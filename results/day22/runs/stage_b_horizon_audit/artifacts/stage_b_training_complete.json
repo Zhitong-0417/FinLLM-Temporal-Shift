@@ -1,0 +1,13 @@
+{
+  "day": 22,
+  "stage": "B",
+  "status": "CONTROLLED_500_STEP_TRAJECTORY_COMPLETE",
+  "global_step": 500,
+  "formal_horizons": [
+    200,
+    300,
+    400,
+    500
+  ],
+  "created_utc": "2026-10-07T04:49:10.373886+00:00"
+}

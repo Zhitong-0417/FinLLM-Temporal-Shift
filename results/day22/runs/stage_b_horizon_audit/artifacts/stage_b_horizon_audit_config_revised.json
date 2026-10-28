@@ -1,0 +1,111 @@
+{
+  "day": 22,
+  "stage": "B",
+  "stage_name": "controlled_training_horizon_audit",
+  "protocol_version": "revised_after_scheduler_audit",
+  "supersedes": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/artifacts/stage_b_horizon_audit_config.json",
+  "revision_reason": "Stage A used a linear learning-rate scheduler parameterized for max_steps=200 and the optimizer learning rate reached zero at step 200. Direct checkpoint continuation would therefore not constitute a clean controlled horizon extension.",
+  "objective": "Measure training adequacy along one common 500-step optimization trajectory and determine whether performance continues improving beyond 200 steps.",
+  "stage_a_role": {
+    "status": "frozen_original_baseline",
+    "selected_step": 200,
+    "selected_eval_loss": 0.2657395303249359,
+    "comparison_role": "External reference only. Stage A step 200 and Stage B step 200 are not expected to be numerically identical because their linear schedulers are parameterized by different total budgets.",
+    "stage_a_adapter_modified": false
+  },
+  "initialization": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "start_from_base_model": true,
+    "load_stage_a_adapter": false,
+    "load_stage_a_optimizer": false,
+    "load_stage_a_scheduler": false,
+    "fresh_lora": true,
+    "seed": 42,
+    "data_seed": 42
+  },
+  "data_protocol": {
+    "training_split": "optimization_train",
+    "training_n": 10831,
+    "evaluation_split": "optimization_dev",
+    "evaluation_n": 2708,
+    "sampling": "natural",
+    "historical_validation_used": false,
+    "future_f1_f6_used": false
+  },
+  "model_protocol": {
+    "quantization": {
+      "enabled": true,
+      "load_in_4bit": true,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "bnb_4bit_compute_dtype": "float16"
+    },
+    "lora": {
+      "r": 8,
+      "lora_alpha": 32,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "bias": "none",
+      "task_type": "CAUSAL_LM",
+      "inference_mode": false
+    },
+    "max_seq_length": 512,
+    "prompt_template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: "
+  },
+  "training_protocol": {
+    "max_steps": 500,
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_train_batch_size": 8,
+    "learning_rate": 0.0001,
+    "lr_scheduler_type": "linear",
+    "warmup_steps": 10,
+    "weight_decay": 0.0,
+    "gradient_checkpointing": true,
+    "seed": 42,
+    "data_seed": 42
+  },
+  "horizon_protocol": {
+    "trajectory_total_steps": 500,
+    "formal_candidate_horizons": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "evaluation_steps": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "checkpoint_steps": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "optional_extension_step": 600,
+    "optional_extension_status": "NOT_ENABLED",
+    "optional_extension_rule": "Do not extend automatically. Reassess only if step 500 remains the best candidate and the boundary signal indicates material continued improvement."
+  },
+  "selection_protocol": {
+    "selection_split": "optimization_dev",
+    "primary_metric": "eval_loss",
+    "direction": "minimize",
+    "tie_break": "shorter_training_horizon",
+    "historical_validation_allowed": false,
+    "future_metrics_allowed": false
+  },
+  "interpretation_protocol": {
+    "valid_internal_comparison": "Compare Stage B checkpoints 200, 300, 400, and 500 because they belong to the same model initialization, dataset, optimizer configuration, and 500-step learning-rate schedule.",
+    "invalid_equivalence": "Do not interpret Stage A step 200 and Stage B step 200 as identical training states.",
+    "primary_question": "Does Optimization Dev performance continue improving after the 200-step observation point under a common longer training trajectory?"
+  },
+  "freeze_status": "REVISED_STAGE_B_PROTOCOL_FROZEN",
+  "created_utc": "2026-10-07T03:20:37.458863+00:00"
+}

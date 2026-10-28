@@ -1,0 +1,41 @@
+{
+  "day": 22,
+  "stage": "B",
+  "artifact": "stage_a_scheduler_continuation_audit",
+  "stage_a_scheduler": {
+    "scheduler_type": "linear",
+    "base_learning_rate": 0.0001,
+    "warmup_steps": 10,
+    "max_steps": 200
+  },
+  "logged_learning_rates": {
+    "step_10": 9e-05,
+    "step_50": 7.947368421052632e-05,
+    "step_100": 5.31578947368421e-05,
+    "step_150": 2.6842105263157896e-05,
+    "step_200": 5.263157894736843e-07
+  },
+  "live_state": {
+    "scheduler_last_epoch": null,
+    "scheduler_learning_rates": [],
+    "optimizer_learning_rates": []
+  },
+  "continuation_assessment": {
+    "scheduler_tied_to_stage_a_budget": true,
+    "scheduler_exhausted_at_step_200": false,
+    "naive_resume_is_clean_horizon_extension": true,
+    "stage_b_protocol_revision_required": false
+  },
+  "checks": {
+    "scheduler_type_identified": true,
+    "stage_a_max_steps_200": true,
+    "stage_a_warmup_steps_10": true,
+    "stage_a_base_lr_1e4": true,
+    "lr_log_available": true,
+    "step_200_lr_observed": true,
+    "live_scheduler_available": false,
+    "live_optimizer_available": false
+  },
+  "audit_completed": false,
+  "created_utc": "2026-10-07T03:20:35.026223+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "day": 22,
+  "stage": "B",
+  "stage_name": "training_horizon_adequacy_audit",
+  "objective": "Determine whether the original 200-step training budget is adequate by extending the exact Stage A training trajectory.",
+  "trigger": {
+    "stage_a_selected_step": 200,
+    "stage_a_selected_eval_loss": 0.2657395303249359,
+    "selected_at_upper_boundary": true,
+    "absolute_eval_loss_improvement_150_to_200": 0.013853102922439575,
+    "relative_eval_loss_improvement_150_to_200": 0.049547453241311795,
+    "stage_b_required": true
+  },
+  "data_protocol": {
+    "training_split": "optimization_train",
+    "training_n": 10831,
+    "evaluation_split": "optimization_dev",
+    "evaluation_n": 2708,
+    "sampling": "natural",
+    "historical_validation_used": false,
+    "future_f1_f6_used": false
+  },
+  "continuation_protocol": {
+    "type": "exact_checkpoint_resume",
+    "resume_checkpoint": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_a_baseline/model/checkpoints/checkpoint-200",
+    "resume_step": 200,
+    "preserve_optimizer_state": true,
+    "preserve_scheduler_state": true,
+    "fresh_lora_initialization": false,
+    "restart_from_base_model": false
+  },
+  "model_protocol": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "quantization": {
+      "enabled": true,
+      "load_in_4bit": true,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "bnb_4bit_compute_dtype": "float16"
+    },
+    "lora": {
+      "r": 8,
+      "lora_alpha": 32,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "bias": "none",
+      "task_type": "CAUSAL_LM",
+      "inference_mode": false
+    },
+    "learning_rate": 0.0001,
+    "effective_batch_size": 8,
+    "warmup_steps": 10,
+    "seed": 42,
+    "data_seed": 42
+  },
+  "horizon_protocol": {
+    "formal_horizons": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "already_observed_horizon": 200,
+    "new_horizons": [
+      300,
+      400,
+      500
+    ],
+    "maximum_step_stage_b": 500,
+    "evaluation_interval_after_resume": 100,
+    "save_interval_after_resume": 100,
+    "optional_extension_step": 600,
+    "optional_extension_rule": "Enable step 600 only if step 500 remains the best formal horizon and Optimization Dev eval_loss is still materially improving at the upper boundary."
+  },
+  "selection_protocol": {
+    "candidate_horizons": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "selection_split": "optimization_dev",
+    "primary_selection_metric": "eval_loss",
+    "selection_direction": "minimize",
+    "tie_break": "shorter_training_horizon",
+    "historical_validation_allowed": false,
+    "future_metrics_allowed": false
+  },
+  "freeze_status": "SUPERSEDED_AFTER_SCHEDULER_AUDIT",
+  "created_utc": "2026-10-07T03:20:33.123724+00:00",
+  "superseded_by": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/artifacts/stage_b_horizon_audit_config_revised.json",
+  "superseded_reason": "Linear scheduler reached zero learning rate at Stage A step 200; direct continuation does not provide a clean horizon comparison."
+}

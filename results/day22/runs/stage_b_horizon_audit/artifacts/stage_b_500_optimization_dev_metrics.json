@@ -1,0 +1,33 @@
+{
+  "day": 22,
+  "stage": "B",
+  "checkpoint_step": 500,
+  "evaluation_population": "optimization_dev",
+  "n": 2708,
+  "accuracy": 0.8408419497784343,
+  "macro_f1": 0.8082013307079015,
+  "weighted_f1": 0.840208760595601,
+  "class_recall": {
+    "negative": 0.7213438735177866,
+    "neutral": 0.889754343918514,
+    "positive": 0.801125703564728
+  },
+  "invalid_prediction_n": 0,
+  "invalid_prediction_rate": 0.0,
+  "inference_protocol": {
+    "batch_size": 8,
+    "max_new_tokens": 4,
+    "do_sample": false,
+    "padding_side": "left",
+    "valid_predictions": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "firewall": {
+    "historical_validation_used": false,
+    "future_f1_f6_used": false
+  },
+  "created_utc": "2026-10-07T04:59:12.474203+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "day": 22,
+  "stage": "B",
+  "artifact": "stage_b_horizon_selection_summary",
+  "selection_protocol": {
+    "candidate_horizons": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "selection_split": "optimization_dev",
+    "metric": "eval_loss",
+    "direction": "minimize",
+    "tie_break": "shorter_training_horizon"
+  },
+  "selected_horizon": {
+    "step": 500,
+    "eval_loss": 0.2157749235630035,
+    "source_checkpoint": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/model/checkpoints/checkpoint-500",
+    "frozen_adapter": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/model/selected_adapter"
+  },
+  "horizon_diagnostics": {
+    "eval_loss_200": 0.2665838897228241,
+    "eval_loss_300": 0.2199805229902267,
+    "eval_loss_400": 0.2192061394453048,
+    "eval_loss_500": 0.2157749235630035,
+    "improvement_200_to_300_absolute": 0.04660336673259741,
+    "improvement_200_to_300_relative": 0.17481689077705498,
+    "improvement_300_to_400_absolute": 0.0007743835449219028,
+    "improvement_300_to_400_relative": 0.0035202368573162596,
+    "improvement_400_to_500_absolute": 0.003431215882301275,
+    "improvement_400_to_500_relative": 0.015652918713790927,
+    "improvement_200_to_500_absolute": 0.050808966159820584,
+    "improvement_200_to_500_relative": 0.1905927856805162,
+    "selected_at_upper_boundary": true
+  },
+  "optional_600_extension": {
+    "status": "NOT_ACTIVATED",
+    "automatically_activated": false,
+    "reason": "Step 500 is the best formal Stage B horizon, but the pre-frozen protocol did not specify a numerical threshold for 'material' boundary improvement. Introducing such a threshold after observing the results would be post-hoc. Furthermore, the common 500-step linear scheduler is exhausted at step 500; a clean 600-step comparison would require a new common 600-step trajectory from fresh initialization rather than continuation from checkpoint-500.",
+    "scientifically_clean_requirement": "If later performed, train a fresh common 600-step trajectory with the same initialization protocol and evaluate formal horizons under that shared schedule."
+  },
+  "checks": {
+    "candidate_n_4": true,
+    "candidate_horizons_exact": true,
+    "one_eval_per_horizon": true,
+    "eval_losses_complete": true,
+    "selected_checkpoint_exists": true,
+    "selected_adapter_config_exists": true,
+    "selected_adapter_weights_exist": true,
+    "selected_adapter_dir_exists": true,
+    "frozen_adapter_config_exists": true,
+    "frozen_adapter_weights_exist": true,
+    "selection_metric_eval_loss": true,
+    "selection_direction_minimize": true,
+    "selected_step_is_argmin": true,
+    "selected_step_500": true,
+    "selected_at_upper_boundary": true,
+    "loss_400_to_500_improved": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true,
+    "600_not_automatically_activated": true
+  },
+  "all_checks_pass": true,
+  "freeze_status": "STAGE_B_HORIZON_500_FROZEN",
+  "created_utc": "2026-10-07T04:51:31.199800+00:00"
+}

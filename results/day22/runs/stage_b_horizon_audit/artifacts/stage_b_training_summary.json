@@ -1,0 +1,118 @@
+{
+  "day": 22,
+  "stage": "B",
+  "artifact": "stage_b_training_summary",
+  "protocol": "controlled_common_500_step_trajectory",
+  "status": "PASS",
+  "training": {
+    "final_global_step": 500,
+    "final_training_loss": 0.45765556502342225,
+    "runtime_seconds": 5233.7780113220215,
+    "runtime_minutes": 87.2296335220337,
+    "peak_gpu_allocation_gb": 8.806620121002197
+  },
+  "formal_horizons": {
+    "expected": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "observed_eval_steps": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "callback_eval_steps": [
+      200,
+      300,
+      400,
+      500
+    ],
+    "callback_save_steps": [
+      200,
+      300,
+      400,
+      500
+    ]
+  },
+  "learning_rate_trajectory": {
+    "scheduler_type": "linear",
+    "base_learning_rate": 0.0001,
+    "warmup_steps": 10,
+    "step_10": 9e-05,
+    "step_100": 8.183673469387756e-05,
+    "step_200": 6.142857142857143e-05,
+    "step_300": 4.102040816326531e-05,
+    "step_400": 2.0612244897959186e-05,
+    "step_500": 2.0408163265306124e-07,
+    "final_scheduler_epoch": 500,
+    "final_scheduler_lrs": [
+      0.0,
+      0.0
+    ]
+  },
+  "checkpoints": {
+    "200": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/model/checkpoints/checkpoint-200",
+      "exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true,
+      "trainer_state_exists": true,
+      "optimizer_state_exists": true,
+      "scheduler_state_exists": true
+    },
+    "300": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/model/checkpoints/checkpoint-300",
+      "exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true,
+      "trainer_state_exists": true,
+      "optimizer_state_exists": true,
+      "scheduler_state_exists": true
+    },
+    "400": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/model/checkpoints/checkpoint-400",
+      "exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true,
+      "trainer_state_exists": true,
+      "optimizer_state_exists": true,
+      "scheduler_state_exists": true
+    },
+    "500": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/model/checkpoints/checkpoint-500",
+      "exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true,
+      "trainer_state_exists": true,
+      "optimizer_state_exists": true,
+      "scheduler_state_exists": true
+    }
+  },
+  "checks": {
+    "training_completed_500_steps": true,
+    "training_loss_finite": true,
+    "training_log_nonempty": true,
+    "observed_eval_steps_exact": true,
+    "callback_eval_steps_exact": true,
+    "callback_save_steps_exact": true,
+    "no_step_100_evaluation": true,
+    "lr_step_200_observed": true,
+    "lr_step_300_observed": true,
+    "lr_step_400_observed": true,
+    "lr_step_200_positive": true,
+    "lr_step_300_positive": true,
+    "lr_step_400_positive": true,
+    "scheduler_reaches_end_at_500": true,
+    "checkpoint_200_complete": true,
+    "checkpoint_300_complete": true,
+    "checkpoint_400_complete": true,
+    "checkpoint_500_complete": true,
+    "historical_validation_not_used": true,
+    "future_data_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-07T04:49:10.362028+00:00"
+}
