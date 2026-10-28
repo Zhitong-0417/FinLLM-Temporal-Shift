@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "condition": "lr_5e-5",
+  "sampling": "natural",
+  "learning_rate": 5e-05,
+  "global_step": 500,
+  "checkpoint": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_d_learning_rate_audit/runs/lr_5e-5/model/checkpoints/checkpoint-500",
+  "created_utc": "2026-10-07T22:35:04.065329+00:00"
+}

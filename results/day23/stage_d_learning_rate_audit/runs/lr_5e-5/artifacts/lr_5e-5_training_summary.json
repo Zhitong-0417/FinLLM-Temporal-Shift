@@ -1,0 +1,69 @@
+{
+  "day": 23,
+  "stage": "D",
+  "condition": "lr_5e-5",
+  "sampling": "natural",
+  "learning_rate": 5e-05,
+  "training": {
+    "final_global_step": 500,
+    "training_loss": 0.5551891169548034,
+    "runtime_seconds": 3455.43563246727,
+    "runtime_minutes": 57.5905938744545,
+    "peak_gpu_gb": 8.808538436889648
+  },
+  "evaluation": {
+    "split": "optimization_dev",
+    "step": 500,
+    "eval_loss": 0.24001599848270416,
+    "eval_runtime": 499.8661
+  },
+  "learning_rate_trajectory": {
+    "step_100": 4.091836734693878e-05,
+    "step_200": 3.071428571428572e-05,
+    "step_300": 2.0510204081632654e-05,
+    "step_400": 1.0306122448979593e-05,
+    "step_500": 1.0204081632653062e-07,
+    "final_scheduler_epoch": 500,
+    "final_scheduler_lr": [
+      0.0,
+      0.0
+    ]
+  },
+  "checkpoint": {
+    "directory": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_d_learning_rate_audit/runs/lr_5e-5/model/checkpoints/checkpoint-500",
+    "all_checkpoint_dirs": [
+      "checkpoint-500"
+    ],
+    "checks": {
+      "checkpoint_exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true,
+      "trainer_state_exists": true,
+      "optimizer_state_exists": true,
+      "scheduler_state_exists": true
+    }
+  },
+  "checks": {
+    "training_completed_500_steps": true,
+    "training_loss_finite": true,
+    "training_log_nonempty": true,
+    "final_eval_triggered": true,
+    "final_save_triggered": true,
+    "exactly_one_eval": true,
+    "eval_at_step_500": true,
+    "eval_loss_finite": true,
+    "only_checkpoint_500": true,
+    "checkpoint_500_complete": true,
+    "lr_100_observed": true,
+    "lr_200_observed": true,
+    "lr_300_observed": true,
+    "lr_400_observed": true,
+    "lr_500_observed": true,
+    "lr_positive_before_end": true,
+    "scheduler_reaches_end_at_500": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-07T22:35:04.058601+00:00"
+}
