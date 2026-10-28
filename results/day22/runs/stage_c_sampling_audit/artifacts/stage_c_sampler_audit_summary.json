@@ -1,0 +1,71 @@
+{
+  "day": 22,
+  "stage": "C",
+  "artifact": "deterministic_sampler_audit",
+  "sampler_seed": 42,
+  "replacement": true,
+  "trajectory_geometry": {
+    "max_steps": 500,
+    "effective_batch_size": 8,
+    "total_draws": 4000
+  },
+  "inverse_sqrt": {
+    "expected_probabilities": {
+      "negative": 0.27695989998851284,
+      "neutral": 0.47756100017367725,
+      "positive": 0.24547909983780988
+    },
+    "realized_counts": {
+      "negative": 1068,
+      "neutral": 1917,
+      "positive": 1015
+    },
+    "realized_probabilities": {
+      "negative": 0.267,
+      "neutral": 0.47925,
+      "positive": 0.25375
+    },
+    "unique_indices": 3257,
+    "unique_fraction": 0.81425,
+    "max_probability_deviation": 0.009959899988512821
+  },
+  "capped_balanced": {
+    "expected_probabilities": {
+      "negative": 0.35808022012911417,
+      "neutral": 0.35808022012911417,
+      "positive": 0.2838395597417716
+    },
+    "realized_counts": {
+      "negative": 1425,
+      "neutral": 1458,
+      "positive": 1117
+    },
+    "realized_probabilities": {
+      "negative": 0.35625,
+      "neutral": 0.3645,
+      "positive": 0.27925
+    },
+    "unique_indices": 3182,
+    "unique_fraction": 0.7955,
+    "max_probability_deviation": 0.006419779870885822
+  },
+  "checks": {
+    "total_draws_4000": true,
+    "inverse_sqrt_weight_length_10831": true,
+    "capped_weight_length_10831": true,
+    "inverse_sqrt_draw_n_4000": true,
+    "capped_draw_n_4000": true,
+    "inverse_sqrt_all_classes_present": true,
+    "capped_all_classes_present": true,
+    "inverse_sqrt_matches_expected": true,
+    "capped_matches_expected": true,
+    "inverse_sqrt_not_majority_dominated": true,
+    "capped_not_majority_dominated": true,
+    "replacement_sampling_preserves_valid_indices": true,
+    "seed_42": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-07T05:25:26.424520+00:00"
+}

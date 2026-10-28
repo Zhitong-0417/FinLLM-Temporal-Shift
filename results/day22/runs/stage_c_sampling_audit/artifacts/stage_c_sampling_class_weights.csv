@@ -1,0 +1,4 @@
+label,count,natural_weight,inverse_sqrt_weight,inverse_frequency_raw,capped_balanced_weight
+negative,2276,1.0,1.7242965504879386,2.9731985940246046,2.9731985940246046
+neutral,6767,1.0,1.0,1.0,1.0
+positive,1788,1.0,1.9454242764015588,3.784675615212528,3.0

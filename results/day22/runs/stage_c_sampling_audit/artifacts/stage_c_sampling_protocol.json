@@ -1,0 +1,107 @@
+{
+  "day": 22,
+  "stage": "C",
+  "stage_name": "sampling_intervention_audit",
+  "objective": "Test whether controlled class-sampling interventions provide incremental classification gains beyond the frozen Stage B-500 incumbent.",
+  "incumbent": {
+    "model": "Stage B-500",
+    "optimization_dev_accuracy": 0.840842,
+    "optimization_dev_macro_f1": 0.808201,
+    "negative_recall": 0.721344,
+    "neutral_recall": 0.889754,
+    "positive_recall": 0.801126
+  },
+  "data": {
+    "train_split": "optimization_train",
+    "train_n": 10831,
+    "dev_split": "optimization_dev",
+    "dev_n": 2708,
+    "class_counts": {
+      "negative": 2276,
+      "neutral": 6767,
+      "positive": 1788
+    },
+    "historical_validation_used": false,
+    "future_f1_f6_used": false
+  },
+  "conditions": {
+    "natural": {
+      "role": "incumbent_reference",
+      "training_required": false,
+      "source": "Stage B-500",
+      "sampling": "natural",
+      "class_weights": {
+        "negative": 1.0,
+        "neutral": 1.0,
+        "positive": 1.0
+      }
+    },
+    "inverse_sqrt": {
+      "role": "sampling_candidate",
+      "training_required": true,
+      "sampling": "weighted_random_sampling",
+      "weight_rule": "1/sqrt(class_frequency)",
+      "class_weights": {
+        "negative": 1.7242965504879386,
+        "neutral": 1.0,
+        "positive": 1.9454242764015588
+      }
+    },
+    "capped_balanced": {
+      "role": "sampling_candidate",
+      "training_required": true,
+      "sampling": "weighted_random_sampling",
+      "weight_rule": "min(n_max/n_c, 3.0)",
+      "cap": 3.0,
+      "class_weights": {
+        "negative": 2.9731985940246046,
+        "neutral": 1.0,
+        "positive": 3.0
+      }
+    }
+  },
+  "training_protocol": {
+    "fresh_initialization_per_candidate": true,
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "max_steps": 500,
+    "learning_rate": 0.0001,
+    "lr_scheduler_type": "linear",
+    "warmup_steps": 10,
+    "train_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_batch_size": 8,
+    "seed": 42,
+    "data_seed": 42,
+    "max_seq_length": 512
+  },
+  "selection_protocol": {
+    "evaluation_split": "optimization_dev",
+    "primary_metric": "accuracy",
+    "direction": "maximize",
+    "guardrails": {
+      "macro_f1": "must_not_materially_degrade",
+      "negative_recall": "must_not_materially_degrade",
+      "positive_recall": "must_not_materially_degrade",
+      "invalid_generation_rate": "must_remain_near_zero"
+    },
+    "tie_break_order": [
+      "macro_f1",
+      "minority_recall_floor",
+      "eval_loss",
+      "simpler_sampling_scheme"
+    ]
+  },
+  "firewall": {
+    "historical_validation_forbidden": true,
+    "future_f1_f6_forbidden": true
+  },
+  "freeze_status": "STAGE_C_SAMPLING_PROTOCOL_FROZEN",
+  "created_utc": "2026-10-07T05:24:04.659931+00:00"
+}
