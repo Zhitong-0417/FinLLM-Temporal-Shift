@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "condition": "capped_balanced",
+  "global_step": 500,
+  "checkpoint": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_c_sampling_completion/capped_balanced/model/checkpoints/checkpoint-500",
+  "created_utc": "2026-10-07T20:55:32.081581+00:00"
+}

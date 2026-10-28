@@ -1,0 +1,65 @@
+{
+  "day": 23,
+  "stage": "C",
+  "condition": "capped_balanced",
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "quantization": {
+    "load_in_4bit": true,
+    "quant_type": "nf4",
+    "double_quant": true,
+    "compute_dtype": "float16",
+    "bitsandbytes_version": "0.50.2",
+    "bnb_backend": "CudaBNBNativeLibrary"
+  },
+  "lora": {
+    "r": 8,
+    "alpha": 32,
+    "dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "training": {
+    "max_steps": 500,
+    "learning_rate": 0.0001,
+    "scheduler": "linear",
+    "warmup_steps": 10,
+    "effective_batch": 8,
+    "seed": 42
+  },
+  "sampling": {
+    "type": "WeightedRandomSampler",
+    "replacement": true,
+    "seed": 42,
+    "num_samples": 4000,
+    "draw_sequence_sha256": "538419c7cfb8bdcba5a0110d10ac3965dbbc1f29fba6dbfc523faf3a21143928",
+    "exact_match_cell3": true
+  },
+  "checks": {
+    "bnb_integrity_pass": true,
+    "checkpoint_dir_clean": true,
+    "fresh_model_loaded": true,
+    "train_n_10831": true,
+    "dev_n_2708": true,
+    "sampler_weights_n_10831": true,
+    "sampler_draws_4000": true,
+    "sampler_seed_42": true,
+    "dry_sampler_exact_match_cell3": true,
+    "max_steps_500": true,
+    "gradient_accumulation_8": true,
+    "learning_rate_1e4": true,
+    "warmup_10": true,
+    "seed_42": true,
+    "lora_r8": true,
+    "lora_alpha32": true,
+    "trainable_params_3407872": true,
+    "only_lora_trainable": true,
+    "trainer_global_step_zero": true,
+    "final_eval_not_triggered": true,
+    "final_save_not_triggered": true,
+    "historical_validation_locked": true,
+    "future_locked": true
+  },
+  "all_checks_pass": true
+}
