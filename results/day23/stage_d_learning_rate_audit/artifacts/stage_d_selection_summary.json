@@ -1,0 +1,78 @@
+{
+  "day": 23,
+  "stage": "D",
+  "objective": "historical optimization with primary target Accuracy",
+  "evaluation_population": "optimization_dev",
+  "fixed_configuration": {
+    "sampling": "natural",
+    "max_steps": 500,
+    "seed": 42,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1
+  },
+  "candidate_learning_rates": [
+    5e-05,
+    0.0001,
+    0.0002
+  ],
+  "selection_rule": {
+    "primary": "accuracy",
+    "secondary": "macro_f1",
+    "diagnostic": "minority_recall_floor",
+    "later_tie_break": "eval_loss",
+    "posthoc_numeric_guardrail_added": false
+  },
+  "winner": {
+    "condition": "lr_2e-4",
+    "learning_rate": 0.0002,
+    "accuracy": 0.843426883308715,
+    "macro_f1": 0.8135161637019171,
+    "weighted_f1": 0.8436650741347105,
+    "negative_recall": 0.7509881422924901,
+    "neutral_recall": 0.8801677651288197,
+    "positive_recall": 0.8161350844277674,
+    "minority_recall_floor": 0.7509881422924901,
+    "eval_loss": 0.21259424090385437,
+    "source_checkpoint": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_d_learning_rate_audit/runs/lr_2e-4/model/checkpoints/checkpoint-500",
+    "selected_adapter": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_d_learning_rate_audit/selected_adapter"
+  },
+  "comparison_vs_previous_incumbent_lr1e4": {
+    "accuracy_delta": 0.002584933530280664,
+    "macro_f1_delta": 0.005314832994015695,
+    "negative_recall_delta": 0.029644268774703497,
+    "neutral_recall_delta": -0.009586578789694378,
+    "positive_recall_delta": 0.015009380863039379,
+    "minority_floor_delta": 0.029644268774703497,
+    "eval_loss_delta": -0.0031807590961456245
+  },
+  "checks": {
+    "lr5e5_accuracy_match": true,
+    "lr5e5_macro_f1_match": true,
+    "lr1e4_accuracy_match": true,
+    "lr1e4_macro_f1_match": true,
+    "lr2e4_accuracy_match": true,
+    "lr2e4_macro_f1_match": true,
+    "lr5e5_eval_loss_match": true,
+    "lr1e4_eval_loss_match": true,
+    "lr2e4_eval_loss_match": true,
+    "three_learning_rates_present": true,
+    "winner_is_lr2e4": true,
+    "lr2e4_highest_accuracy": true,
+    "lr2e4_highest_macro_f1": true,
+    "lr2e4_highest_minority_floor": true,
+    "lr2e4_lowest_eval_loss": true,
+    "lr2e4_beats_lr1e4_accuracy": true,
+    "lr2e4_beats_lr1e4_macro_f1": true,
+    "lr2e4_improves_minority_floor": true,
+    "lr2e4_lower_eval_loss": true,
+    "neutral_recall_tradeoff_recorded": true,
+    "selected_adapter_config_exists": true,
+    "selected_adapter_weights_exist": true,
+    "no_posthoc_numeric_guardrail": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T00:05:41.339302+00:00"
+}

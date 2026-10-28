@@ -1,0 +1,104 @@
+{
+  "day": 23,
+  "stage": "D",
+  "name": "learning_rate_audit",
+  "freeze_status": "STAGE_D_LEARNING_RATE_PROTOCOL_FROZEN",
+  "objective": "Optimize historical model performance with primary target Accuracy.",
+  "evaluation_population": "optimization_dev",
+  "fixed_configuration": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "sampling": "natural",
+    "max_steps": 500,
+    "train_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_batch": 8,
+    "scheduler": "linear",
+    "warmup_steps": 10,
+    "seed": 42,
+    "max_seq_length": 512,
+    "lora": {
+      "r": 8,
+      "alpha": 32,
+      "dropout": 0.1,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "quantization": {
+      "load_in_4bit": true,
+      "quant_type": "nf4",
+      "double_quant": true,
+      "compute_dtype": "float16"
+    }
+  },
+  "candidate_learning_rates": [
+    5e-05,
+    0.0001,
+    0.0002
+  ],
+  "candidate_manifest": {
+    "lr_5e-5": {
+      "learning_rate": 5e-05,
+      "status": "PENDING_FRESH_TRAINING",
+      "reuse_existing_run": false,
+      "run_dir": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_d_learning_rate_audit/runs/lr_5e-5"
+    },
+    "lr_1e-4": {
+      "learning_rate": 0.0001,
+      "status": "EXISTING_REFERENCE",
+      "reuse_existing_run": true,
+      "source": "Day22 Stage B-500 natural sampling",
+      "adapter_path": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/model/selected_adapter",
+      "optimization_dev_accuracy": 0.840842,
+      "optimization_dev_macro_f1": 0.808201
+    },
+    "lr_2e-4": {
+      "learning_rate": 0.0002,
+      "status": "PENDING_FRESH_TRAINING",
+      "reuse_existing_run": false,
+      "run_dir": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_d_learning_rate_audit/runs/lr_2e-4"
+    }
+  },
+  "selection_rule": {
+    "primary": "accuracy",
+    "secondary": "macro_f1",
+    "diagnostic": "minority_recall_floor",
+    "tie_break_if_needed": [
+      "higher_macro_f1",
+      "higher_minority_recall_floor",
+      "lower_eval_loss",
+      "simpler_existing_configuration_if_effectively_tied"
+    ],
+    "posthoc_numeric_guardrail_allowed": false
+  },
+  "firewall": {
+    "historical_validation_allowed": false,
+    "future_f1_f6_allowed": false
+  },
+  "checks": {
+    "stage_c_complete": true,
+    "stage_c_winner_natural": true,
+    "three_learning_rates": true,
+    "reference_lr_1e4": true,
+    "only_two_new_training_runs": true,
+    "natural_sampling_fixed": true,
+    "max_steps_500": true,
+    "effective_batch_8": true,
+    "scheduler_linear": true,
+    "warmup_10": true,
+    "seed_42": true,
+    "lora_r8": true,
+    "lora_alpha32": true,
+    "lora_dropout_0_1": true,
+    "reference_adapter_exists": true,
+    "reference_metrics_exist": true,
+    "primary_metric_accuracy": true,
+    "no_posthoc_guardrail": true,
+    "optimization_dev_only": true,
+    "historical_validation_locked": true,
+    "future_locked": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-07T21:30:19.224199+00:00"
+}
