@@ -1,0 +1,75 @@
+{
+  "artifact": "day27_final_scientific_summary",
+  "class_conditioned": {
+    "negative": -0.0079930667719404,
+    "neutral": -0.0021851496244535,
+    "positive": -0.0092688294607223
+  },
+  "created_utc": "2026-10-09T03:30:09.085417+00:00",
+  "day": 27,
+  "df50_sensitivity": {
+    "delta": -0.01585210917284119,
+    "standardized_mean_difference": -0.14167389755367626
+  },
+  "f3_positive_failure_channel": {
+    "delta_p_to_n_minus_p_to_p": -0.0004338926262745,
+    "p_to_n_n": 104,
+    "p_to_p_n": 346
+  },
+  "logistic_secondary": {
+    "adjusted_or": 0.9530564536376176,
+    "adjusted_or_ci": [
+      0.9172753218156303,
+      0.9902333380368444
+    ],
+    "unadjusted_or": 0.9538718999516569,
+    "unadjusted_or_ci": [
+      0.9180380449303206,
+      0.9911044608030851
+    ]
+  },
+  "major_sources": {
+    "MonitoringSituation": {
+      "delta_error_minus_correct": -0.006781893088041,
+      "n": 699
+    },
+    "WalterBloomberg": {
+      "delta_error_minus_correct": -0.00711890927952,
+      "n": 2539
+    },
+    "firstsquaw": {
+      "delta_error_minus_correct": -0.0047483319894687,
+      "n": 16458
+    }
+  },
+  "period_heterogeneity": {
+    "f3_delta": -0.007061374846857,
+    "negative_periods": [
+      "F1",
+      "F2",
+      "F3",
+      "F4"
+    ],
+    "positive_periods": [
+      "F5",
+      "F6"
+    ]
+  },
+  "primary_result": {
+    "ci_high": -0.0009917963200815508,
+    "ci_low": -0.010077493037884754,
+    "delta_primary": -0.0053883942869783485,
+    "gate": "GATE_C_FAILED",
+    "standardized_mean_difference": -0.04693233840576977
+  },
+  "scientific_interpretation": {
+    "H1_supported": false,
+    "causal_claim_permitted": false,
+    "conclusion": "Day 27 falsified the pre-registered positive historical lexical-instability hypothesis under the frozen Day 26 exposure definition. The all-future primary contrast was negative, with its 95% bootstrap confidence interval entirely below zero. Pre-specified secondary analyses were broadly consistent with this result: F3 remained negative, the F3 positive-to-negative failure channel showed approximately zero/slightly negative contrast, all three class-conditioned contrasts were negative, the three largest sources were negative, df>=50 sensitivity was more strongly negative, and both unadjusted and adjusted logistic models produced odds ratios below one. Therefore, historical lexical-label instability as operationalized on Day 26 does not explain higher future classification error. This result does not rule out lexical/topic shift more broadly; rather, it separates the Day 26 historical instability construct from the future failure mechanism observed in earlier days.",
+    "historical_instability_explains_future_error": false,
+    "lexical_topic_shift_broadly_ruled_out": false,
+    "primary_gate": "GATE_C_FAILED",
+    "secondary_results_may_override_primary": false
+  },
+  "status": "SCIENTIFIC_INTERPRETATION_FROZEN"
+}

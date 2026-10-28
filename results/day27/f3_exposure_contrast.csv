@@ -1,0 +1,2 @@
+scope,group,n,n_correct,n_error,error_rate,mean_exposure_correct,mean_exposure_error,median_exposure_correct,median_exposure_error,delta_error_minus_correct
+f3_specific,F3,4817,3986,831,0.1725140128710816,0.596456256156571,0.589394881309714,0.5951926683250868,0.587823383002023,-0.007061374846857094

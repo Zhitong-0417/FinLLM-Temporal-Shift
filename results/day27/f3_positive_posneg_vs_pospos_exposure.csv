@@ -1,0 +1,2 @@
+scope,comparison,f3_positive_total_n,p_to_n_n,p_to_p_n,p_to_neutral_n,other_n,mean_exposure_p_to_n,mean_exposure_p_to_p,median_exposure_p_to_n,median_exposure_p_to_p,sd_exposure_p_to_n,sd_exposure_p_to_p,delta_p_to_n_minus_p_to_p,standardized_mean_difference,primary_gate,analysis_role
+F3_true_positive,P_to_N_vs_P_to_P,544,104,346,94,0,0.5878081419744119,0.5882420346006865,0.5881798651605609,0.583525900303939,0.124808098279668,0.11682442011025,-0.00043389262627457903,-0.0036551409178543323,GATE_C_FAILED,pre_specified_secondary

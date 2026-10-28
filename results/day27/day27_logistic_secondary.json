@@ -1,0 +1,39 @@
+{
+  "adjusted_model": {
+    "coefficient": -0.04808113926750622,
+    "coefficient_ci_high": -0.009814668638489545,
+    "coefficient_ci_low": -0.0863476098965229,
+    "formula": "error ~ standardized_exposure + period + source + y_true",
+    "n_design_columns": 16,
+    "odds_ratio_ci_high": 0.9902333380368444,
+    "odds_ratio_ci_low": 0.9172753218156303,
+    "odds_ratio_per_1sd": 0.9530564536376176,
+    "p_value": 0.013791067772963234,
+    "standard_error": 0.019524068263936337
+  },
+  "analysis_role": "secondary_corroboration_only",
+  "artifact": "day27_logistic_secondary",
+  "created_utc": "2026-10-09T03:29:14.677669+00:00",
+  "day": 27,
+  "exposure_standardization": {
+    "field": "lexical_instability_exposure_df20",
+    "mean": 0.5899125301070399,
+    "sd": 0.11482587870653405,
+    "unit": "1 SD increase in frozen primary exposure"
+  },
+  "may_override_primary_gate": false,
+  "population_n": 20001,
+  "primary_gate": "GATE_C_FAILED",
+  "status": "SECONDARY_COMPLETE",
+  "unadjusted_model": {
+    "coefficient": -0.04722589333001829,
+    "coefficient_ci_high": -0.0089353407188573,
+    "coefficient_ci_low": -0.08551644594117927,
+    "formula": "error ~ standardized_exposure",
+    "odds_ratio_ci_high": 0.9911044608030851,
+    "odds_ratio_ci_low": 0.9180380449303206,
+    "odds_ratio_per_1sd": 0.9538718999516569,
+    "p_value": 0.015634668721440127,
+    "standard_error": 0.019536355215295783
+  }
+}

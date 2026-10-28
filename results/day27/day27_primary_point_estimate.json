@@ -1,0 +1,37 @@
+{
+  "artifact": "day27_primary_point_estimate",
+  "bootstrap_status": "NOT_YET_RUN",
+  "created_utc": "2026-10-09T03:22:16.691135+00:00",
+  "day": 27,
+  "descriptive_statistics": {
+    "mean_correct": 0.5907611597757556,
+    "mean_error": 0.5853727654887773,
+    "median_correct": 0.5878670898868258,
+    "median_error": 0.5842076896508952,
+    "sd_correct": 0.11385840966427033,
+    "sd_error": 0.1197854768862811
+  },
+  "exposure": {
+    "artifact_sha256": "7873a53366ee958e669c5693cbd88da8967254ca45faa81b7a30679385437365",
+    "field": "lexical_instability_exposure_df20",
+    "rule": "mean I(v) across frozen df>=20 tokens present"
+  },
+  "population": {
+    "n_correct": 16851,
+    "n_error": 3150,
+    "n_missing_primary_exposure": 1,
+    "n_primary_complete": 20001,
+    "n_total_future": 20002
+  },
+  "primary_estimand": {
+    "definition": "mean(error exposure) - mean(correct exposure)",
+    "name": "delta_primary",
+    "value": -0.0053883942869783485
+  },
+  "secondary_analyses_viewed": false,
+  "secondary_effect_size": {
+    "name": "standardized_mean_difference",
+    "value": -0.04693233840576977
+  },
+  "status": "POINT_ESTIMATE_FROZEN_BEFORE_BOOTSTRAP"
+}

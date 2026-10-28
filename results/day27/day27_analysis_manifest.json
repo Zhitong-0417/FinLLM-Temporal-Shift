@@ -1,0 +1,111 @@
+{
+  "analysis_name": "out_of_time_lexical_instability_hypothesis_test",
+  "artifact": "day27_analysis_manifest",
+  "created_utc": "2026-10-09T03:16:08.302986+00:00",
+  "day": 27,
+  "day26_predictor": {
+    "eligible_token_n": 3240,
+    "frozen_for_day27": true,
+    "handoff_artifact": "/content/drive/MyDrive/FinGPT_Project/results/day26/day26_day27_handoff_manifest.json",
+    "handoff_sha256": "674751cc96f6520e06a6db18be0f963a4ed857b2d890eaa603faa6d0c857c29c",
+    "minimum_historical_df": 20,
+    "token_rank_artifact": "/content/drive/MyDrive/FinGPT_Project/results/day26/token_instability_rank.csv",
+    "token_rank_sha256": "b1aa249f458a1b8c855ac8bdb5a4e210a68d322262978c9110cb6e0b6c732347"
+  },
+  "execution_order": [
+    "stage0_upstream_identity_audit",
+    "stage1_future_population_freeze",
+    "stage2_frozen_exposure_construction",
+    "stage3_exposure_qc",
+    "stage4_primary_hypothesis_test",
+    "stage5_pre_specified_secondary_analyses",
+    "stage6_evidence_integration",
+    "stage7_scientific_closure"
+  ],
+  "future_population": {
+    "expected_n": 20002,
+    "expected_periods": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "new_model_inference_allowed": false,
+    "prediction_sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b",
+    "predictions_immutable": true,
+    "source_artifact": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv"
+  },
+  "hypotheses": {
+    "H0": "There is no systematic positive association between historical lexical-instability exposure and future classification error.",
+    "H1": "Mean historical lexical-instability exposure is higher among misclassified future observations than among correctly classified future observations.",
+    "H1_status_entering_day27": "UNTESTED"
+  },
+  "primary_estimand": {
+    "definition": "mean(exposure | error=1) - mean(exposure | error=0)",
+    "direction_of_support": "positive",
+    "name": "delta_primary"
+  },
+  "primary_exposure": {
+    "alternative_primary_aggregation_allowed": false,
+    "binary_presence": true,
+    "document_exposure_definition": "Mean token_instability across eligible frozen historical vocabulary features present in the future observation",
+    "eligible_vocabulary_n": 3240,
+    "primary_minimum_historical_df": 20,
+    "token_score_definition": "I(v) = max_c sample SD across historical windows of smoothed one-vs-rest lexical-label log-odds",
+    "token_score_field": "token_instability",
+    "unknown_or_ineligible_tokens": "ignored",
+    "zero_eligible_tokens": "missing exposure; no imputation"
+  },
+  "primary_inference": {
+    "bootstrap_level": "observation",
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 42,
+    "confidence_interval": "two-sided 95% percentile bootstrap CI",
+    "failure_rule": "Gate C iff delta_primary <= 0 or there is no meaningful positive effect",
+    "suggestive_rule": "Gate B iff delta_primary > 0 but CI crosses 0",
+    "support_rule": "Gate A iff delta_primary > 0 and both CI bounds are > 0"
+  },
+  "scientific_firewall": {
+    "F3_based_primary_redefinition_allowed": false,
+    "checkpoint_reselection_allowed": false,
+    "future_vocabulary_refit_allowed": false,
+    "model_finetuning_allowed": false,
+    "model_training_allowed": false,
+    "new_full_model_inference_allowed": false,
+    "prediction_modification_allowed": false,
+    "primary_exposure_redefinition_allowed": false,
+    "prompt_modification_allowed": false,
+    "secondary_analysis_before_primary_freeze_allowed": false,
+    "secondary_result_may_override_primary_gate": false,
+    "support_threshold_redefinition_allowed": false,
+    "token_score_redefinition_allowed": false
+  },
+  "scientific_question": "Does higher exposure to historically unstable lexical-label associations predict higher classification error in the untouched Day24 future F1-F6 population?",
+  "secondary_analyses": {
+    "F3_positive_P_to_N_vs_P_to_P": true,
+    "F3_specific": true,
+    "class_conditioned": true,
+    "df50_sensitivity": true,
+    "future_period_F1_F6": true,
+    "logistic_adjusted": true,
+    "logistic_unadjusted": true,
+    "may_override_primary_gate": false,
+    "within_source": true
+  },
+  "status": "FROZEN_BEFORE_PRIMARY_OUTCOME_ANALYSIS",
+  "tokenizer": {
+    "binary_document_presence": true,
+    "future_vocabulary_refit_allowed": false,
+    "implementation": "sklearn.feature_extraction.text.CountVectorizer",
+    "lowercase": true,
+    "max_df_historical_fit": 0.95,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "stop_words": null,
+    "token_pattern": "(?u)\\b\\w\\w+\\b"
+  }
+}

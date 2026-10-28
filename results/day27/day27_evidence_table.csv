@@ -1,0 +1,7 @@
+evidence_domain,analysis,estimate,ci_low,ci_high,direction,role,supports_H1,interpretation
+primary_all_future,df20_primary_mean_contrast,-0.0053883942869783485,-0.010077493037884754,-0.0009917963200815508,negative,primary,False,Primary H1 failed; exposure was slightly lower among errors than correct predictions.
+f3_specific,F3_error_vs_correct,-0.007061374846857,,,negative,secondary,False,F3-specific contrast did not rescue the primary hypothesis.
+f3_positive_failure_channel,P_to_N_vs_P_to_P,-0.0004338926262745,,,negative,secondary,False,The specific F3 positive-to-negative failure channel showed essentially no positive instability signal.
+df50_sensitivity,df50_error_vs_correct,-0.01585210917284119,,,negative,secondary_sensitivity,False,Restricting to better-supported tokens strengthened the negative direction.
+logistic_unadjusted,OR_per_1SD_exposure,0.9538718999516569,0.9180380449303206,0.9911044608030851,below_1,secondary,False,Higher exposure was associated with lower error odds in the unadjusted secondary model.
+logistic_adjusted,adjusted_OR_per_1SD_exposure,0.9530564536376176,0.9172753218156303,0.9902333380368444,below_1,secondary_adjusted,False,"The negative association persisted after adjustment for period, source, and true label."

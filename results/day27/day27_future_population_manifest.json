@@ -1,0 +1,51 @@
+{
+  "artifact": "day27_future_population_manifest",
+  "correctness_rule": {
+    "correct_day24": "y_pred_day24 == y_true",
+    "error_day24": "1[y_pred_day24 != y_true]"
+  },
+  "created_utc": "2026-10-09T03:17:17.349460+00:00",
+  "day": 27,
+  "population": {
+    "accuracy": 0.8425157484251575,
+    "n": 20002,
+    "n_correct": 16852,
+    "n_error": 3150,
+    "ordered_observation_id_sha256": "f4aa6032db13ff333af6f0580286b1ef0d20ec44d2aa0117b6860eb58be56c51",
+    "period_counts": {
+      "F1": 3602,
+      "F2": 3522,
+      "F3": 4818,
+      "F4": 3872,
+      "F5": 3588,
+      "F6": 600
+    },
+    "source_counts": {
+      "AGGRNEWSWIRE": 23,
+      "MonitoringSituation": 699,
+      "TreeNewsFeed": 7,
+      "WalterBloomberg": 2539,
+      "ZoomerfiedNews": 53,
+      "apewirenews": 212,
+      "cukkanews": 10,
+      "firstsquaw": 16459
+    },
+    "true_label_counts": {
+      "negative": 5203,
+      "neutral": 11748,
+      "positive": 3051
+    }
+  },
+  "scientific_firewall": {
+    "error_exposure_comparison_performed": false,
+    "lexical_exposure_computed": false,
+    "new_model_inference_performed": false,
+    "prediction_values_modified": false
+  },
+  "source_prediction_artifact": {
+    "immutable": true,
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv",
+    "sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b"
+  },
+  "status": "FUTURE_POPULATION_FROZEN"
+}

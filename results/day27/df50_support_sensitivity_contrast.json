@@ -1,0 +1,24 @@
+{
+  "analysis_role": "pre_specified_secondary_sensitivity",
+  "artifact": "df50_support_sensitivity_contrast",
+  "contrast": {
+    "delta_error_minus_correct": -0.01585210917284119,
+    "mean_correct": 0.49093554608117446,
+    "mean_error": 0.47508343690833327,
+    "median_correct": 0.4867403866319449,
+    "median_error": 0.4741125815753328,
+    "standardized_mean_difference": -0.14167389755367626
+  },
+  "created_utc": "2026-10-09T03:29:14.310893+00:00",
+  "day": 27,
+  "may_override_primary_gate": false,
+  "population": {
+    "n": 19996,
+    "n_correct": 16849,
+    "n_error": 3147,
+    "n_missing": 6
+  },
+  "primary_gate": "GATE_C_FAILED",
+  "status": "SECONDARY_COMPLETE",
+  "support_threshold": 50
+}

@@ -1,0 +1,52 @@
+{
+  "artifact": "day27_primary_hypothesis_test",
+  "bootstrap": {
+    "bootstrap_mean_delta": -0.005414260416355418,
+    "bootstrap_median_delta": -0.0053603134584394585,
+    "bootstrap_sd_delta": 0.0023025710950100144,
+    "ci_high": -0.0009917963200815508,
+    "ci_low": -0.010077493037884754,
+    "confidence_interval": "two-sided 95% percentile",
+    "level": "observation",
+    "replicates": 1000,
+    "seed": 42,
+    "valid_replicates": 1000
+  },
+  "created_utc": "2026-10-09T03:25:02.034050+00:00",
+  "day": 27,
+  "decision_gate": {
+    "gate": "GATE_C_FAILED",
+    "interpretation": "The frozen historical lexical-instability exposure does not explain higher future classification error under the pre-registered primary Day27 definition.",
+    "rule_A": "delta_primary > 0 and 95% CI entirely > 0",
+    "rule_B": "delta_primary > 0 but 95% CI crosses 0",
+    "rule_C": "delta_primary <= 0 or no meaningful positive association"
+  },
+  "population": {
+    "n_correct": 16851,
+    "n_error": 3150,
+    "n_missing_primary_exposure": 1,
+    "n_primary_complete": 20001,
+    "n_total_future": 20002
+  },
+  "primary_estimand": {
+    "definition": "mean(exposure | error=1) - mean(exposure | error=0)",
+    "delta_primary": -0.0053883942869783485,
+    "mean_correct": 0.5907611597757556,
+    "mean_error": 0.5853727654887773,
+    "median_correct": 0.5878670898868258,
+    "median_error": 0.5842076896508952,
+    "standardized_mean_difference": -0.04693233840576977
+  },
+  "primary_exposure": {
+    "artifact_sha256": "7873a53366ee958e669c5693cbd88da8967254ca45faa81b7a30679385437365",
+    "field": "lexical_instability_exposure_df20",
+    "rule": "mean I(v) across eligible frozen df>=20 historical-vocabulary tokens present"
+  },
+  "scientific_constraints": {
+    "causal_claim_permitted": false,
+    "exposure_redefinition_after_result_permitted": false,
+    "secondary_analyses_may_override_primary": false
+  },
+  "secondary_analyses_viewed_before_primary_freeze": false,
+  "status": "PRIMARY_TEST_COMPLETE_AND_FROZEN"
+}
