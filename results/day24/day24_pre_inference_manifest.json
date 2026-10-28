@@ -1,0 +1,42 @@
+{
+  "day": 24,
+  "artifact": "day24_pre_inference_manifest",
+  "status": "READY_FOR_FROZEN_INFERENCE_ENGINE_VALIDATION",
+  "protocol_freeze": {
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/day24_protocol_freeze.json",
+    "sha256": "ec407148afb22fba02804587ff96b3e48a9d12753782b695fdf14fee85d462cd"
+  },
+  "prompt_identity": {
+    "instruction": "Classify the sentiment of the following financial news as negative, neutral, or positive.",
+    "template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: ",
+    "newline_semantics": "literal_backslash_n"
+  },
+  "model_identity": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "adapter_directory": "/content/drive/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+    "adapter_weights_sha256": "4e81774686aeeaa6fe7300ef7485bd19dad51f6e85af6b7effb832e597c9dc10",
+    "adapter_config_sha256": "b83cb88d966256d6250e64b0379f83280ff68a9028892cd4617b0919e9ea78ae",
+    "tokenizer_sha256": "6b4fe3ee018728c8766f5c17f33353003b5a597d8a90788e0d69f97713458259",
+    "tokenizer_config_sha256": "a2036a40bcd69b5e8fc32750404d83b0466d7cc417be2afca6812eb1735197c5"
+  },
+  "future_population_identity": {
+    "n": 20002,
+    "day16_future_predictions_sha256": "729b2c5e7265987628613cbe3034bcecd8415f50e72e2cef810da05133598dc5",
+    "ordered_observation_id_sha256": "f4aa6032db13ff333af6f0580286b1ef0d20ec44d2aa0117b6860eb58be56c51",
+    "population_audit_path": "/content/drive/MyDrive/FinGPT_Project/results/day24/future_population_audit.json"
+  },
+  "historical_validation_anchor": {
+    "n": 5859,
+    "accuracy": 0.8387096774193549,
+    "macro_f1": 0.8041298160120592,
+    "rerun_allowed": false
+  },
+  "future_inference_started": false,
+  "protocol_correction_before_future_inference": {
+    "performed": true,
+    "reason": "Recovered exact upstream literal-backslash-n prompt semantics before any Future prediction was generated.",
+    "future_results_seen": false
+  },
+  "next_action": "FROZEN_INFERENCE_ENGINE_SMOKE_TEST",
+  "created_utc": "2026-10-08T17:37:39.065099+00:00"
+}

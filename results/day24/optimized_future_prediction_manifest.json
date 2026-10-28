@@ -1,0 +1,76 @@
+{
+  "day": 24,
+  "artifact": "optimized_future_prediction_manifest",
+  "status": "COMPLETE_AND_FROZEN",
+  "scientific_role": "one_shot_optimized_model_future_f1_f6_inference",
+  "model_identity": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "adapter_directory": "/content/drive/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+    "adapter_weights_sha256": "4e81774686aeeaa6fe7300ef7485bd19dad51f6e85af6b7effb832e597c9dc10",
+    "adapter_config_sha256": "b83cb88d966256d6250e64b0379f83280ff68a9028892cd4617b0919e9ea78ae",
+    "lora_r": 16,
+    "lora_alpha": 64,
+    "lora_dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "prompt_identity": {
+    "instruction": "Classify the sentiment of the following financial news as negative, neutral, or positive.",
+    "template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: ",
+    "newline_semantics": "literal_backslash_n"
+  },
+  "inference_protocol": {
+    "model_mode": "eval",
+    "batch_size": 8,
+    "padding_side": "left",
+    "do_sample": false,
+    "max_new_tokens": 4,
+    "max_seq_length": 512,
+    "generated_tokens_only_decoding": true,
+    "label_parser": "strip + lowercase + exact frozen-label match"
+  },
+  "future_population": {
+    "n": 20002,
+    "ordered_observation_id_sha256": "f4aa6032db13ff333af6f0580286b1ef0d20ec44d2aa0117b6860eb58be56c51",
+    "window_counts": {
+      "F1": 3602,
+      "F2": 3522,
+      "F3": 4818,
+      "F4": 3872,
+      "F5": 3588,
+      "F6": 600
+    }
+  },
+  "prediction_integrity": {
+    "n_predictions": 20002,
+    "invalid_predictions": 0,
+    "all_checks_pass": true
+  },
+  "runtime": {
+    "seconds": 2502.262065887451,
+    "minutes": 41.70436776479085,
+    "gpu": "Tesla T4"
+  },
+  "prediction_artifact": {
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv",
+    "sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b"
+  },
+  "protocol_freeze_sha256": "ec407148afb22fba02804587ff96b3e48a9d12753782b695fdf14fee85d462cd",
+  "smoke_test_sha256": "99dc123935cfc45f178f8bfeb7174b6717f2e8a0e4968b8fc37e57f633e9ea52",
+  "checks": {
+    "prediction_count_20002": true,
+    "observation_ids_nonmissing": true,
+    "observation_ids_unique": true,
+    "ordered_ids_exact_day16": true,
+    "all_windows_present": true,
+    "true_labels_nonmissing": true,
+    "prediction_valid_field_nonmissing": true,
+    "zero_invalid_predictions": true
+  },
+  "future_predictions_immutable": true,
+  "model_rerun_required_for_downstream_analysis": false,
+  "next_action": "PREDICTION_ARTIFACT_HASH_AND_COMPLETENESS_FREEZE",
+  "created_utc": "2026-10-08T18:22:05.273276+00:00"
+}

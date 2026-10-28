@@ -1,0 +1,2 @@
+n,accuracy,macro_f1,weighted_f1,negative_precision,negative_recall,negative_f1,negative_support,neutral_precision,neutral_recall,neutral_f1,neutral_support,positive_precision,positive_recall,positive_f1,positive_support,minority_recall_floor,period
+20002,0.8425157484251575,0.8141786537245239,0.8425176572862478,0.8164155432196669,0.7914664616567365,0.8037474382746169,5203,0.8797323621580418,0.8841504937010555,0.881935894714498,11748,0.7448429070136464,0.7692559816453621,0.7568526281844566,3051,0.7692559816453621,Future_Pooled

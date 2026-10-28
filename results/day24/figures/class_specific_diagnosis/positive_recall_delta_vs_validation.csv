@@ -1,0 +1,7 @@
+period,metric,delta_F_minus_V,ci_lower,ci_upper,ci_excludes_zero,interpretation,bootstrap_reps,bootstrap_seed,bootstrap_design
+F1,positive_recall,0.008668988491823,-0.0297600192148838,0.0462405178935623,False,not_distinguishable_from_zero,1000,42,independent_sample
+F2,positive_recall,0.0131283320639755,-0.0256406212705527,0.0520482870009387,False,not_distinguishable_from_zero,1000,42,independent_sample
+F3,positive_recall,-0.1726244343891403,-0.2179908251791847,-0.1271901857375199,True,significant_degradation,1000,42,independent_sample
+F4,positive_recall,-0.0485241865104102,-0.0901055465042443,-0.007387558732728,True,significant_degradation,1000,42,independent_sample
+F5,positive_recall,-0.0198687994248741,-0.0619821810213251,0.0186698405230817,False,not_distinguishable_from_zero,1000,42,independent_sample
+F6,positive_recall,0.0071356275303643,-0.0765555031887628,0.0794615276162463,False,not_distinguishable_from_zero,1000,42,independent_sample

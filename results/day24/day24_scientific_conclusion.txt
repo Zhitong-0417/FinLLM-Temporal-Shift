@@ -1,0 +1,59 @@
+DAY 24 — FINAL SCIENTIFIC INTERPRETATION
+
+Primary question
+----------------
+After repairing historical training adequacy, does temporal degradation persist in Future F1–F6?
+
+Main findings
+-------------
+1. Historical Validation:
+   Accuracy = 0.8387
+   Macro-F1 = 0.8041
+
+2. Optimized pooled Future:
+   Accuracy = 0.8425
+   Macro-F1 = 0.8142
+
+3. Compared with the Day16 model, the optimized model improved pooled Future:
+   Accuracy by +0.0666
+   Macro-F1 by +0.0792
+
+4. The original broad temporal degradation is therefore substantially reduced after adequate historical optimization.
+
+5. A residual localized degradation remains in F3:
+   Macro-F1 delta vs V =
+   -0.0235
+   95% CI [
+   -0.0418,
+   -0.0054
+   ]
+
+6. This F3 degradation is predominantly class-specific:
+   Positive-recall delta vs V =
+   -0.1726
+   95% CI [
+   -0.2180,
+   -0.1272
+   ]
+
+7. Negative recall in F3 improves rather than deteriorates.
+
+8. The dominant F3 positive-class error route is:
+   positive→negative
+   count = 104
+   proportion = 0.1912
+
+Scientific interpretation
+-------------------------
+The Day16 temporal degradation signal was partly attributable to insufficient
+historical model optimization. Once historical training adequacy is repaired,
+most aggregate Future degradation disappears. However, a localized,
+class-specific temporal vulnerability remains, concentrated most strongly
+in F3 positive sentiment.
+
+Important limitation
+--------------------
+Day24 identifies the residual failure pattern, but does not establish its causal
+mechanism. The F3 shift should therefore be treated as a diagnosis target for
+subsequent source/topic/semantic/composition analysis rather than as evidence
+for any specific cause.

@@ -1,0 +1,56 @@
+{
+  "day": 24,
+  "artifact": "day24_model_load_audit",
+  "status": "PASS",
+  "base_model": {
+    "model_id": "meta-llama/Meta-Llama-3-8B",
+    "loaded_in_4bit": true,
+    "device": "cuda:0"
+  },
+  "quantization": {
+    "load_in_4bit": true,
+    "quant_type": "nf4",
+    "compute_dtype": "float16",
+    "use_double_quant": true
+  },
+  "adapter": {
+    "directory": "/content/drive/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+    "active_adapter": "default",
+    "weights_sha256": "4e81774686aeeaa6fe7300ef7485bd19dad51f6e85af6b7effb832e597c9dc10",
+    "r": 16,
+    "alpha": 64,
+    "dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "is_trainable": false
+  },
+  "parameter_firewall": {
+    "total_parameters": 4547416064,
+    "trainable_parameters": 0,
+    "trainable_fraction": 0.0
+  },
+  "gpu_memory_gb": {
+    "allocated": 5.349313735961914,
+    "reserved": 5.509765625,
+    "peak_allocated": 5.42093563079834
+  },
+  "checks": {
+    "adapter_sha256_unchanged": true,
+    "base_model_loaded_in_4bit": true,
+    "active_adapter_present": true,
+    "lora_r_is_16": true,
+    "lora_alpha_is_64": true,
+    "lora_dropout_is_0.1": true,
+    "target_has_q_proj": true,
+    "target_has_v_proj": true,
+    "trainable_parameters_zero": true,
+    "model_in_eval_mode": true,
+    "cuda_device_used": true
+  },
+  "all_checks_pass": true,
+  "future_inference_started": false,
+  "next_action": "FROZEN_INFERENCE_ENGINE_SMOKE_TEST",
+  "created_utc": "2026-10-08T17:31:53.309489+00:00"
+}

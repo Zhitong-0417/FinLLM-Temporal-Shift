@@ -1,0 +1,83 @@
+{
+  "day": 24,
+  "artifact": "day24_inference_engine_smoke_test",
+  "status": "PASS",
+  "scientific_role": "technical_engine_validation_only",
+  "data_policy": {
+    "future_observations_used": 0,
+    "historical_validation_observations_used": 0,
+    "synthetic_inputs_only": true,
+    "scientific_performance_interpretation_allowed": false
+  },
+  "prompt": {
+    "instruction": "Classify the sentiment of the following financial news as negative, neutral, or positive.",
+    "template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: ",
+    "newline_semantics": "literal_backslash_n"
+  },
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 4,
+    "padding_side": "left",
+    "generated_tokens_only_decoding": true,
+    "runtime_seconds": 2.1239378452301025
+  },
+  "parser": {
+    "normalization": "strip_then_lowercase",
+    "acceptance_rule": "exact_match_to_frozen_label_set",
+    "valid_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "fuzzy_matching": false,
+    "thresholding": false
+  },
+  "synthetic_results": [
+    {
+      "case_id": "synthetic_positive",
+      "synthetic_text": "The company reported sharply higher quarterly profit and raised its full-year earnings guidance.",
+      "prompt_repr": "'Instruction:Classify the sentiment of the following financial news as negative, neutral, or positive.\\\\nInput:The company reported sharply higher quarterly profit and raised its full-year earnings guidance.\\\\nAnswer: '",
+      "raw_generation": "positive",
+      "normalized_generation": "positive",
+      "parsed_label": "positive",
+      "prediction_valid": true
+    },
+    {
+      "case_id": "synthetic_neutral",
+      "synthetic_text": "The company announced that its annual shareholder meeting will take place next month.",
+      "prompt_repr": "'Instruction:Classify the sentiment of the following financial news as negative, neutral, or positive.\\\\nInput:The company announced that its annual shareholder meeting will take place next month.\\\\nAnswer: '",
+      "raw_generation": "neutral",
+      "normalized_generation": "neutral",
+      "parsed_label": "neutral",
+      "prediction_valid": true
+    },
+    {
+      "case_id": "synthetic_negative",
+      "synthetic_text": "The company reported a large quarterly loss and lowered its revenue outlook.",
+      "prompt_repr": "'Instruction:Classify the sentiment of the following financial news as negative, neutral, or positive.\\\\nInput:The company reported a large quarterly loss and lowered its revenue outlook.\\\\nAnswer: '",
+      "raw_generation": "negative",
+      "normalized_generation": "negative",
+      "parsed_label": "negative",
+      "prediction_valid": true
+    }
+  ],
+  "checks": {
+    "instruction_exact": true,
+    "template_exact_day23": true,
+    "template_exact_day16": true,
+    "literal_backslash_n_present": true,
+    "no_actual_newline_present": true,
+    "model_eval_mode": true,
+    "trainable_parameters_zero": true,
+    "tokenizer_left_padding": true,
+    "pad_equals_eos": true,
+    "generated_batch_size_correct": true,
+    "generated_token_limit_respected": true,
+    "all_generations_nonempty": true,
+    "all_predictions_valid": true
+  },
+  "all_checks_pass": true,
+  "future_inference_started": false,
+  "next_action": "ONE_SHOT_FUTURE_F1_F6_INFERENCE",
+  "created_utc": "2026-10-08T17:38:54.359876+00:00"
+}

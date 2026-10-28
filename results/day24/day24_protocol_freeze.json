@@ -1,0 +1,208 @@
+{
+  "day": 24,
+  "artifact": "day24_protocol_freeze",
+  "status": "FROZEN_BEFORE_FUTURE_INFERENCE",
+  "scientific_question": "After repairing historical training adequacy, does temporal degradation still persist in Future F1-F6?",
+  "scientific_role": "optimized_historical_model_future_temporal_generalization_reevaluation",
+  "model": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "adapter_directory": "/content/drive/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+    "training_provenance": {
+      "sampling": "natural",
+      "max_steps": 500,
+      "learning_rate": 0.0002,
+      "seed": 42
+    },
+    "lora": {
+      "r": 16,
+      "alpha": 64,
+      "dropout": 0.1,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "sha256": {
+      "adapter_config": "b83cb88d966256d6250e64b0379f83280ff68a9028892cd4617b0919e9ea78ae",
+      "adapter_weights": "4e81774686aeeaa6fe7300ef7485bd19dad51f6e85af6b7effb832e597c9dc10",
+      "tokenizer": "6b4fe3ee018728c8766f5c17f33353003b5a597d8a90788e0d69f97713458259",
+      "tokenizer_config": "a2036a40bcd69b5e8fc32750404d83b0466d7cc417be2afca6812eb1735197c5"
+    }
+  },
+  "historical_validation_anchor": {
+    "source": "Day23 saved Historical Validation predictions/metrics",
+    "n": 5859,
+    "ordered_observation_id_sha256": "09ccb61d3ae6cc4e384c7fe5364043a5f7806ca31ee72830324d149f573748bf",
+    "accuracy": 0.8387096774193549,
+    "macro_f1": 0.8041298160120592,
+    "weighted_f1": 0.8390921095383355,
+    "negative_recall": 0.7393992932862191,
+    "neutral_recall": 0.8776783292649851,
+    "positive_recall": 0.8086538461538462,
+    "prediction_artifact": "/content/drive/MyDrive/FinGPT_Project/results/day23/final_historical_validation/final_historical_validation_predictions.csv",
+    "prediction_sha256": "8181d3359e32f4a467b8be4db91844cd36f88b5a66131cbb9a621d21d2f3870d",
+    "rerun_allowed": false
+  },
+  "future_population": {
+    "source_artifact": "/content/drive/MyDrive/FinGPT_Project/results/day16/future_predictions.csv",
+    "n": 20002,
+    "windows": {
+      "F1": {
+        "n": 3602,
+        "period_type": "future_month",
+        "negative_n": 679,
+        "neutral_n": 2288,
+        "positive_n": 635,
+        "start_utc": "2026-01-01T04:05:22+00:00",
+        "end_utc": "2026-01-31T18:59:53+00:00"
+      },
+      "F2": {
+        "n": 3522,
+        "period_type": "future_month",
+        "negative_n": 776,
+        "neutral_n": 2140,
+        "positive_n": 606,
+        "start_utc": "2026-02-01T01:13:53+00:00",
+        "end_utc": "2026-02-28T23:24:40+00:00"
+      },
+      "F3": {
+        "n": 4818,
+        "period_type": "future_month",
+        "negative_n": 1735,
+        "neutral_n": 2539,
+        "positive_n": 544,
+        "start_utc": "2026-03-01T00:27:38+00:00",
+        "end_utc": "2026-03-31T23:58:33+00:00"
+      },
+      "F4": {
+        "n": 3872,
+        "period_type": "future_month",
+        "negative_n": 1036,
+        "neutral_n": 2219,
+        "positive_n": 617,
+        "start_utc": "2026-04-01T00:01:35+00:00",
+        "end_utc": "2026-04-30T23:50:13+00:00"
+      },
+      "F5": {
+        "n": 3588,
+        "period_type": "future_month",
+        "negative_n": 839,
+        "neutral_n": 2214,
+        "positive_n": 535,
+        "start_utc": "2026-05-01T00:08:13+00:00",
+        "end_utc": "2026-05-31T23:58:25+00:00"
+      },
+      "F6": {
+        "n": 600,
+        "period_type": "future_partial",
+        "negative_n": 138,
+        "neutral_n": 348,
+        "positive_n": 114,
+        "start_utc": "2026-06-01T00:01:32+00:00",
+        "end_utc": "2026-06-05T12:59:13+00:00"
+      }
+    },
+    "provenance": {
+      "day16_future_predictions_sha256": "729b2c5e7265987628613cbe3034bcecd8415f50e72e2cef810da05133598dc5",
+      "ordered_observation_id_sha256": "f4aa6032db13ff333af6f0580286b1ef0d20ec44d2aa0117b6860eb58be56c51"
+    }
+  },
+  "prompt": {
+    "instruction": "Classify the sentiment of the following financial news as negative, neutral, or positive.",
+    "template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: ",
+    "newline_semantics": "literal_backslash_n",
+    "exact_match_day23": true,
+    "exact_match_day16_template": true
+  },
+  "inference": {
+    "model_mode": "eval",
+    "padding_side": "left",
+    "do_sample": false,
+    "max_new_tokens": 4,
+    "max_seq_length": 512,
+    "batch_size": 8,
+    "generated_tokens_only_decoding": true,
+    "pad_token_policy": "pad=eos",
+    "valid_predictions": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "evaluation": {
+    "primary_metrics": [
+      "accuracy",
+      "macro_f1"
+    ],
+    "secondary_metrics": [
+      "weighted_f1",
+      "per_class_precision",
+      "per_class_recall",
+      "per_class_f1",
+      "minority_recall_floor",
+      "confusion_matrix",
+      "prediction_distribution"
+    ],
+    "window_order": [
+      "V",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "future_windows": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ]
+  },
+  "firewall": {
+    "training_allowed": false,
+    "hyperparameter_tuning_allowed": false,
+    "checkpoint_reselection_allowed": false,
+    "prompt_modification_allowed": false,
+    "decoding_rule_modification_allowed": false,
+    "label_mapping_modification_allowed": false,
+    "threshold_tuning_allowed": false,
+    "historical_validation_rerun_allowed": false,
+    "future_used_for_training": false,
+    "future_used_for_validation": false,
+    "future_used_for_checkpoint_selection": false,
+    "future_inference_policy": "one canonical inference pass only; saved observation-level predictions become immutable",
+    "post_future_result_retuning_allowed": false
+  },
+  "checks": {
+    "instruction_exact_match_day23": true,
+    "prompt_template_exact_match_day23": true,
+    "prompt_template_exact_match_day16": true,
+    "prompt_contains_literal_backslash_n": true,
+    "prompt_contains_no_actual_newline": true,
+    "base_model_correct": true,
+    "adapter_r_16": true,
+    "adapter_alpha_64": true,
+    "adapter_dropout_0.1": true,
+    "adapter_targets_qv": true,
+    "adapter_weight_hash_matches_day23_metrics": true,
+    "future_n_20002": true,
+    "future_population_audit_passed": true,
+    "future_windows_exact": true,
+    "historical_validation_n_5859": true,
+    "historical_validation_rerun_forbidden": true,
+    "left_padding": true,
+    "greedy_decoding": true,
+    "max_new_tokens_4": true,
+    "batch_size_8": true,
+    "label_order_locked": true,
+    "training_forbidden": true,
+    "tuning_forbidden": true,
+    "checkpoint_reselection_forbidden": true,
+    "post_future_retuning_forbidden": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T17:37:39.052631+00:00"
+}

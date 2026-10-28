@@ -1,0 +1,4 @@
+figure,path
+class_specific_temporal_recall_ci,/content/drive/MyDrive/FinGPT_Project/results/day24/figures/class_specific_diagnosis/class_specific_temporal_recall_ci.png
+positive_recall_delta_vs_validation_ci,/content/drive/MyDrive/FinGPT_Project/results/day24/figures/class_specific_diagnosis/positive_recall_delta_vs_validation_ci.png
+f3_positive_error_decomposition,/content/drive/MyDrive/FinGPT_Project/results/day24/figures/class_specific_diagnosis/f3_positive_error_decomposition.png

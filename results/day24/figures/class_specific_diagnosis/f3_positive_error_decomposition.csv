@@ -1,0 +1,4 @@
+period,true_label,predicted_label,count,proportion
+F3,positive,negative,104,0.19117647058823528
+F3,positive,neutral,94,0.17279411764705882
+F3,positive,positive,346,0.6360294117647058

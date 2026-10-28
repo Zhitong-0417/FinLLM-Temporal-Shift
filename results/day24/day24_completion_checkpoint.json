@@ -1,0 +1,32 @@
+{
+  "day": 24,
+  "status": "PASS",
+  "scientific_status": "COMPLETE",
+  "future_prediction_artifact": {
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv",
+    "sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b",
+    "n": 20002,
+    "invalid_predictions": 0,
+    "immutable": true
+  },
+  "scientific_summary": {
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/day24_final_scientific_summary.json",
+    "sha256": "18bb96c9b654bfc05b4a524f9b24629c5948da794491476647a594cceb716145"
+  },
+  "canonical_notebook": {
+    "source_path": "/content/drive/MyDrive/Colab Notebooks/Untitled7.ipynb",
+    "canonical_path": "/content/drive/MyDrive/FinGPT_Project/notebooks/day24_optimized_future_temporal_generalization.ipynb",
+    "sha256": "b4bc1869fa648b40dc155d08a1ab2a4111d80ec5f69dd9cb2b457d4801b3aae0",
+    "size_bytes": 1544195,
+    "cells": 24,
+    "code_cells": 22,
+    "markdown_cells": 2,
+    "contains_final_scientific_closure": true
+  },
+  "scientific_conclusion": "Adequate historical optimization repairs most aggregate temporal degradation seen with the Day16 model, while a localized class-specific temporal failure remains, concentrated in F3 positive sentiment.",
+  "future_model_rerun_required": false,
+  "day24_complete": true,
+  "created_utc": "2026-10-08T19:17:30.876397+00:00",
+  "final_closure_markdown_added": true,
+  "updated_utc": "2026-10-08T19:21:20.872540+00:00"
+}

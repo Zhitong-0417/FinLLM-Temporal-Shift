@@ -1,0 +1,4 @@
+figure,path
+optimized_temporal_accuracy_ci,/content/drive/MyDrive/FinGPT_Project/results/day24/figures/optimized_temporal_accuracy_ci.png
+optimized_temporal_macro_f1_ci,/content/drive/MyDrive/FinGPT_Project/results/day24/figures/optimized_temporal_macro_f1_ci.png
+old_vs_optimized_future_macro_f1,/content/drive/MyDrive/FinGPT_Project/results/day24/figures/old_vs_optimized_future_macro_f1.png

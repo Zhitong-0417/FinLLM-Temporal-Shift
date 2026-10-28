@@ -1,0 +1,69 @@
+{
+  "day": 24,
+  "artifact": "day24_final_scientific_summary",
+  "status": "SCIENTIFIC_INTEGRATION_COMPLETE",
+  "primary_question": "After repairing historical training adequacy, does temporal degradation persist in Future F1-F6?",
+  "historical_validation": {
+    "n": 5859,
+    "accuracy": 0.8387096774193549,
+    "macro_f1": 0.8041298160120592
+  },
+  "optimized_future_pooled": {
+    "n": 20002,
+    "accuracy": 0.842516,
+    "macro_f1": 0.814179
+  },
+  "residual_temporal_failure": {
+    "primary_window": "F3",
+    "f3_accuracy": 0.8275217932752179,
+    "f3_macro_f1": 0.7806564457595754,
+    "f3_macro_f1_delta_vs_V": -0.0234733702524838,
+    "f3_macro_f1_delta_ci95": [
+      -0.041809043130913,
+      -0.0054405593301962
+    ],
+    "f3_positive_recall": 0.6360294117647058,
+    "f3_positive_recall_delta_vs_V": -0.1726244343891403,
+    "f3_positive_recall_delta_ci95": [
+      -0.2179908251791847,
+      -0.1271901857375199
+    ],
+    "dominant_positive_error_route": "positive→negative",
+    "dominant_error_count": 104,
+    "dominant_error_proportion": 0.1911764705882352
+  },
+  "old_vs_optimized_future": {
+    "pooled_accuracy_delta": 0.0665933406659334,
+    "pooled_accuracy_delta_ci95": [
+      0.0614913508649135,
+      0.0716453354664533
+    ],
+    "pooled_macro_f1_delta": 0.079226380927321,
+    "pooled_macro_f1_delta_ci95": [
+      0.0730276257359734,
+      0.0852460678139246
+    ],
+    "pooled_negative_recall_delta": 0.17067076686527,
+    "pooled_positive_recall_delta": 0.0593248115372008,
+    "new_only_correct": 2237,
+    "old_only_correct": 905,
+    "net_accuracy_gain_count": 1332
+  },
+  "scientific_conclusions": {
+    "primary_question": "After repairing historical training adequacy, does temporal degradation persist in Future F1-F6?",
+    "conclusion_1_historical_training_repair": "The optimized historical model substantially improves Future performance relative to the Day16 historical baseline across all six Future windows.",
+    "conclusion_2_aggregate_temporal_generalization": "Broad aggregate temporal degradation largely disappears after optimization. Future pooled performance is approximately comparable to or slightly above Historical Validation at the point-estimate level.",
+    "conclusion_3_residual_f3_failure": "A localized residual temporal degradation remains in F3: Macro-F1 is significantly lower than Historical Validation, although the corresponding accuracy contrast is not distinguishable from zero.",
+    "conclusion_4_class_specific_mechanism": "The F3 degradation is class-specific rather than global. Positive recall falls sharply, while negative recall significantly improves and neutral recall remains comparatively stable.",
+    "conclusion_5_error_direction": "Among F3 true-positive observations, the dominant misclassification route is positive-to-negative rather than positive-to-neutral.",
+    "conclusion_6_f4_residual": "F4 retains a smaller but statistically supported positive-recall degradation, while F5 and F6 do not show statistically supported positive-recall degradation.",
+    "overall_interpretation": "The Day16 temporal degradation signal was partly attributable to insufficient historical model optimization. After optimization, most aggregate degradation is repaired, but a localized class-specific distribution-shift vulnerability remains, concentrated most strongly in F3 positive sentiment."
+  },
+  "interpretation_boundary": {
+    "supported": "Historical optimization repairs most aggregate Future degradation, while statistically supported localized class-specific degradation remains.",
+    "not_yet_established": "The causal source of the F3 positive-to-negative shift has not yet been identified. No claim is made here regarding whether the mechanism is lexical, topical, source-composition, event-driven, label-distribution, or semantic-regime shift."
+  },
+  "new_model_inference_performed": false,
+  "new_statistical_tests_performed": false,
+  "created_utc": "2026-10-08T19:15:32.565458+00:00"
+}

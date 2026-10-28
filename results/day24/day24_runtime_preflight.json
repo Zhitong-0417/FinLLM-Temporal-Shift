@@ -1,0 +1,54 @@
+{
+  "day": 24,
+  "artifact": "day24_runtime_preflight",
+  "status": "PASS",
+  "runtime": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "cuda_runtime": "13.0",
+    "cuda_available": true,
+    "cuda_device_count": 1,
+    "gpu_name": "Tesla T4",
+    "gpu_capability": [
+      7,
+      5
+    ],
+    "gpu_total_memory_gb": 14.56317138671875
+  },
+  "packages": {
+    "transformers": "5.18.0",
+    "peft": "0.21.1",
+    "accelerate": "1.15.0",
+    "bitsandbytes": "0.50.2",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.33.0"
+  },
+  "tokenizer": {
+    "source": "/content/drive/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+    "padding_side": "left",
+    "pad_token_id": 128001,
+    "eos_token_id": 128001,
+    "frozen_tokenizer_sha256": "6b4fe3ee018728c8766f5c17f33353003b5a597d8a90788e0d69f97713458259"
+  },
+  "checks": {
+    "cuda_available": true,
+    "single_or_more_cuda_device": true,
+    "gpu_name_available": true,
+    "cuda_runtime_available": true,
+    "cuda_compute_smoke_pass": true,
+    "transformers_import": true,
+    "peft_import": true,
+    "accelerate_import": true,
+    "bitsandbytes_import": true,
+    "safetensors_import": true,
+    "bitsandbytes_cuda_smoke_pass": true,
+    "bitsandbytes_config_import": true,
+    "tokenizer_load_pass": true,
+    "tokenizer_left_padding": true,
+    "tokenizer_pad_equals_eos": true,
+    "tokenizer_encoding_smoke_pass": true
+  },
+  "all_checks_pass": true,
+  "next_action": "LOAD_FROZEN_4BIT_BASE_MODEL_AND_DAY23_ADAPTER",
+  "created_utc": "2026-10-08T17:23:15.161119+00:00"
+}
