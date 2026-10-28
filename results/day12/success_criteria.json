@@ -1,0 +1,50 @@
+{
+  "threshold_type": "pre_specified_practical_effect",
+  "primary_success": {
+    "metric": "mean_W1_W5_macro_f1",
+    "M0_reference": 0.5566201694225337,
+    "minimum_M1_minus_M0": 0.01
+  },
+  "failure_aware_support": {
+    "rule": "at_least_one_required",
+    "negative_recall": {
+      "metric": "mean_W1_W5_negative_recall",
+      "M0_reference": 0.3279788458088527,
+      "minimum_M1_minus_M0": 0.02
+    },
+    "negative_to_neutral": {
+      "metric": "mean_W1_W5_negative_to_neutral",
+      "M0_reference": 0.63562841212817,
+      "minimum_M0_minus_M1": 0.02
+    }
+  },
+  "preservation_guardrails": {
+    "maximum_allowed_drop": 0.02,
+    "original_validation_macro_f1": {
+      "M0_reference": 0.8320316007275789
+    },
+    "original_validation_accuracy": {
+      "M0_reference": 0.8680904522613065
+    },
+    "stable_windows": {
+      "windows": [
+        "W2",
+        "W3"
+      ],
+      "metric": "mean_macro_f1",
+      "M0_reference": 0.5971355681191706
+    }
+  },
+  "robustness_diagnostic": {
+    "metric": "W1_W5_macro_f1_gap",
+    "M0_reference": 0.1004786748689327,
+    "desired_direction": "decrease",
+    "required_for_success": false
+  },
+  "outcome_rules": {
+    "success": "Primary criterion met AND at least one failure-aware criterion met AND all preservation guardrails satisfied.",
+    "trade_off": "Temporal/failure-aware improvement observed but at least one preservation guardrail violated.",
+    "no_demonstrated_improvement": "Primary mean temporal Macro-F1 improvement threshold not met."
+  },
+  "thresholds_frozen_before_M1_training": true
+}

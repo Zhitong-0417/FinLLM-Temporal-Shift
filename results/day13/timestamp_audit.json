@@ -1,0 +1,34 @@
+{
+  "dataset_id": "remehostingservices/finance-news-sentiment-35k",
+  "timestamp_field": "date",
+  "documented_semantics": {
+    "meaning": "Telegram post timestamp",
+    "timezone": "UTC",
+    "source": "Dataset repository documentation",
+    "synthetic_timestamp": false,
+    "row_order_inferred": false
+  },
+  "observation_level_validation": {
+    "total_observations": 39965,
+    "valid_timestamps": 39965,
+    "invalid_timestamps": 0,
+    "parsing_success_rate": 1.0,
+    "minimum_timestamp": "2023-02-09T14:00:09+00:00",
+    "maximum_timestamp": "2026-06-05T12:59:13+00:00",
+    "chronologically_monotonic_artifact": true,
+    "negative_time_jumps": 0,
+    "repeated_timestamp_values": 41,
+    "rows_at_repeated_timestamps": 87,
+    "maximum_rows_same_timestamp": 5,
+    "unique_channel_message_id_pairs": 39965,
+    "rows_in_duplicate_channel_message_id_groups": 0
+  },
+  "time_gap_diagnostics": {
+    "median_gap_seconds": 307.0,
+    "p95_gap_seconds": 3007.0,
+    "p99_gap_seconds": 17669.63,
+    "maximum_gap_seconds": 2945145.0
+  },
+  "interpretation": "The timestamp field is documented as the original Telegram post time in UTC and is fully parseable at observation level. Repeated timestamps are rare and do not imply duplicate observations. The released clean artifact is already chronologically ordered. Temporal density is evaluated separately.",
+  "day13_timestamp_gate": "PASS"
+}

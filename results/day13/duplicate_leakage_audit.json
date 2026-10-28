@@ -1,0 +1,85 @@
+{
+  "dataset_population": {
+    "population": "dense_candidate_benchmark",
+    "n": 39400,
+    "start": "2025-06-03T21:06:16+00:00",
+    "end": "2026-06-05T12:59:13+00:00"
+  },
+  "exact_duplicate_audit": {
+    "exact_normalized_text_duplicate_rows": 0,
+    "gate": "PASS"
+  },
+  "near_duplicate_diagnostic": {
+    "method": "Character TF-IDF nearest-neighbor cosine similarity",
+    "tfidf_ngram_range": [
+      3,
+      5
+    ],
+    "nearest_similarity_ge_0_90": 438,
+    "nearest_similarity_ge_0_95": 163,
+    "nearest_similarity_ge_0_98": 50,
+    "short_horizon_definition": {
+      "similarity_threshold": 0.95,
+      "maximum_time_difference_hours": 24.0,
+      "interpretation": "Diagnostic flag for likely repost or lightly reformulated same-event observations; not a general duplicate-removal rule."
+    },
+    "short_horizon_high_similarity_rows": 130,
+    "short_horizon_high_similarity_share": 0.003299492385786802
+  },
+  "candidate_boundary_stress_test": [
+    {
+      "boundary": "2025-10-01T00:00:00+00:00",
+      "historical_n": 9736,
+      "future_n": 29664,
+      "cross_boundary_suspicious_rows": 0,
+      "cross_boundary_unique_pairs": 0,
+      "similarity_threshold": 0.95,
+      "time_window_hours": 24.0
+    },
+    {
+      "boundary": "2025-11-01T00:00:00+00:00",
+      "historical_n": 13539,
+      "future_n": 25861,
+      "cross_boundary_suspicious_rows": 0,
+      "cross_boundary_unique_pairs": 0,
+      "similarity_threshold": 0.95,
+      "time_window_hours": 24.0
+    },
+    {
+      "boundary": "2025-12-01T00:00:00+00:00",
+      "historical_n": 16526,
+      "future_n": 22874,
+      "cross_boundary_suspicious_rows": 0,
+      "cross_boundary_unique_pairs": 0,
+      "similarity_threshold": 0.95,
+      "time_window_hours": 24.0
+    },
+    {
+      "boundary": "2026-01-01T00:00:00+00:00",
+      "historical_n": 19398,
+      "future_n": 20002,
+      "cross_boundary_suspicious_rows": 0,
+      "cross_boundary_unique_pairs": 0,
+      "similarity_threshold": 0.95,
+      "time_window_hours": 24.0
+    },
+    {
+      "boundary": "2026-02-01T00:00:00+00:00",
+      "historical_n": 23000,
+      "future_n": 16400,
+      "cross_boundary_suspicious_rows": 0,
+      "cross_boundary_unique_pairs": 0,
+      "similarity_threshold": 0.95,
+      "time_window_hours": 24.0
+    }
+  ],
+  "boundary_selection_note": "Candidate boundaries were calendar-based diagnostic cutoffs only and were not selected using model performance.",
+  "findings": [
+    "No exact normalized-text duplicates were found in the dense candidate benchmark.",
+    "A small number of high-similarity observations exist, primarily consistent with rapid reposting or lightly reformulated financial news.",
+    "High textual similarity alone is not treated as duplication because templated macroeconomic headlines can remain highly similar across different release dates.",
+    "No suspicious short-horizon near-duplicate pair crossed any of the five tested calendar-based candidate boundaries."
+  ],
+  "recommended_future_guard": "After the final chronological cutoff is selected, repeat the short-horizon near-duplicate check at that exact boundary before model training.",
+  "day13_duplicate_leakage_gate": "PASS"
+}

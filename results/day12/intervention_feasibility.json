@@ -1,0 +1,48 @@
+{
+  "selected_gate": "C",
+  "selected_gate_label": "failure_aware_intervention",
+  "gate_A": {
+    "feasible": false,
+    "candidate": "recency_aware_adaptation",
+    "required_information": "reliable observation-level timestamps",
+    "observed_information": "not_available",
+    "decision": "rejected"
+  },
+  "gate_B": {
+    "feasible": false,
+    "candidate": "source_domain_aware_adaptation",
+    "required_information": "defensible source/domain structure",
+    "observed_information": "not_available",
+    "decision": "rejected"
+  },
+  "gate_C": {
+    "feasible": true,
+    "candidate": "failure_aware_intervention",
+    "decision": "selected"
+  },
+  "evidence": {
+    "training_samples": 9543,
+    "formatted_fields": [
+      "instruction",
+      "input",
+      "output"
+    ],
+    "original_fields": [
+      "text",
+      "label"
+    ],
+    "timestamp_fields": [],
+    "source_domain_fields": [],
+    "negative_samples": 1442,
+    "neutral_samples": 6178,
+    "positive_samples": 1923
+  },
+  "methodological_constraints": {
+    "synthetic_timestamps_allowed": false,
+    "row_order_as_chronology_allowed": false,
+    "text_inferred_dates_allowed": false,
+    "posthoc_W4_specific_intervention_allowed": false,
+    "temporal_training_adaptation_claim_allowed": false
+  },
+  "decision_basis": "The original Day 04 training dataset contains neither observation-level timestamps nor defensible source/domain metadata. Therefore recency-aware and source/domain-aware training interventions are not methodologically supported. Gate C is selected before intervention training or evaluation."
+}

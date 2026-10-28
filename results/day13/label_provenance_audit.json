@@ -1,0 +1,47 @@
+{
+  "dataset_id": "remehostingservices/finance-news-sentiment-35k",
+  "dataset_version_observed": "v2/main",
+  "label_field": "sentiment",
+  "target_classes": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "target_definition": "Investor-impact sentiment: whether the financial news is good, bad, or neutral for an investor.",
+  "label_origin": "LLM-generated annotations",
+  "human_gold_labels_available": false,
+  "labeling_pipeline": {
+    "input_to_judges": "Blind packets containing observation id and text only; channel, date, and engagement metadata were hidden.",
+    "independent_judges": [
+      "Claude Opus 5",
+      "OpenAI GPT-5.6 Sol"
+    ],
+    "shared_rulebook": true,
+    "disagreement_resolution": "Disputed observations were adjudicated by Claude Fable 5 using both judge verdicts and the common rulebook.",
+    "v2_active_learning": true,
+    "v2_note": "4,997 additional released observations were selected primarily from examples where the v1 model was uncertain, plus a smaller random sample."
+  },
+  "reported_reliability_evidence": {
+    "v1_full_profile_sentiment_reason_agreement": 0.854,
+    "v2_full_judge_agreement": 0.81,
+    "v2_sentiment_only_agreement": 0.835,
+    "blind_audit_1_final_label_agreement": 0.943,
+    "blind_audit_2_final_label_agreement": 0.913,
+    "dominant_disagreement_boundary": "neutral versus directional sentiment"
+  },
+  "known_limitations": [
+    "No human-annotated gold set exists.",
+    "Neutral-versus-directional decisions contain substantial ambiguity.",
+    "The v2 active-learning additions are not a random sample of the source pool.",
+    "Label reliability evidence is provider-reported and should be treated as dataset documentation rather than independent human validation."
+  ],
+  "supervision_assessment": "Usable as an explicitly LLM-labeled supervised target for a within-dataset chronological benchmark, provided label uncertainty and the absence of human gold labels are disclosed.",
+  "day13_label_gate": "CONDITIONAL_PASS",
+  "conditions": [
+    "Describe Dataset B as LLM-labeled rather than human-annotated.",
+    "Do not interpret Dataset B sentiment labels as human gold ground truth.",
+    "Report label-generation methodology in the benchmark documentation.",
+    "Treat neutral-versus-directional ambiguity as a benchmark limitation.",
+    "Account for active-learning selection when interpreting temporal composition."
+  ]
+}

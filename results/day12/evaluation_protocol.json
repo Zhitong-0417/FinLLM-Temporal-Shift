@@ -1,0 +1,86 @@
+{
+  "comparison": {
+    "M0": "Original Day 04 LoRA baseline",
+    "M1": "Failure-aware class-balanced LoRA",
+    "comparison_type": "controlled intervention comparison"
+  },
+  "evaluation_sets": {
+    "original_validation": {
+      "name": "Original Validation",
+      "n": 2388,
+      "purpose": "measure preservation of original-distribution performance"
+    },
+    "temporal_benchmark": {
+      "windows": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5"
+      ],
+      "n_per_window": 7880,
+      "total_n": 39400,
+      "window_definition": "frozen_from_Day11",
+      "chronological": true,
+      "non_overlapping": true
+    }
+  },
+  "endpoints": {
+    "primary": {
+      "metric": "macro_f1",
+      "level": "per_temporal_window",
+      "direction": "higher_is_better"
+    },
+    "secondary": {
+      "metric": "negative_recall",
+      "level": "per_temporal_window",
+      "direction": "higher_is_better"
+    },
+    "failure_mode": {
+      "metric": "negative_to_neutral",
+      "definition": "P(predicted neutral | true negative)",
+      "level": "per_temporal_window",
+      "direction": "lower_is_better"
+    },
+    "robustness": {
+      "metric": "cross_window_gap",
+      "definition": "max(window_metric) - min(window_metric)",
+      "windows": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5"
+      ],
+      "direction": "lower_is_better",
+      "interpretation_constraint": "A smaller gap is not considered beneficial if it is achieved primarily by degrading stronger windows."
+    },
+    "overall_quality": [
+      "accuracy",
+      "weighted_f1"
+    ]
+  },
+  "original_validation_baseline": {
+    "n": 2388,
+    "accuracy": 0.8680904522613065,
+    "macro_f1": 0.8320316007275789,
+    "weighted_f1": 0.8674082672446246,
+    "negative_recall": 0.7694524495677233,
+    "negative_to_neutral": 0.22478386167146974
+  },
+  "temporal_baseline_source": "/content/drive/MyDrive/FinGPT_Project/results/day12/baseline_temporal_reference.csv",
+  "evaluation_rules": {
+    "same_evaluation_examples_for_M0_M1": true,
+    "same_window_definitions_for_M0_M1": true,
+    "same_metric_implementation_for_M0_M1": true,
+    "exclude_failed_windows_after_results": false,
+    "redesign_windows_after_results": false,
+    "tune_intervention_on_W1_W5": false,
+    "report_all_five_windows": true
+  },
+  "interpretation_scope": {
+    "claim_temporal_training_adaptation": false,
+    "claim_failure_aware_robustness_intervention": true,
+    "claim_class_imbalance_causes_temporal_shift": false
+  }
+}

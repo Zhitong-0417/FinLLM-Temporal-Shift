@@ -1,0 +1,6 @@
+field,role,total_n,missing_or_invalid_n,audit_status
+text,model_input,39965,0,PASS
+sentiment,supervised_target,39965,0,PASS
+date,chronological_timestamp,39965,0,PASS
+channel_username,source_identifier,39965,0,PASS
+message_id,within_channel_message_identifier,39965,0,PASS

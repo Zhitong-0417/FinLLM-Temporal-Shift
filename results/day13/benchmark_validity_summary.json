@@ -1,0 +1,76 @@
+{
+  "day": 13,
+  "stage": "Temporal Benchmark Validity Audit — Stage A",
+  "dataset_id": "remehostingservices/finance-news-sentiment-35k",
+  "full_clean_dataset": {
+    "n": 39965,
+    "start": "2023-02-09T14:00:09+00:00",
+    "end": "2026-06-05T12:59:13+00:00"
+  },
+  "recommended_candidate_population": {
+    "n": 39400,
+    "start": "2025-06-03T21:06:16+00:00",
+    "end": "2026-06-05T12:59:13+00:00",
+    "status": "candidate population for chronological benchmark redesign; final split not yet selected"
+  },
+  "excluded_sparse_regime": {
+    "n": 565,
+    "reason": "Pre-June-2025 observations are temporally sparse and originate from a substantially different source composition.",
+    "use_in_core_temporal_benchmark": false
+  },
+  "audit_gates": {
+    "schema": "PASS",
+    "label_provenance": "CONDITIONAL_PASS",
+    "timestamp_validity": "PASS",
+    "temporal_coverage": "PASS",
+    "duplicate_leakage": "PASS",
+    "chronological_split_feasibility": "PASS"
+  },
+  "label_provenance": {
+    "origin": "LLM-generated annotations",
+    "human_gold": false,
+    "benchmark_use": "Usable as an explicitly LLM-labeled supervised target with disclosure of annotation uncertainty."
+  },
+  "timestamp_validity": {
+    "field": "date",
+    "meaning": "Telegram post timestamp",
+    "timezone": "UTC",
+    "valid_n": 39965,
+    "invalid_n": 0
+  },
+  "temporal_coverage": {
+    "dense_regime_n": 39400,
+    "dense_regime_months": 13,
+    "months_meeting_feasibility_criteria": 13,
+    "all_dense_months_feasible": true
+  },
+  "source_structure": {
+    "finding": "The dense regime is strongly source-concentrated, with firstsquaw and WalterBloomberg accounting for approximately 95% of observations overall.",
+    "implication": "Source composition must be tracked as a temporal covariate and potential confounder when interpreting future performance degradation."
+  },
+  "duplicate_leakage": {
+    "exact_normalized_text_duplicate_rows": 0,
+    "short_horizon_high_similarity_rows": 130,
+    "short_horizon_high_similarity_share": 0.003299492385786802,
+    "maximum_tested_cross_boundary_pairs": 0
+  },
+  "split_feasibility": {
+    "diagnostic_min_window_n": 500,
+    "diagnostic_min_class_n": 50,
+    "feasible_months": 13,
+    "total_dense_months": 13,
+    "final_cutoff_selected": false,
+    "performance_used_for_split_selection": false
+  },
+  "final_verdict": "CONDITIONAL_PASS",
+  "conditions": [
+    "Describe Dataset B explicitly as LLM-labeled rather than human-gold annotated.",
+    "Report label uncertainty, especially neutral-versus-directional ambiguity.",
+    "Restrict the core chronological benchmark to the dense primary-source regime rather than using the sparse 565-observation early regime.",
+    "Track source/channel composition across chronological windows as a potential temporal confounder.",
+    "Select the final chronological split using timestamps and sample-support criteria only, not model performance.",
+    "Repeat the near-duplicate leakage check at the exact final train/test boundary."
+  ],
+  "approved_next_stage": "Design the within-Dataset-B chronological train/validation/future-window benchmark.",
+  "not_approved_as_primary_temporal_evidence": "Dataset A -> Dataset B performance degradation, which remains external OOD robustness evidence."
+}

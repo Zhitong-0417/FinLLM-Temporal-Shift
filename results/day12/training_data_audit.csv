@@ -1,0 +1,12 @@
+audit_item,value,status,implication
+training_sample_count,9543,verified,Matches original training split
+formatted_fields,"instruction, input, output",verified,Instruction-format training artifact
+original_fields,"text, label",verified,Original dataset exposes only text and label
+negative_samples,1442,verified,Minority sentiment class
+neutral_samples,6178,verified,Majority sentiment class
+positive_samples,1923,verified,Minority sentiment class
+missing_values,0,verified,No missing formatted fields
+exact_duplicate_excess,0,verified,No excess exact duplicate rows
+duplicate_input_excess,0,verified,No excess duplicate inputs
+observation_level_timestamp,not_available,verified,Recency-aware intervention not supported
+source_domain_metadata,not_available,verified,Source/domain-aware intervention not supported

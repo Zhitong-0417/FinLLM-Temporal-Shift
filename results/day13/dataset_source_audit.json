@@ -1,0 +1,32 @@
+{
+  "dataset_id": "remehostingservices/finance-news-sentiment-35k",
+  "dataset_version": "v2 / main",
+  "documented_source": "Public Telegram financial news-wire channels",
+  "documented_time_coverage": {
+    "start": "2023-02",
+    "end": "2026-06"
+  },
+  "released_clean_dataset": {
+    "n": 39965,
+    "observed_start": "2023-02-09T14:00:09+00:00",
+    "observed_end": "2026-06-05T12:59:13+00:00"
+  },
+  "dense_candidate_population": {
+    "n": 39400,
+    "observed_start": "2025-06-03T21:06:16+00:00",
+    "observed_end": "2026-06-05T12:59:13+00:00"
+  },
+  "source_channels": 8,
+  "source_concentration": {
+    "firstsquaw_n": 33190,
+    "WalterBloomberg_n": 4890,
+    "top_two_share": 0.9528
+  },
+  "dataset_construction_notes": [
+    "The released dataset contains financial news collected from public Telegram channels.",
+    "The v2 dataset includes additional observations selected partly through active learning.",
+    "The full early period is sparse and differs substantially in channel composition from the dense June-2025-to-June-2026 regime."
+  ],
+  "day13_source_gate": "CONDITIONAL_PASS",
+  "condition": "Use the dense primary-source regime for the core chronological benchmark and track channel composition as a potential temporal confounder."
+}

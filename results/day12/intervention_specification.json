@@ -1,0 +1,71 @@
+{
+  "experiment_name": "failure_aware_class_balanced_lora",
+  "research_context": "robustness improvement under frozen temporal distribution-shift evaluation",
+  "baseline_model": {
+    "model_id": "M0",
+    "description": "Original Day 04 LoRA baseline",
+    "training_distribution": "original",
+    "class_balancing": false
+  },
+  "intervention_model": {
+    "model_id": "M1",
+    "description": "Day 13 LoRA with class-balanced weighted sampling",
+    "intervention_family": "failure_aware",
+    "temporal_training_adaptation": false,
+    "source_domain_adaptation": false,
+    "class_balancing": true
+  },
+  "training_data": {
+    "dataset": "zeroshot/twitter-financial-news-sentiment",
+    "formatted_artifact": "/content/drive/MyDrive/FinGPT_Project/data/twitter_financial_news_sentiment_formatted",
+    "training_samples": 9543,
+    "classes": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "class_counts": {
+      "negative": 1442,
+      "neutral": 6178,
+      "positive": 1923
+    }
+  },
+  "sampling_rule": {
+    "method": "weighted_random_sampling",
+    "weight_formula": "N / (K * n_c)",
+    "replacement": true,
+    "num_samples_per_epoch": 9543,
+    "class_weights": {
+      "negative": 2.205963938973648,
+      "neutral": 0.5148915506636452,
+      "positive": 1.6541861674466978
+    },
+    "expected_class_share": {
+      "negative": 0.3333333333333333,
+      "neutral": 0.3333333333333333,
+      "positive": 0.3333333333333333
+    }
+  },
+  "comparison_principle": {
+    "change_between_M0_and_M1": "training-sample selection probabilities only",
+    "same_training_examples": true,
+    "same_labels": true,
+    "same_instruction_format": true,
+    "same_base_model_required": true,
+    "same_lora_configuration_required": true,
+    "same_optimizer_configuration_required": true,
+    "same_training_epoch_budget_required": true,
+    "same_evaluation_pipeline_required": true
+  },
+  "prohibited_adaptations": {
+    "synthetic_timestamps": true,
+    "row_order_chronology": true,
+    "text_inferred_chronology": true,
+    "future_window_training_examples": true,
+    "W4_specific_sampling": true,
+    "W1_W5_weight_tuning": true,
+    "posthoc_class_weight_search": true,
+    "external_sentiment_model_substitution": true
+  },
+  "day13_execution_rule": "Run one primary pre-specified M1 intervention using the frozen weighted-sampling rule. Do not tune class weights against Original Validation or W1-W5."
+}

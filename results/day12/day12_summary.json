@@ -1,0 +1,97 @@
+{
+  "day": 12,
+  "title": "Temporal Robustness Intervention Design",
+  "research_question": "Can a lightweight, pre-specified robustness intervention reduce out-of-time degradation without sacrificing performance in relatively stable temporal windows?",
+  "day11_baseline": {
+    "evaluation_n": 39400,
+    "windows": [
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5"
+    ],
+    "window_n": 7880,
+    "day11_decision": "B",
+    "day11_decision_label": "localized_regime_shift",
+    "worst_window": "W4",
+    "partial_recovery_in_W5": true,
+    "baseline_reference": "/content/drive/MyDrive/FinGPT_Project/results/day12/baseline_temporal_reference.csv"
+  },
+  "training_data_audit": {
+    "dataset": "zeroshot/twitter-financial-news-sentiment",
+    "training_n": 9543,
+    "negative_n": 1442,
+    "neutral_n": 6178,
+    "positive_n": 1923,
+    "observation_level_timestamp": false,
+    "source_domain_metadata": false,
+    "audit_artifact": "/content/drive/MyDrive/FinGPT_Project/results/day12/training_data_audit.csv"
+  },
+  "feasibility_decision": {
+    "gate_A_recency_aware": "rejected",
+    "gate_B_source_domain_aware": "rejected",
+    "gate_C_failure_aware": "selected",
+    "selected_gate": "C",
+    "temporal_training_adaptation_claim": false,
+    "artifact": "/content/drive/MyDrive/FinGPT_Project/results/day12/intervention_feasibility.json"
+  },
+  "intervention": {
+    "M0": "Original Day 04 LoRA baseline",
+    "M1": "Failure-aware class-balanced LoRA",
+    "sampling_method": "weighted_random_sampling",
+    "weight_formula": "N / (K * n_c)",
+    "replacement": true,
+    "num_samples_per_epoch": 9543,
+    "class_weights": {
+      "negative": 2.205963938973648,
+      "neutral": 0.5148915506636452,
+      "positive": 1.6541861674466978
+    },
+    "weights_tuned_on_W1_W5": false,
+    "artifact": "/content/drive/MyDrive/FinGPT_Project/results/day12/intervention_specification.json"
+  },
+  "evaluation_protocol": {
+    "original_validation_n": 2388,
+    "temporal_evaluation_n": 39400,
+    "primary_endpoint": "macro_f1",
+    "secondary_endpoint": "negative_recall",
+    "failure_endpoint": "negative_to_neutral",
+    "robustness_endpoint": "cross_window_gap",
+    "artifact": "/content/drive/MyDrive/FinGPT_Project/results/day12/evaluation_protocol.json"
+  },
+  "M0_reference": {
+    "original_validation": {
+      "accuracy": 0.8680904522613065,
+      "macro_f1": 0.8320316007275789,
+      "weighted_f1": 0.8674082672446246,
+      "negative_recall": 0.7694524495677233,
+      "negative_to_neutral": 0.22478386167146974
+    },
+    "temporal": {
+      "mean_macro_f1": 0.5566201694225337,
+      "mean_negative_recall": 0.3279788458088527,
+      "mean_negative_to_neutral": 0.63562841212817,
+      "macro_f1_gap": 0.1004786748689327,
+      "W2_W3_mean_macro_f1": 0.5971355681191706
+    }
+  },
+  "success_criteria": {
+    "minimum_temporal_macro_f1_gain": 0.01,
+    "minimum_negative_recall_gain": 0.02,
+    "minimum_negative_to_neutral_reduction": 0.02,
+    "maximum_guardrail_drop": 0.02,
+    "thresholds_frozen_before_M1_training": true,
+    "artifact": "/content/drive/MyDrive/FinGPT_Project/results/day12/success_criteria.json"
+  },
+  "methodological_guardrails": {
+    "W1_W5_redesign_allowed": false,
+    "W1_W5_weight_tuning_allowed": false,
+    "W4_specific_optimization_allowed": false,
+    "synthetic_temporal_metadata_allowed": false,
+    "future_window_training_allowed": false,
+    "external_model_substitution_allowed": false
+  },
+  "day12_training_performed": false,
+  "ready_for_day13": true
+}
