@@ -1,0 +1,31 @@
+{
+  "day": 22,
+  "artifact": "optimization_cross_boundary_near_duplicate_audit",
+  "comparison": "optimization_dev_vs_optimization_train",
+  "method": {
+    "representation": "word-level TF-IDF",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "similarity": "cosine",
+    "nearest_neighbor_direction": "each optimization_dev row queried against optimization_train",
+    "near_duplicate_threshold": 0.95
+  },
+  "population": {
+    "optimization_train_n": 10831,
+    "optimization_dev_n": 2708
+  },
+  "similarity_summary": {
+    "maximum": 1.0,
+    "p99": 0.7641306519508362,
+    "p999": 1.0
+  },
+  "near_duplicate_summary": {
+    "pair_n": 9,
+    "unique_dev_rows_n": 9,
+    "unique_train_rows_n": 9
+  },
+  "decision_rule": "Any cross-boundary pair with TF-IDF cosine similarity >= 0.95 must be audited before model training proceeds.",
+  "audit_required": true
+}

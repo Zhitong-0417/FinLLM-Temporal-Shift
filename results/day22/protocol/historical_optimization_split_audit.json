@@ -1,0 +1,81 @@
+{
+  "day": 22,
+  "artifact": "historical_optimization_split_audit",
+  "parent_population": {
+    "n_observations": 13539,
+    "observation_id_sha256": "2318e6c4c98676cd268a9728349f7a2abeddaccc0a10c925244ac88c71fc6ae1"
+  },
+  "split_protocol": {
+    "type": "deterministic_chronological",
+    "target_train_fraction": 0.8,
+    "target_train_n": 10831.2,
+    "boundary_rule": "Complete timestamp boundary nearest to 80% target; identical timestamps cannot be split.",
+    "selected_train_end_timestamp_utc": "2025-10-10T01:36:47+00:00",
+    "selected_dev_start_timestamp_utc": "2025-10-10T01:37:04+00:00"
+  },
+  "optimization_train": {
+    "n_observations": 10831,
+    "fraction": 0.7999852278602556,
+    "label_counts": {
+      "negative": 2276,
+      "neutral": 6767,
+      "positive": 1788
+    },
+    "n_sources": 6,
+    "observation_id_sha256": "c99dc271d3fab37d7e1160e48297c07cfd1a459c51c75d6d61f79514d0eb20f7"
+  },
+  "optimization_dev": {
+    "n_observations": 2708,
+    "fraction": 0.20001477213974445,
+    "label_counts": {
+      "negative": 506,
+      "neutral": 1669,
+      "positive": 533
+    },
+    "n_sources": 6,
+    "observation_id_sha256": "4ca97f36f014198c9d7852d55b6f5ef98b866582c03dfa544f6714d09b5132b4"
+  },
+  "exact_leakage_screen": {
+    "raw_exact_text_overlap_n": 0,
+    "normalized_exact_text_overlap_n": 0
+  },
+  "checks": {
+    "parent_population_n_13539": true,
+    "optimization_train_n_10831": true,
+    "optimization_dev_n_2708": true,
+    "selected_boundary_size_exact": true,
+    "train_fraction_near_80pct": true,
+    "full_population_partitioned": true,
+    "train_ids_unique": true,
+    "dev_ids_unique": true,
+    "train_dev_id_overlap_zero": true,
+    "strict_chronological_order": true,
+    "boundary_timestamp_not_split": true,
+    "train_no_future_rows": true,
+    "dev_no_future_rows": true,
+    "train_text_complete": true,
+    "dev_text_complete": true,
+    "raw_exact_text_overlap_zero": true,
+    "normalized_exact_text_overlap_zero": true,
+    "near_duplicate_screen_complete": true,
+    "candidate_identity_matches_forensic_review": true,
+    "confirmed_duplicate_leakage_zero": true
+  },
+  "all_checks_pass": true,
+  "near_duplicate_status": "ADJUDICATED_PASS",
+  "near_duplicate_audit": {
+    "method": "word TF-IDF 1-2gram nearest-neighbor cosine",
+    "threshold": 0.95,
+    "maximum_similarity": 1.0,
+    "p99_similarity": 0.7641306519508362,
+    "p999_similarity": 1.0,
+    "candidate_pair_n": 9,
+    "candidate_pair_identity_matches_prior_review": true,
+    "confirmed_duplicate_leakage_pair_n": 0,
+    "retained_distinct_event_pair_n": 9,
+    "different_label_pair_n": 3,
+    "adjudication": "All nine candidates are recurring macroeconomic-release templates with economically meaningful numeric differences; none are duplicate leakage.",
+    "action": "retain_all_rows_and_preserve_original_chronological_split"
+  },
+  "freeze_status": "FROZEN_FOR_DAY22_MODEL_DEVELOPMENT"
+}
