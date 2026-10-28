@@ -1,0 +1,50 @@
+{
+  "day": 23,
+  "stage": "D",
+  "condition": "lr_2e-4",
+  "learning_rate": 0.0002,
+  "sampling": "natural",
+  "initialization": "fresh_base_plus_fresh_lora",
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "training": {
+    "max_steps": 500,
+    "learning_rate": 0.0002,
+    "scheduler": "linear",
+    "warmup_steps": 10,
+    "effective_batch": 8,
+    "seed": 42
+  },
+  "lora": {
+    "r": 8,
+    "alpha": 32,
+    "dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "checks": {
+    "checkpoint_dir_clean": true,
+    "gpu_cleanup_completed": true,
+    "fresh_model_loaded": true,
+    "natural_sampling": true,
+    "train_n_10831": true,
+    "dev_n_2708": true,
+    "max_steps_500": true,
+    "lr_2e4": true,
+    "gradient_accumulation_8": true,
+    "scheduler_linear": true,
+    "warmup_10": true,
+    "seed_42": true,
+    "lora_r8": true,
+    "lora_alpha32": true,
+    "trainable_params_3407872": true,
+    "only_lora_trainable": true,
+    "trainer_global_step_zero": true,
+    "eval_not_triggered": true,
+    "save_not_triggered": true,
+    "historical_validation_locked": true,
+    "future_locked": true
+  },
+  "all_checks_pass": true
+}
