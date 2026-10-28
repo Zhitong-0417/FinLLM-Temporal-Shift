@@ -1,0 +1,66 @@
+{
+  "day": 23,
+  "analysis": "day15_day23_historical_validation_sample_identity_alignment",
+  "day15_prediction_artifact": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day15/historical_validation_predictions.csv",
+  "day23_prediction_artifact": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/final_historical_validation/final_historical_validation_predictions.csv",
+  "population": {
+    "n": 5859,
+    "ordered_observation_id_sha256": "09ccb61d3ae6cc4e384c7fe5364043a5f7806ca31ee72830324d149f573748bf",
+    "same_id_set": true,
+    "same_id_order": true,
+    "gold_label_mismatch_count": 0
+  },
+  "prediction_comparison": {
+    "same_prediction_count": 4968,
+    "different_prediction_count": 891,
+    "both_correct": 4346,
+    "both_wrong": 668,
+    "day15_only_correct": 277,
+    "day23_only_correct": 568
+  },
+  "reproduced_day15_metrics": {
+    "accuracy": 0.789042498719918,
+    "macro_f1": 0.7456777707898534,
+    "negative_recall": 0.6395759717314488,
+    "neutral_recall": 0.8421480878763222,
+    "positive_recall": 0.7634615384615384
+  },
+  "reproduced_day23_metrics": {
+    "accuracy": 0.8387096774193549,
+    "macro_f1": 0.8041298160120592
+  },
+  "alignment_artifact": {
+    "path": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/final_historical_validation/day15_baseline_recovery/alignment/day15_day23_historical_validation_alignment.csv",
+    "sha256": "2df308ad4b5866e99c9073fbcad0e668edd9b34631be6704f4848d10dcecacb0"
+  },
+  "paired_bootstrap_ready": true,
+  "checks": {
+    "day15_n_5859": true,
+    "day23_n_5859": true,
+    "day15_ids_unique": true,
+    "day23_ids_unique": true,
+    "same_id_set": true,
+    "no_ids_only_in_day15": true,
+    "no_ids_only_in_day23": true,
+    "same_id_order": true,
+    "day15_ordered_hash_match": true,
+    "day23_ordered_hash_match": true,
+    "aligned_n_5859": true,
+    "gold_labels_identical": true,
+    "day15_accuracy_reproduced": true,
+    "day15_macro_f1_reproduced": true,
+    "day15_negative_recall_reproduced": true,
+    "day15_neutral_recall_reproduced": true,
+    "day15_positive_recall_reproduced": true,
+    "day23_accuracy_reproduced": true,
+    "day23_macro_f1_reproduced": true,
+    "alignment_artifact_saved": true,
+    "alignment_hash_created": true,
+    "no_model_inference": true,
+    "no_retraining": true,
+    "no_retuning": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T03:05:26.622357+00:00"
+}

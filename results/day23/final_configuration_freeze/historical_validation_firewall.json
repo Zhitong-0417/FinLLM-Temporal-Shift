@@ -1,0 +1,18 @@
+{
+  "historical_validation_status": "LOCKED_UNTIL_ONE_SHOT_FINAL_EVALUATION",
+  "permitted_next_action": "ONE_SHOT_FINAL_EVALUATION",
+  "prohibited_uses": [
+    "checkpoint_selection",
+    "learning_rate_selection",
+    "lora_selection",
+    "sampling_selection",
+    "prompt_selection",
+    "label_mapping_selection",
+    "threshold_selection",
+    "additional_hyperparameter_tuning",
+    "model_retraining_based_on_validation_result"
+  ],
+  "post_evaluation_retuning_allowed": false,
+  "future_f1_f6_status": "LOCKED",
+  "created_utc": "2026-10-08T01:25:06.689311+00:00"
+}

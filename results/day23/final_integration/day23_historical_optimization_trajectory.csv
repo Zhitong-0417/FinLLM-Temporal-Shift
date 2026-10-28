@@ -1,0 +1,6 @@
+stage,intervention,sampling,max_steps,learning_rate,lora_r,lora_alpha,optimization_dev_accuracy,optimization_dev_macro_f1
+A,baseline reproduction,natural,200,0.0001,8,32,0.779542,0.726037
+B,training horizon,natural,500,0.0001,8,32,0.840842,0.808201
+C,sampling audit,natural,500,0.0001,8,32,0.840842,0.808201
+D,learning-rate audit,natural,500,0.0002,8,32,0.843427,0.813516
+E,LoRA capacity audit,natural,500,0.0002,16,64,0.8526587887740029,0.8207308045661784

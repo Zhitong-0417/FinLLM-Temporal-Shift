@@ -1,0 +1,46 @@
+{
+  "day": 23,
+  "analysis": "historical_validation_bootstrap_uncertainty",
+  "source_prediction_artifact": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/final_historical_validation/final_historical_validation_predictions.csv",
+  "source_prediction_sha256": "8181d3359e32f4a467b8be4db91844cd36f88b5a66131cbb9a621d21d2f3870d",
+  "bootstrap_protocol": {
+    "method": "nonparametric_row_bootstrap",
+    "replicates": 1000,
+    "seed": 42,
+    "confidence_level": 0.95,
+    "interval": "percentile"
+  },
+  "day15_comparison": {
+    "status": "DESCRIPTIVE_POINT_ESTIMATE_ONLY",
+    "reason": "Day15 per-sample Historical Validation predictions have not yet been recovered in the current formal workflow.",
+    "paired_bootstrap_performed": false,
+    "significance_claim_permitted": false
+  },
+  "firewall": {
+    "model_inference_performed": false,
+    "historical_validation_predictions_reused_only": true,
+    "retuning_performed": false,
+    "future_f1_f6_used": false
+  },
+  "checks": {
+    "accuracy_matches_cell22": true,
+    "macro_f1_matches_cell22": true,
+    "negative_recall_matches_cell22": true,
+    "neutral_recall_matches_cell22": true,
+    "positive_recall_matches_cell22": true,
+    "prediction_artifact_hash_unchanged": true,
+    "bootstrap_replicates_1000": true,
+    "bootstrap_seed_42": true,
+    "all_bootstrap_metrics_finite": true,
+    "all_ci_bounds_finite": true,
+    "all_ci_lower_le_point": true,
+    "all_ci_upper_ge_point": true,
+    "day15_comparison_is_descriptive_only": true,
+    "no_paired_significance_claim": true,
+    "no_model_inference": true,
+    "no_retuning": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T02:27:28.959801+00:00"
+}

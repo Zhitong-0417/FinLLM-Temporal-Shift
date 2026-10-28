@@ -1,0 +1,34 @@
+{
+  "day": 23,
+  "analysis": "day15_historical_validation_prediction_artifact_recovery",
+  "search_root": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day15",
+  "candidate_files_discovered": 7,
+  "strict_candidate_count": 1,
+  "recovery_status": "ONE_VALID_DAY15_PREDICTION_CANDIDATE_FOUND",
+  "best_candidate": {
+    "path": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day15/historical_validation_predictions.csv",
+    "n_rows": 5859,
+    "n_cols": 7,
+    "columns": [
+      "observation_id",
+      "channel_username",
+      "message_id",
+      "date",
+      "true_label",
+      "predicted_label",
+      "prediction_valid"
+    ]
+  },
+  "paired_bootstrap_ready": true,
+  "checks": {
+    "day15_results_root_exists": true,
+    "candidate_audit_saved": true,
+    "no_model_inference": true,
+    "no_model_loading": true,
+    "no_retraining": true,
+    "no_retuning": true,
+    "historical_validation_predictions_not_modified": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true
+}

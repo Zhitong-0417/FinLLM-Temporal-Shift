@@ -1,0 +1,71 @@
+{
+  "day": 23,
+  "analysis": "paired_bootstrap_day23_minus_day15_historical_validation",
+  "population": {
+    "n": 5859,
+    "alignment_artifact": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/final_historical_validation/day15_baseline_recovery/alignment/day15_day23_historical_validation_alignment.csv",
+    "alignment_sha256": "2df308ad4b5866e99c9073fbcad0e668edd9b34631be6704f4848d10dcecacb0"
+  },
+  "protocol": {
+    "method": "paired_nonparametric_row_bootstrap",
+    "pairing_unit": "observation_id",
+    "same_resampled_indices_for_both_models": true,
+    "replicates": 1000,
+    "seed": 42,
+    "confidence_level": 0.95,
+    "interval": "percentile"
+  },
+  "primary_results": {
+    "accuracy": {
+      "day15": 0.789042498719918,
+      "day23": 0.8387096774193549,
+      "delta": 0.04966717869943682,
+      "ci_lower": 0.04062126642771802,
+      "ci_upper": 0.05905444615122035,
+      "ci_excludes_zero": true
+    },
+    "macro_f1": {
+      "day15": 0.7456777707898534,
+      "day23": 0.8041298160120592,
+      "delta": 0.05845204522220582,
+      "ci_lower": 0.047361740976011375,
+      "ci_upper": 0.06950237545048843,
+      "ci_excludes_zero": true
+    }
+  },
+  "interpretation_rule": {
+    "allowed_statement": "A paired 95% bootstrap confidence interval that lies entirely above zero supports a positive performance difference on this fixed Historical Validation population.",
+    "classical_p_value_computed": false,
+    "do_not_report_as": "classical hypothesis-test significance unless a separate paired test is performed"
+  },
+  "firewall": {
+    "model_inference_performed": false,
+    "retraining_performed": false,
+    "retuning_performed": false,
+    "future_f1_f6_used": false
+  },
+  "checks": {
+    "day15_accuracy_match": true,
+    "day15_macro_f1_match": true,
+    "day23_accuracy_match": true,
+    "day23_macro_f1_match": true,
+    "accuracy_delta_positive": true,
+    "macro_f1_delta_positive": true,
+    "alignment_artifact_hash_unchanged": true,
+    "paired_population_5859": true,
+    "paired_ids_unique": true,
+    "bootstrap_replicates_1000": true,
+    "bootstrap_seed_42": true,
+    "same_indices_used_for_both_models": true,
+    "all_delta_values_finite": true,
+    "all_ci_bounds_finite": true,
+    "accuracy_ci_contains_point_delta": true,
+    "macro_f1_ci_contains_point_delta": true,
+    "no_model_inference": true,
+    "no_retraining": true,
+    "no_retuning": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T03:13:59.831960+00:00"
+}

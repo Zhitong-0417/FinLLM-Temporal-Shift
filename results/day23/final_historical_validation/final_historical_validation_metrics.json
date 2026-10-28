@@ -1,0 +1,81 @@
+{
+  "day": 23,
+  "status": "FINAL_ONE_SHOT_HISTORICAL_VALIDATION_EVALUATION",
+  "model_configuration": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "selected_adapter": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+    "sampling": "natural",
+    "max_steps": 500,
+    "learning_rate": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 64,
+    "lora_dropout": 0.1,
+    "seed": 42,
+    "adapter_weights_sha256": "4e81774686aeeaa6fe7300ef7485bd19dad51f6e85af6b7effb832e597c9dc10"
+  },
+  "evaluation_population": {
+    "name": "historical_validation",
+    "n": 5859,
+    "ordered_observation_id_sha256": "09ccb61d3ae6cc4e384c7fe5364043a5f7806ca31ee72830324d149f573748bf"
+  },
+  "metrics": {
+    "accuracy": 0.8387096774193549,
+    "macro_f1": 0.8041298160120592,
+    "weighted_f1": 0.8390921095383355,
+    "negative_recall": 0.7393992932862191,
+    "neutral_recall": 0.8776783292649851,
+    "positive_recall": 0.8086538461538462,
+    "minority_recall_floor": 0.7393992932862191,
+    "invalid_predictions": 0,
+    "invalid_prediction_rate": 0.0
+  },
+  "descriptive_delta_vs_optimization_dev": {
+    "accuracy": -0.013949111354648047,
+    "macro_f1": -0.016600988554119178,
+    "negative_recall": 0.004221427673570921,
+    "neutral_recall": -0.025856721663714666,
+    "positive_recall": 0.003775797373358314,
+    "minority_recall_floor": 0.004221427673570921
+  },
+  "inference": {
+    "batch_size": 8,
+    "do_sample": false,
+    "max_new_tokens": 4,
+    "padding_side": "left",
+    "runtime_seconds": 770.0634479522705,
+    "runtime_minutes": 12.834390799204508
+  },
+  "prediction_artifact": {
+    "path": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/final_historical_validation/final_historical_validation_predictions.csv",
+    "sha256": "8181d3359e32f4a467b8be4db91844cd36f88b5a66131cbb9a621d21d2f3870d"
+  },
+  "firewall": {
+    "post_validation_retuning_allowed": false,
+    "future_f1_f6_status": "LOCKED",
+    "all_future_historical_validation_analysis_must_use_saved_predictions": true
+  },
+  "checks": {
+    "configuration_freeze_complete": true,
+    "frozen_adapter_hash_unchanged": true,
+    "frozen_adapter_config_hash_unchanged": true,
+    "histval_population_5859": true,
+    "histval_prediction_count_5859": true,
+    "histval_population_hash_unchanged": true,
+    "zero_invalid_predictions": true,
+    "accuracy_finite": true,
+    "macro_f1_finite": true,
+    "weighted_f1_finite": true,
+    "negative_recall_finite": true,
+    "neutral_recall_finite": true,
+    "positive_recall_finite": true,
+    "confusion_total_5859": true,
+    "prediction_artifact_saved": true,
+    "class_metrics_saved": true,
+    "confusion_matrix_saved": true,
+    "prediction_hash_created": true,
+    "retuning_remains_forbidden": true,
+    "future_f1_f6_remain_locked": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T01:55:06.843936+00:00"
+}

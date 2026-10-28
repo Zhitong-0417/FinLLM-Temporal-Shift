@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "evaluation": "ONE_SHOT_HISTORICAL_VALIDATION",
+  "model_inference_complete": true,
+  "model_inference_must_not_be_repeated": true,
+  "prediction_artifact": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/final_historical_validation/final_historical_validation_predictions.csv",
+  "prediction_sha256": "8181d3359e32f4a467b8be4db91844cd36f88b5a66131cbb9a621d21d2f3870d",
+  "post_validation_retuning_allowed": false,
+  "future_f1_f6_status": "LOCKED",
+  "created_utc": "2026-10-08T01:55:06.850477+00:00"
+}

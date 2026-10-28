@@ -1,0 +1,53 @@
+{
+  "day": 23,
+  "title": "Day 23 — Historical Optimization Completion and Final Configuration Selection",
+  "resumed_from_day22": true,
+  "resume_point": "Stage C capped-balanced candidate",
+  "next_formal_task": "Initialize fresh capped-balanced weighted-sampling model and trainer.",
+  "incumbent": {
+    "model": "Stage B-500 natural sampling",
+    "accuracy": 0.840842,
+    "macro_f1": 0.808201,
+    "negative_recall": 0.721344,
+    "neutral_recall": 0.889754,
+    "positive_recall": 0.801126
+  },
+  "pending_sequence": [
+    "Stage C capped-balanced infrastructure",
+    "Stage C capped-balanced 500-step training",
+    "Stage C capped-balanced classification evaluation",
+    "Stage C three-condition selection",
+    "Stage D learning-rate audit",
+    "Stage D winner selection",
+    "Stage E LoRA-capacity audit",
+    "Stage E winner selection",
+    "multi-seed confirmation",
+    "final configuration freeze",
+    "one-shot Historical Validation evaluation",
+    "Day 22 final artifact audit and notebook completion"
+  ],
+  "historical_validation_locked": true,
+  "future_f1_f6_locked": true,
+  "runtime": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "cuda_available": true,
+    "cuda_runtime": "13.0",
+    "gpu": "Tesla T4",
+    "gpu_memory_gb": 14.56317138671875
+  },
+  "resume_checks": {
+    "project_root_exists": true,
+    "day22_checkpoint_complete": true,
+    "resume_manifest_day22": true,
+    "resume_point_is_capped_balanced": true,
+    "incumbent_is_stage_b_500": true,
+    "incumbent_accuracy_matches": true,
+    "stage_c_protocol_frozen": true,
+    "historical_validation_locked": true,
+    "future_locked": true,
+    "all_required_resume_artifacts_present": true
+  },
+  "all_resume_checks_pass": true,
+  "created_utc": "2026-10-08T03:22:42.281102+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "configuration_frozen": true,
+  "selected_adapter": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+  "historical_validation_status": "LOCKED_UNTIL_ONE_SHOT_FINAL_EVALUATION",
+  "next_action": "ONE_SHOT_HISTORICAL_VALIDATION_EVALUATION",
+  "future_f1_f6_status": "LOCKED",
+  "created_utc": "2026-10-08T01:25:06.696447+00:00"
+}

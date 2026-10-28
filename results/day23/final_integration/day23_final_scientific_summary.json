@@ -1,0 +1,108 @@
+{
+  "day": 23,
+  "status": "HISTORICAL_MODEL_OPTIMIZATION_AND_VALIDATION_COMPLETE",
+  "runtime_recovery_mode": true,
+  "final_model": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "sampling": "natural",
+    "training_horizon": 500,
+    "learning_rate": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 64,
+    "lora_dropout": 0.1,
+    "seed": 42,
+    "selected_adapter": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+    "adapter_weights_sha256": "4e81774686aeeaa6fe7300ef7485bd19dad51f6e85af6b7effb832e597c9dc10"
+  },
+  "optimization_dev": {
+    "n": 2708,
+    "accuracy": 0.8526587887740029,
+    "macro_f1": 0.8207308045661784,
+    "weighted_f1": 0.8518464334277301,
+    "negative_recall": 0.7351778656126482,
+    "neutral_recall": 0.9035350509286998,
+    "positive_recall": 0.8048780487804879,
+    "minority_recall_floor": 0.7351778656126482,
+    "eval_loss": 0.19689752161502838
+  },
+  "historical_validation": {
+    "n": 5859,
+    "accuracy": 0.8387096774193549,
+    "accuracy_ci_95": [
+      0.8298301757979177,
+      0.8475849121010411
+    ],
+    "macro_f1": 0.8041298160120592,
+    "macro_f1_ci_95": [
+      0.7930779356392492,
+      0.8145130345637537
+    ],
+    "weighted_f1": 0.8390921095383355,
+    "negative_recall": 0.7393992932862191,
+    "neutral_recall": 0.8776783292649851,
+    "positive_recall": 0.8086538461538462
+  },
+  "day15_vs_day23_paired_improvement": {
+    "n": 5859,
+    "accuracy_day15": 0.789042498719918,
+    "accuracy_day23": 0.8387096774193549,
+    "accuracy_delta": 0.0496671786994368,
+    "accuracy_delta_ci_95": [
+      0.040621266427718,
+      0.0590544461512203
+    ],
+    "macro_f1_day15": 0.7456777707898534,
+    "macro_f1_day23": 0.8041298160120592,
+    "macro_f1_delta": 0.0584520452222058,
+    "macro_f1_delta_ci_95": [
+      0.0473617409760113,
+      0.0695023754504884
+    ]
+  },
+  "generalization_gap": {
+    "histval_minus_optdev_accuracy": -0.013949111354648047,
+    "histval_minus_optdev_macro_f1": -0.016600988554119178
+  },
+  "scientific_interpretation": {
+    "historical_adequacy": "Historical model adequacy improved materially relative to the Day15 baseline.",
+    "heldout_validation": "The improvement persisted on the untouched Historical Validation population.",
+    "paired_uncertainty": "Paired bootstrap confidence intervals for Accuracy and Macro-F1 improvement are entirely above zero.",
+    "future_scope": "Future F1-F6 have not been re-evaluated with the optimized model. Therefore improved future temporal generalization has not yet been established."
+  },
+  "firewall": {
+    "historical_validation": "EVALUATED_ONCE_AND_FROZEN",
+    "post_validation_retuning": "FORBIDDEN",
+    "future_f1_f6": "LOCKED"
+  },
+  "terminal_checks": {
+    "stage_e_winner_r16_a64": true,
+    "final_sampling_natural": true,
+    "final_horizon_500": true,
+    "final_lr_2e4": true,
+    "final_lora_r16": true,
+    "final_lora_alpha64": true,
+    "final_seed_42": true,
+    "selected_adapter_exists": true,
+    "final_freeze_pass": true,
+    "histval_evaluated_once": true,
+    "histval_predictions_n_5859": true,
+    "histval_prediction_hash_unchanged": true,
+    "alignment_n_5859": true,
+    "alignment_pass": true,
+    "paired_bootstrap_pass": true,
+    "accuracy_delta_positive": true,
+    "accuracy_delta_ci_above_zero": true,
+    "macro_f1_delta_positive": true,
+    "macro_f1_delta_ci_above_zero": true,
+    "historical_validation_retuning_forbidden": true,
+    "future_f1_f6_locked": true,
+    "all_terminal_artifacts_exist": true,
+    "no_training": true,
+    "no_model_loading": true,
+    "no_inference": true,
+    "no_retuning": true,
+    "future_not_accessed": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T03:32:30.654431+00:00"
+}

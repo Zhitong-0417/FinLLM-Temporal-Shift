@@ -1,0 +1,6 @@
+metric,day15_baseline,day23_final,absolute_delta,delta_percentage_points,comparison_type,paired_uncertainty_available
+accuracy,0.7890424987,0.8387096774193549,0.04966717871935489,4.966717871935488,descriptive_point_estimate_only,False
+macro_f1,0.7456777708,0.8041298160120592,0.05845204521205927,5.845204521205927,descriptive_point_estimate_only,False
+negative_recall,0.639576,0.7393992932862191,0.09982329328621908,9.982329328621908,descriptive_point_estimate_only,False
+neutral_recall,0.842148,0.8776783292649851,0.03553032926498512,3.5530329264985117,descriptive_point_estimate_only,False
+positive_recall,0.763462,0.8086538461538462,0.045191846153846194,4.519184615384619,descriptive_point_estimate_only,False

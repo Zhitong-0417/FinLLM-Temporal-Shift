@@ -1,0 +1,116 @@
+{
+  "day": 23,
+  "status": "FINAL_HISTORICAL_MODEL_CONFIGURATION_FROZEN",
+  "model": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "selected_adapter": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter",
+    "adapter_config": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter/adapter_config.json",
+    "adapter_weights": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/selected_adapter/adapter_model.safetensors",
+    "adapter_config_sha256": "b83cb88d966256d6250e64b0379f83280ff68a9028892cd4617b0919e9ea78ae",
+    "adapter_weights_sha256": "4e81774686aeeaa6fe7300ef7485bd19dad51f6e85af6b7effb832e597c9dc10"
+  },
+  "training_configuration": {
+    "sampling": "natural",
+    "max_steps": 500,
+    "learning_rate": 0.0002,
+    "scheduler": "linear",
+    "warmup_steps": 10,
+    "train_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_batch": 8,
+    "seed": 42,
+    "max_seq_length": 512,
+    "lora": {
+      "r": 16,
+      "alpha": 64,
+      "dropout": 0.1,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "quantization": {
+      "load_in_4bit": true,
+      "quant_type": "nf4",
+      "double_quant": true,
+      "compute_dtype": "float16"
+    }
+  },
+  "inference_protocol": {
+    "prompt_template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: ",
+    "instruction": "Classify the sentiment of the following financial news as negative, neutral, or positive.",
+    "padding_side": "left",
+    "pad_token": "eos",
+    "pad_token_id": 128001,
+    "eos_token_id": 128001,
+    "add_special_tokens": false,
+    "max_input_length": 512,
+    "do_sample": false,
+    "max_new_tokens": 4,
+    "decode_generated_tokens_only": true,
+    "skip_special_tokens": true,
+    "clean_up_tokenization_spaces": false,
+    "normalization": "strip_then_lowercase",
+    "valid_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "invalid_prediction_policy": "__invalid__"
+  },
+  "optimization_dev_selection_metrics": {
+    "n": 2708,
+    "accuracy": 0.8526587887740029,
+    "macro_f1": 0.8207308045661784,
+    "weighted_f1": 0.8518464334277301,
+    "negative_recall": 0.7351778656126482,
+    "neutral_recall": 0.9035350509286998,
+    "positive_recall": 0.8048780487804879,
+    "minority_recall_floor": 0.7351778656126482,
+    "eval_loss": 0.19689752161502838
+  },
+  "historical_validation_population": {
+    "n": 5859,
+    "date_start": "2025-11-01T01:50:30+00:00",
+    "date_end": "2025-12-31T21:05:31+00:00",
+    "label_counts": {
+      "neutral": 3687,
+      "negative": 1132,
+      "positive": 1040
+    },
+    "ordered_observation_id_sha256": "09ccb61d3ae6cc4e384c7fe5364043a5f7806ca31ee72830324d149f573748bf",
+    "status": "LOCKED_UNTIL_ONE_SHOT_FINAL_EVALUATION"
+  },
+  "future_population_status": "LOCKED",
+  "post_validation_retuning_allowed": false,
+  "checks": {
+    "stage_e_complete": true,
+    "winner_r16_a64": true,
+    "final_sampling_natural": true,
+    "final_steps_500": true,
+    "final_lr_2e4": true,
+    "final_lora_r16": true,
+    "final_lora_alpha64": true,
+    "final_lora_dropout_0_1": true,
+    "final_seed_42": true,
+    "final_effective_batch_8": true,
+    "instruction_exact_match": true,
+    "prompt_template_exact_match": true,
+    "literal_backslash_n_preserved": true,
+    "tokenizer_eos_128001": true,
+    "selected_adapter_exists": true,
+    "adapter_config_exists": true,
+    "adapter_weights_exist": true,
+    "adapter_config_hash_created": true,
+    "adapter_weights_hash_created": true,
+    "opt_dev_accuracy_match": true,
+    "opt_dev_macro_f1_match": true,
+    "historical_validation_n_5859": true,
+    "historical_validation_id_unique": true,
+    "historical_validation_still_locked": true,
+    "post_validation_retuning_forbidden": true,
+    "future_f1_f6_locked": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T01:25:06.681036+00:00"
+}
