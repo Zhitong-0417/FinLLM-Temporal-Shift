@@ -1,0 +1,118 @@
+{
+  "day": 22,
+  "artifact": "historical_optimization_split_audit",
+  "parent_population": {
+    "name": "Day14_frozen_historical_train",
+    "n_observations": 13539,
+    "observation_id_sha256": "2318e6c4c98676cd268a9728349f7a2abeddaccc0a10c925244ac88c71fc6ae1",
+    "source_dataset": "/content/drive/MyDrive/FinGPT_Project/results/day07/temporal_dataset_clean.csv"
+  },
+  "split_rule": {
+    "type": "deterministic_chronological",
+    "target_train_fraction": 0.8,
+    "target_train_n": 10831.2,
+    "boundary_rule": "Choose complete timestamp boundary nearest to 80% target; never split identical timestamps; ties resolved toward smaller/earlier train partition.",
+    "selected_train_end_timestamp_utc": "2025-10-10T01:36:47+00:00"
+  },
+  "optimization_train": {
+    "n_observations": 10831,
+    "fraction": 0.7999852278602556,
+    "start_timestamp_utc": "2025-06-03T21:06:16+00:00",
+    "end_timestamp_utc": "2025-10-10T01:36:47+00:00",
+    "label_counts": {
+      "negative": 2276,
+      "neutral": 6767,
+      "positive": 1788
+    },
+    "label_proportions": {
+      "negative": 0.21013756809158896,
+      "neutral": 0.6247807220016619,
+      "positive": 0.16508170990674914
+    },
+    "n_sources": 6,
+    "source_counts": {
+      "AGGRNEWSWIRE": 33,
+      "MonitoringSituation": 108,
+      "TreeNewsFeed": 15,
+      "WalterBloomberg": 1283,
+      "ZoomerfiedNews": 65,
+      "firstsquaw": 9327
+    },
+    "source_proportions": {
+      "AGGRNEWSWIRE": 0.003046810082171545,
+      "MonitoringSituation": 0.009971378450743237,
+      "TreeNewsFeed": 0.0013849136737143384,
+      "WalterBloomberg": 0.11845628289169975,
+      "ZoomerfiedNews": 0.0060012925860954665,
+      "firstsquaw": 0.8611393223155757
+    },
+    "observation_id_sha256": "c99dc271d3fab37d7e1160e48297c07cfd1a459c51c75d6d61f79514d0eb20f7"
+  },
+  "optimization_dev": {
+    "n_observations": 2708,
+    "fraction": 0.20001477213974445,
+    "start_timestamp_utc": "2025-10-10T01:37:04+00:00",
+    "end_timestamp_utc": "2025-10-31T21:14:14+00:00",
+    "label_counts": {
+      "negative": 506,
+      "neutral": 1669,
+      "positive": 533
+    },
+    "label_proportions": {
+      "negative": 0.18685376661742983,
+      "neutral": 0.6163220088626292,
+      "positive": 0.19682422451994092
+    },
+    "n_sources": 6,
+    "source_counts": {
+      "AGGRNEWSWIRE": 6,
+      "MonitoringSituation": 10,
+      "TreeNewsFeed": 4,
+      "WalterBloomberg": 343,
+      "ZoomerfiedNews": 16,
+      "firstsquaw": 2329
+    },
+    "source_proportions": {
+      "AGGRNEWSWIRE": 0.0022156573116691287,
+      "MonitoringSituation": 0.003692762186115214,
+      "TreeNewsFeed": 0.0014771048744460858,
+      "WalterBloomberg": 0.12666174298375185,
+      "ZoomerfiedNews": 0.005908419497784343,
+      "firstsquaw": 0.8600443131462334
+    },
+    "observation_id_sha256": "4ca97f36f014198c9d7852d55b6f5ef98b866582c03dfa544f6714d09b5132b4"
+  },
+  "leakage_audit": {
+    "observation_id_overlap_n": 0,
+    "raw_exact_text_overlap_unique_n": 0,
+    "normalized_exact_text_overlap_unique_n": 0,
+    "shared_boundary_timestamp_n": 0,
+    "near_duplicate_method": "word TF-IDF 1-2gram cosine nearest-neighbor",
+    "near_duplicate_threshold": 0.95,
+    "near_duplicate_pair_n": 9,
+    "near_duplicate_max_similarity": 1.0
+  },
+  "checks": {
+    "historical_population_n_13539": true,
+    "optimization_train_nonempty": true,
+    "optimization_dev_nonempty": true,
+    "optimization_train_size_matches_selected_boundary": true,
+    "full_population_partitioned_exactly_once": true,
+    "optimization_train_ids_unique": true,
+    "optimization_dev_ids_unique": true,
+    "train_dev_observation_overlap_zero": true,
+    "strict_chronological_order": true,
+    "boundary_timestamp_not_split": true,
+    "train_no_future_rows": true,
+    "dev_no_future_rows": true,
+    "train_labels_valid": true,
+    "dev_labels_valid": true,
+    "train_text_complete": true,
+    "dev_text_complete": true,
+    "raw_exact_text_cross_boundary_zero": true,
+    "normalized_exact_text_cross_boundary_zero": true,
+    "near_duplicate_audit_complete": true,
+    "near_duplicate_candidates_require_review": true
+  },
+  "all_checks_pass": true
+}
