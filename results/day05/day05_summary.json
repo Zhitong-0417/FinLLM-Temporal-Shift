@@ -1,0 +1,18 @@
+{
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "dataset": "Twitter Financial News Sentiment",
+  "num_validation_examples": 2388,
+  "accuracy": 0.8680904522613065,
+  "macro_f1": 0.8320316007275789,
+  "weighted_f1": 0.8674082672446246,
+  "num_errors": 315,
+  "error_rate": 0.13190954773869346,
+  "dominant_error_types": {
+    "positive -> neutral": 94,
+    "negative -> neutral": 78,
+    "neutral -> negative": 70,
+    "neutral -> positive": 66,
+    "positive -> negative": 5,
+    "negative -> positive": 2
+  }
+}

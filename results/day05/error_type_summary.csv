@@ -1,0 +1,7 @@
+error_type,count,percentage
+positive -> neutral,94,29.84
+negative -> neutral,78,24.76
+neutral -> negative,70,22.22
+neutral -> positive,66,20.95
+positive -> negative,5,1.59
+negative -> positive,2,0.63

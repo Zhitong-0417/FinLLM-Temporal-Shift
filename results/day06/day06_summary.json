@@ -1,0 +1,28 @@
+{
+  "day": "Day 06",
+  "task": "Baseline comparison and reproducibility benchmark",
+  "dataset": "Twitter Financial News Sentiment",
+  "validation_examples": 2388,
+  "models": {
+    "Day04_LoRA": {
+      "accuracy": 0.8680904522613065,
+      "macro_f1": 0.8320316007275789,
+      "weighted_f1": 0.8674082672446246
+    },
+    "FinBERT": {
+      "model_name": "ProsusAI/finbert",
+      "accuracy": 0.7252931323283082,
+      "macro_f1": 0.6681732301000801,
+      "weighted_f1": 0.7328700943132527
+    }
+  },
+  "comparison": {
+    "models_agree": 1719,
+    "models_disagree": 669,
+    "both_correct": 1585,
+    "lora_only_correct": 488,
+    "finbert_only_correct": 147,
+    "both_wrong": 168
+  },
+  "main_finding": "The Day04 LoRA model substantially outperforms FinBERT in-domain, with the largest improvement coming from reduced neutral-to-polar sentiment errors."
+}
