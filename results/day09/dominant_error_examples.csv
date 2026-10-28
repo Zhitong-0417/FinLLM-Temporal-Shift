@@ -1,0 +1,11 @@
+message_id,date,text,true_label,predicted_label,transition,period
+86309,2026-01-12 17:01:49,US WASDE CORN END STOCKS JAN: 2.227B (EST 1.969B; PREV 2.029B) || SOYBEAN END STOCKS: 350M (EST 298M; PREV 290M) || TOTAL WHEAT END STOCKS: 926M (EST 900M; PREV 901M) || COTTON END STOCKS: 4.20M (EST 4.60M; PREV 4.50M),negative,neutral,negative -> neutral,LATE
+86519,2026-01-13 01:47:54,"Ukraine and Moldova would have blocked all supply routes to the Russian contingent in Transnistria since January 1, according to Ukrainian media. About 1,500 troops would be left without fuel or ammunition. EADaily claims that the blockade has largely existed since 2014 and that",negative,neutral,negative -> neutral,LATE
+87328,2026-01-14 17:14:56,Fed's Bostic: We still need a restrictive posture on rates.,negative,neutral,negative -> neutral,LATE
+104125,2026-02-28 09:36:20,"ISRAEL TELLS IRANIANS INSIDE, NEAR MILITARY SITES TO EVACUATE",negative,neutral,negative -> neutral,LATE
+104914,2026-03-01 09:52:50,"THE EGYPTIAN PRESIDENT CALLS THE SULTAN OF OMAN BY PHONE AND EXPRESSES HIS CONDEMNATION OF THE TARGETING OF THE OMANI PORT OF DUQM, AFFIRMING EGYPT'S FULL SOLIDARITY WITH THE ARAB COUNTRIES THAT HAVE BEEN SUBJECTED TO IRANIAN ATTACKS.",negative,neutral,negative -> neutral,LATE
+109238,2026-03-08 17:48:02,TÜRKIYE TO DEPLOY SIX F-16 FIGHTER JETS TO NORTHERN CYPRUS TOMORROW MORNING AS PART OF SECURITY MEASURES. - SOURCES,negative,neutral,negative -> neutral,LATE
+26410,2026-03-09 23:42:52,"AIRSTRIKES HIT POPULAR MOBILIZATION FORCES POSITION IN IRAQI TOWN OF AL-QAIM ON THE SYRIAN BORDER, WOUND FOUR FIGHTERS -ARMY SOURCES",negative,neutral,negative -> neutral,LATE
+27366,2026-03-20 22:29:24,"U.S. JURY FINDS ELON MUSK LIABLE TO TWITTER SHAREHOLDERS IN SECURITIES FRAUD LAWSUIT RELATED TO $44 BILLION TAKEOVER, COURT RECORDS SHOW",negative,neutral,negative -> neutral,LATE
+128678,2026-04-26 10:21:56,US motorists skimp at the pump as Iran war keeps petrol prices high - ft,negative,neutral,negative -> neutral,LATE
+136220,2026-05-18 00:53:44,"Russian drones, missiles strike multiple Ukrainian regions, injuring at least 5.",negative,neutral,negative -> neutral,LATE

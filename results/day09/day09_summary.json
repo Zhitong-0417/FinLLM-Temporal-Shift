@@ -1,0 +1,33 @@
+{
+  "evaluation_population": {
+    "total": 39400,
+    "early": 19398,
+    "late": 20002
+  },
+  "negative_class": {
+    "recall_early": 0.3658661216147164,
+    "recall_late": 0.27676340572746494,
+    "delta_recall_pp": -8.910271588725143,
+    "delta_error_rate_pp": 8.910271588725143
+  },
+  "dominant_error_transition": {
+    "transition": "negative -> neutral",
+    "early_rate": 0.6014307613694431,
+    "late_rate": 0.6844128387468768,
+    "delta_pp": 8.298207737743368
+  },
+  "negative_failure_decomposition": {
+    "negative_to_neutral_share_pct": 93.13080589197452,
+    "negative_to_positive_share_pct": 6.869194108025413
+  },
+  "class_level_changes_pp": {
+    "negative": 8.910271588725138,
+    "positive": 1.4471723436870199,
+    "neutral": -1.4317073624898757
+  },
+  "interpretation": {
+    "dominant_failure_mode": "negative sentiment increasingly misclassified as neutral",
+    "degradation_pattern": "class-asymmetric temporal degradation concentrated in negative sentiment",
+    "causal_claim": false
+  }
+}

@@ -1,0 +1,13 @@
+period,true_label,predicted_label,transition,error_count,true_class_support,error_rate
+EARLY,negative,neutral,negative -> neutral,2354,3914,0.6014307613694431
+LATE,negative,neutral,negative -> neutral,3561,5203,0.6844128387468768
+EARLY,negative,positive,negative -> positive,128,3914,0.032703117015840576
+LATE,negative,positive,negative -> positive,202,5203,0.038823755525658275
+EARLY,neutral,negative,neutral -> negative,988,12123,0.0814979790480904
+LATE,neutral,negative,neutral -> negative,862,11748,0.07337419135171944
+EARLY,neutral,positive,neutral -> positive,816,12123,0.06731007176441475
+LATE,neutral,positive,neutral -> positive,718,11748,0.06111678583588696
+EARLY,positive,negative,positive -> negative,158,3361,0.047009818506396905
+LATE,positive,negative,positive -> negative,177,3051,0.05801376597836775
+EARLY,positive,neutral,positive -> neutral,1741,3361,0.5180005950609937
+LATE,positive,neutral,positive -> neutral,1591,3051,0.5214683710258932
