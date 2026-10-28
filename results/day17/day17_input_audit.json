@@ -1,0 +1,150 @@
+{
+  "day": 17,
+  "stage": "A",
+  "artifact": "day17_input_audit",
+  "status": "PASS",
+  "scientific_role": "Frozen diagnostic audit establishing that Day 17 starts from the completed Day 16 evidence layer without changing the benchmark or model.",
+  "day16_input_directory": "/content/drive/MyDrive/FinGPT_Project/results/day16",
+  "required_artifacts": {
+    "future_predictions.csv": {
+      "exists": true,
+      "size_bytes": 4804707,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/future_predictions.csv"
+    },
+    "future_window_metrics.csv": {
+      "exists": true,
+      "size_bytes": 1216,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/future_window_metrics.csv"
+    },
+    "future_class_performance.csv": {
+      "exists": true,
+      "size_bytes": 1602,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/future_class_performance.csv"
+    },
+    "future_confusion_matrices.csv": {
+      "exists": true,
+      "size_bytes": 2067,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/future_confusion_matrices.csv"
+    },
+    "future_error_transitions.csv": {
+      "exists": true,
+      "size_bytes": 4392,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/future_error_transitions.csv"
+    },
+    "future_prediction_distribution.csv": {
+      "exists": true,
+      "size_bytes": 1416,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/future_prediction_distribution.csv"
+    },
+    "future_source_composition.csv": {
+      "exists": true,
+      "size_bytes": 4440,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/future_source_composition.csv"
+    },
+    "temporal_performance_curve.csv": {
+      "exists": true,
+      "size_bytes": 1950,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/temporal_performance_curve.csv"
+    },
+    "day16_summary.json": {
+      "exists": true,
+      "size_bytes": 6309,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day16/day16_summary.json"
+    }
+  },
+  "future_population": {
+    "n_rows": 20002,
+    "n_unique_observation_ids": 20002,
+    "duplicate_observation_ids": 0,
+    "periods": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "window_counts": {
+      "F1": 3602,
+      "F2": 3522,
+      "F3": 4818,
+      "F4": 3872,
+      "F5": 3588,
+      "F6": 600
+    },
+    "window_count_total": 20002,
+    "period_type_by_window": {
+      "F1": "future_month",
+      "F2": "future_month",
+      "F3": "future_month",
+      "F4": "future_month",
+      "F5": "future_month",
+      "F6": "future_partial"
+    },
+    "f6_is_partial": true
+  },
+  "label_protocol": {
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "observed_true_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "observed_predicted_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "missing_true_labels": 0,
+    "missing_predictions": 0,
+    "invalid_predictions": 0
+  },
+  "metric_reproducibility": {
+    "windows_recomputed": 6,
+    "metrics_checked": [
+      "macro_f1",
+      "accuracy",
+      "weighted_f1",
+      "negative_recall",
+      "neutral_recall",
+      "positive_recall"
+    ],
+    "maximum_absolute_difference": 0.0,
+    "all_metrics_match_frozen_day16": true
+  },
+  "cross_layer_consistency": {
+    "confusion_cells_checked": 54,
+    "confusion_counts_all_match": true,
+    "transition_cells_checked": 54,
+    "transition_counts_all_match": true,
+    "transition_support_all_match": true,
+    "transition_rates_all_match": true,
+    "maximum_transition_rate_abs_diff": 9.020562075079397e-17,
+    "class_rows_checked": 18,
+    "class_support_all_match": true,
+    "class_precision_all_match": true,
+    "class_recall_all_match": true,
+    "class_f1_all_match": true
+  },
+  "day17_boundary": {
+    "retraining": false,
+    "checkpoint_reselection": false,
+    "prompt_modification": false,
+    "threshold_tuning": false,
+    "relabeling": false,
+    "window_redefinition": false,
+    "new_inference": false
+  },
+  "acceptance_gate": {
+    "all_required_day16_artifacts_present": true,
+    "future_population_integrity_pass": true,
+    "day16_metric_reproducibility_pass": true,
+    "cross_layer_consistency_pass": true,
+    "stage_A_pass": true
+  },
+  "created_utc": "2026-09-26T03:32:37.333672+00:00"
+}

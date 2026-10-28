@@ -1,0 +1,201 @@
+{
+  "day": 17,
+  "project": "Financial Language Models under Temporal Distribution Shift",
+  "status": "PASS — TEMPORAL PERFORMANCE DIAGNOSIS COMPLETE",
+  "scientific_role": "Diagnose the non-monotonic future performance curve measured on Day 16 without retraining, threshold tuning, window redefinition, smoothing, or causal attribution.",
+  "research_question": "What observable class-, error-, composition-, and source-level factors co-occur with the non-monotonic future performance pattern, especially the F3 dip and subsequent recovery?",
+  "analysis_boundary": {
+    "model_retrained": false,
+    "checkpoint_changed": false,
+    "future_windows_redefined": false,
+    "threshold_tuned": false,
+    "temporal_curve_smoothed": false,
+    "causal_claims_allowed": false,
+    "stage_G_adjusted_model": "deferred_not_required",
+    "interpretation_scope": "Descriptive and associative diagnosis only. Elapsed time, source identity, label composition, and prediction composition are not interpreted as causal mechanisms."
+  },
+  "bootstrap_protocol": {
+    "replicates": 1000,
+    "seed": 42,
+    "confidence_level": 0.95,
+    "primary_metric": "Macro-F1",
+    "secondary_metrics": [
+      "Accuracy",
+      "negative_recall",
+      "neutral_recall",
+      "positive_recall"
+    ]
+  },
+  "source_protocol": {
+    "source_universe_size": 8,
+    "low_support_threshold": 50,
+    "dominant_source": "firstsquaw",
+    "standardization_reference": "F1_source_shares",
+    "standardization_interpretation": "Descriptive sensitivity analysis only; not a causal adjustment."
+  },
+  "integrated_diagnosis": {
+    "overall_pattern": "Localized, non-monotonic temporal performance regime: F1/F2 stable, F3 sharp class-specific degradation, F4 incomplete recovery, F5 substantial recovery, F6 apparent partial-window rebound.",
+    "F3": {
+      "role": "primary_dip",
+      "macro_f1": 0.6923463315165214,
+      "macro_f1_change_vs_F1": -0.056394884367712894,
+      "delta_ci_95": [
+        -0.07991035131040891,
+        -0.03327134704416368
+      ],
+      "delta_ci_excludes_zero": true,
+      "largest_class_contributor": "positive",
+      "largest_class_f1_change_vs_F1": -0.15767030544767502,
+      "largest_transition_rate_increase": "positive→negative",
+      "largest_transition_rate_change_vs_F1": 0.1000607920333488,
+      "true_label_tvd_vs_F1": 0.1716015432596023,
+      "source_tvd_vs_F1": 0.04061451492863269,
+      "dominant_source_macro_f1_change_vs_F1": -0.05267899592418879,
+      "source_standardization_effect_on_macro_f1": 0.0010961333255861128,
+      "interpretation": "Class-concentrated degradation dominated by positive-class failure and increased positive→negative errors. Source mix changes are present but explain little of the aggregate dip."
+    },
+    "F4": {
+      "role": "incomplete_recovery",
+      "macro_f1": 0.7176713958415403,
+      "macro_f1_change_vs_F1": -0.031069820042693985,
+      "delta_ci_95": [
+        -0.054448145186908305,
+        -0.010888899436980843
+      ],
+      "delta_ci_excludes_zero": true,
+      "largest_class_contributor": "neutral",
+      "largest_transition_rate_increase": "positive→neutral",
+      "largest_excess_error_transition": "neutral→negative",
+      "source_tvd_vs_F1": 0.05876900344620302,
+      "source_standardization_effect_on_macro_f1": 0.00293021290521267,
+      "interpretation": "Partial recovery from F3, but performance remains below F1. Residual errors are more distributed across classes and transitions than in F3."
+    },
+    "F5": {
+      "role": "substantial_recovery",
+      "macro_f1": 0.742438726736156,
+      "macro_f1_change_vs_F1": -0.006302489148078294,
+      "delta_ci_95": [
+        -0.029225374884047896,
+        0.016560934171111423
+      ],
+      "delta_ci_excludes_zero": false,
+      "interpretation": "Performance substantially recovers toward the F1 reference regime; the Macro-F1 difference from F1 is not clearly separated from zero under the bootstrap interval."
+    },
+    "F6": {
+      "role": "partial_window_rebound",
+      "macro_f1": 0.7745188645875478,
+      "macro_f1_change_vs_F1": 0.02577764870331356,
+      "delta_ci_95": [
+        -0.016417259356549703,
+        0.06699274428488446
+      ],
+      "delta_ci_excludes_zero": false,
+      "partial_window": true,
+      "n": 600,
+      "interpretation": "Observed rebound above F1, but the interval includes zero and F6 is a partial June window. It is not interpreted as stable recovery or a persistent upward trend."
+    }
+  },
+  "completion_flags": {
+    "stage_A_input_audit": true,
+    "stage_B_bootstrap_uncertainty": true,
+    "stage_C_class_decomposition": true,
+    "stage_D_error_transition_analysis": true,
+    "stage_E_label_prediction_composition": true,
+    "stage_F_source_diagnostics": true,
+    "stage_F_source_standardization": true,
+    "stage_G_adjusted_association_model": false,
+    "stage_G_deferred_by_design": true,
+    "stage_H_integrated_diagnosis": true,
+    "stage_I_summary_freeze": true
+  },
+  "formal_artifact_status": {
+    "day17_input_audit.json": {
+      "exists": true,
+      "size_bytes": 4403,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/day17_input_audit.json"
+    },
+    "temporal_metric_uncertainty.csv": {
+      "exists": true,
+      "size_bytes": 5956,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/temporal_metric_uncertainty.csv"
+    },
+    "class_diagnostic_summary.csv": {
+      "exists": true,
+      "size_bytes": 3558,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/class_diagnostic_summary.csv"
+    },
+    "transition_diagnostic_summary.csv": {
+      "exists": true,
+      "size_bytes": 10828,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/transition_diagnostic_summary.csv"
+    },
+    "label_prediction_shift.csv": {
+      "exists": true,
+      "size_bytes": 5438,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/label_prediction_shift.csv"
+    },
+    "macro_vs_weighted_gap.csv": {
+      "exists": true,
+      "size_bytes": 655,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/macro_vs_weighted_gap.csv"
+    },
+    "source_performance.csv": {
+      "exists": true,
+      "size_bytes": 8962,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/source_performance.csv"
+    },
+    "source_shift_diagnostics.csv": {
+      "exists": true,
+      "size_bytes": 2129,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/source_shift_diagnostics.csv"
+    },
+    "source_standardized_performance.csv": {
+      "exists": true,
+      "size_bytes": 1961,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/source_standardized_performance.csv"
+    },
+    "day17_diagnostic_evidence.csv": {
+      "exists": true,
+      "size_bytes": 2625,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/day17_diagnostic_evidence.csv"
+    }
+  },
+  "figure_artifact_status": {
+    "temporal_macro_f1_ci.png": {
+      "exists": true,
+      "size_bytes": 182328,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/figures/temporal_macro_f1_ci.png"
+    },
+    "class_recall_ci.png": {
+      "exists": true,
+      "size_bytes": 226070,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/figures/class_recall_ci.png"
+    },
+    "class_f1_trajectory.png": {
+      "exists": true,
+      "size_bytes": 243594,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/figures/class_f1_trajectory.png"
+    },
+    "selected_error_transition_trajectories.png": {
+      "exists": true,
+      "size_bytes": 275172,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/figures/selected_error_transition_trajectories.png"
+    },
+    "transition_rate_heatmap.png": {
+      "exists": true,
+      "size_bytes": 298890,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/figures/transition_rate_heatmap.png"
+    },
+    "label_prediction_composition.png": {
+      "exists": true,
+      "size_bytes": 228071,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/figures/label_prediction_composition.png"
+    },
+    "observed_vs_source_standardized_performance.png": {
+      "exists": true,
+      "size_bytes": 233574,
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day17/figures/observed_vs_source_standardized_performance.png"
+    }
+  },
+  "created_utc": "2026-09-26T04:52:27.477149+00:00"
+}

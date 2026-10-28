@@ -1,0 +1,114 @@
+{
+  "day": 16,
+  "artifact": "future_inference_manifest",
+  "project": "Financial Language Models under Temporal Distribution Shift",
+  "model": {
+    "model_id": "M_H",
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "frozen_adapter_recorded_path": "/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/frozen_selected_adapter",
+    "frozen_adapter_runtime_path": "/content/drive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/frozen_selected_adapter",
+    "selected_checkpoint_step": 200,
+    "selected_checkpoint_recorded_path": "/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/training_checkpoints/checkpoint-200",
+    "selected_checkpoint_runtime_path": "/content/drive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/training_checkpoints/checkpoint-200",
+    "freeze_status": "FROZEN_BEFORE_FUTURE_EVALUATION"
+  },
+  "chronological_protocol": {
+    "historical_cutoff_utc": "2026-01-01T00:00:00+00:00",
+    "historical_train_n": 13539,
+    "historical_validation_n": 5859,
+    "strictly_future_n": 20002,
+    "future_windows": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "ordering_rule": "historical_train < historical_validation < all future evaluation windows",
+    "F6_is_partial_month": true
+  },
+  "evaluation_protocol": {
+    "primary_endpoint": "macro_f1",
+    "secondary_endpoints": [
+      "accuracy",
+      "weighted_f1"
+    ],
+    "class_specific_metrics": [
+      "precision",
+      "recall",
+      "f1",
+      "support"
+    ],
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "priority_failure_mode": "negative->neutral"
+  },
+  "inference_protocol": {
+    "model_mode": "eval",
+    "padding_side": "left",
+    "do_sample": false,
+    "max_new_tokens": 4,
+    "valid_predictions": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "max_seq_length": 512,
+    "prompt_template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: "
+  },
+  "historical_validation_anchor": {
+    "role": "pooled_reference_anchor",
+    "n": 5859,
+    "accuracy": 0.789042498719918,
+    "macro_f1": 0.7456777707898534,
+    "weighted_f1": 0.7889070414565585,
+    "negative_recall": 0.6395759717314488,
+    "neutral_recall": 0.8421480878763222,
+    "positive_recall": 0.7634615384615384
+  },
+  "future_firewall": {
+    "future_observations_used_for_training": 0,
+    "future_observations_used_for_validation": 0,
+    "future_metrics_used_for_checkpoint_selection": false,
+    "adaptation_performed": false
+  },
+  "label_provenance_caveat": "Day16 performance is evaluated against the frozen Dataset-B sentiment benchmark labels. These labels are LLM-generated benchmark labels rather than conventional human gold labels.",
+  "stage_a_integrity_checks": {
+    "cutoff_matches_day14": true,
+    "historical_train_n_matches": true,
+    "historical_validation_n_matches": true,
+    "future_n_matches": true,
+    "chronological_protocol_locked": true,
+    "future_windows_match": true,
+    "f6_marked_partial": true,
+    "evaluation_protocol_locked": true,
+    "primary_endpoint_is_macro_f1": true,
+    "label_order_matches": true,
+    "same_metric_implementation": true,
+    "model_id_is_M_H": true,
+    "model_freeze_status_valid": true,
+    "selected_checkpoint_step_matches": true,
+    "checkpoint_selected_without_future_metrics": true,
+    "inference_eval_mode": true,
+    "inference_left_padding": true,
+    "inference_deterministic_generation": true,
+    "inference_max_new_tokens_match": true,
+    "validation_baseline_n_matches": true,
+    "validation_checkpoint_step_matches": true,
+    "validation_used_no_future_observations": true,
+    "future_training_use_zero": true,
+    "future_validation_use_zero": true,
+    "future_checkpoint_selection_use_false": true,
+    "day15_future_evaluation_not_started": true,
+    "day15_training_audit_passed": true,
+    "frozen_adapter_directory_exists": true,
+    "selected_checkpoint_directory_exists": true,
+    "label_provenance_disclosed": true
+  },
+  "stage_a_all_checks_pass": true,
+  "created_utc": "2026-09-21T23:05:05.272186+00:00"
+}

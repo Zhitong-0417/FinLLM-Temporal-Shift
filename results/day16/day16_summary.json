@@ -1,0 +1,185 @@
+{
+  "day": 16,
+  "project": "Financial Language Models under Temporal Distribution Shift",
+  "status": "PASS — STRICT FUTURE TEMPORAL GENERALIZATION MEASUREMENT COMPLETE",
+  "scientific_role": "strict_future_temporal_generalization_measurement",
+  "research_question": "How does predictive performance change across strictly future temporal windows?",
+  "model": {
+    "model_id": "M_H",
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "selected_checkpoint_step": 200,
+    "freeze_status": "FROZEN_BEFORE_FUTURE_EVALUATION",
+    "adaptation_performed": false,
+    "trainable_parameters_during_future_evaluation": 0
+  },
+  "chronological_protocol": {
+    "historical_cutoff_utc": "2026-01-01T00:00:00+00:00",
+    "historical_train_n": 13539,
+    "historical_validation_n": 5859,
+    "strictly_future_n": 20002,
+    "future_windows": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "F1_to_F5_role": "full_future_months",
+    "F6_role": "partial_month_sensitivity_point"
+  },
+  "evaluation_protocol": {
+    "primary_endpoint": "macro_f1",
+    "secondary_endpoints": [
+      "accuracy",
+      "weighted_f1"
+    ],
+    "class_specific_metrics": [
+      "precision",
+      "recall",
+      "f1",
+      "support"
+    ],
+    "priority_failure_mode_retained_for_day17": "negative->neutral",
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "historical_validation_anchor": {
+    "role": "pooled_historical_reference_anchor",
+    "period": "2025-11-01 through 2025-12-31",
+    "n": 5859,
+    "macro_f1": 0.7456777707898534,
+    "accuracy": 0.789042498719918,
+    "weighted_f1": 0.7889070414565585,
+    "negative_recall": 0.6395759717314488,
+    "neutral_recall": 0.8421480878763222,
+    "positive_recall": 0.7634615384615384
+  },
+  "future_window_metrics": {
+    "F1": {
+      "period_type": "future_month",
+      "n": 3602,
+      "macro_f1": 0.7487412158842343,
+      "accuracy": 0.7976124375347029,
+      "weighted_f1": 0.795994840586369,
+      "negative_recall": 0.6097201767304861,
+      "neutral_recall": 0.8631993006993007,
+      "positive_recall": 0.7622047244094489
+    },
+    "F2": {
+      "period_type": "future_month",
+      "n": 3522,
+      "macro_f1": 0.7578181122360976,
+      "accuracy": 0.7964224872231687,
+      "weighted_f1": 0.79498945173291,
+      "negative_recall": 0.634020618556701,
+      "neutral_recall": 0.861214953271028,
+      "positive_recall": 0.7755775577557755
+    },
+    "F3": {
+      "period_type": "future_month",
+      "n": 4818,
+      "macro_f1": 0.6923463315165214,
+      "accuracy": 0.7488584474885844,
+      "weighted_f1": 0.7458523919455623,
+      "negative_recall": 0.6322766570605187,
+      "neutral_recall": 0.8668767231193383,
+      "positive_recall": 0.5698529411764706
+    },
+    "F4": {
+      "period_type": "future_month",
+      "n": 3872,
+      "macro_f1": 0.7176713958415403,
+      "accuracy": 0.7551652892561983,
+      "weighted_f1": 0.7515428347796471,
+      "negative_recall": 0.5926640926640927,
+      "neutral_recall": 0.8476791347453808,
+      "positive_recall": 0.6952998379254457
+    },
+    "F5": {
+      "period_type": "future_month",
+      "n": 3588,
+      "macro_f1": 0.742438726736156,
+      "accuracy": 0.7887402452619844,
+      "weighted_f1": 0.7858824100662186,
+      "negative_recall": 0.6174016686531585,
+      "neutral_recall": 0.8703703703703703,
+      "positive_recall": 0.719626168224299
+    },
+    "F6": {
+      "period_type": "future_partial",
+      "n": 600,
+      "macro_f1": 0.7745188645875478,
+      "accuracy": 0.8,
+      "weighted_f1": 0.7990634287707185,
+      "negative_recall": 0.6884057971014492,
+      "neutral_recall": 0.853448275862069,
+      "positive_recall": 0.7719298245614035
+    }
+  },
+  "descriptive_measurement_summary": {
+    "future_macro_f1_non_monotonic": true,
+    "lowest_observed_future_macro_f1_window": "F3",
+    "lowest_observed_future_macro_f1": 0.6923463315165214,
+    "highest_observed_future_macro_f1_window": "F6",
+    "highest_observed_future_macro_f1": 0.7745188645875478,
+    "interpretation_rule": "These are descriptive observed extrema only. No causal or diagnostic explanation is assigned in Day16."
+  },
+  "future_prediction_integrity": {
+    "n_predictions": 20002,
+    "invalid_predictions": 0,
+    "observation_order_preserved": true,
+    "all_future_windows_present": true
+  },
+  "source_protocol_crosscheck": {
+    "all_source_counts_match_day14": true,
+    "all_source_shares_match_day14": true
+  },
+  "label_provenance": {
+    "label_type": "LLM-generated Dataset-B benchmark labels",
+    "human_gold_labels": false,
+    "interpretation_caveat": "Performance metrics describe agreement with the frozen Dataset-B benchmark sentiment labels and should not be overstated as accuracy against conventional human gold labels."
+  },
+  "scientific_boundary": {
+    "day16": "measurement",
+    "day17": "diagnosis",
+    "day18": "controlled_temporal_composition_robustness_intervention",
+    "causal_claim_about_time": false,
+    "interpretation_deferred_to_day17": true
+  },
+  "completion_flags": {
+    "stage_a_frozen_protocol_verified": true,
+    "stage_b_benchmark_population_verified": true,
+    "stage_b_future_population_verified": true,
+    "stage_c_runtime_preflight_pass": true,
+    "stage_c_frozen_model_loaded": true,
+    "stage_c_day15_inference_reproduced": true,
+    "stage_d_future_inference_complete": true,
+    "stage_e_window_metrics_complete": true,
+    "stage_f_error_structure_complete": true,
+    "stage_g_composition_tables_complete": true,
+    "stage_h_temporal_curve_complete": true,
+    "stage_h_figures_complete": true
+  },
+  "formal_artifact_status": {
+    "future_inference_manifest.json": true,
+    "future_population_audit.json": true,
+    "future_predictions.csv": true,
+    "future_window_metrics.csv": true,
+    "future_class_performance.csv": true,
+    "future_confusion_matrices.csv": true,
+    "future_error_transitions.csv": true,
+    "future_prediction_distribution.csv": true,
+    "future_source_composition.csv": true,
+    "temporal_performance_curve.csv": true
+  },
+  "figure_artifact_status": {
+    "temporal_macro_f1_curve.png": true,
+    "temporal_accuracy_curve.png": true,
+    "temporal_negative_recall_curve.png": true
+  },
+  "created_utc": "2026-09-22T01:06:16.620302+00:00"
+}
