@@ -1,0 +1,31 @@
+{
+  "evaluation": {
+    "total_samples": 39400,
+    "early_samples": 19398,
+    "late_samples": 20002,
+    "model": "Meta-Llama-3-8B + Day04 LoRA",
+    "retrained": false
+  },
+  "performance": {
+    "EARLY": {
+      "accuracy": 0.6811526961542427,
+      "macro_f1": 0.575295887507094,
+      "weighted_f1": 0.6629000007831508
+    },
+    "LATE": {
+      "accuracy": 0.6444855514448555,
+      "macro_f1": 0.5381950690584613,
+      "weighted_f1": 0.6132829183220122
+    }
+  },
+  "degradation": {
+    "accuracy": -0.036667144709387145,
+    "macro_f1": -0.03710081844863278,
+    "weighted_f1": -0.049617082461138606
+  },
+  "class_f1_degradation": {
+    "negative": -0.06625597956221285,
+    "neutral": -0.026413558582664698,
+    "positive": -0.018632917201020838
+  }
+}
