@@ -1,0 +1,16 @@
+{
+  "decision": "B",
+  "decision_label": "localized_regime_shift",
+  "systematic_monotonic_degradation": false,
+  "localized_deterioration_detected": true,
+  "worst_window": "W4",
+  "partial_recovery_in_W5": true,
+  "key_transition": "W3_to_W4",
+  "w3_to_w4_change_pp": {
+    "accuracy": -8.45,
+    "macro_f1": -9.25,
+    "negative_recall": -16.46,
+    "negative_to_neutral": 17.46
+  },
+  "interpretation": "Temporal robustness is non-monotonic. Performance improves or remains relatively stable through W2-W3, deteriorates sharply in W4, and partially recovers in W5. The W4 deterioration is especially pronounced for the negative class and is accompanied by increased negative-to-neutral confusion and observable composition changes. These associations are descriptive and do not establish causality."
+}

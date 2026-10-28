@@ -1,0 +1,29 @@
+{
+  "baseline": {
+    "accuracy": 0.8680904522613065,
+    "macro_f1": 0.8320316007275789,
+    "negative_recall": 0.7694524495677233,
+    "negative_to_neutral": 0.22478386167146974
+  },
+  "early": {
+    "accuracy": 0.6811526961542427,
+    "macro_f1": 0.575295887507094,
+    "negative_recall": 0.3658661216147164,
+    "negative_to_neutral": 0.6014307613694431
+  },
+  "late": {
+    "accuracy": 0.6444855514448555,
+    "macro_f1": 0.5381950690584613,
+    "negative_recall": 0.27676340572746494,
+    "negative_to_neutral": 0.6844128387468768
+  },
+  "decision_gate": {
+    "decision": "A",
+    "baseline_credible": true,
+    "large_generalization_drop": true,
+    "continued_temporal_degradation": true,
+    "neutral_failure_amplified": true,
+    "interpretation": "Credible original baseline with substantial generalization loss and continued within-temporal degradation.",
+    "next_direction": "Preserve the current baseline and expand temporal robustness evaluation before model improvement."
+  }
+}

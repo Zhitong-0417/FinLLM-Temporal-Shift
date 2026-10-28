@@ -1,0 +1,3 @@
+comparison,accuracy_change_pp,macro_f1_change_pp,negative_recall_change_pp,negative_to_neutral_change_pp,predicted_neutral_share_change_pp
+Original Validation -> EARLY,-18.693775610706385,-25.67357132204848,-40.35863279530069,37.66468996979733,7.2212024137596975
+EARLY -> LATE,-3.6667144709387145,-3.7100818448632777,-8.910271588725143,8.298207737743368,2.28571121648532

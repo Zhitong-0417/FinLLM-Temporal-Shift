@@ -1,0 +1,60 @@
+{
+  "day": 11,
+  "title": "Multi-window Temporal Robustness Benchmark",
+  "evaluation_population": {
+    "n_samples": 39400,
+    "n_windows": 5,
+    "window_labels": [
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5"
+    ],
+    "partition_rule": "chronological non-overlapping approximately equal-count windows"
+  },
+  "model_policy": {
+    "fixed_model": true,
+    "retraining": false,
+    "prompt_tuning": false,
+    "threshold_tuning": false,
+    "new_inference": false
+  },
+  "main_findings": {
+    "worst_window": "W4",
+    "best_accuracy_window": "W2",
+    "best_macro_f1_window": "W2",
+    "w3_to_w4_change_pp": {
+      "accuracy": -8.45,
+      "macro_f1": -9.25,
+      "negative_recall": -16.46,
+      "negative_to_neutral": 17.46
+    },
+    "negative_recall_by_window": {
+      "W1": 0.307023,
+      "W2": 0.427997,
+      "W3": 0.39217,
+      "W4": 0.227572,
+      "W5": 0.285132
+    },
+    "negative_to_neutral_by_window": {
+      "W1": 0.665119,
+      "W2": 0.537173,
+      "W3": 0.565362,
+      "W4": 0.739918,
+      "W5": 0.67057
+    },
+    "interpretation": "Temporal robustness is non-monotonic. W2-W3 are relatively stronger, W4 shows pronounced deterioration, and W5 partially recovers. The negative class is especially vulnerable in W4, with a sharp increase in negative-to-neutral confusion."
+  },
+  "day07_integration": {
+    "observation_level_alignment_verified": true,
+    "matched_rows": 39400,
+    "descriptive_shift_indicators_added": true,
+    "causal_interpretation": false
+  },
+  "decision_gate": {
+    "decision": "B",
+    "label": "localized_regime_shift"
+  },
+  "conclusion": "Day 11 refines the earlier EARLY/LATE temporal degradation finding: the degradation is not uniformly progressive across time, but is concentrated in a pronounced W4 deterioration with partial recovery in W5."
+}
