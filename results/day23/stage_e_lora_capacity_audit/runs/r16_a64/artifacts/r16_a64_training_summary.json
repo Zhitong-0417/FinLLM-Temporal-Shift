@@ -1,0 +1,74 @@
+{
+  "day": 23,
+  "stage": "E",
+  "condition": "r16_a64",
+  "sampling": "natural",
+  "learning_rate": 0.0002,
+  "lora": {
+    "r": 16,
+    "alpha": 64,
+    "dropout": 0.1
+  },
+  "training": {
+    "final_global_step": 500,
+    "training_loss": 0.3999615972042084,
+    "runtime_seconds": 3446.5050735473633,
+    "runtime_minutes": 57.44175122578939,
+    "peak_gpu_gb": 8.859319686889648
+  },
+  "evaluation": {
+    "split": "optimization_dev",
+    "step": 500,
+    "eval_loss": 0.19689752161502838,
+    "eval_runtime": 501.9325
+  },
+  "learning_rate_trajectory": {
+    "step_100": 0.00016367346938775512,
+    "step_200": 0.00012285714285714287,
+    "step_300": 8.204081632653062e-05,
+    "step_400": 4.122448979591837e-05,
+    "step_500": 4.081632653061225e-07,
+    "final_scheduler_epoch": 500,
+    "final_scheduler_lr": [
+      0.0,
+      0.0
+    ]
+  },
+  "checkpoint": {
+    "directory": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/runs/r16_a64/model/checkpoints/checkpoint-500",
+    "all_checkpoint_dirs": [
+      "checkpoint-500"
+    ],
+    "checks": {
+      "checkpoint_exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true,
+      "trainer_state_exists": true,
+      "optimizer_state_exists": true,
+      "scheduler_state_exists": true
+    }
+  },
+  "checks": {
+    "training_completed_500_steps": true,
+    "training_loss_finite": true,
+    "training_log_nonempty": true,
+    "final_eval_triggered": true,
+    "final_save_triggered": true,
+    "exactly_one_eval": true,
+    "eval_at_step_500": true,
+    "eval_loss_finite": true,
+    "only_checkpoint_500": true,
+    "checkpoint_500_complete": true,
+    "lr_100_observed": true,
+    "lr_200_observed": true,
+    "lr_300_observed": true,
+    "lr_400_observed": true,
+    "lr_500_observed": true,
+    "lr_positive_before_end": true,
+    "scheduler_reaches_end_at_500": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T01:09:13.558145+00:00"
+}

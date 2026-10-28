@@ -1,0 +1,64 @@
+{
+  "day": 23,
+  "stage": "E",
+  "condition": "r16_a64",
+  "sampling": "natural",
+  "learning_rate": 0.0002,
+  "lora": {
+    "r": 16,
+    "alpha": 64,
+    "dropout": 0.1
+  },
+  "evaluation_population": "optimization_dev",
+  "n": 2708,
+  "metrics": {
+    "accuracy": 0.8526587887740029,
+    "macro_f1": 0.8207308045661784,
+    "weighted_f1": 0.8518464334277301,
+    "negative_recall": 0.7351778656126482,
+    "neutral_recall": 0.9035350509286998,
+    "positive_recall": 0.8048780487804879,
+    "minority_recall_floor": 0.7351778656126482,
+    "eval_loss": 0.19689752161502838,
+    "invalid_predictions": 0,
+    "invalid_prediction_rate": 0.0
+  },
+  "comparison_vs_r8_a32": {
+    "reference": "Stage D winner r8/a32",
+    "accuracy_delta": 0.00923190546528796,
+    "macro_f1_delta": 0.007214640864261268,
+    "weighted_f1_delta": 0.008181359293019663,
+    "negative_recall_delta": -0.015810276679841917,
+    "neutral_recall_delta": 0.023367285799880122,
+    "positive_recall_delta": -0.011257035647279534,
+    "minority_recall_floor_delta": -0.015810276679841917,
+    "eval_loss_delta": -0.01569671928882599,
+    "beats_reference_accuracy": true
+  },
+  "inference": {
+    "batch_size": 8,
+    "do_sample": false,
+    "max_new_tokens": 4,
+    "padding_side": "left",
+    "runtime_seconds": 369.73013639450073
+  },
+  "checks": {
+    "dev_population_2708": true,
+    "prediction_count_2708": true,
+    "zero_invalid_predictions": true,
+    "accuracy_finite": true,
+    "macro_f1_finite": true,
+    "weighted_f1_finite": true,
+    "negative_recall_finite": true,
+    "neutral_recall_finite": true,
+    "positive_recall_finite": true,
+    "confusion_total_2708": true,
+    "prediction_artifact_saved": true,
+    "class_metrics_saved": true,
+    "confusion_matrix_saved": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T01:19:19.264748+00:00"
+}

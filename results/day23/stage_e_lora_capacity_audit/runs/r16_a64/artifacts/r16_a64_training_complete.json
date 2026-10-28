@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "condition": "r16_a64",
+  "sampling": "natural",
+  "learning_rate": 0.0002,
+  "lora_r": 16,
+  "lora_alpha": 64,
+  "global_step": 500,
+  "checkpoint": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/runs/r16_a64/model/checkpoints/checkpoint-500",
+  "created_utc": "2026-10-08T01:09:13.566130+00:00"
+}

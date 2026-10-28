@@ -1,0 +1,84 @@
+{
+  "day": 23,
+  "stage": "E",
+  "name": "lora_capacity_audit",
+  "freeze_status": "STAGE_E_LORA_CAPACITY_PROTOCOL_FROZEN",
+  "objective": "Test whether increasing LoRA capacity improves historical Optimization Dev performance.",
+  "evaluation_population": "optimization_dev",
+  "fixed_configuration": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "sampling": "natural",
+    "learning_rate": 0.0002,
+    "max_steps": 500,
+    "effective_batch": 8,
+    "scheduler": "linear",
+    "warmup_steps": 10,
+    "seed": 42,
+    "max_seq_length": 512,
+    "dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "candidate_manifest": {
+    "r8_a32": {
+      "r": 8,
+      "alpha": 32,
+      "dropout": 0.1,
+      "status": "EXISTING_REFERENCE",
+      "reuse_existing_run": true,
+      "source": "Stage D winner",
+      "learning_rate": 0.0002,
+      "accuracy": 0.843426883308715,
+      "macro_f1": 0.8135161637019171,
+      "minority_recall_floor": 0.7509881422924901,
+      "eval_loss": 0.21259424090385437,
+      "adapter_path": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_d_learning_rate_audit/selected_adapter"
+    },
+    "r16_a64": {
+      "r": 16,
+      "alpha": 64,
+      "dropout": 0.1,
+      "status": "PENDING_FRESH_TRAINING",
+      "reuse_existing_run": false,
+      "learning_rate": 0.0002,
+      "run_dir": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_e_lora_capacity_audit/runs/r16_a64"
+    }
+  },
+  "selection_rule": {
+    "primary": "accuracy",
+    "secondary": "macro_f1",
+    "diagnostic": "minority_recall_floor",
+    "later_tie_break": "eval_loss",
+    "complexity_preference_if_effectively_tied": "prefer_r8_a32",
+    "posthoc_numeric_guardrail_allowed": false
+  },
+  "firewall": {
+    "historical_validation_allowed": false,
+    "future_f1_f6_allowed": false
+  },
+  "checks": {
+    "stage_d_complete": true,
+    "stage_d_winner_lr2e4": true,
+    "learning_rate_fixed_2e4": true,
+    "natural_sampling_fixed": true,
+    "max_steps_500": true,
+    "effective_batch_8": true,
+    "scheduler_linear": true,
+    "warmup_10": true,
+    "seed_42": true,
+    "reference_r8_a32": true,
+    "new_candidate_r16_a64": true,
+    "same_dropout": true,
+    "reference_adapter_exists": true,
+    "only_one_new_training_run": true,
+    "primary_metric_accuracy": true,
+    "no_posthoc_guardrail": true,
+    "optimization_dev_only": true,
+    "historical_validation_locked": true,
+    "future_locked": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T00:07:29.734487+00:00"
+}

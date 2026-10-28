@@ -1,0 +1,56 @@
+{
+  "day": 23,
+  "stage": "E",
+  "condition": "r16_a64",
+  "sampling": "natural",
+  "learning_rate": 0.0002,
+  "initialization": "fresh_base_plus_fresh_lora",
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "training": {
+    "max_steps": 500,
+    "learning_rate": 0.0002,
+    "scheduler": "linear",
+    "warmup_steps": 10,
+    "effective_batch": 8,
+    "seed": 42
+  },
+  "lora": {
+    "r": 16,
+    "alpha": 64,
+    "dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "parameter_audit": {
+    "trainable_params": 6815744,
+    "total_params": 4547416064,
+    "unexpected_trainable_count": 0
+  },
+  "checks": {
+    "checkpoint_dir_clean": true,
+    "gpu_cleanup_completed": true,
+    "fresh_model_loaded": true,
+    "natural_sampling": true,
+    "train_n_10831": true,
+    "dev_n_2708": true,
+    "max_steps_500": true,
+    "lr_2e4": true,
+    "gradient_accumulation_8": true,
+    "scheduler_linear": true,
+    "warmup_10": true,
+    "seed_42": true,
+    "lora_r16": true,
+    "lora_alpha64": true,
+    "lora_dropout_0_1": true,
+    "trainable_params_6815744": true,
+    "only_lora_trainable": true,
+    "trainer_global_step_zero": true,
+    "eval_not_triggered": true,
+    "save_not_triggered": true,
+    "historical_validation_locked": true,
+    "future_locked": true
+  },
+  "all_checks_pass": true
+}
