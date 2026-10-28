@@ -1,0 +1,55 @@
+{
+  "day": 22,
+  "part": 1,
+  "status": "COMPLETE",
+  "research_objective": "Improve historical financial sentiment model accuracy before renewed temporal evaluation.",
+  "completed_stages": {
+    "stage_a": {
+      "status": "COMPLETE",
+      "role": "200-step historical baseline",
+      "optimization_dev_accuracy": 0.779542,
+      "optimization_dev_macro_f1": 0.726037
+    },
+    "stage_b": {
+      "status": "COMPLETE",
+      "role": "training horizon adequacy audit",
+      "selected_horizon": 500,
+      "selected_eval_loss": 0.215775,
+      "optimization_dev_accuracy": 0.840842,
+      "optimization_dev_macro_f1": 0.808201,
+      "accuracy_gain_vs_stage_a_pp": 6.13,
+      "conclusion": "The original 200-step training budget was materially insufficient. A controlled 500-step trajectory substantially improved classification performance."
+    },
+    "stage_c_inverse_sqrt": {
+      "status": "COMPLETE",
+      "sampling": "inverse_sqrt",
+      "optimization_dev_accuracy": 0.822009,
+      "optimization_dev_macro_f1": 0.796423,
+      "negative_recall": 0.810277,
+      "neutral_recall": 0.823847,
+      "positive_recall": 0.827392,
+      "accuracy_delta_vs_stage_b_pp": -1.88,
+      "beats_stage_b_accuracy": false,
+      "interpretation": "Moderate class rebalancing improved minority-class recall but reduced neutral recall and overall accuracy."
+    }
+  },
+  "current_incumbent": {
+    "model": "Stage B-500 natural sampling",
+    "accuracy": 0.840842,
+    "macro_f1": 0.808201,
+    "negative_recall": 0.721344,
+    "neutral_recall": 0.889754,
+    "positive_recall": 0.801126
+  },
+  "data_firewall": {
+    "historical_validation_used_for_tuning": false,
+    "future_f1_f6_used_for_tuning": false,
+    "status": "INTACT"
+  },
+  "stage_c_status": {
+    "natural": "COMPLETE_INCUMBENT",
+    "inverse_sqrt": "COMPLETE_NOT_WINNER",
+    "capped_balanced": "PENDING"
+  },
+  "created_utc": "2026-10-07T06:41:11.964825+00:00"
+}

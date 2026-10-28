@@ -1,0 +1,34 @@
+{
+  "day": 22,
+  "resume_from": "Stage C capped-balanced candidate",
+  "next_formal_task": "Initialize fresh capped-balanced weighted-sampling model and trainer.",
+  "do_not_repeat": [
+    "Stage A baseline training",
+    "Stage B 500-step horizon audit",
+    "Stage A vs Stage B fair comparison",
+    "Stage C protocol freeze",
+    "Stage C deterministic sampler audit",
+    "inverse-sqrt 500-step training",
+    "inverse-sqrt Optimization Dev classification evaluation"
+  ],
+  "pending_sequence": [
+    "Stage C capped-balanced infrastructure",
+    "Stage C capped-balanced 500-step training",
+    "Stage C capped-balanced classification evaluation",
+    "Stage C three-condition selection",
+    "Stage D learning-rate audit",
+    "Stage D winner selection",
+    "Stage E LoRA-capacity audit",
+    "Stage E winner selection",
+    "multi-seed confirmation",
+    "final configuration freeze",
+    "one-shot Historical Validation evaluation",
+    "Day 22 final artifact audit and notebook completion"
+  ],
+  "current_incumbent": "Stage B-500 natural sampling",
+  "primary_selection_metric": "accuracy",
+  "optimization_dev_only": true,
+  "historical_validation_locked": true,
+  "future_f1_f6_locked": true,
+  "created_utc": "2026-10-07T06:41:11.964951+00:00"
+}
