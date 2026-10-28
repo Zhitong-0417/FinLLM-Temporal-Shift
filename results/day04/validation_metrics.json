@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.8680904522613065,
+  "macro_f1": 0.8320316007275789,
+  "weighted_f1": 0.8674082672446246,
+  "num_validation_examples": 2388,
+  "training_steps": 200,
+  "base_model": "meta-llama/Meta-Llama-3-8B"
+}
