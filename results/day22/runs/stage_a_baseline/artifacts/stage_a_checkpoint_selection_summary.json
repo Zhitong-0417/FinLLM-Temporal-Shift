@@ -1,0 +1,59 @@
+{
+  "day": 22,
+  "stage": "A",
+  "artifact": "stage_a_checkpoint_selection_summary",
+  "selection_protocol": {
+    "candidate_steps": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "selection_split": "optimization_dev",
+    "metric": "eval_loss",
+    "direction": "minimize",
+    "tie_break": "smaller_step"
+  },
+  "selected_checkpoint": {
+    "step": 200,
+    "eval_loss": 0.2657395303249359,
+    "source_directory": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_a_baseline/model/checkpoints/checkpoint-200",
+    "frozen_adapter_directory": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_a_baseline/model/selected_adapter"
+  },
+  "training_adequacy_signal": {
+    "selected_at_upper_boundary": true,
+    "eval_loss_step_150": 0.2795926332473755,
+    "eval_loss_step_200": 0.2657395303249359,
+    "absolute_improvement_150_to_200": 0.013853102922439575,
+    "relative_improvement_150_to_200": 0.049547453241311795,
+    "stage_b_horizon_audit_required": true,
+    "interpretation": "The formal Stage A optimum occurs at the maximum allowed training horizon and validation loss continues to improve from step 150 to step 200. The 200-step budget therefore does not establish convergence; Stage B horizon extension is required."
+  },
+  "firewall": {
+    "historical_validation_used": false,
+    "future_f1_f6_used": false
+  },
+  "checks": {
+    "candidate_row_n_4": true,
+    "candidate_steps_exact": true,
+    "one_eval_per_candidate": true,
+    "candidate_eval_losses_finite": true,
+    "selected_checkpoint_exists": true,
+    "selected_adapter_config_exists": true,
+    "selected_adapter_weights_exist": true,
+    "selected_adapter_dir_exists": true,
+    "frozen_adapter_config_exists": true,
+    "frozen_adapter_weights_exist": true,
+    "selection_metric_eval_loss": true,
+    "selection_direction_minimize": true,
+    "selected_step_is_argmin": true,
+    "selected_step_200": true,
+    "selected_at_upper_boundary": true,
+    "loss_improved_150_to_200": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "freeze_status": "STAGE_A_BASELINE_FROZEN",
+  "created_utc": "2026-10-07T03:20:28.515679+00:00"
+}

@@ -1,0 +1,116 @@
+{
+  "day": 22,
+  "stage": "A",
+  "stage_name": "baseline_reproduction",
+  "objective": "Reproduce the Day 15 baseline configuration on the Day 22 frozen Optimization Train / Optimization Dev split.",
+  "data_protocol": {
+    "parent_population": "Day14 frozen Historical Train",
+    "training_split": "optimization_train",
+    "training_n": 10831,
+    "evaluation_split": "optimization_dev",
+    "evaluation_n": 2708,
+    "sampling": "natural",
+    "historical_validation_used_for_selection": false,
+    "future_f1_f6_used": false,
+    "optimization_split_audit": "/content/drive/MyDrive/FinGPT_Project/results/day22/protocol/historical_optimization_split_audit.json"
+  },
+  "base_model": {
+    "model_name": "meta-llama/Meta-Llama-3-8B",
+    "task": "causal_language_modeling",
+    "trust_remote_code": true,
+    "device_map": "auto"
+  },
+  "quantization": {
+    "enabled": true,
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16"
+  },
+  "lora": {
+    "r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "bias": "none",
+    "task_type": "CAUSAL_LM",
+    "inference_mode": false
+  },
+  "sequence_protocol": {
+    "max_seq_length": 512,
+    "instruction_text": "Classify the sentiment of the following financial news as negative, neutral, or positive.",
+    "prompt_template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: ",
+    "target_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "append_eos_token": true,
+    "loss_masking": "Mask complete prompt with -100; compute loss only on target label + EOS.",
+    "training_padding_side": "right",
+    "training_pad_token": "eos_token",
+    "padding_label_value": -100
+  },
+  "training": {
+    "max_steps": 200,
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_train_batch_size": 8,
+    "learning_rate": 0.0001,
+    "warmup_steps": 10,
+    "weight_decay": 0.0,
+    "gradient_checkpointing": true,
+    "logging_steps": 10,
+    "eval_steps": 25,
+    "save_steps": 50,
+    "seed": 42,
+    "data_seed": 42
+  },
+  "checkpoint_selection": {
+    "candidate_steps": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "selection_split": "optimization_dev",
+    "selection_metric": "eval_loss",
+    "selection_direction": "minimize",
+    "early_stopping": false,
+    "historical_validation_metrics_allowed": false,
+    "future_metrics_allowed": false
+  },
+  "inference": {
+    "model_mode": "eval",
+    "padding_side": "left",
+    "pad_token": "eos_token",
+    "max_new_tokens": 4,
+    "do_sample": false,
+    "postprocessing": [
+      "decode generated tokens only",
+      "skip special tokens",
+      "strip whitespace",
+      "lowercase"
+    ],
+    "valid_predictions": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "day15_reference": {
+    "accuracy": 0.789042498719918,
+    "macro_f1": 0.7456777707898534,
+    "weighted_f1": 0.7889070414565585,
+    "negative_recall": 0.6395759717314488,
+    "neutral_recall": 0.8421480878763222,
+    "positive_recall": 0.7634615384615384,
+    "selected_checkpoint_step": 200
+  },
+  "freeze_status": "FROZEN_BEFORE_STAGE_A_TRAINING",
+  "created_utc": "2026-10-07T03:17:17.172097+00:00"
+}

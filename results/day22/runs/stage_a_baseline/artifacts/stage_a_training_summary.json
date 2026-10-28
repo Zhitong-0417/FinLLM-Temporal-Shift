@@ -1,0 +1,77 @@
+{
+  "day": 22,
+  "stage": "A",
+  "artifact": "stage_a_training_summary",
+  "training_status": "PASS",
+  "population": {
+    "optimization_train_n": 10831,
+    "optimization_dev_n": 2708,
+    "historical_validation_used": false,
+    "future_f1_f6_used": false
+  },
+  "training": {
+    "final_global_step": 200,
+    "final_train_loss": 0.7811464953422547,
+    "runtime_seconds": 5082.941953420639,
+    "runtime_minutes": 84.71569922367732,
+    "peak_gpu_allocation_gb": 8.806620121002197,
+    "seed": 42
+  },
+  "evaluation": {
+    "observed_eval_steps": [
+      25,
+      50,
+      75,
+      100,
+      125,
+      150,
+      175,
+      200
+    ]
+  },
+  "checkpoints": {
+    "50": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_a_baseline/model/checkpoints/checkpoint-50",
+      "exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true
+    },
+    "100": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_a_baseline/model/checkpoints/checkpoint-100",
+      "exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true
+    },
+    "150": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_a_baseline/model/checkpoints/checkpoint-150",
+      "exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true
+    },
+    "200": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_a_baseline/model/checkpoints/checkpoint-200",
+      "exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true
+    }
+  },
+  "checks": {
+    "training_completed_200_steps": true,
+    "training_loss_finite": true,
+    "training_log_nonempty": true,
+    "evaluation_logs_present": true,
+    "eval_step_25_present": true,
+    "eval_step_50_present": true,
+    "eval_step_100_present": true,
+    "eval_step_150_present": true,
+    "eval_step_200_present": true,
+    "checkpoint_50_complete": true,
+    "checkpoint_100_complete": true,
+    "checkpoint_150_complete": true,
+    "checkpoint_200_complete": true,
+    "historical_validation_not_used": true,
+    "future_data_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-07T00:28:33.826726+00:00"
+}
