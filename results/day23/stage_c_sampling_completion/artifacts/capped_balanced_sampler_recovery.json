@@ -1,0 +1,63 @@
+{
+  "day": 23,
+  "condition": "capped_balanced",
+  "recovered_from_day22": true,
+  "sampler": {
+    "type": "WeightedRandomSampler",
+    "replacement": true,
+    "seed": 42,
+    "total_draws": 4000,
+    "draw_sequence_sha256": "538419c7cfb8bdcba5a0110d10ac3965dbbc1f29fba6dbfc523faf3a21143928"
+  },
+  "class_weights": {
+    "negative": 2.9731985940246046,
+    "neutral": 1.0,
+    "positive": 3.0
+  },
+  "expected_probabilities": {
+    "negative": 0.35808022012911417,
+    "neutral": 0.35808022012911417,
+    "positive": 0.2838395597417716
+  },
+  "realized_counts": {
+    "negative": 1425,
+    "neutral": 1458,
+    "positive": 1117
+  },
+  "realized_probabilities": {
+    "negative": 0.35625,
+    "neutral": 0.3645,
+    "positive": 0.27925
+  },
+  "unique_indices": 3182,
+  "unique_fraction": 0.7955,
+  "max_probability_deviation": 0.006419779870885822,
+  "day22_match": {
+    "expected_probabilities": true,
+    "realized_counts": true,
+    "realized_probabilities": true,
+    "unique_indices": true,
+    "unique_fraction": true
+  },
+  "checks": {
+    "max_steps_500": true,
+    "effective_batch_8": true,
+    "total_draws_4000": true,
+    "sampler_seed_42": true,
+    "replacement_true": true,
+    "sample_weights_n_10831": true,
+    "draw_sequence_n_4000": true,
+    "all_indices_valid": true,
+    "all_classes_present": true,
+    "deterministic_sequence_exact": true,
+    "expected_probabilities_match_day22": true,
+    "realized_counts_match_day22": true,
+    "realized_probabilities_match_day22": true,
+    "unique_indices_match_day22": true,
+    "unique_fraction_match_day22": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-08T03:23:52.376281+00:00"
+}
