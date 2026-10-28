@@ -1,0 +1,56 @@
+{
+  "day": 23,
+  "stage": "C",
+  "objective": "historical optimization with primary target Accuracy",
+  "evaluation_population": "optimization_dev",
+  "selection_rule": {
+    "primary": "accuracy",
+    "secondary": "macro_f1",
+    "diagnostic": "minority_recall_floor",
+    "posthoc_numeric_guardrail_added": false
+  },
+  "winner": {
+    "condition": "natural",
+    "sampling": "Natural",
+    "accuracy": 0.8408419497784343,
+    "macro_f1": 0.8082013307079015,
+    "negative_recall": 0.7213438735177866,
+    "neutral_recall": 0.889754343918514,
+    "positive_recall": 0.801125703564728,
+    "minority_recall_floor": 0.7213438735177866,
+    "adapter_path": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day22/runs/stage_b_horizon_audit/model/selected_adapter"
+  },
+  "interpretation": {
+    "natural_highest_accuracy": true,
+    "natural_highest_macro_f1": true,
+    "inverse_sqrt_improves_minority_floor": true,
+    "inverse_sqrt_reduces_accuracy": true,
+    "capped_balanced_improves_minority_floor": true,
+    "capped_balanced_reduces_accuracy": true,
+    "reweighting_shifts_recall_from_neutral_toward_minority_classes": true
+  },
+  "checks": {
+    "natural_accuracy_match": true,
+    "natural_macro_f1_match": true,
+    "inverse_sqrt_accuracy_match": true,
+    "inverse_sqrt_macro_f1_match": true,
+    "capped_balanced_accuracy_match": true,
+    "capped_balanced_macro_f1_match": true,
+    "three_conditions_present": true,
+    "winner_is_natural": true,
+    "natural_highest_accuracy": true,
+    "natural_highest_macro_f1": true,
+    "inverse_improves_minority_floor": true,
+    "capped_improves_minority_floor": true,
+    "inverse_reduces_accuracy": true,
+    "capped_reduces_accuracy": true,
+    "inverse_reduces_neutral_recall": true,
+    "capped_reduces_neutral_recall": true,
+    "winner_adapter_exists": true,
+    "no_posthoc_numeric_guardrail": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-07T21:27:57.936929+00:00"
+}
