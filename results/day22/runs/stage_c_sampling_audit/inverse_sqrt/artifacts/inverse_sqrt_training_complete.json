@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "condition": "inverse_sqrt",
+  "global_step": 500,
+  "checkpoint": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_c_sampling_audit/inverse_sqrt/model/checkpoints/checkpoint-500",
+  "created_utc": "2026-10-07T06:29:17.180321+00:00"
+}

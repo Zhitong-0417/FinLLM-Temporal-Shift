@@ -1,0 +1,33 @@
+{
+  "day": 22,
+  "stage": "C",
+  "condition": "inverse_sqrt",
+  "evaluation_population": "optimization_dev",
+  "n": 2708,
+  "eval_loss": 0.22835159301757812,
+  "accuracy": 0.8220088626292467,
+  "macro_f1": 0.7964232819309564,
+  "weighted_f1": 0.8248070444634396,
+  "class_recall": {
+    "negative": 0.8102766798418972,
+    "neutral": 0.8238466147393649,
+    "positive": 0.8273921200750469
+  },
+  "minority_recall_floor": 0.8102766798418972,
+  "invalid_prediction_n": 0,
+  "invalid_prediction_rate": 0.0,
+  "delta_vs_stage_b": {
+    "accuracy": -0.018833137370753317,
+    "macro_f1": -0.011777718069043597,
+    "negative_recall": 0.08893267984189723,
+    "neutral_recall": -0.06590738526063511,
+    "positive_recall": 0.026266120075046917,
+    "minority_recall_floor": 0.08893267984189723
+  },
+  "beats_stage_b_accuracy": false,
+  "firewall": {
+    "historical_validation_used": false,
+    "future_f1_f6_used": false
+  },
+  "created_utc": "2026-10-07T06:37:09.294383+00:00"
+}

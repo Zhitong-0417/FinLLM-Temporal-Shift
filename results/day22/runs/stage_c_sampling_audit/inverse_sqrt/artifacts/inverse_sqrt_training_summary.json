@@ -1,0 +1,77 @@
+{
+  "day": 22,
+  "stage": "C",
+  "condition": "inverse_sqrt",
+  "sampling": {
+    "sampler": "WeightedRandomSampler",
+    "replacement": true,
+    "seed": 42,
+    "draws": 4000,
+    "class_weights": {
+      "negative": 1.7242965504879386,
+      "neutral": 1.0,
+      "positive": 1.9454242764015588
+    }
+  },
+  "training": {
+    "final_global_step": 500,
+    "training_loss": 0.46200464296340943,
+    "runtime_seconds": 3624.5395708084106,
+    "runtime_minutes": 60.408992846806846,
+    "peak_gpu_gb": 8.80022144317627
+  },
+  "evaluation": {
+    "step": 500,
+    "eval_loss": 0.22835159301757812,
+    "eval_runtime": 520.9127
+  },
+  "learning_rate": {
+    "step_100": 8.183673469387756e-05,
+    "step_200": 6.142857142857143e-05,
+    "step_300": 4.102040816326531e-05,
+    "step_400": 2.0612244897959186e-05,
+    "step_500": 2.0408163265306124e-07,
+    "final_scheduler_epoch": 500,
+    "final_scheduler_lr": [
+      0.0,
+      0.0
+    ]
+  },
+  "checkpoint": {
+    "directory": "/content/drive/MyDrive/FinGPT_Project/results/day22/runs/stage_c_sampling_audit/inverse_sqrt/model/checkpoints/checkpoint-500",
+    "all_checkpoint_dirs": [
+      "checkpoint-500"
+    ],
+    "checks": {
+      "checkpoint_exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true,
+      "trainer_state_exists": true,
+      "optimizer_state_exists": true,
+      "scheduler_state_exists": true
+    }
+  },
+  "checks": {
+    "training_completed_500_steps": true,
+    "training_loss_finite": true,
+    "training_log_nonempty": true,
+    "final_eval_triggered": true,
+    "final_save_triggered": true,
+    "exactly_one_eval": true,
+    "eval_at_step_500": true,
+    "eval_loss_finite": true,
+    "only_checkpoint_500": true,
+    "checkpoint_500_complete": true,
+    "lr_step_100_observed": true,
+    "lr_step_200_observed": true,
+    "lr_step_300_observed": true,
+    "lr_step_400_observed": true,
+    "lr_step_500_observed": true,
+    "lr_positive_before_end": true,
+    "scheduler_reaches_end_at_500": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-07T06:29:17.170814+00:00"
+}
