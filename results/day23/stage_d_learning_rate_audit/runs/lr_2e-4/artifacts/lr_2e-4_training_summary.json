@@ -1,0 +1,69 @@
+{
+  "day": 23,
+  "stage": "D",
+  "condition": "lr_2e-4",
+  "sampling": "natural",
+  "learning_rate": 0.0002,
+  "training": {
+    "final_global_step": 500,
+    "training_loss": 0.40264508867263793,
+    "runtime_seconds": 3439.6284885406494,
+    "runtime_minutes": 57.32714147567749,
+    "peak_gpu_gb": 8.808538436889648
+  },
+  "evaluation": {
+    "split": "optimization_dev",
+    "step": 500,
+    "eval_loss": 0.21259424090385437,
+    "eval_runtime": 499.9684
+  },
+  "learning_rate_trajectory": {
+    "step_100": 0.00016367346938775512,
+    "step_200": 0.00012285714285714287,
+    "step_300": 8.204081632653062e-05,
+    "step_400": 4.122448979591837e-05,
+    "step_500": 4.081632653061225e-07,
+    "final_scheduler_epoch": 500,
+    "final_scheduler_lr": [
+      0.0,
+      0.0
+    ]
+  },
+  "checkpoint": {
+    "directory": "/content/gdrive_day23/MyDrive/FinGPT_Project/results/day23/stage_d_learning_rate_audit/runs/lr_2e-4/model/checkpoints/checkpoint-500",
+    "all_checkpoint_dirs": [
+      "checkpoint-500"
+    ],
+    "checks": {
+      "checkpoint_exists": true,
+      "adapter_config_exists": true,
+      "adapter_weights_exist": true,
+      "trainer_state_exists": true,
+      "optimizer_state_exists": true,
+      "scheduler_state_exists": true
+    }
+  },
+  "checks": {
+    "training_completed_500_steps": true,
+    "training_loss_finite": true,
+    "training_log_nonempty": true,
+    "final_eval_triggered": true,
+    "final_save_triggered": true,
+    "exactly_one_eval": true,
+    "eval_at_step_500": true,
+    "eval_loss_finite": true,
+    "only_checkpoint_500": true,
+    "checkpoint_500_complete": true,
+    "lr_100_observed": true,
+    "lr_200_observed": true,
+    "lr_300_observed": true,
+    "lr_400_observed": true,
+    "lr_500_observed": true,
+    "lr_positive_before_end": true,
+    "scheduler_reaches_end_at_500": true,
+    "historical_validation_not_used": true,
+    "future_not_used": true
+  },
+  "all_checks_pass": true,
+  "created_utc": "2026-10-07T23:50:38.861815+00:00"
+}
