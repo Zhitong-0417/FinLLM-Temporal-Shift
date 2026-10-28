@@ -1,0 +1,43 @@
+{
+  "dataset": {
+    "dataset_id": "remehostingservices/finance-news-sentiment-35k",
+    "full_clean_samples": 39965,
+    "temporal_window_samples": 39400,
+    "excluded_sparse_samples": 565,
+    "full_date_start": "2023-02-09 14:00:09",
+    "full_date_end": "2026-06-05 12:59:13",
+    "temporal_window_start": "2025-06-03 21:06:16",
+    "temporal_window_end": "2026-06-05 12:59:13"
+  },
+  "temporal_split": {
+    "cutoff": "2026-01-01",
+    "early_samples": 19398,
+    "late_samples": 20002,
+    "early_start": "2025-06-03 21:06:16",
+    "early_end": "2025-12-31 21:05:31",
+    "late_start": "2026-01-01 04:05:22",
+    "late_end": "2026-06-05 12:59:13",
+    "non_overlap": true
+  },
+  "shift_metrics": {
+    "label_tvd": 0.058350608902404955,
+    "label_chi_square": 193.90911240350462,
+    "label_chi_square_p_value": 7.819360681972185e-43,
+    "char_length_ks": 0.046844779384315416,
+    "char_length_ks_p_value": 3.219827564517726e-19,
+    "vocabulary_top50_jaccard": 0.5873015873015873,
+    "financial_context_tvd": 0.13368149214566122,
+    "source_composition_tvd": 0.04420653923884859
+  },
+  "acceptance": {
+    "real_documented_timestamp": true,
+    "chronologically_sorted": true,
+    "early_late_non_overlap": true,
+    "sufficient_samples_both_periods": true,
+    "all_sentiment_classes_present": true,
+    "quantitative_shift_diagnostics": true,
+    "shift_evidence_summarized": true,
+    "overall_diagnostic_pass": true
+  },
+  "conclusion": "The EARLY/LATE split provides a valid and empirically characterized temporal distribution-shift setting for Day 08 robustness evaluation."
+}

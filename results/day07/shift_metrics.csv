@@ -1,0 +1,6 @@
+dimension,metric,value,interpretation
+Label,TVD,0.058350608902404955,Measurable label-composition shift
+Text,KS statistic (char length),0.046844779384315416,Small text-length distribution shift
+Vocabulary,Top-50 Jaccard similarity,0.5873015873015873,Meaningful vocabulary turnover
+Financial context,TVD,0.13368149214566122,Clear financial-context shift
+Source composition,TVD,0.04420653923884859,Present but comparatively limited source shift
