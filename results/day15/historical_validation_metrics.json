@@ -1,0 +1,33 @@
+{
+  "day": 15,
+  "artifact": "historical_validation_metrics",
+  "model_id": "M_H",
+  "split": "historical_validation",
+  "n_observations": 5859,
+  "accuracy": 0.789042498719918,
+  "macro_f1": 0.7456777707898534,
+  "weighted_f1": 0.7889070414565585,
+  "class_recall": {
+    "negative": 0.6395759717314488,
+    "neutral": 0.8421480878763222,
+    "positive": 0.7634615384615384
+  },
+  "predicted_class_distribution": {
+    "negative": {
+      "count": 976,
+      "proportion": 0.16658132787165045
+    },
+    "neutral": {
+      "count": 3676,
+      "proportion": 0.6274108209592081
+    },
+    "positive": {
+      "count": 1207,
+      "proportion": 0.2060078511691415
+    }
+  },
+  "future_observations_used": 0,
+  "selected_checkpoint_step": 200,
+  "selected_checkpoint_eval_loss": 0.24941079318523407,
+  "created_utc": "2026-09-21T19:22:29.791310+00:00"
+}

@@ -1,0 +1,155 @@
+{
+  "day": 14,
+  "artifact": "chronological_split_spec",
+  "benchmark_population": {
+    "dataset": "Dataset B",
+    "n_observations": 39400,
+    "start_timestamp_utc": "2025-06-03T21:06:16+00:00",
+    "end_timestamp_utc": "2026-06-05T12:59:13+00:00"
+  },
+  "historical_cutoff": {
+    "cutoff_timestamp_utc": "2026-01-01T00:00:00+00:00",
+    "selection_basis": "Pre-model calendar/sample-support feasibility; no model performance used."
+  },
+  "historical_train": {
+    "split_name": "historical_train",
+    "n_observations": 13539,
+    "start_timestamp_utc": "2025-06-03T21:06:16+00:00",
+    "end_timestamp_utc": "2025-10-31T21:14:14+00:00",
+    "negative_n": 2782,
+    "neutral_n": 8436,
+    "positive_n": 2321,
+    "n_sources": 6
+  },
+  "historical_validation": {
+    "split_name": "historical_validation",
+    "n_observations": 5859,
+    "start_timestamp_utc": "2025-11-01T01:50:30+00:00",
+    "end_timestamp_utc": "2025-12-31T21:05:31+00:00",
+    "negative_n": 1132,
+    "neutral_n": 3687,
+    "positive_n": 1040,
+    "n_sources": 7
+  },
+  "strictly_future_total": {
+    "split_name": "strictly_future_total",
+    "n_observations": 20002,
+    "start_timestamp_utc": "2026-01-01T04:05:22+00:00",
+    "end_timestamp_utc": "2026-06-05T12:59:13+00:00",
+    "negative_n": 5203,
+    "neutral_n": 11748,
+    "positive_n": 3051,
+    "n_sources": 8
+  },
+  "future_windows": [
+    {
+      "future_window": "F1",
+      "calendar_month": "2026-01",
+      "window_order": 1,
+      "start_timestamp_utc": "2026-01-01T04:05:22+00:00",
+      "end_timestamp_utc": "2026-01-31T18:59:53+00:00",
+      "midpoint_timestamp_utc": "2026-01-16T11:32:37.500000+00:00",
+      "n_observations": 3602,
+      "negative_n": 679,
+      "neutral_n": 2288,
+      "positive_n": 635,
+      "n_sources": 6,
+      "is_partial_month": false,
+      "days_from_train_end_to_midpoint": 76.59610532407407,
+      "days_from_development_end_to_midpoint": 15.602158564814815
+    },
+    {
+      "future_window": "F2",
+      "calendar_month": "2026-02",
+      "window_order": 2,
+      "start_timestamp_utc": "2026-02-01T01:13:53+00:00",
+      "end_timestamp_utc": "2026-02-28T23:24:40+00:00",
+      "midpoint_timestamp_utc": "2026-02-15T00:19:16.500000+00:00",
+      "n_observations": 3522,
+      "negative_n": 776,
+      "neutral_n": 2140,
+      "positive_n": 606,
+      "n_sources": 7,
+      "is_partial_month": false,
+      "days_from_train_end_to_midpoint": 106.12850115740741,
+      "days_from_development_end_to_midpoint": 45.13455439814815
+    },
+    {
+      "future_window": "F3",
+      "calendar_month": "2026-03",
+      "window_order": 3,
+      "start_timestamp_utc": "2026-03-01T00:27:38+00:00",
+      "end_timestamp_utc": "2026-03-31T23:58:33+00:00",
+      "midpoint_timestamp_utc": "2026-03-16T12:13:05.500000+00:00",
+      "n_observations": 4818,
+      "negative_n": 1735,
+      "neutral_n": 2539,
+      "positive_n": 544,
+      "n_sources": 7,
+      "is_partial_month": false,
+      "days_from_train_end_to_midpoint": 135.62420717592593,
+      "days_from_development_end_to_midpoint": 74.63026041666667
+    },
+    {
+      "future_window": "F4",
+      "calendar_month": "2026-04",
+      "window_order": 4,
+      "start_timestamp_utc": "2026-04-01T00:01:35+00:00",
+      "end_timestamp_utc": "2026-04-30T23:50:13+00:00",
+      "midpoint_timestamp_utc": "2026-04-15T23:55:54+00:00",
+      "n_observations": 3872,
+      "negative_n": 1036,
+      "neutral_n": 2219,
+      "positive_n": 617,
+      "n_sources": 7,
+      "is_partial_month": false,
+      "days_from_train_end_to_midpoint": 166.1122685185185,
+      "days_from_development_end_to_midpoint": 105.11832175925926
+    },
+    {
+      "future_window": "F5",
+      "calendar_month": "2026-05",
+      "window_order": 5,
+      "start_timestamp_utc": "2026-05-01T00:08:13+00:00",
+      "end_timestamp_utc": "2026-05-31T23:58:25+00:00",
+      "midpoint_timestamp_utc": "2026-05-16T12:03:19+00:00",
+      "n_observations": 3588,
+      "negative_n": 839,
+      "neutral_n": 2214,
+      "positive_n": 535,
+      "n_sources": 7,
+      "is_partial_month": false,
+      "days_from_train_end_to_midpoint": 196.61741898148148,
+      "days_from_development_end_to_midpoint": 135.62347222222223
+    },
+    {
+      "future_window": "F6",
+      "calendar_month": "2026-06",
+      "window_order": 6,
+      "start_timestamp_utc": "2026-06-01T00:01:32+00:00",
+      "end_timestamp_utc": "2026-06-05T12:59:13+00:00",
+      "midpoint_timestamp_utc": "2026-06-03T06:30:22.500000+00:00",
+      "n_observations": 600,
+      "negative_n": 138,
+      "neutral_n": 348,
+      "positive_n": 114,
+      "n_sources": 6,
+      "is_partial_month": true,
+      "days_from_train_end_to_midpoint": 214.38620949074075,
+      "days_from_development_end_to_midpoint": 153.39226273148148
+    }
+  ],
+  "ordering_rule": "historical_train < historical_validation < all future evaluation windows",
+  "future_data_prohibition": {
+    "training": true,
+    "checkpoint_selection": true,
+    "early_stopping": true,
+    "hyperparameter_selection": true,
+    "threshold_tuning": true
+  },
+  "partial_window_rule": {
+    "F6_is_partial": true,
+    "interpretation_rule": "F6 is retained because class support is adequate, but temporal-trend interpretation must explicitly acknowledge its partial-month status."
+  },
+  "freeze_status": "LOCKED"
+}

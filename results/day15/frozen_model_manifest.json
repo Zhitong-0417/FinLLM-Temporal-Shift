@@ -1,0 +1,161 @@
+{
+  "day": 15,
+  "artifact": "frozen_model_manifest",
+  "project": "Financial Language Models under Temporal Distribution Shift",
+  "model_identity": {
+    "model_id": "M_H",
+    "role": "Historical Dataset B model for primary within-dataset temporal benchmark",
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "adapter_initialization": "fresh LoRA initialized from common base model",
+    "day04_adapter_loaded": false,
+    "frozen_model_directory": "/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/frozen_selected_adapter",
+    "freeze_status": "FROZEN_BEFORE_FUTURE_EVALUATION"
+  },
+  "training_population": {
+    "split": "historical_train",
+    "n_observations": 13539,
+    "start_timestamp_utc": "2025-06-03T21:06:16+00:00",
+    "end_timestamp_utc": "2025-10-31T21:14:14+00:00",
+    "future_observations_used": 0
+  },
+  "validation_population": {
+    "split": "historical_validation",
+    "n_observations": 5859,
+    "start_timestamp_utc": "2025-11-01T01:50:30+00:00",
+    "end_timestamp_utc": "2025-12-31T21:05:31+00:00",
+    "future_observations_used": 0
+  },
+  "quantization": {
+    "enabled": true,
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16"
+  },
+  "lora_configuration": {
+    "r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "bias": "none",
+    "task_type": "CAUSAL_LM"
+  },
+  "sequence_protocol": {
+    "max_seq_length": 512,
+    "prompt_template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: ",
+    "target_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "loss_masking": "mask complete prompt with -100; compute causal-LM loss only on target/EOS tokens",
+    "training_pad_token": "eos_token",
+    "padding_label_value": -100
+  },
+  "training_protocol": {
+    "max_steps": 200,
+    "learning_rate": 0.0001,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_train_batch_size": 8,
+    "eval_steps": 25,
+    "save_steps": 50,
+    "warmup_steps": 10,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "data_seed": 42,
+    "training_runtime_minutes": 154.55224253733954,
+    "peak_gpu_allocation_gb": 9.274434566497803
+  },
+  "checkpoint_selection": {
+    "candidate_steps": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "selection_dataset": "historical_validation only",
+    "selection_metric": "eval_loss",
+    "selection_direction": "minimize",
+    "selected_checkpoint_step": 200,
+    "selected_checkpoint_path": "/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/training_checkpoints/checkpoint-200",
+    "selected_historical_validation_eval_loss": 0.24941079318523407,
+    "future_metrics_used": false
+  },
+  "historical_validation_baseline": {
+    "n_observations": 5859,
+    "accuracy": 0.789042498719918,
+    "macro_f1": 0.7456777707898534,
+    "weighted_f1": 0.7889070414565585,
+    "negative_recall": 0.6395759717314488,
+    "neutral_recall": 0.8421480878763222,
+    "positive_recall": 0.7634615384615384,
+    "predicted_class_distribution": {
+      "negative": {
+        "count": 976,
+        "proportion": 0.16658132787165045
+      },
+      "neutral": {
+        "count": 3676,
+        "proportion": 0.6274108209592081
+      },
+      "positive": {
+        "count": 1207,
+        "proportion": 0.2060078511691415
+      }
+    }
+  },
+  "inference_protocol": {
+    "model_mode": "eval",
+    "padding_side": "left",
+    "do_sample": false,
+    "max_new_tokens": 4,
+    "valid_predictions": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "future_firewall": {
+    "future_windows": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "future_observations_available": 20002,
+    "future_observations_used_for_training": 0,
+    "future_observations_used_for_validation": 0,
+    "future_metrics_used_for_checkpoint_selection": false,
+    "future_evaluation_status": "NOT_STARTED_DAY15"
+  },
+  "runtime": {
+    "python_version": "3.13.15",
+    "pytorch_version": "2.11.0+cu128",
+    "transformers_version": "5.16.1",
+    "datasets_version": "4.8.5",
+    "peft_version": "0.20.0",
+    "accelerate_version": "1.14.0",
+    "cuda_available": true,
+    "cuda_runtime": "12.8",
+    "gpu_name": "Tesla T4",
+    "gpu_total_memory_gb": 14.56317138671875
+  },
+  "provenance": {
+    "historical_train_manifest": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/historical_train_manifest.json",
+    "historical_validation_manifest": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/historical_validation_manifest.json",
+    "training_data_audit": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/training_data_audit.json",
+    "lora_training_log": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/lora_training_log.csv",
+    "checkpoint_selection": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/checkpoint_selection.csv",
+    "historical_validation_predictions": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/historical_validation_predictions.csv",
+    "historical_validation_metrics": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/historical_validation_metrics.csv",
+    "historical_validation_confusion": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/historical_validation_confusion.csv",
+    "historical_validation_pred_distribution": "/content/gdrive/MyDrive/FinGPT_Project/results/day15/historical_validation_pred_distribution.csv"
+  },
+  "created_utc": "2026-09-21T19:21:27.146346+00:00"
+}

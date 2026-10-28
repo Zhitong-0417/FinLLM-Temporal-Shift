@@ -1,0 +1,60 @@
+{
+  "day": 15,
+  "artifact": "historical_validation_manifest",
+  "project": "Financial Language Models under Temporal Distribution Shift",
+  "split_name": "historical_validation",
+  "dataset": "Dataset B",
+  "n_observations": 5859,
+  "n_sources": 7,
+  "start_timestamp_utc": "2025-11-01T01:50:30+00:00",
+  "end_timestamp_utc": "2025-12-31T21:05:31+00:00",
+  "label_counts": {
+    "negative": 1132,
+    "neutral": 3687,
+    "positive": 1040
+  },
+  "label_proportions": {
+    "negative": 0.19320703191670935,
+    "neutral": 0.6292882744495648,
+    "positive": 0.1775046936337259
+  },
+  "source_composition": {
+    "AGGRNEWSWIRE": {
+      "n": 9,
+      "proportion": 0.0015360983102918587
+    },
+    "MonitoringSituation": {
+      "n": 25,
+      "proportion": 0.004266939750810718
+    },
+    "TreeNewsFeed": {
+      "n": 5,
+      "proportion": 0.0008533879501621437
+    },
+    "WalterBloomberg": {
+      "n": 725,
+      "proportion": 0.12374125277351083
+    },
+    "ZoomerfiedNews": {
+      "n": 16,
+      "proportion": 0.00273084144051886
+    },
+    "cukkanews": {
+      "n": 4,
+      "proportion": 0.000682710360129715
+    },
+    "firstsquaw": {
+      "n": 5075,
+      "proportion": 0.8661887694145759
+    }
+  },
+  "observation_id_rule": "channel_username::message_id",
+  "observation_id_unique": true,
+  "train_validation_overlap": 0,
+  "day14_protocol_reference": {
+    "chronological_split_spec": "/content/gdrive/MyDrive/FinGPT_Project/results/day14/chronological_split_spec.json",
+    "benchmark_population_manifest": "/content/gdrive/MyDrive/FinGPT_Project/results/day14/benchmark_population_manifest.json"
+  },
+  "future_observations_in_split": 0,
+  "freeze_status": "LOCKED_FOR_DAY15_VALIDATION"
+}

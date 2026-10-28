@@ -1,0 +1,95 @@
+{
+  "day": 14,
+  "artifact": "benchmark_population_manifest",
+  "project": "Financial Language Models under Temporal Distribution Shift",
+  "benchmark_population": {
+    "dataset": "Dataset B",
+    "population_rule": "Day 13 dense temporal regime only",
+    "n_observations": 39400,
+    "start_timestamp_utc": "2025-06-03T21:06:16+00:00",
+    "end_timestamp_utc": "2026-06-05T12:59:13+00:00",
+    "chronologically_sorted": true
+  },
+  "excluded_population": {
+    "n_observations": 565,
+    "reason": "Sparse pre-June-2025 observations excluded from the primary benchmark because Day 13 identified them as belonging to a substantially different and sparse source regime."
+  },
+  "label_schema": {
+    "target_column": "sentiment",
+    "classes": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "label_provenance": "LLM-generated sentiment labels; not human gold",
+    "distribution": {
+      "negative": {
+        "count": 9117,
+        "proportion": 0.2313959390862944
+      },
+      "neutral": {
+        "count": 23871,
+        "proportion": 0.6058629441624366
+      },
+      "positive": {
+        "count": 6412,
+        "proportion": 0.16274111675126904
+      }
+    }
+  },
+  "source_schema": {
+    "source_column": "channel_username",
+    "n_unique_sources": 8,
+    "distribution": {
+      "firstsquaw": {
+        "count": 33190,
+        "proportion": 0.8423857868020305
+      },
+      "WalterBloomberg": {
+        "count": 4890,
+        "proportion": 0.12411167512690355
+      },
+      "MonitoringSituation": {
+        "count": 842,
+        "proportion": 0.021370558375634518
+      },
+      "apewirenews": {
+        "count": 212,
+        "proportion": 0.005380710659898477
+      },
+      "ZoomerfiedNews": {
+        "count": 150,
+        "proportion": 0.0038071065989847717
+      },
+      "AGGRNEWSWIRE": {
+        "count": 71,
+        "proportion": 0.001802030456852792
+      },
+      "TreeNewsFeed": {
+        "count": 31,
+        "proportion": 0.0007868020304568528
+      },
+      "cukkanews": {
+        "count": 14,
+        "proportion": 0.0003553299492385787
+      }
+    }
+  },
+  "required_columns": [
+    "message_id",
+    "channel_username",
+    "date",
+    "text",
+    "sentiment"
+  ],
+  "upstream_provenance": {
+    "dataset_source": "/content/gdrive/MyDrive/FinGPT_Project/results/day07/temporal_dataset_clean.csv",
+    "day13_dataset_source_audit": "/content/gdrive/MyDrive/FinGPT_Project/results/day13/dataset_source_audit.json",
+    "day13_label_provenance_audit": "/content/gdrive/MyDrive/FinGPT_Project/results/day13/label_provenance_audit.json",
+    "day13_timestamp_audit": "/content/gdrive/MyDrive/FinGPT_Project/results/day13/timestamp_audit.json",
+    "day13_duplicate_leakage_audit": "/content/gdrive/MyDrive/FinGPT_Project/results/day13/duplicate_leakage_audit.json",
+    "day13_benchmark_validity_summary": "/content/gdrive/MyDrive/FinGPT_Project/results/day13/benchmark_validity_summary.json"
+  },
+  "freeze_status": "LOCKED",
+  "downstream_rule": "All Day 14 cutoff, split, future-window, source-composition, and leakage analyses must operate only on this benchmark population."
+}

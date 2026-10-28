@@ -1,0 +1,144 @@
+{
+  "day": 14,
+  "artifact": "lora_training_protocol",
+  "purpose": "Pre-specify the Day 15 Dataset-B historical LoRA training recipe before observing any new Dataset-B-trained model performance.",
+  "data_protocol": {
+    "training_split": "historical_train",
+    "training_n": 13539,
+    "validation_split": "historical_validation",
+    "validation_n": 5859,
+    "training_start_utc": "2025-06-03T21:06:16+00:00",
+    "training_end_utc": "2025-10-31T21:14:14+00:00",
+    "validation_start_utc": "2025-11-01T01:50:30+00:00",
+    "validation_end_utc": "2025-12-31T21:05:31+00:00",
+    "future_windows_prohibited": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "future_data_may_not_affect": [
+      "training",
+      "checkpoint_selection",
+      "early_stopping",
+      "hyperparameter_selection",
+      "threshold_tuning",
+      "prompt_selection",
+      "label_mapping"
+    ]
+  },
+  "base_model": {
+    "model_name": "meta-llama/Meta-Llama-3-8B",
+    "model_family": "Meta-Llama-3",
+    "task": "causal_language_modeling",
+    "trust_remote_code": true,
+    "device_map": "auto"
+  },
+  "quantization": {
+    "enabled": true,
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16"
+  },
+  "lora": {
+    "task_type": "CAUSAL_LM",
+    "inference_mode": false,
+    "r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "bias": "none"
+  },
+  "sequence_protocol": {
+    "max_seq_length": 512,
+    "prompt_template": "Instruction:{instruction}\\nInput:{input}\\nAnswer: ",
+    "target": "sentiment label",
+    "target_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "append_eos_token": true,
+    "loss_masking": "mask complete prompt with -100; compute causal-LM loss only on target/EOS tokens",
+    "dynamic_batch_padding": true,
+    "padding_label_value": -100,
+    "training_pad_token": "eos_token"
+  },
+  "training": {
+    "max_steps": 200,
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_train_batch_size": 8,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_steps": 10,
+    "fp16": true,
+    "gradient_checkpointing": true,
+    "use_cache_during_training": false,
+    "logging_steps": 10,
+    "evaluation_strategy": "steps",
+    "eval_steps": 25,
+    "save_strategy": "steps",
+    "save_steps": 50,
+    "save_total_limit": 4,
+    "report_to": "none",
+    "remove_unused_columns": false,
+    "seed": 42,
+    "data_seed": 42
+  },
+  "checkpoint_selection": {
+    "candidate_steps": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "selection_dataset": "historical_validation only",
+    "selection_metric": "eval_loss",
+    "selection_direction": "minimize",
+    "early_stopping": false,
+    "maximum_training_budget_steps": 200,
+    "tie_break_rule": "If multiple checkpoints have numerically identical validation loss at stored precision, select the earliest step.",
+    "future_window_metrics_allowed": false
+  },
+  "inference": {
+    "model_mode": "eval",
+    "tokenizer_padding_side": "left",
+    "pad_token": "eos_token",
+    "generation": {
+      "max_new_tokens": 4,
+      "do_sample": false,
+      "pad_token_id": "eos_token_id",
+      "eos_token_id": "eos_token_id"
+    },
+    "prediction_postprocessing": [
+      "decode generated tokens only",
+      "skip special tokens",
+      "strip whitespace",
+      "lowercase"
+    ],
+    "valid_predictions": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "day04_comparability": {
+    "core_architecture_preserved": true,
+    "quantization_preserved": true,
+    "lora_configuration_preserved": true,
+    "sequence_length_preserved": true,
+    "optimization_hyperparameters_preserved": true,
+    "maximum_step_budget_preserved": true,
+    "generation_rule_preserved": true,
+    "intentional_protocol_change": "Day 04 retained the final 200-step model with load_best_model_at_end=False. Day 15 will instead select among pre-specified saved checkpoints using historical-validation eval_loss only."
+  },
+  "freeze_status": "LOCKED_BEFORE_DAY15"
+}

@@ -1,0 +1,5 @@
+checkpoint_step,checkpoint_path,checkpoint_exists,historical_validation_eval_loss,selected,selection_rule
+50,/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/training_checkpoints/checkpoint-50,True,0.3619799315929413,False,minimum historical-validation eval_loss among frozen candidate checkpoints
+100,/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/training_checkpoints/checkpoint-100,True,0.29732444882392883,False,minimum historical-validation eval_loss among frozen candidate checkpoints
+150,/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/training_checkpoints/checkpoint-150,True,0.27748221158981323,False,minimum historical-validation eval_loss among frozen candidate checkpoints
+200,/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/training_checkpoints/checkpoint-200,True,0.24941079318523407,True,minimum historical-validation eval_loss among frozen candidate checkpoints

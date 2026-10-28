@@ -1,0 +1,117 @@
+{
+  "day": 14,
+  "artifact": "evaluation_protocol",
+  "evaluation_scope": {
+    "historical_validation": true,
+    "future_windows": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "same_metric_implementation_for_all_splits": true
+  },
+  "label_schema": {
+    "labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "true_label_column": "sentiment",
+    "prediction_column": "prediction",
+    "case_normalization": "lowercase",
+    "whitespace_normalization": "strip leading/trailing whitespace"
+  },
+  "metrics": {
+    "primary": {
+      "name": "macro_f1",
+      "definition": "unweighted mean of per-class F1 scores",
+      "reason": "Primary temporal-generalization metric because class frequencies are unequal and class-specific failure modes are scientifically important."
+    },
+    "secondary": [
+      {
+        "name": "accuracy",
+        "role": "overall predictive correctness"
+      },
+      {
+        "name": "weighted_f1",
+        "role": "class-frequency-weighted predictive performance"
+      }
+    ],
+    "class_specific": [
+      "precision",
+      "recall",
+      "f1",
+      "support"
+    ]
+  },
+  "confusion_analysis": {
+    "matrix_label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "report_raw_counts": true,
+    "report_row_normalized_rates": true,
+    "directional_transitions": [
+      "negative->neutral",
+      "negative->positive",
+      "neutral->negative",
+      "neutral->positive",
+      "positive->negative",
+      "positive->neutral"
+    ],
+    "priority_failure_mode": "negative->neutral",
+    "transition_denominator": "number of observations in the corresponding true class"
+  },
+  "prediction_behavior": {
+    "report_predicted_class_counts": true,
+    "report_predicted_class_proportions": true,
+    "classes": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "purpose": "Detect systematic changes such as increased neutral prediction tendency over time."
+  },
+  "invalid_prediction_rule": {
+    "valid_exact_predictions": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "postprocessing": [
+      "decode generated tokens only",
+      "skip special tokens",
+      "strip whitespace",
+      "lowercase"
+    ],
+    "semantic_remapping": false,
+    "manual_correction": false,
+    "invalid_label": "invalid",
+    "invalid_predictions_count_as_errors": true,
+    "report_invalid_count": true,
+    "report_invalid_rate": true
+  },
+  "temporal_comparisons": {
+    "validation_is_historical_baseline": true,
+    "report_each_future_window_independently": true,
+    "compute_change_vs_historical_validation": true,
+    "compute_change_vs_F1": true,
+    "primary_change_metric": "macro_f1"
+  },
+  "partial_window_rule": {
+    "F6_retained": true,
+    "F6_is_partial_month": true,
+    "same_metrics_as_other_windows": true,
+    "interpretation_caution_required": true
+  },
+  "freeze_status": "LOCKED_BEFORE_MODEL_EVALUATION"
+}

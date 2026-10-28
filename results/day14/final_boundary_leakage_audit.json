@@ -1,0 +1,88 @@
+{
+  "day": 14,
+  "artifact": "final_boundary_leakage_audit",
+  "dataset_population": {
+    "population": "frozen_dense_benchmark",
+    "n": 39400,
+    "start": "2025-06-03T21:06:16+00:00",
+    "end": "2026-06-05T12:59:13+00:00"
+  },
+  "implementation": {
+    "reproduces_day13_definition": true,
+    "text_normalization": [
+      "lowercase",
+      "remove URLs",
+      "collapse whitespace",
+      "strip whitespace"
+    ],
+    "tfidf": {
+      "analyzer": "char_wb",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_features": 100000,
+      "sublinear_tf": true
+    },
+    "nearest_neighbor": {
+      "n_neighbors": 2,
+      "metric": "cosine",
+      "algorithm": "brute",
+      "neighbor_used": "nearest non-self neighbor"
+    }
+  },
+  "exact_duplicate_audit": {
+    "exact_normalized_text_duplicate_rows": 0,
+    "gate": "PASS"
+  },
+  "near_duplicate_definition": {
+    "similarity_threshold": 0.95,
+    "maximum_time_difference_hours": 24.0,
+    "interpretation": "Diagnostic flag for likely repost or lightly reformulated same-event observations; not a general duplicate-removal rule."
+  },
+  "overall_near_duplicate_diagnostic": {
+    "nearest_similarity_ge_0_90": 438,
+    "nearest_similarity_ge_0_95": 163,
+    "nearest_similarity_ge_0_98": 50,
+    "short_horizon_high_similarity_rows": 130,
+    "short_horizon_high_similarity_share": 0.003299492385786802
+  },
+  "frozen_boundary_tests": [
+    {
+      "boundary_name": "train_to_validation",
+      "boundary_utc": "2025-11-01T00:00:00+00:00",
+      "before_n": 13539,
+      "after_n": 25861,
+      "cross_boundary_suspicious_rows": 0,
+      "cross_boundary_unique_pairs": 0,
+      "similarity_threshold": 0.95,
+      "time_window_hours": 24.0,
+      "gate": "PASS"
+    },
+    {
+      "boundary_name": "development_to_future",
+      "boundary_utc": "2026-01-01T00:00:00+00:00",
+      "before_n": 19398,
+      "after_n": 20002,
+      "cross_boundary_suspicious_rows": 0,
+      "cross_boundary_unique_pairs": 0,
+      "similarity_threshold": 0.95,
+      "time_window_hours": 24.0,
+      "gate": "PASS"
+    }
+  ],
+  "primary_benchmark_boundary": {
+    "boundary_name": "development_to_future",
+    "boundary_utc": "2026-01-01T00:00:00+00:00",
+    "cross_boundary_unique_pairs": 0,
+    "gate": "PASS"
+  },
+  "train_validation_boundary": {
+    "boundary_utc": "2025-11-01T00:00:00+00:00",
+    "cross_boundary_unique_pairs": 0,
+    "gate": "PASS"
+  },
+  "resolution_rule": "If any suspicious cross-boundary pair exists, inspect and document that pair before training. Do not perform broad similarity-based deletion.",
+  "day14_final_boundary_leakage_gate": "PASS"
+}

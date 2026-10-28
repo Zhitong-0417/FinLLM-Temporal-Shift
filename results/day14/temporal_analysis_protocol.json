@@ -1,0 +1,147 @@
+{
+  "day": 14,
+  "artifact": "temporal_analysis_protocol",
+  "analysis_scope": {
+    "historical_baseline": "historical_validation",
+    "future_windows": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "analyze_each_future_window_independently": true,
+    "monotonic_degradation_required": false
+  },
+  "primary_temporal_outcome": {
+    "metric": "macro_f1",
+    "role": "primary temporal-generalization outcome"
+  },
+  "tracked_outcomes": [
+    "accuracy",
+    "weighted_f1",
+    "negative_recall",
+    "neutral_recall",
+    "positive_recall",
+    "negative_to_neutral_rate",
+    "negative_to_positive_rate",
+    "neutral_to_negative_rate",
+    "neutral_to_positive_rate",
+    "positive_to_negative_rate",
+    "positive_to_neutral_rate",
+    "predicted_negative_proportion",
+    "predicted_neutral_proportion",
+    "predicted_positive_proportion",
+    "invalid_prediction_rate"
+  ],
+  "relative_change_analysis": {
+    "vs_historical_validation": {
+      "enabled": true,
+      "metrics": [
+        "macro_f1",
+        "accuracy",
+        "weighted_f1",
+        "negative_recall",
+        "neutral_recall",
+        "positive_recall",
+        "negative_to_neutral_rate"
+      ],
+      "formula": "future_window_metric - historical_validation_metric"
+    },
+    "vs_F1": {
+      "enabled": true,
+      "applicable_windows": [
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "metrics": [
+        "macro_f1",
+        "accuracy",
+        "weighted_f1",
+        "negative_recall",
+        "neutral_recall",
+        "positive_recall",
+        "negative_to_neutral_rate"
+      ],
+      "formula": "future_window_metric - F1_metric"
+    }
+  },
+  "temporal_predictors": {
+    "window_order": {
+      "values": {
+        "F1": 1,
+        "F2": 2,
+        "F3": 3,
+        "F4": 4,
+        "F5": 5,
+        "F6": 6
+      },
+      "role": "ordinal descriptive time index"
+    },
+    "continuous_time": {
+      "variable": "days_from_development_end_to_midpoint",
+      "source": "future_window_manifest.csv",
+      "role": "primary continuous temporal-distance predictor"
+    }
+  },
+  "trend_analysis": {
+    "primary_model": {
+      "response": "macro_f1",
+      "predictor": "days_from_development_end_to_midpoint",
+      "model": "ordinary least squares linear trend",
+      "interpretation": "Descriptive association between temporal distance and future-window Macro-F1; not interpreted causally."
+    },
+    "secondary_model": {
+      "response": "macro_f1",
+      "predictor": "window_order",
+      "model": "ordinary least squares linear trend"
+    },
+    "report": [
+      "slope",
+      "intercept",
+      "R_squared"
+    ],
+    "small_number_of_windows_caution": "Trend estimates are descriptive because only six future windows are available."
+  },
+  "localized_regime_analysis": {
+    "enabled": true,
+    "adjacent_window_changes": true,
+    "primary_adjacent_metric": "macro_f1",
+    "additional_adjacent_metrics": [
+      "negative_recall",
+      "negative_to_neutral_rate"
+    ],
+    "largest_drop_rule": "identify the most negative adjacent-window change",
+    "largest_recovery_rule": "identify the most positive adjacent-window change",
+    "interpretation_rule": "Localized deterioration or recovery is reported without redefining the temporal benchmark."
+  },
+  "failure_mechanism_analysis": {
+    "priority_class": "negative",
+    "priority_recall_metric": "negative_recall",
+    "priority_transition": "negative_to_neutral_rate",
+    "additional_class_recalls": [
+      "neutral_recall",
+      "positive_recall"
+    ],
+    "prediction_distribution_tracking": true
+  },
+  "partial_window_handling": {
+    "F6_included_in_primary_tables": true,
+    "F6_included_in_trend_model": true,
+    "F6_partial_status_must_be_reported": true,
+    "sensitivity_requirement": "If F6 materially changes the fitted temporal slope, report an additional sensitivity trend using F1-F5 without replacing the pre-specified primary analysis."
+  },
+  "prohibited_posthoc_changes": [
+    "dropping a future window because performance is inconvenient",
+    "changing the primary metric after observing future results",
+    "redefining temporal cutoffs using performance",
+    "requiring monotonic degradation after seeing results",
+    "excluding F6 solely because its performance differs from other windows",
+    "using the worst-performing window to redefine the benchmark"
+  ],
+  "freeze_status": "LOCKED_BEFORE_FUTURE_INFERENCE"
+}

@@ -1,0 +1,4 @@
+predicted_label,count,proportion
+negative,976,0.16658132787165045
+neutral,3676,0.6274108209592081
+positive,1207,0.2060078511691415

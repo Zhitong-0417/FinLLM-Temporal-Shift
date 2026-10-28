@@ -1,0 +1,41 @@
+{
+  "day": 15,
+  "project": "Financial Language Models under Temporal Distribution Shift",
+  "status": "PASS \u2014 HISTORICAL LoRA TRAINED AND FROZEN",
+  "model": {
+    "model_id": "M_H",
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "training_population_n": 13539,
+    "validation_population_n": 5859,
+    "future_population_n": 20002,
+    "future_observations_used": 0
+  },
+  "training": {
+    "max_steps": 200,
+    "final_global_step": 200,
+    "selected_checkpoint_step": 200,
+    "selected_checkpoint_eval_loss": 0.24941079318523407,
+    "training_runtime_minutes": 154.55224253733954
+  },
+  "historical_validation": {
+    "accuracy": 0.789042498719918,
+    "macro_f1": 0.7456777707898534,
+    "weighted_f1": 0.7889070414565585,
+    "negative_recall": 0.6395759717314488,
+    "neutral_recall": 0.8421480878763222,
+    "positive_recall": 0.7634615384615384
+  },
+  "model_freeze": {
+    "frozen_model_directory": "/content/gdrive/MyDrive/FinGPT_Project/models/day15_historical_datasetB_lora/frozen_selected_adapter",
+    "trainable_parameters_after_freeze": 0,
+    "freeze_status": "FROZEN_BEFORE_FUTURE_EVALUATION"
+  },
+  "future_firewall": {
+    "future_evaluation_started": false,
+    "future_metrics_used_for_training": false,
+    "future_metrics_used_for_validation": false,
+    "future_metrics_used_for_checkpoint_selection": false,
+    "next_stage": "Day 16 \u2014 frozen M_H evaluation on F1\u2013F6"
+  },
+  "created_utc": "2026-09-21T19:22:29.811744+00:00"
+}

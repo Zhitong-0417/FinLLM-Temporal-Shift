@@ -1,0 +1,111 @@
+{
+  "day": 14,
+  "project": "Financial Language Models under Temporal Distribution Shift",
+  "objective": "Freeze a within-Dataset-B chronological benchmark before any new Dataset-B LoRA training.",
+  "status": "PASS — CHRONOLOGICAL PROTOCOL FROZEN",
+  "benchmark_population": {
+    "n": 39400,
+    "start_utc": "2025-06-03T21:06:16+00:00",
+    "end_utc": "2026-06-05T12:59:13+00:00",
+    "excluded_sparse_early_n": 565
+  },
+  "chronological_design": {
+    "historical_cutoff_utc": "2026-01-01T00:00:00+00:00",
+    "historical_train": {
+      "n": 13539,
+      "start_utc": "2025-06-03T21:06:16+00:00",
+      "end_utc": "2025-10-31T21:14:14+00:00"
+    },
+    "historical_validation": {
+      "n": 5859,
+      "start_utc": "2025-11-01T01:50:30+00:00",
+      "end_utc": "2025-12-31T21:05:31+00:00"
+    },
+    "strictly_future": {
+      "n": 20002,
+      "windows": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "F6_partial": true
+    }
+  },
+  "model_protocol": {
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "max_steps": 200,
+    "checkpoint_selection": "historical-validation eval_loss only",
+    "future_data_used_for_model_selection": false
+  },
+  "evaluation_protocol": {
+    "primary_metric": "macro_f1",
+    "secondary_metrics": [
+      "accuracy",
+      "weighted_f1"
+    ],
+    "class_specific_recall": true,
+    "confusion_transitions": true,
+    "prediction_distribution": true
+  },
+  "temporal_analysis": {
+    "each_future_window_independent": true,
+    "change_vs_validation": true,
+    "change_vs_F1": true,
+    "continuous_time_predictor": "days_from_development_end_to_midpoint",
+    "monotonic_degradation_required": false
+  },
+  "source_diagnostics": {
+    "channel_composition_tracked": true,
+    "source_controlled_analysis_role": "later sensitivity analysis only"
+  },
+  "leakage_guard": {
+    "similarity_threshold": 0.95,
+    "time_window_hours": 24.0,
+    "train_validation_cross_boundary_pairs": 0,
+    "development_future_cross_boundary_pairs": 0,
+    "gate": "PASS"
+  },
+  "required_artifacts": {
+    "benchmark_population_manifest.json": true,
+    "candidate_cutoff_feasibility.csv": true,
+    "chronological_split_spec.json": true,
+    "future_window_manifest.csv": true,
+    "source_composition_by_split.csv": true,
+    "lora_training_protocol.json": true,
+    "evaluation_protocol.json": true,
+    "final_boundary_leakage_audit.json": true
+  },
+  "additional_artifacts": {
+    "temporal_analysis_protocol.json": true,
+    "source_shift_summary.csv": true
+  },
+  "acceptance_checks": {
+    "dense_benchmark_population_39400": true,
+    "historical_cutoff_frozen_2026_01_01": true,
+    "historical_train_precedes_validation": true,
+    "historical_validation_precedes_future": true,
+    "historical_train_n_13539": true,
+    "historical_validation_n_5859": true,
+    "future_total_n_20002": true,
+    "six_future_windows": true,
+    "future_windows_preserve_all_rows": true,
+    "every_future_window_all_classes": true,
+    "f6_explicitly_partial": true,
+    "split_selection_no_model_performance": true,
+    "lora_protocol_frozen": true,
+    "future_excluded_from_model_selection": true,
+    "primary_metric_macro_f1": true,
+    "secondary_metrics_frozen": true,
+    "temporal_analysis_frozen": true,
+    "non_monotonic_temporal_analysis": true,
+    "source_composition_recorded_for_all_splits": true,
+    "train_validation_leakage_guard_pass": true,
+    "development_future_leakage_guard_pass": true,
+    "zero_primary_cross_boundary_pairs": true,
+    "all_required_artifacts_exist": true
+  },
+  "approved_next_stage": "Day 15 — train the frozen LoRA configuration using Dataset B historical train only, with historical validation used only for checkpoint selection."
+}
