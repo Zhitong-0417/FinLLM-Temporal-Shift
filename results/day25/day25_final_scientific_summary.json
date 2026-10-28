@@ -1,0 +1,86 @@
+{
+  "day": 25,
+  "status": "SCIENTIFIC_ANALYSIS_COMPLETE",
+  "primary_question": "What observable distributional mechanism is associated with the residual F3 positive-class failure after historical optimization?",
+  "final_mechanism_class": {
+    "class": "C",
+    "label": "mixed source + lexical association",
+    "qualifier": "Lexical/topic shift appears dominant, while source composition contributes secondarily."
+  },
+  "key_findings": {
+    "class_prior_shift": {
+      "status": "SUPPORTED_BUT_INSUFFICIENT",
+      "f3_positive_prevalence_shift_vs_validation_pp": -6.459477250462667,
+      "f3_negative_prevalence_shift_vs_validation_pp": 16.690089668436993
+    },
+    "source_composition_shift": {
+      "status": "PARTIAL_SUPPORT",
+      "overall_f3_vs_validation_tvd": 0.056486630503422404,
+      "positive_only_f3_vs_validation_tvd": 0.05384615384615385,
+      "monitoring_situation_positive_share_shift_vs_validation_pp": 4.867081447963801
+    },
+    "source_conditioned_failure": {
+      "status": "SUPPORTED",
+      "firstsquaw_f3_minus_validation_positive_recall": {
+        "delta": -0.14710407239819012,
+        "ci_low_95": -0.19438612368024136,
+        "ci_high_95": -0.09657315233785822
+      },
+      "walter_bloomberg_f3_minus_validation_positive_recall": {
+        "delta": -0.2732375392905254,
+        "ci_low_95": -0.4072743601257297,
+        "ci_high_95": -0.13959923664122154
+      },
+      "monitoring_situation_f3_minus_f4_positive_recall": {
+        "delta": -0.40740740740740744,
+        "ci_low_95": -0.6296296296296297,
+        "ci_high_95": -0.1481481481481482
+      }
+    },
+    "f3_positive_error_cohort": {
+      "positive_to_positive": 346,
+      "positive_to_negative": 104,
+      "positive_to_neutral": 94
+    },
+    "lexical_shift": {
+      "status": "STRONGLY_SUPPORTED",
+      "dominant_theme": "energy / commodity / supply-disruption language",
+      "representative_terms": [
+        "oil",
+        "production",
+        "prices",
+        "gas",
+        "crude",
+        "gasoline",
+        "force majeure",
+        "qatarenergy",
+        "iraq",
+        "lng"
+      ],
+      "broader_f3_shift_vs_neighbors": true,
+      "error_cohort_enrichment": true
+    },
+    "within_source_lexical_persistence": {
+      "status": "STRONGLY_SUPPORTED",
+      "firstsquaw_signature_positive_fraction": 0.9333333333333333,
+      "walter_bloomberg_signature_positive_fraction": 0.8,
+      "monitoring_situation_signature_positive_fraction": 0.6666666666666666
+    }
+  },
+  "interpretation": {
+    "pure_source_composition_explanation": "weakened",
+    "pure_class_prior_explanation": "insufficient",
+    "lexical_topic_association": "strong",
+    "mixed_mechanism": "best_supported",
+    "causal_claim": false
+  },
+  "scientific_conclusion": "Day 25 identifies the residual F3 positive-sentiment failure as most consistent with a mixed source + lexical association. F3 exhibits a material class-prior shift and a modest source-composition shift, including increased representation of MonitoringSituation, but these factors are insufficient to explain the failure by themselves. Positive recall declines persist within major common sources, including firstsquaw and WalterBloomberg. In parallel, F3 true-positive texts show a broader energy/commodity/supply-disruption lexical shift relative to neighboring F2 and F4 periods, and this lexical structure is especially concentrated among the 104 positive→negative errors. The same lexical signature persists after conditioning on the three major F3 sources. Therefore, the residual failure is associated primarily with a lexical/topic shift, with source composition contributing secondarily. These results establish association and concentration, not causal mechanism.",
+  "scientific_firewall_preserved": {
+    "model_retraining": false,
+    "checkpoint_reselection": false,
+    "prompt_modification": false,
+    "threshold_tuning": false,
+    "new_full_model_inference": false
+  },
+  "created_utc": "2026-10-09T01:08:09.586133+00:00"
+}

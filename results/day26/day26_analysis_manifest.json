@@ -1,0 +1,148 @@
+{
+  "artifact": "day26_analysis_manifest",
+  "association_metric": {
+    "alpha": 0.5,
+    "class_strategy": "one_vs_rest",
+    "classes": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "formula": "log((n11+alpha)/(n10+alpha)) - log((n01+alpha)/(n00+alpha))",
+    "name": "smoothed_one_vs_rest_log_odds",
+    "unit": "token_class_window"
+  },
+  "created_utc": "2026-10-09T02:43:22.614298+00:00",
+  "day": 26,
+  "day26_endpoint": "A frozen historical-only token instability table and ranking. Day26 does not test H1.",
+  "day27_interface_pre_freeze": {
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 42,
+    "observation_exposure_primary": "Mean I(v) across eligible historical-vocabulary tokens present in the future text.",
+    "primary_contrast": "Mean exposure in misclassified future observations minus mean exposure in correctly classified future observations.",
+    "token_score": "I(v)",
+    "unknown_or_ineligible_tokens": "Ignored in exposure numerator and denominator; coverage fraction must be reported.",
+    "zero_eligible_token_observation": "Exposure is missing; do not impute using future labels."
+  },
+  "environment": {
+    "numpy_version": "2.1.3",
+    "pandas_version": "2.2.3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "python_version": "3.13.16",
+    "timestamp_utc": "2026-10-09T02:34:51.633331+00:00"
+  },
+  "historical_population_rule": {
+    "canonical_source": "/content/drive/MyDrive/FinGPT_Project/results/day07/temporal_dataset_clean.csv",
+    "day25_term_based_exclusions_allowed": false,
+    "eligibility": "Use the full eligible pre-future historical corpus available before 2026-01-01, reconstructed from the canonical Day07 cleaned dataset under already-frozen upstream cleaning rules.",
+    "future_cutoff_utc": "2026-01-01T00:00:00Z",
+    "new_content_based_exclusions_allowed": false
+  },
+  "historical_window_protocol": {
+    "construction": "Approximately equal-size chronological, non-overlapping windows.",
+    "fallback": {
+      "fallback_n_windows": 3,
+      "posthoc_redrawing_allowed": false,
+      "trigger": "Any class has fewer than 50 observations in any primary historical window."
+    },
+    "identical_timestamp_blocks_must_remain_intact": true,
+    "minimum_class_support_per_window": 50,
+    "primary_n_windows": 4,
+    "sorting": "timestamp ascending, then stable observation identity for deterministic ordering",
+    "window_names": [
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ]
+  },
+  "hypotheses": {
+    "H0": "Historical lexical-label instability is not systematically associated with future classification error.",
+    "H1": "Tokens with less stable historical sentiment-label associations will be associated with higher future classification error."
+  },
+  "primary_instability_metric": {
+    "class_specific": "I(v,c) = sample SD across historical windows of A(v,c,t)",
+    "class_tie_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "ddof": 1,
+    "primary_metric_count": 1,
+    "token_level": "I(v) = max_c I(v,c)"
+  },
+  "primary_research_question": "Do lexical features whose sentiment-label associations are unstable across historical time contribute to higher future classification error?",
+  "primary_vocabulary_support": {
+    "minimum_historical_windows_present": 3,
+    "minimum_total_historical_document_frequency": 20,
+    "support_rule_role": "PRIMARY"
+  },
+  "ranking_protocol": {
+    "first_tie_break": "historical document frequency descending",
+    "primary_sort": "I(v) descending",
+    "ranking_frozen_before_day25_term_lookup": true,
+    "second_tie_break": "lexical order ascending"
+  },
+  "scientific_firewall": {
+    "checkpoint_reselection_allowed": false,
+    "day25_terms_used_as_whitelist": false,
+    "day25_terms_used_for_threshold_tuning": false,
+    "day27_endpoint_redefinition_allowed": false,
+    "future_errors_used_for_metric_selection": false,
+    "future_errors_used_for_threshold_selection": false,
+    "future_labels_used_for_instability": false,
+    "future_labels_used_for_support_thresholds": false,
+    "future_labels_used_for_vocabulary": false,
+    "lora_update_allowed": false,
+    "multiple_primary_metric_shopping_allowed": false,
+    "new_full_model_inference_allowed": false,
+    "new_model_training_allowed": false,
+    "prompt_modification_allowed": false,
+    "threshold_tuning_allowed": false
+  },
+  "scientific_objective": "Construct and freeze a historical-only measure of temporal lexical-label instability for Day27 out-of-time hypothesis testing.",
+  "secondary_descriptors": {
+    "association_range": true,
+    "coefficient_of_variation_primary": false,
+    "direction_flip": true,
+    "historical_document_frequency": true,
+    "window_specific_class_probability": true
+  },
+  "secondary_support_sensitivity": {
+    "may_replace_primary_analysis": false,
+    "minimum_total_historical_document_frequency": 50,
+    "role": "SECONDARY_ONLY"
+  },
+  "status": "PRE_REGISTERED_AND_FROZEN",
+  "text_preprocessing": {
+    "association_weighting": "binary_document_presence",
+    "feature_type": "unigram_plus_bigram",
+    "lowercase": true,
+    "max_df": 0.95,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "stop_words": null,
+    "token_pattern": "scikit-learn default token pattern"
+  },
+  "upstream_hashes": {
+    "day07_temporal_dataset_clean_sha256": "a65556ea5bc10ae163efee8ac952f1500ab64bd225b104a9e2a9c88cd2e9aa03",
+    "day22_split_audit_sha256": "a884d65b7b9125690abcaab92f7b999c3827899ae3549e401774d9f33bb07169",
+    "day22_split_manifest_sha256": "ddc2b0fff22d6b4035a5909cd321bf3d1fca8f970892bef677c9f60acc51c352",
+    "day23_completion_checkpoint_sha256": "a411d4121fcc8df452b3502c9f96e6370181648141b94f9e03fb4b05225f728c",
+    "day23_validation_predictions_sha256": "8181d3359e32f4a467b8be4db91844cd36f88b5a66131cbb9a621d21d2f3870d",
+    "day24_completion_checkpoint_sha256": "cbbb7edf3cae880e9ecf0218ce8508f585ef5e73b0ab19ee9e53c8aa684acc27",
+    "day24_future_predictions_sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b",
+    "day24_prediction_manifest_sha256": "9a70d00e0bc2a7c68a6cab1e0a66c4606e99a2ad7bc461fc42fa53a76b9926d9",
+    "day25_analysis_manifest_sha256": "fb7143c351faa58a2699e17a1f3132517d8ec019444cbda643f9af4d774b4051",
+    "day25_completion_checkpoint_sha256": "e394e55998dd4af623068ea9616c06fefd522e8b7bcd507ce83e5cc1b252d56f"
+  },
+  "upstream_paths": {
+    "day22_split_manifest": "/content/drive/MyDrive/FinGPT_Project/results/day22/historical_optimization_split_manifest.csv",
+    "day23_historical_validation_predictions": "/content/drive/MyDrive/FinGPT_Project/results/day23/final_historical_validation/final_historical_validation_predictions.csv",
+    "day24_future_predictions_identity_only": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv",
+    "day25_completion": "/content/drive/MyDrive/FinGPT_Project/results/day25/day25_completion_checkpoint.json",
+    "historical_source": "/content/drive/MyDrive/FinGPT_Project/results/day07/temporal_dataset_clean.csv"
+  }
+}

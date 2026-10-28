@@ -1,0 +1,4 @@
+source,n_posneg,n_pospos,stable_for_interpretation,energy_signature_terms_available,energy_signature_terms_positive,energy_signature_positive_fraction,mean_energy_signature_tfidf_difference,median_energy_signature_tfidf_difference,top_10_posneg_enriched_terms
+firstsquaw,69,293,True,15,14,0.9333333333333333,0.02396631818992121,0.027807646063812707,prices | gasoline | gasoline prices | qatarenergy | lng | oil | gas | force majeure | majeure | force
+WalterBloomberg,19,38,True,15,12,0.8,0.02907716385162124,0.02569937264986787,iraq | cuts | as | oil | exports | hormuz | production | supplies | per | iraqi
+MonitoringSituation,16,8,True,15,10,0.6666666666666666,0.029844749346144634,0.04316749859068254,production | the | 2022 | average | oil | since | prices | down | field | gas

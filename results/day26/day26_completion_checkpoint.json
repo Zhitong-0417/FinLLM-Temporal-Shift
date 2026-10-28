@@ -1,0 +1,81 @@
+{
+  "canonical_notebook": {
+    "cells": 28,
+    "code_cells": 20,
+    "markdown_cells": 8,
+    "nbformat_valid": true,
+    "path": "/content/drive/MyDrive/FinGPT_Project/notebooks/day26_historical_temporal_lexical_instability.ipynb",
+    "sha256": "af192c0aca836e024e1b2ca117536ac5b595756066b863889a163f3111d42426",
+    "size_bytes": 496438
+  },
+  "core_artifact_hashes": {
+    "analysis_manifest": "ff49407efbc41e8a2f9cc123e4807da64d3f22fab1e40b078fa16556e7fa97bc",
+    "association_semantic": "1e872ae40cb195c04364eec5764ac7a9dd325e20d06efd58708047e297e9ef2c",
+    "day27_handoff": "674751cc96f6520e06a6db18be0f963a4ed857b2d890eaa603faa6d0c857c29c",
+    "final_scientific_summary": "e7359d7f0d0f212202df5c7f3a8974228af5ec499257852b9e9a9512c66516e4",
+    "historical_population_manifest": "3e4ef7314899d0f60bb7373b32a75385c3dd5b464f35c74d063e51850556e213",
+    "historical_vocabulary_manifest": "bec68a277530b1417759e4956b05a13c2e049d0963482bf82918e61f81b20c13",
+    "historical_window_distribution": "fe8907aab37a77becc7c48532c3a736edd2fd0cd48fd3d1a5bb07f37bef05745",
+    "historical_window_manifest": "b2490cad63a006efb1f582308727ea99d0d8304a93d52ab37d16fb0fbc413c93",
+    "scientific_conclusion": "3c088864077bb0dc3dec3a23e1e9d8e1d45546c8ddfa5817cc6208e12198017c",
+    "support_sensitivity": "6667d100e071af2c945ae2c20b6e75a82c5338ad128d8984ea74aab95b936c03",
+    "token_class_association": "3b9ce6cf41b41f98ef0104e79e223e0c1c48f5451d103bfaac343666e24fb18c",
+    "token_instability_rank": "b1aa249f458a1b8c855ac8bdb5a4e210a68d322262978c9110cb6e0b6c732347",
+    "token_temporal_instability": "48af24b1ded06037e3f28c80619164a35d314709ee139fbed35b2e411fef2de2"
+  },
+  "created_utc": "2026-10-09T03:02:20.993727+00:00",
+  "day": 26,
+  "day26_complete": true,
+  "day27_handoff": {
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 42,
+    "observation_exposure": "mean I(v) across eligible tokens present",
+    "status": "FROZEN_FOR_DAY27",
+    "token_score": "token_instability"
+  },
+  "hypothesis_status": {
+    "H0_rejected_claim": false,
+    "H1_supported_claim": false,
+    "H1_tested": false,
+    "next_test": "Day27 out-of-time hypothesis test"
+  },
+  "next_action": "DAY27_OUT_OF_TIME_HYPOTHESIS_TEST",
+  "primary_scientific_endpoint": {
+    "association_alpha": 0.5,
+    "eligible_vocabulary_n": 3240,
+    "historical_population_n": 19398,
+    "historical_windows": 4,
+    "instability_ddof": 1,
+    "primary_token_score": "I(v)=max_c SD_t[A(v,c,t)]"
+  },
+  "scientific_findings": {
+    "day25_overlap_interpretation": "Partial rather than uniform overlap between Day25 F3 lexical/topic signature and historically unstable lexical-label associations.",
+    "day25_posneg_signature_matched_n": 9,
+    "day25_posneg_signature_total_n": 15,
+    "direction_flip_n": 2204,
+    "median_instability": 0.8766940210590981,
+    "q95_instability": 1.5122229743937317,
+    "top50_df_ge_50_n": 6
+  },
+  "scientific_firewall": {
+    "causal_claim_made": false,
+    "checkpoint_reselection_performed": false,
+    "day25_terms_used_to_define_instability": false,
+    "day25_terms_used_to_define_vocabulary": false,
+    "future_errors_used_to_construct_predictor": false,
+    "future_labels_used_to_construct_predictor": false,
+    "lora_update_performed": false,
+    "new_full_model_inference_performed": false,
+    "new_model_training_performed": false,
+    "prompt_modification_performed": false,
+    "threshold_tuning_performed": false
+  },
+  "scientific_status": "HISTORICAL_TEMPORAL_LEXICAL_LABEL_INSTABILITY_ESTIMATOR_FROZEN",
+  "status": "PASS",
+  "upstream_identity": {
+    "day07_historical_source_sha256": "a65556ea5bc10ae163efee8ac952f1500ab64bd225b104a9e2a9c88cd2e9aa03",
+    "day24_future_prediction_n": 20002,
+    "day24_future_prediction_sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b",
+    "day24_future_prediction_unchanged": true
+  }
+}

@@ -1,0 +1,4 @@
+source,comparison,delta,ci_low_95,ci_high_95
+firstsquaw,F3_minus_V_positive_recall,-0.14710407239819012,-0.19438612368024136,-0.09657315233785822
+WalterBloomberg,F3_minus_V_positive_recall,-0.2732375392905254,-0.4072743601257297,-0.13959923664122154
+MonitoringSituation,F3_minus_F4_positive_recall,-0.40740740740740744,-0.6296296296296297,-0.1481481481481482

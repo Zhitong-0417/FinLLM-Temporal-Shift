@@ -1,0 +1,4 @@
+source,positive_support,positive_to_positive,positive_to_neutral,positive_to_negative,positive_recall,positive_to_negative_rate
+firstsquaw,442,293,80,69,0.6628959276018099,0.15610859728506787
+WalterBloomberg,68,38,11,19,0.5588235294117647,0.27941176470588236
+MonitoringSituation,27,8,3,16,0.2962962962962963,0.5925925925925926

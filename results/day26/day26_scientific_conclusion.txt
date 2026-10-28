@@ -1,0 +1,65 @@
+DAY 26 — SCIENTIFIC CONCLUSION
+==============================
+
+STATUS
+------
+COMPLETE — HISTORICAL TEMPORAL LEXICAL-LABEL INSTABILITY ESTIMATOR CONSTRUCTED AND FROZEN.
+
+WHAT DAY 26 ESTABLISHED
+-----------------------
+1. The exact pre-future historical estimation population was frozen at 19,398 observations.
+2. Four deterministic chronological historical windows were constructed without fallback.
+3. A historical-only unigram+bigram vocabulary was frozen at 3,240 eligible lexical features.
+4. Token-class associations were estimated using smoothed one-vs-rest log-odds with alpha=0.5.
+5. Primary temporal instability was defined as:
+
+   I(v) = max_c SD_t[A(v,c,t)]
+
+   using sample standard deviation with ddof=1.
+6. The complete token instability table and deterministic ranking were frozen before retrospective inspection of Day25 lexical terms.
+7. The Day27 document-level exposure interface was frozen before future-error testing.
+
+DESCRIPTIVE FINDINGS
+--------------------
+Historical lexical-label associations show heterogeneous temporal stability.
+
+Median token instability:
+0.876694
+
+95th percentile:
+1.512223
+
+Maximum:
+2.234543
+
+The extreme high-instability tail is enriched for relatively low-support lexical features:
+only 6/50 of the top-50 tokens have historical DF >= 50.
+This does not alter the pre-registered primary ranking; df>=50 remains a secondary sensitivity analysis.
+
+The retrospective Day25 comparison shows that the previously observed F3
+positive-to-negative energy / commodity / supply-disruption lexical signature
+does not map uniformly to historically unstable lexical-label associations.
+Some terms exhibit high historical instability, while several prominent Day25
+terms are historically stable under the frozen Day26 estimator.
+
+SCIENTIFIC BOUNDARY
+-------------------
+Day26 does NOT establish that lexical instability causes future classification error.
+
+Day26 does NOT test H1.
+
+Day26 does NOT reject H0.
+
+No future labels or future classification errors were used to define the
+historical instability predictor.
+
+NEXT SCIENTIFIC STEP
+--------------------
+Day27 will apply the frozen Day26 predictor out-of-time and test whether future
+observations with greater exposure to historically unstable lexical features
+are more likely to be misclassified.
+
+DAY 26 FINAL SCIENTIFIC STATUS
+------------------------------
+PASS — HISTORICAL TEMPORAL LEXICAL-LABEL INSTABILITY ESTIMATOR CONSTRUCTED AND FROZEN.
+READY — DAY 27 OUT-OF-TIME HYPOTHESIS TEST.

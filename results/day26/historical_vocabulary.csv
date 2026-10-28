@@ -1,0 +1,3241 @@
+eligible_feature_index,feature_index_raw,token,feature_type,historical_df,windows_present,H1_df,H2_df,H3_df,H4_df
+0,0,00,unigram,85,4,18,19,24,24
+1,58,000,unigram,270,4,41,55,82,92
+2,252,01,unigram,33,4,12,6,7,8
+3,301,02,unigram,35,4,9,6,8,12
+4,353,03,unigram,29,4,5,11,6,7
+5,402,04,unigram,39,4,8,9,13,9
+6,449,05,unigram,34,4,6,7,12,9
+7,505,06,unigram,38,4,9,8,7,14
+8,559,07,unigram,43,4,17,7,11,8
+9,620,08,unigram,32,4,11,9,3,9
+10,682,09,unigram,33,4,4,7,10,12
+11,742,0b,unigram,23,4,7,8,4,4
+12,763,10,unigram,389,4,105,96,99,89
+13,918,10 year,bigram,103,4,29,24,15,35
+14,921,100,unigram,216,4,48,57,70,41
+15,1004,100 up,bigram,26,4,9,4,6,7
+16,1192,11,unigram,141,4,34,32,36,39
+17,1454,12,unigram,210,4,57,44,59,50
+18,1584,120,unigram,20,4,5,6,6,3
+19,1731,13,unigram,120,4,25,33,33,29
+20,1935,14,unigram,128,4,26,30,38,34
+21,2137,15,unigram,221,4,79,41,53,48
+22,2278,150,unigram,23,4,6,3,6,8
+23,2392,16,unigram,128,4,37,34,28,29
+24,2585,17,unigram,131,4,32,32,47,20
+25,2812,18,unigram,107,4,27,23,33,24
+26,2987,19,unigram,94,4,28,21,19,26
+27,3237,1b,unigram,74,4,17,21,20,16
+28,3335,20,unigram,239,4,66,61,53,59
+29,3456,20 year,bigram,30,4,2,11,9,8
+30,3460,200,unigram,74,4,18,20,16,20
+31,3603,2020,unigram,28,4,6,7,9,6
+32,3625,2021,unigram,21,4,4,8,4,5
+33,3640,2023,unigram,23,4,8,6,6,3
+34,3654,2024,unigram,74,4,13,18,19,24
+35,3699,2025,unigram,401,4,112,89,115,85
+36,3749,2025 earnings,bigram,57,4,34,3,19,1
+37,3899,2026,unigram,368,4,43,67,92,166
+38,4063,2027,unigram,83,4,12,14,23,34
+39,4107,2028,unigram,40,4,4,8,9,19
+40,4147,2030,unigram,41,4,5,10,10,16
+41,4260,21,unigram,108,4,31,22,31,24
+42,4415,22,unigram,109,4,20,22,38,29
+43,4582,23,unigram,100,4,22,26,22,30
+44,4750,24,unigram,81,4,20,14,24,23
+45,4882,25,unigram,197,4,56,53,35,53
+46,4979,250,unigram,20,4,3,9,6,2
+47,5100,26,unigram,96,4,16,23,25,32
+48,5232,27,unigram,76,4,19,12,24,21
+49,5342,28,unigram,77,4,13,15,19,30
+50,5458,29,unigram,70,4,12,17,21,20
+51,5574,2b,unigram,42,4,16,5,11,10
+52,5667,30,unigram,217,4,53,44,55,65
+53,5773,30 year,bigram,57,4,15,13,9,20
+54,5776,300,unigram,53,4,15,8,16,14
+55,5899,31,unigram,63,4,22,12,9,20
+56,5989,32,unigram,62,4,18,23,11,10
+57,6073,33,unigram,59,4,25,12,12,10
+58,6179,34,unigram,50,4,17,8,11,14
+59,6268,35,unigram,76,4,21,14,25,16
+60,6385,36,unigram,48,4,16,4,13,15
+61,6466,37,unigram,38,4,8,10,10,10
+62,6558,38,unigram,46,4,18,7,12,9
+63,6647,39,unigram,36,4,8,8,10,10
+64,6734,3b,unigram,46,4,15,8,7,16
+65,6765,3m,unigram,21,4,3,8,3,7
+66,6786,3q,unigram,28,4,3,1,17,7
+67,6836,40,unigram,171,4,52,36,33,50
+68,6904,40 up,bigram,20,4,6,3,5,6
+69,6912,400,unigram,24,4,8,2,11,3
+70,7024,41,unigram,42,4,9,11,11,11
+71,7118,42,unigram,35,4,7,4,15,9
+72,7183,43,unigram,45,4,11,9,13,12
+73,7257,44,unigram,64,4,25,15,11,13
+74,7354,45,unigram,91,4,23,30,21,17
+75,7490,46,unigram,77,4,23,16,29,9
+76,7596,47,unigram,70,4,22,13,21,14
+77,7695,48,unigram,91,4,31,11,26,23
+78,7790,49,unigram,97,4,28,16,30,23
+79,7835,49 vs,bigram,20,4,10,2,6,2
+80,7865,4b,unigram,39,4,10,4,10,15
+81,7935,50,unigram,306,4,102,59,80,65
+82,8055,50 vs,bigram,20,4,9,1,6,4
+83,8062,500,unigram,248,4,57,67,67,57
+84,8153,500 unofficially,bigram,23,4,5,5,5,8
+85,8154,500 up,bigram,30,4,5,7,11,7
+86,8237,51,unigram,77,4,20,12,22,23
+87,8307,52,unigram,85,4,19,14,25,27
+88,8395,53,unigram,69,4,16,13,18,22
+89,8489,54,unigram,56,4,8,17,19,12
+90,8575,55,unigram,78,4,15,19,24,20
+91,8673,56,unigram,43,4,8,11,12,12
+92,8746,57,unigram,40,4,12,3,12,13
+93,8825,58,unigram,66,4,17,15,14,20
+94,8907,59,unigram,55,4,10,9,13,23
+95,8989,5b,unigram,51,4,17,8,15,11
+96,9071,60,unigram,109,4,31,22,33,23
+97,9131,600,unigram,38,4,6,9,17,6
+98,9209,61,unigram,47,4,11,11,14,11
+99,9290,62,unigram,54,4,19,6,15,14
+100,9381,63,unigram,49,4,10,16,13,10
+101,9451,64,unigram,46,4,12,14,12,8
+102,9522,65,unigram,55,4,11,16,17,11
+103,9615,66,unigram,51,4,11,11,18,11
+104,9682,67,unigram,49,4,15,10,15,9
+105,9732,68,unigram,38,4,13,9,13,3
+106,9789,69,unigram,28,4,11,3,9,5
+107,9840,6b,unigram,39,4,11,9,11,8
+108,9895,70,unigram,49,4,12,12,14,11
+109,9929,700,unigram,28,4,6,10,8,4
+110,9985,71,unigram,33,4,9,6,7,11
+111,10042,72,unigram,36,4,9,5,11,11
+112,10105,73,unigram,29,4,5,5,9,10
+113,10161,74,unigram,20,4,1,5,9,5
+114,10219,75,unigram,63,4,17,14,19,13
+115,10320,76,unigram,25,4,7,5,6,7
+116,10369,77,unigram,36,4,10,11,7,8
+117,10437,78,unigram,36,4,6,10,12,8
+118,10500,79,unigram,27,4,6,4,9,8
+119,10548,7b,unigram,32,4,9,6,11,6
+120,10587,80,unigram,53,4,17,10,14,12
+121,10676,81,unigram,29,4,10,2,11,6
+122,10724,82,unigram,22,4,4,4,7,7
+123,10764,83,unigram,25,4,6,4,8,7
+124,10809,84,unigram,29,4,9,4,10,6
+125,10857,85,unigram,34,4,7,10,9,8
+126,10915,86,unigram,35,4,8,7,14,6
+127,10967,87,unigram,37,4,9,6,11,11
+128,11035,88,unigram,46,4,13,12,8,13
+129,11091,89,unigram,41,4,12,5,11,13
+130,11152,8b,unigram,31,4,12,7,8,4
+131,11205,90,unigram,76,4,18,10,22,26
+132,11302,91,unigram,30,4,11,6,4,9
+133,11362,92,unigram,35,4,8,11,5,11
+134,11423,93,unigram,41,4,15,7,11,8
+135,11481,94,unigram,35,4,6,6,8,15
+136,11534,95,unigram,48,4,10,11,10,17
+137,11589,96,unigram,35,4,7,12,10,6
+138,11650,97,unigram,35,4,8,12,8,7
+139,11703,98,unigram,47,4,9,10,12,16
+140,11754,99,unigram,34,4,9,6,8,11
+141,11801,9b,unigram,29,4,12,6,6,5
+142,11894,aapl,unigram,30,4,6,6,15,3
+143,11950,abc,unigram,31,4,14,6,5,6
+144,12017,about,unigram,464,4,120,127,114,103
+145,12279,about the,bigram,25,4,4,5,7,9
+146,12315,above,unigram,104,4,26,23,24,31
+147,12475,accelerate,unigram,22,4,8,3,4,7
+148,12534,accept,unigram,35,4,12,9,4,10
+149,12602,access,unigram,60,4,13,12,25,10
+150,12623,access to,bigram,27,4,5,4,11,7
+151,12670,according,unigram,331,4,104,94,88,45
+152,12672,according to,bigram,330,4,104,93,88,45
+153,12678,account,unigram,24,4,4,5,7,8
+154,12705,accounts,unigram,26,4,9,1,6,10
+155,12785,achieve,unigram,35,4,10,11,8,6
+156,12833,achieving,unigram,21,4,3,8,6,4
+157,12870,acquire,unigram,29,4,8,3,11,7
+158,12941,across,unigram,86,4,15,12,40,19
+159,12986,across the,bigram,26,4,3,1,16,6
+160,12992,act,unigram,73,4,22,22,18,11
+161,13056,action,unigram,89,4,29,26,22,12
+162,13098,actions,unigram,62,4,11,18,20,13
+163,13140,active,unigram,24,4,6,3,7,8
+164,13195,activities,unigram,25,4,9,3,6,7
+165,13207,activity,unigram,63,4,12,22,15,14
+166,13262,actual,unigram,754,4,191,157,150,256
+167,13415,actual vs,bigram,451,4,108,95,88,160
+168,13462,add,unigram,38,4,10,12,10,6
+169,13492,added,unigram,38,4,8,8,12,10
+170,13520,adding,unigram,32,4,6,7,10,9
+171,13544,additional,unigram,85,4,22,26,17,20
+172,13613,address,unigram,44,4,7,17,8,12
+173,13671,adds,unigram,38,4,6,7,16,9
+174,13735,adj,unigram,74,4,25,10,26,13
+175,13740,adj eps,bigram,56,4,21,7,21,7
+176,13775,adjusted,unigram,74,4,33,4,31,6
+177,13781,adjusted eps,bigram,45,4,17,1,25,2
+178,13811,adjustments,unigram,21,4,6,7,1,7
+179,13831,admin,unigram,23,4,6,10,3,4
+180,13855,administration,unigram,194,4,51,73,45,25
+181,14032,adoption,unigram,20,4,4,6,7,3
+182,14096,advance,unigram,33,4,8,5,10,10
+183,14125,advanced,unigram,28,4,6,5,10,7
+184,14225,adviser,unigram,52,4,12,15,13,12
+185,14352,affairs,unigram,27,4,6,5,6,10
+186,14376,affect,unigram,23,4,5,6,9,3
+187,14454,affirms,unigram,21,4,3,5,2,11
+188,14528,africa,unigram,30,4,8,9,6,7
+189,14568,after,unigram,704,4,161,193,184,166
+190,14780,after market,bigram,35,4,6,9,9,11
+191,14919,after the,bigram,38,4,4,11,10,13
+192,14930,after trump,bigram,27,4,10,5,10,2
+193,14941,after us,bigram,20,4,7,4,5,4
+194,14981,ag,unigram,22,4,3,5,8,6
+195,15002,again,unigram,82,4,22,19,23,18
+196,15052,against,unigram,286,4,85,81,80,40
+197,15177,against the,bigram,39,4,11,9,10,9
+198,15197,age,unigram,23,4,6,5,2,10
+199,15221,agencies,unigram,24,4,7,6,5,6
+200,15237,agency,unigram,102,4,47,23,13,19
+201,15361,aggression,unigram,38,4,24,8,4,2
+202,15418,ago,unigram,42,4,15,3,13,11
+203,15446,agree,unigram,66,4,18,20,15,13
+204,15454,agree to,bigram,40,4,12,11,9,8
+205,15457,agreed,unigram,71,4,31,6,19,15
+206,15473,agreed to,bigram,38,4,23,1,8,6
+207,15478,agreement,unigram,253,4,89,49,74,41
+208,15534,agreement to,bigram,21,4,6,7,5,3
+209,15548,agreement with,bigram,44,4,19,9,11,5
+210,15551,agreements,unigram,40,4,11,9,9,11
+211,15575,agrees,unigram,45,4,11,11,6,17
+212,15588,agrees to,bigram,25,4,7,6,5,7
+213,15618,ahead,unigram,158,4,53,28,40,37
+214,15635,ahead of,bigram,114,4,35,22,26,31
+215,15673,ai,unigram,480,4,83,93,149,155
+216,15724,ai chip,bigram,23,4,8,3,8,4
+217,15727,ai chips,bigram,20,4,3,4,9,4
+218,15963,aid,unigram,110,4,46,21,35,8
+219,16022,aide,unigram,21,4,5,4,4,8
+220,16054,aimed,unigram,35,4,10,7,9,9
+221,16055,aimed at,bigram,34,4,10,7,8,9
+222,16057,aiming,unigram,30,4,9,9,6,6
+223,16059,aiming to,bigram,24,4,6,8,6,4
+224,16060,aims,unigram,64,4,21,21,10,12
+225,16062,aims to,bigram,56,4,19,18,8,11
+226,16067,air,unigram,195,4,81,40,43,31
+227,16093,air defense,bigram,25,4,9,6,9,1
+228,16097,air force,bigram,28,4,18,4,3,3
+229,16144,airbus,unigram,35,4,7,4,7,17
+230,16172,aircraft,unigram,70,4,17,13,19,21
+231,16248,airlines,unigram,39,4,12,9,11,7
+232,16288,airport,unigram,39,4,10,17,10,2
+233,16336,airspace,unigram,44,4,13,17,7,7
+234,16369,airstrikes,unigram,24,4,9,8,5,2
+235,16398,akazawa,unigram,25,3,11,12,2,0
+236,16430,al,unigram,158,4,53,35,36,34
+237,16470,al jazeera,bigram,22,3,14,6,2,0
+238,16551,alaska,unigram,45,4,29,6,7,3
+239,16734,all,unigram,366,4,106,66,99,95
+240,16867,all of,bigram,20,4,7,4,6,3
+241,16928,all time,bigram,40,4,9,7,14,10
+242,16959,alleged,unigram,24,4,8,6,3,7
+243,16997,alliance,unigram,28,4,8,12,1,7
+244,17027,allies,unigram,52,4,10,16,15,11
+245,17082,allow,unigram,55,4,15,14,11,15
+246,17139,allowing,unigram,26,4,9,4,9,4
+247,17163,allows,unigram,21,4,2,10,3,6
+248,17198,almost,unigram,26,4,7,5,10,4
+249,17233,along,unigram,29,4,6,8,6,9
+250,17265,alphabet,unigram,26,4,5,4,7,10
+251,17287,already,unigram,65,4,17,14,20,14
+252,17345,also,unigram,138,4,45,34,31,28
+253,17551,always,unigram,32,4,5,9,10,8
+254,17583,am,unigram,48,4,11,15,12,10
+255,17625,amazon,unigram,86,4,17,14,25,30
+256,17701,ambassador,unigram,33,4,10,11,4,8
+257,17710,ambassador to,bigram,21,4,7,6,2,6
+258,17750,amd,unigram,36,4,4,3,19,10
+259,17808,america,unigram,124,4,38,33,35,18
+260,17890,american,unigram,125,4,44,19,26,36
+261,17988,americans,unigram,66,4,7,9,27,23
+262,18043,amid,unigram,300,4,80,72,82,66
+263,18238,among,unigram,51,4,13,16,9,13
+264,18276,amount,unigram,21,4,8,5,3,5
+265,18331,an,unigram,511,4,152,123,108,128
+266,18355,an agreement,bigram,36,4,18,8,6,4
+267,18511,an israeli,bigram,32,4,16,9,5,2
+268,18597,analyst,unigram,34,4,4,9,11,10
+269,18626,analysts,unigram,46,4,7,17,11,11
+270,18683,and,unigram,3747,4,1006,932,935,874
+271,19086,and china,bigram,41,4,11,12,16,2
+272,19418,and european,bigram,20,4,8,2,4,6
+273,19550,and gas,bigram,21,3,0,6,10,5
+274,19702,and in,bigram,23,4,6,4,5,8
+275,19721,and inflation,bigram,20,4,4,7,5,4
+276,19765,and is,bigram,30,4,11,5,10,4
+277,19774,and it,bigram,24,4,7,6,9,2
+278,19776,and its,bigram,24,4,5,5,7,7
+279,20112,and other,bigram,44,4,12,5,15,12
+280,20434,and russia,bigram,22,4,7,5,5,5
+281,20733,and that,bigram,25,4,6,5,5,9
+282,20734,and the,bigram,207,4,51,52,51,53
+283,20786,and trump,bigram,25,4,6,9,1,9
+284,20806,and ukraine,bigram,20,4,7,3,2,8
+285,20847,and us,bigram,25,4,5,8,7,5
+286,20902,and we,bigram,52,4,17,5,10,20
+287,20924,and will,bigram,37,4,10,10,6,11
+288,21081,announce,unigram,44,4,9,14,14,7
+289,21120,announced,unigram,133,4,45,39,30,19
+290,21162,announced that,bigram,48,4,19,16,8,5
+291,21166,announcement,unigram,38,4,7,10,11,10
+292,21195,announces,unigram,176,4,48,70,40,18
+293,21324,annual,unigram,46,4,8,16,11,11
+294,21399,another,unigram,68,4,13,23,21,11
+295,21495,anti,unigram,41,4,9,14,6,12
+296,21595,antitrust,unigram,25,4,8,7,3,7
+297,21629,any,unigram,181,4,69,32,39,41
+298,21898,app,unigram,31,4,10,12,7,2
+299,21932,appeal,unigram,20,4,8,7,2,3
+300,21985,apple,unigram,135,4,26,45,37,27
+301,22114,applications,unigram,24,4,4,4,8,8
+302,22211,approach,unigram,40,4,8,11,12,9
+303,22247,appropriate,unigram,43,4,11,11,12,9
+304,22283,approval,unigram,62,4,15,19,17,11
+305,22317,approve,unigram,28,4,3,5,11,9
+306,22345,approved,unigram,43,4,10,10,7,16
+307,22374,approves,unigram,40,4,10,14,9,7
+308,22419,approximately,unigram,20,4,4,6,4,6
+309,22454,april,unigram,51,4,9,10,18,14
+310,22499,arab,unigram,37,4,7,13,8,9
+311,22513,arabia,unigram,52,4,14,14,11,13
+312,22635,are,unigram,982,4,280,208,265,229
+313,22864,are in,bigram,23,4,9,5,5,4
+314,22953,are not,bigram,55,4,22,13,13,7
+315,23162,are working,bigram,22,4,6,4,6,6
+316,23167,area,unigram,61,4,16,19,17,9
+317,23203,areas,unigram,51,4,22,8,12,9
+318,23243,argentina,unigram,36,3,1,12,23,0
+319,23351,armed,unigram,30,4,8,7,7,8
+320,23379,arms,unigram,23,4,4,6,6,7
+321,23395,army,unigram,177,4,53,53,21,50
+322,23489,army we,bigram,23,4,10,4,1,8
+323,23493,around,unigram,130,4,33,24,32,41
+324,23611,arrest,unigram,20,4,8,3,4,5
+325,23698,artificial,unigram,39,4,6,10,11,12
+326,23700,artificial intelligence,bigram,37,4,5,10,10,12
+327,23718,as,unigram,1273,4,326,308,326,313
+328,24009,as investors,bigram,36,4,9,9,5,13
+329,24019,as it,bigram,30,4,7,5,12,6
+330,24074,as much,bigram,30,4,6,7,10,7
+331,24096,as of,bigram,20,4,7,5,4,4
+332,24123,as part,bigram,60,4,17,15,19,9
+333,24279,as the,bigram,73,4,19,17,19,18
+334,24299,as traders,bigram,37,4,10,11,9,7
+335,24311,as trump,bigram,25,4,10,7,4,4
+336,24327,as us,bigram,23,4,5,3,9,6
+337,24395,asia,unigram,78,4,16,20,22,20
+338,24435,asian,unigram,70,4,12,22,18,18
+339,24484,asked,unigram,65,4,22,14,18,11
+340,24584,assembly,unigram,25,4,5,12,5,3
+341,24620,assess,unigram,22,4,5,8,5,4
+342,24654,assessment,unigram,20,4,8,4,3,5
+343,24668,asset,unigram,46,4,8,7,22,9
+344,24699,assets,unigram,122,4,24,20,35,43
+345,24900,asx,unigram,36,4,7,8,8,13
+346,24901,asx 200,bigram,30,4,6,7,7,10
+347,24928,at,unigram,1584,4,422,381,362,419
+348,25070,at 22,bigram,24,4,2,8,12,2
+349,25073,at 23,bigram,23,3,0,2,4,17
+350,25141,at 45,bigram,23,4,5,13,3,2
+351,25146,at 46,bigram,20,4,1,7,11,1
+352,25530,at least,bigram,61,4,13,14,23,11
+353,25659,at risk,bigram,23,4,5,2,7,9
+354,25719,at the,bigram,143,4,51,31,34,27
+355,25845,attack,unigram,215,4,89,59,23,44
+356,25898,attack on,bigram,59,4,21,23,6,9
+357,25929,attacked,unigram,22,4,9,5,2,6
+358,25964,attacks,unigram,84,4,37,18,12,17
+359,25981,attacks on,bigram,45,4,15,13,7,10
+360,25991,attempt,unigram,22,4,2,13,4,3
+361,26010,attend,unigram,21,4,5,7,7,2
+362,26044,attention,unigram,30,4,4,11,6,9
+363,26103,auction,unigram,28,4,11,7,5,5
+364,26155,aug,unigram,233,4,28,163,34,8
+365,26186,aug actual,bigram,43,3,6,35,0,2
+366,26263,august,unigram,156,4,48,79,25,4
+367,26383,australia,unigram,216,4,50,44,67,55
+368,26393,australia asx,bigram,21,4,5,6,2,8
+369,26481,australian,unigram,38,4,8,6,8,16
+370,26512,authorities,unigram,43,4,12,15,7,9
+371,26546,authority,unigram,63,4,18,10,19,16
+372,26607,auto,unigram,67,4,19,14,15,19
+373,26730,available,unigram,26,4,4,5,6,11
+374,26761,average,unigram,68,4,21,11,11,25
+375,26838,aviation,unigram,27,4,9,5,8,5
+376,26878,avoid,unigram,41,4,14,8,7,12
+377,26934,await,unigram,22,3,6,10,0,6
+378,26979,away,unigram,40,4,11,6,12,11
+379,26985,away from,bigram,24,4,8,3,9,4
+380,27019,axios,unigram,89,4,38,15,25,11
+381,27109,back,unigram,163,4,44,34,43,42
+382,27176,back to,bigram,35,4,11,7,7,10
+383,27187,backed,unigram,49,4,12,12,12,13
+384,27230,backing,unigram,21,4,2,9,3,7
+385,27376,bailey,unigram,38,4,6,4,21,7
+386,27413,baker,unigram,23,4,3,6,7,7
+387,27414,baker hughes,bigram,23,4,3,6,7,7
+388,27425,balance,unigram,102,4,13,29,27,33
+389,27464,balance sheet,bigram,29,4,4,3,13,9
+390,27472,balanced,unigram,25,4,5,4,8,8
+391,27538,ban,unigram,56,4,14,14,17,11
+392,27596,bank,unigram,475,4,112,150,120,93
+393,27699,bank of,bigram,178,4,47,52,45,34
+394,27786,banking,unigram,35,4,11,3,11,10
+395,27832,banks,unigram,76,4,23,14,21,18
+396,27942,barclays,unigram,25,4,9,7,7,2
+397,28036,barrel,unigram,38,4,14,11,9,4
+398,28059,barrels,unigram,32,4,7,9,10,6
+399,28119,base,unigram,56,4,18,12,13,13
+400,28153,based,unigram,80,4,22,21,22,15
+401,28177,based on,bigram,44,4,11,15,10,8
+402,28244,basis,unigram,101,4,32,26,15,28
+403,28252,basis point,bigram,26,4,10,9,1,6
+404,28253,basis points,bigram,62,4,18,16,10,18
+405,28293,battery,unigram,22,4,3,8,5,6
+406,28364,bbg,unigram,63,4,24,14,15,10
+407,28370,bbl,unigram,56,4,17,9,14,16
+408,28375,bbl down,bigram,28,4,8,5,9,6
+409,28402,be,unigram,1010,4,259,217,271,263
+410,28666,be in,bigram,21,4,4,7,7,3
+411,28839,be released,bigram,26,4,5,3,11,7
+412,29011,beat,unigram,26,4,5,7,9,5
+413,29076,because,unigram,59,4,14,8,18,19
+414,29089,because of,bigram,29,4,6,5,11,7
+415,29103,become,unigram,58,4,15,15,19,9
+416,29196,been,unigram,202,4,55,45,45,57
+417,29355,before,unigram,173,4,48,43,36,46
+418,29458,before the,bigram,24,4,6,3,5,10
+419,29482,begin,unigram,61,4,14,16,17,14
+420,29545,begins,unigram,37,4,7,9,15,6
+421,29614,behind,unigram,29,4,7,3,9,10
+422,29639,beijing,unigram,48,4,11,14,10,13
+423,29677,being,unigram,106,4,27,26,30,23
+424,29835,believe,unigram,38,4,7,8,11,12
+425,29860,believes,unigram,20,4,7,7,2,4
+426,29896,below,unigram,96,4,15,26,28,27
+427,29977,benchmark,unigram,40,4,12,6,9,13
+428,30018,benefit,unigram,26,4,5,6,8,7
+429,30039,benefits,unigram,31,4,7,5,12,7
+430,30141,bessent,unigram,303,4,106,58,84,55
+431,30218,bessent on,bigram,32,4,19,3,8,2
+432,30236,bessent says,bigram,65,4,14,8,15,28
+433,30272,best,unigram,35,4,9,8,12,6
+434,30325,bets,unigram,52,4,5,17,14,16
+435,30354,better,unigram,64,4,20,17,20,7
+436,30407,between,unigram,197,4,67,36,46,48
+437,30512,between the,bigram,20,4,5,5,6,4
+438,30541,beyond,unigram,27,4,4,8,9,6
+439,30613,bid,unigram,64,4,14,12,17,21
+440,30632,bid to,bigram,24,3,7,7,0,10
+441,30642,biden,unigram,27,4,5,8,5,9
+442,30673,big,unigram,103,4,25,25,22,31
+443,30758,biggest,unigram,76,4,15,15,29,17
+444,30823,bilateral,unigram,29,4,7,10,6,6
+445,30840,bill,unigram,111,4,42,14,25,30
+446,30918,billion,unigram,417,4,96,113,118,90
+447,31026,billion in,bigram,81,4,14,25,24,18
+448,31146,billions,unigram,29,4,8,7,8,6
+449,31161,bills,unigram,27,3,5,0,11,11
+450,31319,bitcoin,unigram,96,4,24,13,25,34
+451,31452,blackrock,unigram,26,4,6,4,9,7
+452,31487,blackwell,unigram,21,4,2,10,6,3
+453,31589,bln,unigram,93,4,16,13,25,39
+454,31675,block,unigram,21,4,6,7,4,4
+455,31719,blocked,unigram,21,4,4,5,9,3
+456,31770,bloomberg,unigram,42,4,18,9,8,7
+457,31874,board,unigram,84,4,15,21,21,27
+458,31955,boc,unigram,27,4,4,3,9,11
+459,31977,bodies,unigram,25,4,3,1,19,2
+460,31989,body,unigram,33,4,4,8,12,9
+461,32013,boe,unigram,107,4,16,27,41,23
+462,32016,boe bailey,bigram,23,3,2,0,15,6
+463,32056,boeing,unigram,64,4,14,21,20,9
+464,32112,bofa,unigram,53,4,13,15,16,9
+465,32156,boj,unigram,257,4,57,54,58,88
+466,32173,boj gov,bigram,22,4,5,5,10,2
+467,32174,boj governor,bigram,29,4,5,8,6,10
+468,32217,boj ueda,bigram,38,4,3,9,5,21
+469,32229,bok,unigram,30,3,0,15,6,9
+470,32337,bond,unigram,183,4,38,49,38,58
+471,32391,bond yield,bigram,65,4,11,15,14,25
+472,32410,bonds,unigram,73,4,11,28,15,19
+473,32518,boom,unigram,25,4,3,8,7,7
+474,32543,boost,unigram,126,4,45,27,28,26
+475,32645,boosting,unigram,32,4,8,9,8,7
+476,32674,boosts,unigram,31,4,8,6,8,9
+477,32711,border,unigram,61,4,22,12,15,12
+478,32757,borders,unigram,21,4,6,10,2,3
+479,32816,bostic,unigram,53,4,25,11,11,6
+480,32832,bostic says,bigram,29,3,16,3,10,0
+481,32845,both,unigram,102,4,30,26,30,16
+482,32886,both sides,bigram,25,4,9,5,7,4
+483,32972,bowman,unigram,25,3,15,8,2,0
+484,33011,bp,unigram,32,4,5,8,6,13
+485,33031,bpd,unigram,32,4,6,6,4,16
+486,33055,bps,unigram,89,4,16,20,20,33
+487,33072,bps to,bigram,38,4,7,11,7,13
+488,33162,brazil,unigram,92,4,35,23,24,10
+489,33287,breaking,unigram,31,4,13,8,7,3
+490,33357,brent,unigram,61,4,21,13,14,13
+491,33364,brent crude,bigram,44,4,18,7,10,9
+492,33465,bring,unigram,37,4,10,9,6,12
+493,33517,britain,unigram,80,4,24,16,20,20
+494,33524,britain ftse,bigram,43,4,13,7,12,11
+495,33546,british,unigram,44,4,15,12,11,6
+496,33648,broader,unigram,33,4,9,6,10,8
+497,33723,bros,unigram,25,4,1,2,6,16
+498,33832,bubble,unigram,30,3,0,3,14,13
+499,33868,budget,unigram,131,4,22,24,36,49
+500,33973,build,unigram,54,4,7,9,20,18
+501,34016,building,unigram,51,4,14,20,8,9
+502,34067,built,unigram,22,4,6,8,5,3
+503,34121,bullish,unigram,27,4,6,4,9,8
+504,34284,business,unigram,182,4,44,46,52,40
+505,34378,businesses,unigram,29,4,6,11,4,8
+506,34415,but,unigram,463,4,107,127,125,104
+507,34567,but not,bigram,20,4,3,5,10,2
+508,34693,buy,unigram,110,4,21,25,35,29
+509,34813,buyers,unigram,26,4,4,6,10,6
+510,34834,buying,unigram,66,4,9,18,23,16
+511,34884,buys,unigram,20,4,7,3,6,4
+512,34908,by,unigram,1126,4,275,292,286,273
+513,34940,by 2030,bigram,21,4,1,7,4,9
+514,35121,by end,bigram,41,4,8,10,10,13
+515,35438,by the,bigram,93,4,33,22,18,20
+516,35456,by trump,bigram,21,4,4,8,5,4
+517,35490,by year,bigram,25,4,4,9,7,5
+518,35544,cabinet,unigram,54,4,11,15,14,14
+519,35580,cac,unigram,42,4,11,7,11,13
+520,35581,cac 40,bigram,39,4,11,7,9,12
+521,35645,california,unigram,42,4,10,14,6,12
+522,35678,call,unigram,149,4,48,33,30,38
+523,35732,call with,bigram,35,4,14,5,2,14
+524,35733,called,unigram,67,4,9,15,24,19
+525,35778,calling,unigram,51,4,13,14,10,14
+526,35794,calls,unigram,139,4,36,41,26,36
+527,35803,calls for,bigram,57,4,13,21,11,12
+528,35817,calls on,bigram,24,4,8,3,6,7
+529,35869,cambodia,unigram,29,3,11,0,3,15
+530,35932,campaign,unigram,21,4,4,4,5,8
+531,35958,can,unigram,233,4,48,55,72,58
+532,35972,can be,bigram,31,4,6,8,11,6
+533,36095,canada,unigram,212,4,60,54,66,32
+534,36213,canadian,unigram,47,4,8,15,9,15
+535,36372,cannot,unigram,51,4,16,11,16,8
+536,36426,cap,unigram,47,4,13,13,10,11
+537,36460,capabilities,unigram,29,4,10,8,7,4
+538,36486,capacity,unigram,56,4,11,18,15,12
+539,36518,capex,unigram,29,4,8,6,7,8
+540,36549,capital,unigram,101,4,26,24,28,23
+541,36673,car,unigram,56,4,11,12,16,17
+542,36773,care,unigram,32,4,7,5,10,10
+543,36876,carney,unigram,58,4,13,20,17,8
+544,36932,carried,unigram,22,4,5,6,8,3
+545,36934,carried out,bigram,21,4,5,6,8,2
+546,36973,cars,unigram,39,4,18,7,7,7
+547,37032,case,unigram,91,4,20,22,26,23
+548,37084,cases,unigram,20,4,6,3,8,3
+549,37099,cash,unigram,92,4,26,17,30,19
+550,37116,cash flow,bigram,26,4,10,3,11,2
+551,37248,cause,unigram,27,4,8,9,7,3
+552,37270,caused,unigram,28,4,10,6,6,6
+553,37305,caution,unigram,28,4,6,8,11,3
+554,37329,cautious,unigram,43,4,11,10,15,7
+555,37403,cbs,unigram,39,4,14,4,11,10
+556,37427,cctv,unigram,25,4,8,5,4,8
+557,37461,ceasefire,unigram,160,4,75,12,51,22
+558,37493,ceasefire in,bigram,22,4,9,2,9,2
+559,37606,center,unigram,73,4,26,19,13,15
+560,37659,centers,unigram,39,4,8,9,9,13
+561,37687,central,unigram,202,4,54,59,39,50
+562,37692,central bank,bigram,134,4,29,50,26,29
+563,37747,cents,unigram,27,4,10,3,5,9
+564,37770,ceo,unigram,287,4,65,70,108,44
+565,37875,ceo says,bigram,42,4,3,11,16,12
+566,37938,certain,unigram,40,4,19,6,6,9
+567,38017,cfo,unigram,44,4,17,12,8,7
+568,38063,chain,unigram,28,4,6,7,6,9
+569,38106,chair,unigram,131,4,44,28,22,37
+570,38148,chair powell,bigram,26,4,13,6,6,1
+571,38174,chairman,unigram,30,4,7,8,9,6
+572,38205,challenge,unigram,22,4,6,5,7,4
+573,38229,challenges,unigram,36,4,10,10,10,6
+574,38249,challenging,unigram,29,4,6,9,8,6
+575,38287,chance,unigram,57,4,23,8,15,11
+576,38295,chance of,bigram,36,4,15,6,7,8
+577,38303,chancellor,unigram,50,4,18,14,7,11
+578,38309,chancellor merz,bigram,24,4,10,7,2,5
+579,38326,change,unigram,108,4,24,29,28,27
+580,38395,changed,unigram,26,4,6,5,9,6
+581,38412,changes,unigram,85,4,30,23,20,12
+582,38465,channel,unigram,54,4,19,11,17,7
+583,38467,channel 12,bigram,36,4,11,9,12,4
+584,38529,charges,unigram,24,4,10,3,8,3
+585,38605,chatgpt,unigram,39,4,12,10,6,11
+586,38719,chevron,unigram,23,3,10,0,3,10
+587,38783,chicago,unigram,49,4,3,17,21,8
+588,38814,chief,unigram,216,4,56,59,55,46
+589,38875,chief of,bigram,36,4,13,11,3,9
+590,38942,children,unigram,29,4,5,13,3,8
+591,38977,china,unigram,1460,4,300,376,471,313
+592,39013,china and,bigram,46,4,9,13,14,10
+593,39072,china central,bigram,22,4,4,7,3,8
+594,39090,china commerce,bigram,48,4,10,4,19,15
+595,39192,china foreign,bigram,37,4,16,6,7,8
+596,39213,china has,bigram,20,4,4,2,11,3
+597,39251,china is,bigram,21,4,7,2,8,4
+598,39512,china to,bigram,60,4,4,21,26,9
+599,39517,china trade,bigram,52,4,10,5,35,2
+600,39556,china will,bigram,35,4,9,10,13,3
+601,39565,china xi,bigram,54,4,5,22,12,15
+602,39568,chinese,unigram,250,4,55,68,69,58
+603,39724,chip,unigram,111,4,25,15,40,31
+604,39808,chips,unigram,91,4,14,19,30,28
+605,40104,citi,unigram,23,4,3,5,8,7
+606,40145,citigroup,unigram,30,4,7,11,9,3
+607,40169,citing,unigram,83,4,38,18,17,10
+608,40236,citizens,unigram,32,4,11,8,5,8
+609,40262,city,unigram,134,4,35,58,25,16
+610,40298,city of,bigram,23,4,6,7,5,5
+611,40325,civil,unigram,30,4,13,6,5,6
+612,40405,claims,unigram,150,4,38,49,28,35
+613,40604,clear,unigram,37,4,17,4,1,15
+614,40712,climate,unigram,22,4,3,7,6,6
+615,40729,climb,unigram,37,4,10,9,12,6
+616,40745,climbed,unigram,21,4,6,6,2,7
+617,40767,climbs,unigram,37,4,7,8,9,13
+618,40810,close,unigram,198,4,51,38,47,62
+619,40866,close of,bigram,34,4,9,10,9,6
+620,40875,close to,bigram,45,4,9,4,17,15
+621,40882,closed,unigram,36,4,14,8,9,5
+622,40913,closely,unigram,35,4,13,10,4,8
+623,40929,closer,unigram,32,4,5,8,6,13
+624,40937,closer to,bigram,20,4,4,4,3,9
+625,40939,closes,unigram,83,4,23,23,19,18
+626,40944,closes down,bigram,24,4,4,5,9,6
+627,40951,closes up,bigram,42,4,14,11,6,11
+628,40956,closing,unigram,21,4,1,7,6,7
+629,40991,cloud,unigram,45,4,10,12,16,7
+630,41078,cnbc,unigram,133,4,34,26,28,45
+631,41093,cnn,unigram,49,4,24,4,7,14
+632,41150,co,unigram,42,4,10,7,14,11
+633,41206,coalition,unigram,32,4,7,8,9,8
+634,41225,coast,unigram,32,4,10,10,6,6
+635,41297,coffee,unigram,21,4,8,2,6,5
+636,41338,coinbase,unigram,34,4,7,3,8,16
+637,41443,collaboration,unigram,27,4,6,6,12,3
+638,41532,collins,unigram,26,4,4,4,8,10
+639,41591,combat,unigram,21,4,6,5,4,6
+640,41649,come,unigram,75,4,14,11,33,17
+641,41684,comes,unigram,30,4,11,4,7,8
+642,41722,coming,unigram,97,4,27,23,21,26
+643,41763,command,unigram,21,4,11,5,3,2
+644,41782,commander,unigram,23,4,9,7,1,6
+645,41809,comment,unigram,24,4,8,6,4,6
+646,41826,comments,unigram,32,4,7,5,10,10
+647,41843,commerce,unigram,118,4,36,18,35,29
+648,41857,commerce minister,bigram,22,4,7,1,6,8
+649,41858,commerce ministry,bigram,42,4,7,5,18,12
+650,41870,commercial,unigram,22,4,6,4,6,6
+651,41898,commission,unigram,61,4,15,13,12,21
+652,41951,commissioner,unigram,25,4,4,11,8,2
+653,41981,commitment,unigram,34,4,8,8,10,8
+654,41989,commitment to,bigram,27,4,6,6,9,6
+655,42007,committed,unigram,29,4,8,7,7,7
+656,42015,committed to,bigram,21,4,4,7,5,5
+657,42016,committee,unigram,63,4,15,15,24,9
+658,42072,common,unigram,22,4,6,8,3,5
+659,42100,communication,unigram,22,4,2,5,8,7
+660,42147,community,unigram,24,4,5,8,2,9
+661,42174,companies,unigram,146,4,28,40,39,39
+662,42260,company,unigram,167,4,35,38,54,40
+663,42303,company is,bigram,20,4,5,3,6,6
+664,42372,compared,unigram,52,4,16,17,9,10
+665,42373,compared to,bigram,39,4,13,16,6,4
+666,42419,competition,unigram,41,4,7,10,18,6
+667,42488,complete,unigram,32,4,11,8,10,3
+668,42570,compliance,unigram,21,4,5,5,5,6
+669,42624,composite,unigram,58,4,22,9,14,13
+670,42637,composite pmi,bigram,34,4,12,5,9,8
+671,42761,concern,unigram,35,4,8,9,8,10
+672,42779,concerned,unigram,30,4,12,7,5,6
+673,42780,concerned about,bigram,23,4,8,6,5,4
+674,42793,concerns,unigram,127,4,33,39,22,33
+675,42827,concerns over,bigram,26,4,10,5,4,7
+676,42913,condemns,unigram,29,4,8,8,3,10
+677,42951,conditions,unigram,82,4,15,21,28,18
+678,42997,conduct,unigram,30,4,10,6,6,8
+679,43061,conference,unigram,37,4,9,14,7,7
+680,43080,confidence,unigram,108,4,23,36,22,27
+681,43127,confident,unigram,40,4,14,9,13,4
+682,43184,confirmed,unigram,52,4,24,9,11,8
+683,43216,confirms,unigram,116,4,33,26,24,33
+684,43297,conflict,unigram,79,4,36,20,11,12
+685,43395,congress,unigram,28,4,6,9,5,8
+686,43500,consensus,unigram,45,4,13,14,7,11
+687,43561,consider,unigram,39,4,12,10,10,7
+688,43625,considering,unigram,52,4,24,15,12,1
+689,43672,considers,unigram,36,4,12,10,9,5
+690,43797,construction,unigram,43,4,11,13,9,10
+691,43879,consumer,unigram,161,4,39,48,38,36
+692,43887,consumer confidence,bigram,38,4,6,15,5,12
+693,43912,consumer sentiment,bigram,31,4,10,6,8,7
+694,43914,consumer spending,bigram,21,4,8,7,3,3
+695,43923,consumers,unigram,39,4,6,7,15,11
+696,43950,consumption,unigram,51,4,14,9,12,16
+697,44098,continue,unigram,169,4,54,35,43,37
+698,44160,continue to,bigram,58,4,24,10,15,9
+699,44169,continued,unigram,46,4,13,10,15,8
+700,44204,continues,unigram,81,4,23,18,28,12
+701,44232,continues to,bigram,33,4,12,4,11,6
+702,44236,continuing,unigram,40,4,12,11,4,13
+703,44269,contract,unigram,30,4,5,8,7,10
+704,44305,contracts,unigram,20,4,6,3,6,5
+705,44360,control,unigram,112,4,34,28,25,25
+706,44389,control of,bigram,26,4,8,5,4,9
+707,44433,controls,unigram,35,4,5,5,21,4
+708,44547,cook,unigram,56,4,8,31,12,5
+709,44637,cooperation,unigram,94,4,26,31,21,16
+710,44671,cooperation with,bigram,22,4,4,10,5,3
+711,44729,copper,unigram,78,4,21,18,18,21
+712,44796,core,unigram,99,4,27,23,26,23
+713,44866,corp,unigram,30,4,13,8,6,3
+714,44891,corporate,unigram,42,4,10,13,8,11
+715,44942,correct,unigram,23,4,5,4,7,7
+716,45029,cost,unigram,87,4,26,17,26,18
+717,45104,costs,unigram,95,4,22,18,31,24
+718,45172,could,unigram,368,4,109,84,83,92
+719,45183,could be,bigram,54,4,11,14,11,18
+720,45342,council,unigram,75,4,13,26,17,19
+721,45405,count,unigram,21,4,5,5,5,6
+722,45422,counter,unigram,24,4,4,7,9,4
+723,45460,counterpart,unigram,28,4,9,4,9,6
+724,45506,countries,unigram,153,4,41,55,33,24
+725,45578,country,unigram,121,4,33,35,30,23
+726,45707,court,unigram,160,4,30,56,39,35
+727,45794,cover,unigram,31,4,10,6,6,9
+728,45858,covid,unigram,26,4,8,8,4,6
+729,45923,cpi,unigram,228,4,54,65,49,60
+730,45953,cpi mom,bigram,47,4,12,12,12,11
+731,45981,cpi yoy,bigram,50,4,11,14,11,14
+732,45983,cpif,unigram,33,4,4,7,11,11
+733,46007,crackdown,unigram,22,4,5,6,3,8
+734,46065,create,unigram,36,4,8,9,9,10
+735,46173,credit,unigram,101,4,20,21,38,22
+736,46287,crime,unigram,22,4,5,7,4,6
+737,46313,criminal,unigram,20,4,8,4,1,7
+738,46343,crisis,unigram,62,4,9,18,17,18
+739,46387,critical,unigram,55,4,10,9,23,13
+740,46401,critical minerals,bigram,25,4,4,2,14,5
+741,46470,cross,unigram,27,4,6,2,16,3
+742,46556,crude,unigram,184,4,55,41,41,47
+743,46570,crude futures,bigram,35,4,12,6,10,7
+744,46581,crude oil,bigram,80,4,21,17,19,23
+745,46631,crypto,unigram,139,4,48,24,34,33
+746,46770,csi,unigram,27,4,4,8,4,11
+747,46851,curbs,unigram,21,4,4,5,9,3
+748,46877,currencies,unigram,20,4,4,2,6,8
+749,46888,currency,unigram,54,4,8,14,17,15
+750,46930,current,unigram,130,4,38,23,36,33
+751,47004,currently,unigram,57,4,18,14,19,6
+752,47092,customer,unigram,25,4,5,2,9,9
+753,47108,customers,unigram,29,4,11,4,8,6
+754,47147,cut,unigram,404,4,71,117,92,124
+755,47247,cut in,bigram,39,4,16,10,6,7
+756,47294,cut rates,bigram,31,4,8,9,3,11
+757,47341,cuts,unigram,294,4,61,91,83,59
+758,47410,cuts in,bigram,26,4,9,6,3,8
+759,47494,cutting,unigram,41,4,9,9,12,11
+760,47570,cycle,unigram,23,4,5,3,11,4
+761,47627,daily,unigram,31,4,7,12,4,8
+762,47671,daly,unigram,33,4,3,4,12,14
+763,47698,damage,unigram,46,4,20,8,10,8
+764,47784,dangerous,unigram,25,4,10,5,4,6
+765,47856,data,unigram,430,4,83,112,118,117
+766,47881,data center,bigram,35,4,4,11,8,12
+767,47882,data centers,bigram,28,4,4,6,8,10
+768,48034,date,unigram,25,4,8,4,6,7
+769,48100,dax,unigram,71,4,22,13,18,18
+770,48123,dax up,bigram,21,4,6,3,6,6
+771,48124,day,unigram,168,4,41,46,42,39
+772,48211,days,unigram,93,4,35,23,17,18
+773,48280,de,unigram,36,4,10,12,5,9
+774,48303,dead,unigram,30,4,5,12,9,4
+775,48326,deadline,unigram,34,4,22,6,3,3
+776,48365,deal,unigram,557,4,181,111,137,128
+777,48512,deal to,bigram,40,4,6,11,9,14
+778,48530,deal with,bigram,108,4,43,13,30,22
+779,48553,deals,unigram,76,4,28,12,27,9
+780,48599,death,unigram,33,4,10,8,4,11
+781,48654,debt,unigram,118,4,21,30,32,35
+782,48756,dec,unigram,80,4,2,4,6,68
+783,48801,decade,unigram,24,4,5,4,10,5
+784,48839,december,unigram,97,4,8,16,26,47
+785,48906,decide,unigram,23,4,7,4,5,7
+786,48941,decision,unigram,139,4,34,37,30,38
+787,48993,decision to,bigram,20,4,7,5,5,3
+788,49002,decisions,unigram,37,4,13,7,8,9
+789,49065,declares,unigram,33,4,12,15,5,1
+790,49095,decline,unigram,85,4,20,21,24,20
+791,49109,decline in,bigram,24,4,5,3,10,6
+792,49138,declines,unigram,54,4,12,16,15,11
+793,49232,deep,unigram,22,4,8,10,3,1
+794,49250,deepen,unigram,24,4,2,9,10,3
+795,49365,defence,unigram,103,4,25,29,24,25
+796,49389,defence minister,bigram,26,4,6,8,7,5
+797,49391,defence ministry,bigram,23,4,5,6,6,6
+798,49413,defend,unigram,23,4,8,5,5,5
+799,49447,defense,unigram,247,4,83,69,61,34
+800,49504,defense minister,bigram,41,4,13,7,12,9
+801,49599,deficit,unigram,51,4,10,12,10,19
+802,49740,delay,unigram,28,4,7,9,6,6
+803,49763,delayed,unigram,41,4,5,6,19,11
+804,49797,delays,unigram,36,4,6,10,12,8
+805,49833,delegation,unigram,32,4,5,10,7,10
+806,49909,deliver,unigram,26,4,5,6,7,8
+807,49934,delivered,unigram,21,4,8,4,5,4
+808,49956,deliveries,unigram,23,4,7,4,8,4
+809,49993,delivery,unigram,27,4,7,5,6,9
+810,50036,demand,unigram,250,4,65,50,75,60
+811,50075,demand for,bigram,42,4,13,6,13,10
+812,50157,demands,unigram,38,4,15,8,8,7
+813,50221,democratic,unigram,44,4,7,11,15,11
+814,50255,democrats,unigram,58,4,10,10,27,11
+815,50448,department,unigram,114,4,43,31,15,25
+816,50476,department of,bigram,35,4,12,8,7,8
+817,50591,deployment,unigram,26,4,8,6,7,5
+818,50643,deposits,unigram,22,4,3,4,9,6
+819,50683,dept,unigram,26,4,6,7,6,7
+820,50713,deputy,unigram,63,4,19,17,14,13
+821,50738,der,unigram,64,4,25,17,8,14
+822,50739,der leyen,bigram,63,4,25,17,7,14
+823,50895,despite,unigram,159,4,47,36,46,30
+824,51032,destroyed,unigram,35,3,17,7,11,0
+825,51099,details,unigram,54,4,16,14,17,7
+826,51237,deutsche,unigram,27,4,4,8,8,7
+827,51238,deutsche bank,bigram,25,4,4,8,7,6
+828,51258,develop,unigram,24,4,5,8,8,3
+829,51311,developing,unigram,25,4,6,9,8,2
+830,51331,development,unigram,70,4,12,16,23,19
+831,51369,developments,unigram,32,4,11,5,9,7
+832,51482,dialogue,unigram,28,4,6,11,5,6
+833,51529,did,unigram,37,4,15,6,6,10
+834,51534,did not,bigram,26,4,12,4,5,5
+835,51612,different,unigram,21,4,9,4,7,1
+836,51637,difficult,unigram,30,4,14,5,5,6
+837,51685,digital,unigram,46,4,11,14,11,10
+838,51778,dip,unigram,22,4,3,7,8,4
+839,51796,diplomacy,unigram,30,4,10,9,5,6
+840,51825,diplomatic,unigram,45,4,11,20,4,10
+841,51893,direct,unigram,28,4,12,5,7,4
+842,51934,direction,unigram,21,4,2,6,4,9
+843,51955,directly,unigram,21,4,7,3,8,3
+844,51975,director,unigram,46,4,10,21,9,6
+845,52239,discuss,unigram,103,4,24,28,27,24
+846,52311,discussed,unigram,70,4,17,14,15,24
+847,52371,discussing,unigram,24,4,7,5,9,3
+848,52394,discussion,unigram,26,4,11,4,5,6
+849,52407,discussions,unigram,80,4,21,19,25,15
+850,52508,disney,unigram,20,4,2,6,4,8
+851,52631,disruption,unigram,21,4,6,10,4,1
+852,52860,dividend,unigram,30,4,13,5,8,4
+853,52963,do,unigram,137,4,32,32,38,35
+854,52993,do not,bigram,36,4,10,9,9,8
+855,53046,documents,unigram,20,4,4,10,1,5
+856,53070,does,unigram,75,4,28,17,16,14
+857,53075,does not,bigram,68,4,25,15,15,13
+858,53079,doesn,unigram,58,4,13,13,21,11
+859,53144,doha,unigram,22,4,3,16,2,1
+860,53161,doing,unigram,27,4,7,10,6,4
+861,53179,doj,unigram,31,4,16,7,3,5
+862,53206,dollar,unigram,270,4,63,72,63,72
+863,53366,dollars,unigram,33,4,6,10,13,4
+864,53405,domestic,unigram,69,4,17,16,15,21
+865,53490,don,unigram,95,4,24,21,25,25
+866,53527,donald,unigram,180,4,56,58,42,24
+867,53528,donald trump,bigram,180,4,56,58,42,24
+868,53547,done,unigram,45,4,10,10,11,14
+869,53638,double,unigram,37,4,3,9,16,9
+870,53724,dow,unigram,105,4,28,26,24,27
+871,53741,dow jones,bigram,73,4,20,19,16,18
+872,53747,down,unigram,475,4,110,113,119,133
+873,53900,down from,bigram,35,4,9,10,9,7
+874,54035,downside,unigram,28,4,4,9,12,3
+875,54068,dozens,unigram,21,4,10,3,4,4
+876,54085,draft,unigram,27,4,7,5,5,10
+877,54292,drive,unigram,28,4,2,8,7,11
+878,54316,driven,unigram,80,4,12,18,23,27
+879,54321,driven by,bigram,39,4,8,8,10,13
+880,54374,driving,unigram,35,4,10,9,7,9
+881,54404,drone,unigram,120,4,27,45,31,17
+882,54465,drones,unigram,95,4,29,37,15,14
+883,54516,drop,unigram,145,4,37,38,41,29
+884,54544,drop in,bigram,26,4,5,7,7,7
+885,54582,dropped,unigram,34,4,13,9,2,10
+886,54613,drops,unigram,57,4,12,16,18,11
+887,54650,drug,unigram,76,4,5,23,31,17
+888,54710,drugs,unigram,32,4,3,12,8,9
+889,54782,due,unigram,195,4,73,55,41,26
+890,54792,due to,bigram,183,4,71,50,40,22
+891,54854,during,unigram,176,4,44,53,43,36
+892,54932,during the,bigram,44,4,13,9,11,11
+893,54951,dutch,unigram,24,4,3,2,14,5
+894,54970,duties,unigram,21,4,7,7,2,5
+895,54984,duty,unigram,22,4,7,9,1,5
+896,55051,each,unigram,44,4,10,13,9,12
+897,55085,earlier,unigram,66,4,21,16,12,17
+898,55128,early,unigram,201,4,46,47,52,56
+899,55199,early trade,bigram,47,4,11,14,6,16
+900,55225,earnings,unigram,192,4,76,30,59,27
+901,55229,earnings adj,bigram,31,4,14,4,11,2
+902,55321,earth,unigram,46,4,11,7,23,5
+903,55351,earthquake,unigram,57,4,23,14,7,13
+904,55384,earths,unigram,36,4,6,2,23,5
+905,55411,ease,unigram,36,4,9,7,10,10
+906,55442,eased,unigram,23,4,5,6,5,7
+907,55484,easing,unigram,77,4,15,16,21,25
+908,55538,east,unigram,101,4,47,19,26,9
+909,55583,eastern,unigram,42,4,9,17,9,7
+910,55647,ebitda,unigram,27,4,16,3,5,3
+911,55684,ecb,unigram,194,4,30,37,57,70
+912,55720,ecb lagarde,bigram,40,4,3,5,13,19
+913,55787,economic,unigram,314,4,72,79,91,72
+914,55809,economic data,bigram,33,4,7,8,11,7
+915,55832,economic growth,bigram,54,4,16,11,12,15
+916,55929,economists,unigram,26,4,9,9,6,2
+917,55949,economy,unigram,286,4,60,67,94,65
+918,55959,economy and,bigram,21,4,2,6,10,3
+919,56007,economy is,bigram,32,4,4,10,12,6
+920,56012,economy minister,bigram,24,4,5,5,9,5
+921,56097,edge,unigram,39,4,9,13,12,5
+922,56121,edges,unigram,46,4,17,7,7,15
+923,56173,effect,unigram,45,4,14,12,10,9
+924,56196,effective,unigram,35,4,10,5,11,9
+925,56234,effects,unigram,46,4,16,11,15,4
+926,56280,effort,unigram,24,4,6,12,4,2
+927,56293,efforts,unigram,100,4,27,33,15,25
+928,56320,efforts to,bigram,42,4,9,18,5,10
+929,56330,egypt,unigram,50,4,11,9,23,7
+930,56364,egyptian,unigram,30,4,5,9,7,9
+931,56380,eia,unigram,33,4,8,5,5,15
+932,56401,eight,unigram,23,4,4,7,6,6
+933,56473,election,unigram,53,4,11,17,17,8
+934,56508,elections,unigram,30,4,5,4,14,7
+935,56534,electric,unigram,31,4,8,9,6,8
+936,56551,electricity,unigram,23,4,4,6,8,5
+937,56620,elevated,unigram,33,4,7,7,11,8
+938,56656,eli,unigram,35,4,12,7,10,6
+939,56658,eli lilly,bigram,31,4,10,7,9,5
+940,56729,elon,unigram,51,4,21,10,13,7
+941,56733,elon musk,bigram,48,4,20,10,13,5
+942,56762,embassy,unigram,27,4,14,6,3,4
+943,56802,emergency,unigram,30,4,12,9,4,5
+944,56831,emerging,unigram,22,4,3,8,5,6
+945,56917,emphasizes,unigram,47,4,7,19,10,11
+946,56965,employees,unigram,43,4,11,10,11,11
+947,57007,employment,unigram,83,4,23,22,20,18
+948,57137,end,unigram,349,4,81,88,82,98
+949,57196,end of,bigram,77,4,17,24,15,21
+950,57221,end the,bigram,44,4,15,6,8,15
+951,57259,ending,unigram,56,4,12,11,14,19
+952,57303,ends,unigram,31,4,12,4,8,7
+953,57359,energy,unigram,232,4,75,51,59,47
+954,57497,enforcement,unigram,25,4,7,7,6,5
+955,57525,engage,unigram,21,4,9,4,6,2
+956,57591,england,unigram,46,4,12,22,4,8
+957,57677,enough,unigram,30,4,6,4,13,7
+958,57719,ensure,unigram,44,4,18,11,7,8
+959,57777,enter,unigram,24,4,8,5,7,4
+960,57804,entering,unigram,21,4,9,7,3,2
+961,57909,entry,unigram,29,4,11,7,6,5
+962,57920,environment,unigram,26,4,6,8,7,5
+963,57946,envoy,unigram,69,4,18,17,14,20
+964,58017,eps,unigram,165,4,63,15,70,17
+965,58133,eps usd,bigram,31,3,7,0,22,2
+966,58137,epstein,unigram,37,4,16,8,3,10
+967,58190,equipment,unigram,47,4,14,8,13,12
+968,58229,equities,unigram,40,4,4,7,9,20
+969,58262,equity,unigram,45,4,6,13,14,12
+970,58308,era,unigram,23,4,7,6,6,4
+971,58441,escalation,unigram,30,4,11,6,5,8
+972,58498,especially,unigram,27,4,12,2,4,9
+973,58539,essential,unigram,20,4,9,4,3,4
+974,58561,est,unigram,1016,4,252,236,234,294
+975,58734,est 49,bigram,22,4,5,4,6,7
+976,58736,est 50,bigram,27,4,8,4,7,8
+977,58871,est prev,bigram,150,4,29,48,36,37
+978,58875,est us,bigram,21,4,8,8,1,4
+979,58877,establish,unigram,20,4,3,5,5,7
+980,58942,estimate,unigram,87,4,32,6,38,11
+981,59007,estimate usd,bigram,31,3,7,0,22,2
+982,59009,estimated,unigram,28,4,8,4,10,6
+983,59036,estimates,unigram,60,4,17,17,22,4
+984,59092,et,unigram,30,4,7,4,10,9
+985,59114,etf,unigram,26,4,8,8,4,6
+986,59167,ether,unigram,23,4,4,3,5,11
+987,59191,ethereum,unigram,29,4,12,5,6,6
+988,59242,eu,unigram,501,4,163,108,90,140
+989,59461,eu to,bigram,28,4,8,7,5,8
+990,59464,eu trade,bigram,27,4,18,2,5,2
+991,59472,eu von,bigram,35,4,16,7,3,9
+992,59511,eur,unigram,47,4,10,10,15,12
+993,59607,euro,unigram,60,4,16,16,18,10
+994,59660,europe,unigram,169,4,49,47,28,45
+995,59753,european,unigram,291,4,97,95,38,61
+996,59769,european central,bigram,38,4,8,23,5,2
+997,59772,european commission,bigram,21,4,2,6,5,8
+998,59799,european leaders,bigram,35,4,24,4,3,4
+999,59831,european union,bigram,56,4,22,22,7,5
+1000,59865,eurozone,unigram,60,4,9,10,14,27
+1001,59908,ev,unigram,46,4,13,9,13,11
+1002,60017,even,unigram,84,4,18,19,23,24
+1003,60075,event,unigram,20,4,1,7,8,4
+1004,60109,ever,unigram,57,4,8,14,16,19
+1005,60157,every,unigram,32,4,6,9,10,7
+1006,60193,everyone,unigram,22,4,6,2,7,7
+1007,60209,everything,unigram,27,4,5,5,6,11
+1008,60226,evidence,unigram,29,4,4,10,6,9
+1009,60271,ex,unigram,47,4,9,14,6,18
+1010,60445,exchange,unigram,82,4,27,17,21,17
+1011,60588,executive,unigram,77,4,23,22,14,18
+1012,60611,executive order,bigram,31,4,6,12,4,9
+1013,60714,existing,unigram,26,4,11,7,4,4
+1014,60736,exit,unigram,25,4,15,7,2,1
+1015,60778,expand,unigram,61,4,16,13,19,13
+1016,60835,expanding,unigram,21,4,5,7,7,2
+1017,60855,expands,unigram,21,4,4,6,4,7
+1018,60872,expansion,unigram,40,4,13,9,9,9
+1019,60903,expect,unigram,106,4,23,29,30,24
+1020,60992,expectations,unigram,168,4,40,51,39,38
+1021,61020,expectations for,bigram,20,4,6,5,8,1
+1022,61058,expected,unigram,312,4,89,70,99,54
+1023,61146,expected to,bigram,152,4,40,36,44,32
+1024,61174,expects,unigram,167,4,26,41,61,39
+1025,61517,export,unigram,135,4,40,27,52,16
+1026,61529,export controls,bigram,23,4,3,2,17,1
+1027,61592,exports,unigram,139,4,37,31,36,35
+1028,61653,exports to,bigram,26,4,10,6,6,4
+1029,61708,expressed,unigram,20,4,4,6,5,5
+1030,61725,expresses,unigram,34,4,7,16,7,4
+1031,61754,extend,unigram,73,4,15,18,21,19
+1032,61801,extended,unigram,30,4,10,7,4,9
+1033,61842,extends,unigram,62,4,15,15,20,12
+1034,61910,extra,unigram,21,4,2,7,4,8
+1035,61997,eye,unigram,21,4,4,3,2,12
+1036,62025,eyes,unigram,31,4,10,8,6,7
+1037,62089,face,unigram,74,4,18,21,19,16
+1038,62162,faces,unigram,70,4,17,25,10,18
+1039,62232,facilities,unigram,58,4,26,14,8,10
+1040,62268,facility,unigram,54,4,21,12,9,12
+1041,62298,facing,unigram,29,4,4,9,10,6
+1042,62364,factory,unigram,44,4,12,8,12,12
+1043,62506,fall,unigram,115,4,37,25,30,23
+1044,62570,falling,unigram,35,4,5,9,12,9
+1045,62598,falls,unigram,112,4,19,36,33,24
+1046,62632,falls to,bigram,29,4,4,9,9,7
+1047,62651,familiar,unigram,22,4,8,3,6,5
+1048,62655,families,unigram,24,4,4,5,9,6
+1049,62671,family,unigram,23,4,7,3,2,11
+1050,62736,far,unigram,69,4,19,14,24,12
+1051,62820,farmers,unigram,22,4,5,3,9,5
+1052,62871,fast,unigram,28,4,8,7,6,7
+1053,62891,faster,unigram,34,4,5,8,11,10
+1054,63014,fbi,unigram,21,4,2,11,4,4
+1055,63056,fda,unigram,30,4,6,11,5,8
+1056,63121,fears,unigram,39,4,7,10,14,8
+1057,63174,february,unigram,21,4,6,1,9,5
+1058,63187,fed,unigram,989,4,199,257,249,284
+1059,63223,fed chair,bigram,71,4,26,18,4,23
+1060,63228,fed collins,bigram,21,4,2,3,6,10
+1061,63286,fed goolsbee,bigram,29,4,6,6,11,6
+1062,63292,fed hammack,bigram,53,4,1,9,10,33
+1063,63342,fed miran,bigram,50,3,0,4,34,12
+1064,63347,fed musalem,bigram,20,4,4,4,11,1
+1065,63372,fed powell,bigram,75,4,14,21,26,14
+1066,63384,fed rate,bigram,88,4,12,32,20,24
+1067,63450,fed waller,bigram,26,4,12,4,2,8
+1068,63456,fed williams,bigram,26,4,3,7,2,14
+1069,63460,federal,unigram,299,4,88,99,75,37
+1070,63515,federal reserve,bigram,178,4,58,75,34,11
+1071,63541,fee,unigram,32,4,4,10,6,12
+1072,63578,feel,unigram,22,4,8,3,6,5
+1073,63605,fees,unigram,29,4,5,4,18,2
+1074,63628,fell,unigram,75,4,23,20,16,16
+1075,63724,few,unigram,30,4,5,7,13,5
+1076,63845,fight,unigram,34,4,9,9,9,7
+1077,63870,fighter,unigram,28,4,9,6,7,6
+1078,63881,fighting,unigram,20,4,4,4,4,8
+1079,63941,files,unigram,31,4,10,9,4,8
+1080,63969,filing,unigram,50,4,16,11,10,13
+1081,64017,final,unigram,75,4,26,17,13,19
+1082,64124,finance,unigram,154,4,34,38,48,34
+1083,64144,finance minister,bigram,79,4,18,17,27,17
+1084,64146,finance ministry,bigram,29,4,7,10,7,5
+1085,64174,financial,unigram,176,4,34,40,50,52
+1086,64257,financing,unigram,23,4,2,8,2,11
+1087,64282,find,unigram,30,4,5,6,9,10
+1088,64328,fine,unigram,20,4,4,8,3,5
+1089,64379,finland,unigram,27,4,6,7,6,8
+1090,64422,fire,unigram,93,4,42,16,14,21
+1091,64479,fired,unigram,24,4,10,7,4,3
+1092,64521,firing,unigram,26,4,11,10,4,1
+1093,64542,firm,unigram,55,4,16,9,15,15
+1094,64602,firms,unigram,124,4,20,36,36,32
+1095,64677,first,unigram,267,4,66,66,81,54
+1096,64798,first time,bigram,58,4,14,14,15,15
+1097,64814,fiscal,unigram,78,4,18,23,13,24
+1098,64866,fitch,unigram,49,4,12,14,4,19
+1099,64895,five,unigram,62,4,14,8,28,12
+1100,64938,fixed,unigram,26,4,4,12,6,4
+1101,65032,flat,unigram,39,4,15,9,9,6
+1102,65076,fleet,unigram,20,4,6,2,6,6
+1103,65123,flight,unigram,43,4,15,10,11,7
+1104,65156,flights,unigram,34,4,16,3,10,5
+1105,65249,flow,unigram,35,4,14,3,14,4
+1106,65339,fm,unigram,27,4,6,15,3,3
+1107,65365,focus,unigram,82,4,25,21,18,18
+1108,65380,focus on,bigram,36,4,5,11,12,8
+1109,65393,focused,unigram,41,4,13,14,5,9
+1110,65404,focused on,bigram,25,4,7,9,4,5
+1111,65450,follow,unigram,23,4,5,6,6,6
+1112,65476,following,unigram,172,4,58,44,35,35
+1113,65578,following the,bigram,27,4,13,6,2,6
+1114,65625,food,unigram,76,4,18,16,28,14
+1115,65704,for,unigram,2649,4,693,649,664,643
+1116,65792,for ai,bigram,28,4,3,6,11,8
+1117,65815,for an,bigram,25,4,9,6,4,6
+1118,66149,for fed,bigram,23,4,7,7,2,7
+1119,66317,for its,bigram,37,4,7,9,10,11
+1120,66420,for more,bigram,21,4,6,4,5,6
+1121,66444,for new,bigram,32,4,7,9,10,6
+1122,66500,for peace,bigram,20,4,7,5,4,4
+1123,66783,for the,bigram,275,4,78,61,69,67
+1124,66837,for ukraine,bigram,50,4,21,7,10,12
+1125,66852,for us,bigram,32,4,4,8,14,6
+1126,66926,force,unigram,105,4,35,20,20,30
+1127,66986,forced,unigram,21,4,6,7,2,6
+1128,67007,forces,unigram,148,4,34,39,36,39
+1129,67096,ford,unigram,33,4,6,5,10,12
+1130,67133,forecast,unigram,143,4,37,32,30,44
+1131,67195,forecast to,bigram,24,4,5,7,5,7
+1132,67222,forecasts,unigram,51,4,7,16,14,14
+1133,67272,foreign,unigram,479,4,133,141,91,114
+1134,67312,foreign minister,bigram,197,4,53,66,37,41
+1135,67313,foreign ministers,bigram,22,4,7,11,1,3
+1136,67315,foreign ministry,bigram,128,4,47,23,21,37
+1137,67415,form,unigram,20,4,6,5,3,6
+1138,67463,former,unigram,65,4,23,19,10,13
+1139,67560,forward,unigram,56,4,8,16,19,13
+1140,67655,four,unigram,56,4,12,17,15,12
+1141,67695,fourth,unigram,21,4,4,6,7,4
+1142,67707,fox,unigram,77,4,33,19,6,19
+1143,67712,fox news,bigram,46,4,22,11,2,11
+1144,67756,framework,unigram,50,4,13,14,7,16
+1145,67788,france,unigram,251,4,71,73,48,59
+1146,67803,france cac,bigram,38,4,11,7,9,11
+1147,67839,france macron,bigram,20,4,5,4,2,9
+1148,67958,free,unigram,69,4,23,10,22,14
+1149,68031,french,unigram,96,4,16,32,30,18
+1150,68093,fresh,unigram,52,4,11,17,6,18
+1151,68139,friday,unigram,89,4,27,19,25,18
+1152,68247,from,unigram,1394,4,386,341,354,313
+1153,68989,from the,bigram,113,4,36,23,35,19
+1154,69015,from us,bigram,21,4,7,5,5,4
+1155,69049,front,unigram,32,4,14,5,8,5
+1156,69093,frozen,unigram,28,4,1,4,7,16
+1157,69125,ft,unigram,319,4,73,79,76,91
+1158,69161,ftse,unigram,75,4,21,13,21,20
+1159,69162,ftse 100,bigram,44,4,13,7,12,12
+1160,69189,fuel,unigram,65,4,22,17,6,20
+1161,69236,fueled,unigram,22,4,2,10,5,5
+1162,69295,full,unigram,94,4,23,32,23,16
+1163,69362,fully,unigram,64,4,13,22,16,13
+1164,69433,fund,unigram,91,4,15,21,27,28
+1165,69516,fundamentals,unigram,23,4,6,2,8,7
+1166,69545,funding,unigram,90,4,14,30,22,24
+1167,69605,funds,unigram,85,4,27,18,22,18
+1168,69674,further,unigram,126,4,37,29,33,27
+1169,69771,future,unigram,111,4,39,23,23,26
+1170,69850,futures,unigram,241,4,68,55,58,60
+1171,69911,futures settle,bigram,52,4,12,11,14,15
+1172,69930,futures up,bigram,21,4,7,3,1,10
+1173,69935,fx,unigram,134,4,29,22,35,48
+1174,69968,fy,unigram,88,4,33,3,37,15
+1175,69972,fy adj,bigram,27,3,12,0,10,5
+1176,69973,fy adjusted,bigram,21,3,7,0,12,2
+1177,70075,g7,unigram,24,4,11,5,5,3
+1178,70112,gain,unigram,57,4,11,12,14,20
+1179,70175,gains,unigram,182,4,32,51,47,52
+1180,70326,gap,unigram,28,4,7,7,9,5
+1181,70371,gas,unigram,137,4,30,37,38,32
+1182,70433,gas storage,bigram,20,4,6,3,5,6
+1183,70525,gaza,unigram,496,4,147,146,164,39
+1184,70547,gaza ceasefire,bigram,24,4,9,4,9,2
+1185,70552,gaza city,bigram,47,3,12,33,0,2
+1186,70631,gaza strip,bigram,70,4,23,15,29,3
+1187,70706,gdp,unigram,173,4,36,49,36,52
+1188,70736,gdp growth,bigram,36,4,7,11,10,8
+1189,70843,general,unigram,116,4,23,41,25,27
+1190,70937,generation,unigram,21,4,8,4,4,5
+1191,71031,geopolitical,unigram,40,4,8,11,12,9
+1192,71089,german,unigram,195,4,53,61,35,46
+1193,71109,german chancellor,bigram,30,4,13,10,2,5
+1194,71181,germany,unigram,224,4,66,55,49,54
+1195,71200,germany dax,bigram,41,4,14,8,10,9
+1196,71295,get,unigram,109,4,27,21,29,32
+1197,71378,gets,unigram,24,4,6,7,7,4
+1198,71400,getting,unigram,29,4,5,5,10,9
+1199,71540,give,unigram,55,4,13,14,15,13
+1200,71579,given,unigram,39,4,10,8,8,13
+1201,71622,giving,unigram,23,4,4,3,7,9
+1202,71673,global,unigram,380,4,97,67,120,96
+1203,71879,globally,unigram,21,4,7,3,4,7
+1204,71938,go,unigram,71,4,18,16,27,10
+1205,71974,goal,unigram,33,4,7,12,8,6
+1206,71987,goals,unigram,37,4,16,10,5,6
+1207,72025,going,unigram,115,4,29,27,40,19
+1208,72040,going to,bigram,76,4,20,19,26,11
+1209,72049,gold,unigram,220,4,30,63,84,43
+1210,72187,goldman,unigram,89,4,13,24,33,19
+1211,72203,goldman sachs,bigram,72,4,11,17,28,16
+1212,72227,good,unigram,111,4,33,15,28,35
+1213,72296,goods,unigram,64,4,29,12,13,10
+1214,72351,google,unigram,105,4,20,28,24,33
+1215,72429,goolsbee,unigram,66,4,6,19,21,20
+1216,72458,goolsbee says,bigram,26,4,2,7,6,11
+1217,72472,gop,unigram,24,4,5,4,11,4
+1218,72533,gov,unigram,47,4,6,11,20,10
+1219,72547,gov ueda,bigram,21,4,5,5,10,1
+1220,72570,government,unigram,485,4,96,108,181,100
+1221,72590,government bond,bigram,66,4,16,15,13,22
+1222,72706,government shutdown,bigram,91,3,0,11,67,13
+1223,72750,governor,unigram,156,4,35,51,35,35
+1224,72802,governor ueda,bigram,31,4,6,8,7,10
+1225,72823,govt,unigram,84,4,15,21,14,34
+1226,72925,gradual,unigram,22,4,3,3,10,6
+1227,72942,gradually,unigram,23,4,2,5,12,4
+1228,73064,great,unigram,75,4,25,13,14,23
+1229,73120,greater,unigram,23,4,6,5,7,5
+1230,73167,green,unigram,26,4,3,8,8,7
+1231,73223,greer,unigram,58,4,11,3,28,16
+1232,73341,gross,unigram,29,4,10,7,9,3
+1233,73371,ground,unigram,45,4,9,17,10,9
+1234,73408,group,unigram,140,4,40,37,36,27
+1235,73514,groups,unigram,35,4,9,11,7,8
+1236,73540,grow,unigram,44,4,8,14,14,8
+1237,73572,growing,unigram,83,4,15,21,25,22
+1238,73655,growth,unigram,385,4,72,93,116,104
+1239,73667,growth and,bigram,22,4,5,6,3,8
+1240,73720,growth in,bigram,40,4,10,5,14,11
+1241,73876,guarantees,unigram,59,4,27,12,4,16
+1242,73915,guard,unigram,58,4,21,9,17,11
+1243,73978,guidance,unigram,64,4,21,14,15,14
+1244,74256,had,unigram,100,4,29,20,19,32
+1245,74394,half,unigram,50,4,17,12,9,12
+1246,74406,half of,bigram,32,4,12,7,4,9
+1247,74428,halt,unigram,41,4,17,11,6,7
+1248,74505,hamas,unigram,256,4,55,62,118,21
+1249,74635,hammack,unigram,80,4,8,20,15,37
+1250,74658,hammack says,bigram,35,4,1,13,6,15
+1251,74770,happen,unigram,28,4,9,6,9,4
+1252,74835,hard,unigram,31,4,9,5,8,9
+1253,74972,has,unigram,837,4,267,173,201,196
+1254,75013,has been,bigram,94,4,24,17,21,32
+1255,75167,has not,bigram,34,4,10,13,6,5
+1256,75345,hassett,unigram,129,4,14,13,25,77
+1257,75377,hassett on,bigram,26,4,1,3,8,14
+1258,75386,hassett says,bigram,22,4,3,1,6,12
+1259,75435,have,unigram,640,4,181,141,157,161
+1260,75468,have been,bigram,76,4,24,17,17,18
+1261,75735,have to,bigram,45,4,8,11,13,13
+1262,75761,haven,unigram,34,4,5,12,9,8
+1263,75905,he,unigram,409,4,101,107,95,106
+1264,75983,he is,bigram,47,4,13,17,6,11
+1265,76052,he will,bigram,41,4,10,14,7,10
+1266,76059,head,unigram,72,4,22,14,22,14
+1267,76076,head of,bigram,34,4,10,7,9,8
+1268,76094,heading,unigram,20,4,5,3,8,4
+1269,76150,health,unigram,100,4,23,35,27,15
+1270,76206,healthcare,unigram,24,4,1,5,12,6
+1271,76312,heavy,unigram,37,4,7,10,12,8
+1272,76388,hegseth,unigram,41,4,6,15,12,8
+1273,76446,held,unigram,71,4,21,13,18,19
+1274,76523,help,unigram,79,4,16,27,20,16
+1275,76633,her,unigram,26,4,7,10,5,4
+1276,76730,hezbollah,unigram,55,4,9,14,6,26
+1277,76801,high,unigram,305,4,66,68,92,79
+1278,76873,high of,bigram,23,4,2,3,14,4
+1279,76934,higher,unigram,174,4,39,44,38,53
+1280,77023,highest,unigram,130,4,34,27,35,34
+1281,77041,highest level,bigram,45,4,12,11,13,9
+1282,77052,highest since,bigram,38,4,8,8,8,14
+1283,77092,highlights,unigram,52,4,8,11,17,16
+1284,77142,highs,unigram,42,4,8,10,8,16
+1285,77176,hike,unigram,53,4,11,11,13,18
+1286,77216,hikes,unigram,49,4,9,16,12,12
+1287,77271,him,unigram,75,4,20,21,13,21
+1288,77368,hiring,unigram,27,4,4,9,10,4
+1289,77393,his,unigram,188,4,58,48,35,47
+1290,77558,historic,unigram,27,4,9,3,8,7
+1291,77595,history,unigram,42,4,12,12,13,5
+1292,77614,hit,unigram,186,4,50,44,48,44
+1293,77687,hit record,bigram,27,4,5,8,6,8
+1294,77717,hits,unigram,125,4,32,31,40,22
+1295,77785,hitting,unigram,29,4,5,6,11,7
+1296,77870,hold,unigram,106,4,30,27,25,24
+1297,77951,holding,unigram,42,4,14,10,10,8
+1298,77985,holdings,unigram,41,4,13,13,6,9
+1299,78019,holds,unigram,80,4,15,20,25,20
+1300,78117,home,unigram,95,4,31,23,15,26
+1301,78196,homes,unigram,23,4,4,4,3,12
+1302,78250,hong,unigram,94,4,16,16,20,42
+1303,78251,hong kong,bigram,94,4,16,16,20,42
+1304,78287,hope,unigram,39,4,10,10,14,5
+1305,78318,hopes,unigram,60,4,15,12,15,18
+1306,78384,hospital,unigram,21,4,11,7,1,2
+1307,78418,host,unigram,22,4,12,3,3,4
+1308,78438,hostage,unigram,31,4,5,5,19,2
+1309,78455,hostages,unigram,87,3,30,14,43,0
+1310,78558,hours,unigram,51,4,21,11,12,7
+1311,78587,house,unigram,446,4,135,104,99,108
+1312,78693,house official,bigram,29,4,11,7,6,5
+1313,78735,house speaker,bigram,25,4,6,2,11,6
+1314,78756,house trump,bigram,27,4,12,7,4,4
+1315,78768,household,unigram,43,4,5,11,13,14
+1316,78802,housing,unigram,81,4,13,18,24,26
+1317,78820,housing market,bigram,20,4,2,8,4,6
+1318,78856,houthis,unigram,20,3,3,12,0,5
+1319,78881,how,unigram,70,4,16,20,16,18
+1320,78974,hsbc,unigram,36,4,6,9,10,11
+1321,79003,huang,unigram,30,4,2,3,12,13
+1322,79085,hughes,unigram,23,4,3,6,7,7
+1323,79108,human,unigram,29,4,6,8,5,10
+1324,79129,humanitarian,unigram,34,4,12,8,6,8
+1325,79176,hundreds,unigram,25,4,7,7,7,4
+1326,79189,hungary,unigram,20,4,3,8,5,4
+1327,79265,hurt,unigram,20,4,3,7,5,5
+1328,79385,hyundai,unigram,21,4,2,6,6,7
+1329,79401,iaea,unigram,49,4,27,14,4,4
+1330,79455,ibex,unigram,38,4,11,7,9,11
+1331,79456,ibex down,bigram,20,4,5,5,6,4
+1332,79599,idf,unigram,27,4,11,8,5,3
+1333,79635,iea,unigram,24,4,9,7,2,6
+1334,79659,if,unigram,435,4,133,110,113,79
+1335,79741,if it,bigram,22,4,9,5,5,3
+1336,79815,if the,bigram,36,4,14,8,8,6
+1337,79846,ifx,unigram,33,4,7,8,7,11
+1338,79916,illegal,unigram,36,4,9,10,6,11
+1339,80019,imf,unigram,56,4,7,7,22,20
+1340,80063,immediate,unigram,39,4,21,5,6,7
+1341,80092,immediately,unigram,49,4,14,9,18,8
+1342,80140,immigration,unigram,51,4,9,21,13,8
+1343,80196,impact,unigram,155,4,51,46,32,26
+1344,80232,impact of,bigram,23,4,7,7,6,3
+1345,80233,impact on,bigram,37,4,15,10,7,5
+1346,80332,implementation,unigram,22,4,5,5,9,3
+1347,80387,import,unigram,42,4,10,10,12,10
+1348,80410,importance,unigram,29,4,7,11,7,4
+1349,80412,importance of,bigram,24,4,4,11,6,3
+1350,80415,important,unigram,57,4,8,15,20,14
+1351,80476,imports,unigram,104,4,32,21,31,20
+1352,80523,impose,unigram,45,4,15,16,8,6
+1353,80551,imposed,unigram,23,4,8,7,4,4
+1354,80608,improve,unigram,37,4,12,11,9,5
+1355,80695,in,unigram,4757,4,1239,1192,1150,1176
+1356,80725,in 2025,bigram,88,4,21,18,21,28
+1357,80726,in 2026,bigram,122,4,8,26,31,57
+1358,80728,in 2027,bigram,20,4,2,3,3,12
+1359,80787,in ai,bigram,22,4,6,5,6,5
+1360,80807,in an,bigram,35,4,9,12,4,10
+1361,80846,in august,bigram,44,4,5,24,14,1
+1362,80956,in china,bigram,68,4,16,16,19,17
+1363,81053,in december,bigram,23,4,1,3,6,13
+1364,81108,in early,bigram,85,4,16,26,19,24
+1365,81157,in europe,bigram,29,4,11,8,5,5
+1366,81256,in gaza,bigram,148,4,46,49,40,13
+1367,81312,in history,bigram,21,4,7,3,7,4
+1368,81382,in its,bigram,37,4,9,9,7,12
+1369,81389,in japan,bigram,34,4,10,6,9,9
+1370,81405,in july,bigram,45,4,24,17,3,1
+1371,81406,in june,bigram,28,4,20,5,1,2
+1372,81454,in line,bigram,30,4,11,7,8,4
+1373,81570,in new,bigram,38,4,8,14,7,9
+1374,81585,in november,bigram,31,4,2,2,4,23
+1375,81594,in october,bigram,55,4,4,10,19,22
+1376,81738,in q3,bigram,26,4,1,2,14,9
+1377,81740,in qatar,bigram,27,3,10,16,0,1
+1378,81804,in response,bigram,30,4,9,7,10,4
+1379,81830,in russia,bigram,23,4,7,8,4,4
+1380,81866,in september,bigram,73,4,15,17,30,11
+1381,81912,in south,bigram,35,4,6,12,11,6
+1382,81913,in southern,bigram,35,4,7,6,13,9
+1383,81991,in talks,bigram,48,4,10,13,12,13
+1384,82015,in the,bigram,698,4,211,160,165,162
+1385,82072,in ukraine,bigram,103,4,28,33,7,35
+1386,82086,in us,bigram,52,4,14,18,11,9
+1387,82115,in washington,bigram,24,4,13,5,2,4
+1388,82179,inc,unigram,48,4,9,7,13,19
+1389,82243,incident,unigram,33,4,7,12,8,6
+1390,82283,include,unigram,37,4,9,9,11,8
+1391,82320,included,unigram,22,4,9,3,4,6
+1392,82335,includes,unigram,34,4,4,8,9,13
+1393,82369,including,unigram,186,4,57,48,47,34
+1394,82538,income,unigram,112,4,37,20,40,15
+1395,82639,increase,unigram,173,4,48,51,49,25
+1396,82677,increase in,bigram,29,4,8,9,7,5
+1397,82720,increased,unigram,97,4,29,26,25,17
+1398,82775,increases,unigram,71,4,18,12,15,26
+1399,82811,increasing,unigram,36,4,9,11,12,4
+1400,82839,increasingly,unigram,22,4,7,2,3,10
+1401,82893,independence,unigram,35,4,9,15,3,8
+1402,82911,independent,unigram,23,4,4,8,4,7
+1403,82937,index,unigram,298,4,60,82,66,90
+1404,83020,index rises,bigram,24,4,6,6,6,6
+1405,83052,india,unigram,276,4,86,91,48,51
+1406,83212,indian,unigram,35,4,11,13,3,8
+1407,83248,indicate,unigram,26,4,8,7,5,6
+1408,83269,indicates,unigram,20,4,3,6,8,3
+1409,83284,indicating,unigram,20,4,7,7,5,1
+1410,83366,individuals,unigram,25,4,13,3,3,6
+1411,83387,indonesia,unigram,53,4,19,14,4,16
+1412,83443,industrial,unigram,85,4,22,22,19,22
+1413,83459,industrial production,bigram,45,4,12,11,9,13
+1414,83481,industry,unigram,97,4,27,23,27,20
+1415,83586,inflation,unigram,611,4,123,179,161,148
+1416,83594,inflation and,bigram,22,4,5,9,3,5
+1417,83623,inflation data,bigram,21,4,4,5,6,6
+1418,83643,inflation expectations,bigram,55,4,14,17,13,11
+1419,83676,inflation is,bigram,49,4,7,17,11,14
+1420,83790,inflation to,bigram,20,4,4,8,6,2
+1421,83847,influence,unigram,22,4,7,4,5,6
+1422,83891,information,unigram,68,4,18,22,11,17
+1423,83921,informed,unigram,21,3,6,10,5,0
+1424,83951,infrastructure,unigram,86,4,27,21,18,20
+1425,84024,initial,unigram,26,4,7,6,4,9
+1426,84065,initiative,unigram,32,4,10,6,9,7
+1427,84121,injured,unigram,32,4,12,11,7,2
+1428,84166,innovation,unigram,23,4,5,6,9,3
+1429,84229,inside,unigram,32,4,10,6,7,9
+1430,84364,instead,unigram,26,4,7,6,6,7
+1431,84436,insurance,unigram,28,4,3,8,13,4
+1432,84513,intel,unigram,76,4,19,35,11,11
+1433,84572,intelligence,unigram,97,4,25,21,23,28
+1434,84767,interest,unigram,215,4,48,70,50,47
+1435,84797,interest rate,bigram,69,4,14,28,15,12
+1436,84798,interest rates,bigram,91,4,20,33,12,26
+1437,84819,interests,unigram,34,4,14,7,7,6
+1438,84861,interior,unigram,34,4,8,2,16,8
+1439,84888,internal,unigram,31,4,10,1,10,10
+1440,84913,international,unigram,161,4,38,47,40,36
+1441,85061,interview,unigram,50,4,15,10,11,14
+1442,85095,into,unigram,280,4,71,68,72,69
+1443,85251,into the,bigram,40,4,15,11,9,5
+1444,85269,intraday,unigram,25,4,7,7,7,4
+1445,85303,introduces,unigram,20,4,7,8,3,2
+1446,85366,inventories,unigram,56,4,11,12,10,23
+1447,85367,inventories actual,bigram,30,4,5,5,6,14
+1448,85400,invest,unigram,60,4,13,23,13,11
+1449,85473,investigation,unigram,57,4,18,16,10,13
+1450,85478,investigation into,bigram,26,4,4,10,6,6
+1451,85511,investment,unigram,201,4,39,50,63,49
+1452,85558,investment in,bigram,30,4,3,11,8,8
+1453,85619,investments,unigram,61,4,10,14,24,13
+1454,85653,investor,unigram,45,4,9,8,14,14
+1455,85679,investors,unigram,163,4,34,54,33,42
+1456,85812,involved,unigram,21,4,5,8,6,2
+1457,85864,iphone,unigram,35,4,5,16,12,2
+1458,85888,ipo,unigram,29,4,12,5,6,6
+1459,85919,iran,unigram,516,4,359,78,43,36
+1460,86002,iran foreign,bigram,35,4,17,11,4,3
+1461,86029,iran is,bigram,20,4,11,4,1,4
+1462,86062,iran nuclear,bigram,25,3,21,1,0,3
+1463,86157,iranian,unigram,209,4,150,24,16,19
+1464,86188,iranian foreign,bigram,30,4,16,3,3,8
+1465,86241,iraq,unigram,41,4,14,9,10,8
+1466,86269,iraqi,unigram,20,4,9,5,1,5
+1467,86310,iron,unigram,25,4,10,5,6,4
+1468,86352,is,unigram,1936,4,502,425,530,479
+1469,86399,is an,bigram,21,4,5,7,5,4
+1470,86614,is expected,bigram,44,4,11,8,13,12
+1471,86720,is in,bigram,38,4,13,14,5,6
+1472,86821,is no,bigram,33,4,12,7,8,6
+1473,86825,is not,bigram,95,4,28,19,27,21
+1474,86828,is now,bigram,50,4,11,7,19,13
+1475,86884,is preparing,bigram,21,4,5,3,2,11
+1476,86926,is ready,bigram,27,4,6,5,7,9
+1477,86983,is set,bigram,22,4,7,2,6,7
+1478,87025,is still,bigram,46,4,11,16,9,10
+1479,87064,is the,bigram,60,4,22,14,14,10
+1480,87074,is to,bigram,27,4,9,4,5,9
+1481,87196,ishiba,unigram,39,3,18,20,1,0
+1482,87275,island,unigram,22,4,4,3,5,10
+1483,87302,ism,unigram,35,4,8,6,16,5
+1484,87312,isn,unigram,22,4,6,4,8,4
+1485,87348,israel,unigram,459,4,225,107,81,46
+1486,87361,israel and,bigram,30,4,15,4,8,3
+1487,87573,israeli,unigram,515,4,212,138,107,58
+1488,87585,israeli army,bigram,76,4,25,23,12,16
+1489,87588,israeli attack,bigram,21,3,7,13,1,0
+1490,87597,israeli channel,bigram,24,4,2,8,12,2
+1491,87639,israeli military,bigram,49,4,33,9,5,2
+1492,87647,israeli official,bigram,24,4,14,7,2,1
+1493,87703,issuance,unigram,20,4,4,2,6,8
+1494,87715,issue,unigram,81,4,27,22,24,8
+1495,87761,issued,unigram,37,4,14,4,8,11
+1496,87798,issues,unigram,123,4,33,30,32,28
+1497,87890,it,unigram,783,4,213,157,210,203
+1498,88014,it has,bigram,26,4,9,7,6,4
+1499,88041,it is,bigram,88,4,26,16,22,24
+1500,88161,it to,bigram,22,4,4,8,3,7
+1501,88180,it was,bigram,26,4,5,5,7,9
+1502,88184,it will,bigram,84,4,24,17,24,19
+1503,88192,it would,bigram,24,4,10,2,7,5
+1504,88213,italy,unigram,80,4,9,19,17,35
+1505,88272,items,unigram,21,4,8,4,7,2
+1506,88291,its,unigram,727,4,211,159,177,180
+1507,88916,jan,unigram,29,4,4,2,3,20
+1508,88946,january,unigram,54,4,9,8,8,29
+1509,88979,japan,unigram,727,4,197,167,178,185
+1510,89085,japan finance,bigram,23,4,5,3,7,8
+1511,89178,japan nikkei,bigram,33,4,8,10,6,9
+1512,89198,japan pm,bigram,42,4,9,3,25,5
+1513,89256,japan to,bigram,29,4,11,3,3,12
+1514,89290,japanese,unigram,117,4,27,22,26,42
+1515,89308,japanese government,bigram,44,4,11,7,10,16
+1516,89359,jazeera,unigram,22,3,14,6,2,0
+1517,89381,jefferies,unigram,31,4,9,6,13,3
+1518,89455,jerome,unigram,21,4,12,3,3,3
+1519,89456,jerome powell,bigram,20,4,12,3,2,3
+1520,89466,jerusalem,unigram,23,4,14,4,2,3
+1521,89484,jet,unigram,21,4,6,4,3,8
+1522,89509,jets,unigram,39,4,8,12,11,8
+1523,89555,jgb,unigram,94,4,29,19,16,30
+1524,89566,jgb futures,bigram,25,4,12,6,3,4
+1525,89576,jgb yield,bigram,45,4,9,8,11,17
+1526,89643,job,unigram,142,4,22,48,30,42
+1527,89668,job market,bigram,39,4,4,14,14,7
+1528,89693,jobless,unigram,45,4,12,8,6,19
+1529,89694,jobless claims,bigram,36,4,10,6,4,16
+1530,89698,jobs,unigram,151,4,18,46,36,51
+1531,89718,jobs data,bigram,29,4,5,9,3,12
+1532,89791,johnson,unigram,55,4,11,7,24,13
+1533,89834,join,unigram,43,4,11,19,7,6
+1534,89894,joint,unigram,87,4,28,23,11,25
+1535,89974,jones,unigram,80,4,21,20,19,20
+1536,89990,jones unofficially,bigram,23,4,7,5,4,7
+1537,89991,jones up,bigram,21,4,5,2,7,7
+1538,89993,jong,unigram,24,4,3,13,5,3
+1539,89995,jong un,bigram,21,4,1,12,5,3
+1540,90050,jp,unigram,34,4,5,10,12,7
+1541,90051,jp morgan,bigram,34,4,5,10,12,7
+1542,90064,jpmorgan,unigram,79,4,8,13,27,31
+1543,90121,jpy,unigram,24,4,4,7,4,9
+1544,90154,judge,unigram,39,4,11,13,7,8
+1545,90252,july,unigram,167,4,101,47,10,9
+1546,90360,jump,unigram,36,4,6,9,11,10
+1547,90395,jumps,unigram,28,4,3,9,10,6
+1548,90409,jun,unigram,89,3,87,1,1,0
+1549,90452,june,unigram,98,4,65,17,5,11
+1550,90541,just,unigram,122,4,29,42,22,29
+1551,90633,justice,unigram,30,4,9,6,3,12
+1552,90706,kallas,unigram,33,4,2,10,8,13
+1553,90724,kalshi,unigram,37,4,10,7,8,12
+1554,90844,kato,unigram,23,3,7,8,8,0
+1555,90937,keep,unigram,104,4,25,31,22,26
+1556,91019,keeping,unigram,34,4,3,10,9,12
+1557,91166,key,unigram,156,4,42,42,36,36
+1558,91330,khan,unigram,20,3,5,5,10,0
+1559,91422,killed,unigram,78,4,20,25,20,13
+1560,91436,killed in,bigram,24,4,6,8,6,4
+1561,91450,killing,unigram,30,4,8,7,5,10
+1562,91491,kim,unigram,42,4,3,26,7,6
+1563,91501,kim jong,bigram,22,4,1,13,5,3
+1564,91642,know,unigram,37,4,8,9,10,10
+1565,91731,kong,unigram,94,4,16,16,20,42
+1566,91809,korea,unigram,334,4,64,121,100,49
+1567,91977,korea to,bigram,26,4,7,8,9,2
+1568,91994,korean,unigram,84,4,16,30,27,11
+1569,92096,kremlin,unigram,131,4,37,29,31,34
+1570,92257,kyiv,unigram,52,4,10,19,6,17
+1571,92300,kyodo,unigram,44,4,21,7,8,8
+1572,92341,labor,unigram,148,4,20,55,44,29
+1573,92363,labor market,bigram,84,4,10,29,26,19
+1574,92388,labour,unigram,31,4,3,10,10,8
+1575,92447,lagarde,unigram,75,4,11,19,21,24
+1576,92471,lagarde says,bigram,28,4,3,7,11,7
+1577,92546,land,unigram,50,4,17,13,7,13
+1578,92656,large,unigram,64,4,14,16,20,14
+1579,92718,larger,unigram,20,4,3,7,5,5
+1580,92735,largest,unigram,71,4,21,15,23,12
+1581,92805,last,unigram,237,4,65,46,62,64
+1582,92815,last close,bigram,25,4,11,3,5,6
+1583,92820,last down,bigram,21,4,7,2,5,7
+1584,92863,last up,bigram,31,4,4,7,8,12
+1585,92865,last week,bigram,25,4,7,6,4,8
+1586,92867,last year,bigram,25,4,8,6,9,2
+1587,92874,lasting,unigram,26,4,2,8,11,5
+1588,92890,late,unigram,52,4,11,21,14,6
+1589,92925,later,unigram,50,4,21,11,11,7
+1590,92947,latest,unigram,59,4,12,20,11,16
+1591,93008,launch,unigram,141,4,39,51,29,22
+1592,93097,launched,unigram,52,4,29,11,5,7
+1593,93130,launches,unigram,62,4,21,14,14,13
+1594,93208,lavrov,unigram,41,4,8,14,7,12
+1595,93238,law,unigram,81,4,26,20,16,19
+1596,93300,lawmakers,unigram,27,4,6,9,3,9
+1597,93337,lawsuit,unigram,29,4,10,9,4,6
+1598,93376,layoffs,unigram,38,4,2,8,22,6
+1599,93439,lead,unigram,67,4,18,16,15,18
+1600,93465,lead to,bigram,29,4,9,7,6,7
+1601,93470,leader,unigram,150,4,31,25,55,39
+1602,93549,leaders,unigram,144,4,48,42,35,19
+1603,93626,leadership,unigram,46,4,8,20,15,3
+1604,93662,leading,unigram,48,4,15,12,10,11
+1605,93768,least,unigram,63,4,14,14,24,11
+1606,93818,leave,unigram,28,4,5,8,7,8
+1607,93860,leaving,unigram,25,4,6,6,5,8
+1608,93885,leavitt,unigram,29,4,10,5,8,6
+1609,93903,lebanese,unigram,41,4,12,14,8,7
+1610,93925,lebanon,unigram,71,4,11,17,15,28
+1611,93974,led,unigram,59,4,15,11,20,13
+1612,94006,lee,unigram,70,4,12,22,24,12
+1613,94059,left,unigram,35,4,10,13,8,4
+1614,94092,legal,unigram,42,4,12,8,12,10
+1615,94150,legislation,unigram,22,4,8,2,5,7
+1616,94265,less,unigram,46,4,12,10,11,13
+1617,94304,let,unigram,28,4,11,10,4,3
+1618,94343,letter,unigram,40,4,13,13,8,6
+1619,94374,level,unigram,159,4,34,36,45,44
+1620,94396,level in,bigram,22,4,2,7,8,5
+1621,94409,level since,bigram,55,4,13,11,16,15
+1622,94419,levels,unigram,64,4,18,14,13,19
+1623,94505,leyen,unigram,63,4,25,17,7,14
+1624,94554,li,unigram,26,4,1,8,15,2
+1625,94641,licenses,unigram,23,4,8,4,6,5
+1626,94710,lift,unigram,29,4,6,9,8,6
+1627,94756,lifts,unigram,28,3,0,7,7,14
+1628,94808,like,unigram,138,4,35,31,47,25
+1629,94928,likely,unigram,174,4,44,33,51,46
+1630,94989,likely to,bigram,78,4,28,13,17,20
+1631,95006,lilly,unigram,36,4,11,8,12,5
+1632,95037,limit,unigram,31,4,6,4,6,15
+1633,95067,limited,unigram,51,4,11,14,14,12
+1634,95120,limits,unigram,22,4,3,6,6,7
+1635,95151,line,unigram,68,4,20,12,22,14
+1636,95176,line with,bigram,28,4,11,6,8,3
+1637,95218,linked,unigram,40,4,11,9,9,11
+1638,95233,linked to,bigram,24,4,7,6,3,8
+1639,95269,liquidity,unigram,26,4,6,4,8,8
+1640,95297,lisa,unigram,28,4,5,17,2,4
+1641,95299,lisa cook,bigram,22,4,4,16,1,1
+1642,95302,list,unigram,49,4,11,16,14,8
+1643,95402,little,unigram,52,4,12,8,19,13
+1644,95439,live,unigram,25,4,3,8,9,5
+1645,95497,ll,unigram,60,4,20,15,16,9
+1646,95551,lng,unigram,42,4,16,4,16,6
+1647,95600,loan,unigram,53,4,9,8,13,23
+1648,95638,loans,unigram,47,4,5,5,21,16
+1649,95690,local,unigram,51,4,17,13,15,6
+1650,95784,logan,unigram,21,4,3,2,13,3
+1651,95843,london,unigram,44,4,10,14,10,10
+1652,95877,long,unigram,158,4,32,42,46,38
+1653,95929,long term,bigram,66,4,14,16,18,18
+1654,95934,longer,unigram,57,4,13,21,15,8
+1655,95995,look,unigram,30,4,5,4,9,12
+1656,96012,looking,unigram,58,4,16,9,20,13
+1657,96032,looks,unigram,29,4,9,7,7,6
+1658,96137,losing,unigram,22,4,3,9,7,3
+1659,96160,loss,unigram,59,4,16,12,22,9
+1660,96200,losses,unigram,72,4,17,15,21,19
+1661,96244,lost,unigram,34,4,6,11,9,8
+1662,96270,lot,unigram,30,4,9,3,10,8
+1663,96316,low,unigram,117,4,19,27,44,27
+1664,96391,lower,unigram,172,4,49,35,48,40
+1665,96454,lower than,bigram,20,4,1,3,9,7
+1666,96480,lowers,unigram,23,4,5,8,5,5
+1667,96503,lowest,unigram,60,4,9,17,14,20
+1668,96511,lowest level,bigram,21,4,2,5,8,6
+1669,96518,lowest since,bigram,20,4,1,9,4,6
+1670,96519,lows,unigram,21,4,5,7,5,4
+1671,96649,lula,unigram,33,4,12,5,11,5
+1672,96721,lutnick,unigram,64,4,19,30,2,13
+1673,96917,macron,unigram,90,4,33,20,16,21
+1674,96983,made,unigram,110,4,38,17,27,28
+1675,97066,maduro,unigram,30,4,2,5,5,18
+1676,97146,magnitude,unigram,34,4,17,8,4,5
+1677,97152,magnitude earthquake,bigram,21,4,10,5,3,3
+1678,97181,main,unigram,34,4,5,9,10,10
+1679,97240,maintain,unigram,38,4,7,5,13,13
+1680,97337,major,unigram,173,4,59,34,43,37
+1681,97493,majority,unigram,39,4,11,3,12,13
+1682,97513,make,unigram,158,4,45,45,38,30
+1683,97638,makes,unigram,25,4,9,2,10,4
+1684,97670,making,unigram,60,4,14,16,16,14
+1685,97721,malaysia,unigram,48,4,13,4,15,16
+1686,97806,mamdani,unigram,20,3,0,4,8,8
+1687,97859,management,unigram,34,4,4,6,13,11
+1688,98035,manufacturing,unigram,190,4,48,43,55,44
+1689,98073,manufacturing pmi,bigram,76,4,20,16,22,18
+1690,98096,many,unigram,72,4,19,10,20,23
+1691,98179,march,unigram,34,4,8,4,11,11
+1692,98207,margin,unigram,41,4,14,7,14,6
+1693,98247,margins,unigram,24,4,9,4,8,3
+1694,98312,mark,unigram,32,4,5,8,8,11
+1695,98336,market,unigram,659,4,125,191,184,159
+1696,98466,market is,bigram,30,4,4,12,8,6
+1697,98500,market open,bigram,42,4,6,14,11,11
+1698,98656,markets,unigram,248,4,51,62,64,71
+1699,98792,marking,unigram,48,4,14,10,18,6
+1700,98883,martyrs,unigram,32,4,16,11,4,1
+1701,98936,mass,unigram,28,4,4,7,12,5
+1702,98966,massive,unigram,52,4,10,9,24,9
+1703,99077,materials,unigram,32,4,11,4,13,4
+1704,99115,matter,unigram,33,4,8,7,14,4
+1705,99210,may,unigram,354,4,127,72,78,77
+1706,99236,may be,bigram,52,4,11,9,15,17
+1707,99433,mayor,unigram,32,4,4,9,13,6
+1708,99499,me,unigram,26,4,6,5,7,8
+1709,99554,means,unigram,20,4,6,7,2,5
+1710,99593,measures,unigram,91,4,19,20,30,22
+1711,99647,mechanism,unigram,20,4,7,2,4,7
+1712,99665,media,unigram,136,4,54,25,39,18
+1713,99782,medical,unigram,42,4,16,9,9,8
+1714,99872,meet,unigram,167,4,50,36,38,43
+1715,99950,meet with,bigram,29,4,11,3,6,9
+1716,99954,meeting,unigram,375,4,111,93,88,83
+1717,99997,meeting in,bigram,21,4,6,6,4,5
+1718,100074,meeting with,bigram,97,4,34,21,26,16
+1719,100082,meetings,unigram,40,4,13,4,11,12
+1720,100103,meets,unigram,22,4,2,7,8,5
+1721,100184,member,unigram,72,4,16,19,15,22
+1722,100223,members,unigram,59,4,15,22,13,9
+1723,100428,merz,unigram,66,4,25,14,7,20
+1724,100474,message,unigram,22,4,6,10,2,4
+1725,100492,met,unigram,42,4,13,12,9,8
+1726,100510,met with,bigram,23,4,6,7,7,3
+1727,100511,meta,unigram,77,4,18,19,16,24
+1728,100679,mexico,unigram,71,4,17,16,13,25
+1729,100804,michigan,unigram,60,4,16,22,15,7
+1730,100807,michigan consumer,bigram,22,4,6,6,6,4
+1731,100833,microsoft,unigram,82,4,31,18,10,23
+1732,100909,mid,unigram,58,4,19,10,15,14
+1733,100921,mid point,bigram,20,3,13,3,0,4
+1734,100931,middle,unigram,65,4,29,6,21,9
+1735,100933,middle east,bigram,57,4,28,5,17,7
+1736,100973,might,unigram,67,4,21,28,12,6
+1737,101122,military,unigram,336,4,112,93,62,69
+1738,101324,million,unigram,266,4,60,64,89,53
+1739,101393,million in,bigram,25,4,6,12,3,4
+1740,101452,million vs,bigram,33,3,8,0,24,1
+1741,101532,minerals,unigram,33,4,5,4,16,8
+1742,101603,minimum,unigram,23,4,7,5,6,5
+1743,101640,minister,unigram,707,4,196,194,177,140
+1744,101812,minister of,bigram,22,4,7,9,4,2
+1745,101857,minister says,bigram,52,4,14,13,17,8
+1746,101915,minister we,bigram,32,4,14,3,9,6
+1747,101933,ministers,unigram,49,4,16,21,5,7
+1748,101967,ministry,unigram,368,4,110,89,82,87
+1749,102035,ministry of,bigram,45,4,11,22,8,4
+1750,102057,ministry says,bigram,48,4,14,4,10,20
+1751,102137,minutes,unigram,55,4,19,9,12,15
+1752,102173,miran,unigram,120,4,6,30,52,32
+1753,102205,miran says,bigram,53,3,0,3,29,21
+1754,102294,missile,unigram,90,4,43,14,20,13
+1755,102350,missiles,unigram,69,4,31,12,15,11
+1756,102402,mission,unigram,27,4,3,7,6,11
+1757,102475,mixed,unigram,28,4,4,9,10,5
+1758,102518,mln,unigram,40,4,9,8,10,13
+1759,102633,model,unigram,58,4,15,11,21,11
+1760,102677,models,unigram,28,4,7,5,8,8
+1761,102705,moderate,unigram,20,4,5,2,7,6
+1762,102770,modest,unigram,23,4,5,9,7,2
+1763,102794,modi,unigram,36,4,7,21,5,3
+1764,102892,mom,unigram,195,4,51,39,37,68
+1765,102893,mom actual,bigram,118,4,26,20,30,42
+1766,102925,momentum,unigram,41,4,6,9,16,10
+1767,102963,monday,unigram,94,4,22,25,27,20
+1768,103029,monetary,unigram,96,4,19,24,22,31
+1769,103041,monetary policy,bigram,69,4,15,20,16,18
+1770,103050,money,unigram,77,4,16,18,22,21
+1771,103110,monitoring,unigram,29,4,8,8,5,8
+1772,103152,month,unigram,147,4,35,36,39,37
+1773,103239,monthly,unigram,49,4,9,11,14,15
+1774,103271,months,unigram,122,4,36,30,34,22
+1775,103370,more,unigram,510,4,111,94,165,140
+1776,103588,more than,bigram,131,4,27,18,40,46
+1777,103623,morgan,unigram,98,4,16,27,37,18
+1778,103644,morgan stanley,bigram,51,4,9,13,20,9
+1779,103650,morning,unigram,37,4,5,11,12,9
+1780,103680,mortgage,unigram,54,4,10,11,13,20
+1781,103709,moscow,unigram,65,4,27,10,7,21
+1782,103768,most,unigram,162,4,43,37,42,40
+1783,103865,mostly,unigram,26,4,8,4,8,6
+1784,103909,motor,unigram,21,4,5,5,5,6
+1785,103991,move,unigram,135,4,33,35,34,33
+1786,104072,movement,unigram,31,4,3,6,13,9
+1787,104104,moves,unigram,55,4,11,18,12,14
+1788,104142,moving,unigram,43,4,12,9,11,11
+1789,104269,much,unigram,102,4,22,24,34,22
+1790,104274,much as,bigram,28,4,5,6,10,7
+1791,104351,multi,unigram,24,4,6,6,5,7
+1792,104388,multiple,unigram,50,4,17,12,11,10
+1793,104484,musalem,unigram,33,4,5,8,14,6
+1794,104534,musk,unigram,100,4,43,16,30,11
+1795,104616,must,unigram,209,4,64,41,45,59
+1796,104629,must be,bigram,63,4,16,9,13,25
+1797,104751,my,unigram,42,4,15,6,10,11
+1798,104897,names,unigram,28,4,10,8,8,2
+1799,105007,nasdaq,unigram,166,4,42,42,46,36
+1800,105008,nasdaq 100,bigram,41,4,10,11,12,8
+1801,105047,nasdaq unofficially,bigram,25,4,10,3,4,8
+1802,105048,nasdaq up,bigram,25,4,5,4,9,7
+1803,105082,nation,unigram,36,4,9,10,8,9
+1804,105113,national,unigram,178,4,52,42,48,36
+1805,105135,national guard,bigram,32,4,7,6,12,7
+1806,105160,national security,bigram,58,4,27,12,11,8
+1807,105192,nations,unigram,64,4,19,18,14,13
+1808,105231,nationwide,unigram,21,4,4,6,9,2
+1809,105252,nato,unigram,98,4,24,40,12,22
+1810,105297,nato rutte,bigram,20,3,0,9,1,10
+1811,105312,natural,unigram,55,4,14,14,12,15
+1812,105315,natural gas,bigram,46,4,13,12,10,11
+1813,105412,nbc,unigram,28,4,12,7,5,4
+1814,105444,near,unigram,231,4,63,62,49,57
+1815,105554,near term,bigram,29,4,9,9,6,5
+1816,105593,nearly,unigram,97,4,15,17,43,22
+1817,105675,necessary,unigram,35,4,16,5,4,10
+1818,105702,need,unigram,164,4,42,38,50,34
+1819,105714,need for,bigram,28,4,11,4,10,3
+1820,105738,need to,bigram,89,4,21,26,29,13
+1821,105743,needed,unigram,54,4,12,11,20,11
+1822,105763,needs,unigram,72,4,15,21,16,20
+1823,105795,needs to,bigram,26,4,4,8,3,11
+1824,105800,negative,unigram,53,4,15,10,20,8
+1825,105850,negotiate,unigram,20,4,5,5,8,2
+1826,105876,negotiating,unigram,31,4,8,9,8,6
+1827,105905,negotiations,unigram,122,4,47,34,25,16
+1828,105958,negotiator,unigram,20,4,7,7,3,3
+1829,106035,net,unigram,153,4,52,25,54,22
+1830,106060,net income,bigram,48,4,19,10,18,1
+1831,106086,netanyahu,unigram,166,4,49,56,34,27
+1832,106178,netflix,unigram,26,4,1,3,8,14
+1833,106210,network,unigram,29,4,8,9,4,8
+1834,106270,neutral,unigram,88,4,10,18,31,29
+1835,106293,neutral rate,bigram,26,3,0,1,14,11
+1836,106318,never,unigram,45,4,11,18,6,10
+1837,106360,new,unigram,867,4,196,231,232,208
+1838,106813,new york,bigram,75,4,18,22,25,10
+1839,106817,new zealand,bigram,55,4,21,14,9,11
+1840,106844,news,unigram,189,4,89,37,25,38
+1841,106847,news agency,bigram,31,4,20,2,4,5
+1842,106948,next,unigram,321,4,63,69,92,97
+1843,107027,next week,bigram,55,4,18,13,10,14
+1844,107029,next year,bigram,84,4,8,11,27,38
+1845,107153,night,unigram,32,4,6,9,13,4
+1846,107199,nikkei,unigram,129,4,41,37,27,24
+1847,107299,no,unigram,417,4,139,101,106,71
+1848,107429,no longer,bigram,25,4,5,9,6,5
+1849,107627,non,unigram,87,4,21,23,28,15
+1850,107723,nordisk,unigram,32,4,6,7,12,7
+1851,107786,north,unigram,120,4,23,44,35,18
+1852,107795,north korea,bigram,63,4,12,24,21,6
+1853,107813,northern,unigram,31,4,10,5,11,5
+1854,107843,norway,unigram,47,4,8,8,13,18
+1855,107883,not,unigram,842,4,242,208,224,168
+1856,107929,not be,bigram,43,4,13,9,12,9
+1857,108312,not to,bigram,30,4,7,8,10,5
+1858,108344,not yet,bigram,22,4,7,5,8,2
+1859,108375,noted,unigram,27,4,6,4,10,7
+1860,108389,notes,unigram,80,4,11,17,26,26
+1861,108447,nothing,unigram,23,4,7,4,9,3
+1862,108512,nov,unigram,209,4,1,6,20,182
+1863,108642,november,unigram,95,4,6,15,25,49
+1864,108707,novo,unigram,44,4,6,11,18,9
+1865,108712,novo nordisk,bigram,32,4,6,7,12,7
+1866,108729,now,unigram,345,4,86,70,109,80
+1867,108977,nuclear,unigram,246,4,132,44,44,26
+1868,109001,nuclear facilities,bigram,24,4,18,2,3,1
+1869,109021,nuclear power,bigram,20,4,6,5,4,5
+1870,109051,nuclear weapons,bigram,21,4,8,8,4,1
+1871,109059,number,unigram,47,4,16,10,10,11
+1872,109062,number of,bigram,41,4,14,10,8,9
+1873,109064,numbers,unigram,23,4,5,8,3,7
+1874,109109,nvda,unigram,55,4,6,16,12,21
+1875,109141,nvidia,unigram,259,4,38,71,64,86
+1876,109166,nvidia ceo,bigram,38,4,12,9,13,4
+1877,109256,nvidia shares,bigram,22,4,1,8,4,9
+1878,109276,nvidia to,bigram,20,4,4,5,6,5
+1879,109293,ny,unigram,24,4,5,5,9,5
+1880,109317,nyt,unigram,29,4,10,5,6,8
+1881,109535,occupation,unigram,48,4,14,17,8,9
+1882,109614,oct,unigram,218,3,0,16,103,99
+1883,109705,october,unigram,149,4,13,35,60,41
+1884,109813,odds,unigram,29,4,8,8,6,7
+1885,109842,of,unigram,4155,4,1111,1026,1037,981
+1886,109919,of 2025,bigram,29,4,11,8,7,3
+1887,110078,of all,bigram,36,4,5,3,16,12
+1888,110086,of america,bigram,51,4,12,17,15,7
+1889,110092,of an,bigram,33,4,8,9,5,11
+1890,110249,of canada,bigram,21,4,9,4,6,2
+1891,110285,of china,bigram,38,4,7,9,13,9
+1892,110419,of defense,bigram,23,4,11,9,1,2
+1893,110526,of england,bigram,44,4,12,20,4,8
+1894,110664,of gaza,bigram,45,4,12,21,11,1
+1895,110665,of gdp,bigram,25,4,8,8,5,4
+1896,110841,of its,bigram,88,4,27,19,22,20
+1897,110844,of japan,bigram,38,4,10,10,7,11
+1898,111048,of new,bigram,37,4,12,8,11,6
+1899,111116,of our,bigram,32,4,10,6,7,9
+1900,111340,of russia,bigram,27,4,6,8,6,7
+1901,111341,of russian,bigram,20,4,5,7,4,4
+1902,111462,of staff,bigram,35,4,13,11,6,5
+1903,111465,of state,bigram,37,4,14,7,9,7
+1904,111525,of tariffs,bigram,22,4,8,4,6,4
+1905,111551,of the,bigram,564,4,170,141,133,120
+1906,111600,of trump,bigram,25,4,7,6,9,3
+1907,111611,of ukraine,bigram,21,4,3,5,5,8
+1908,111639,of us,bigram,34,4,5,11,8,10
+1909,111745,off,unigram,142,4,40,20,51,31
+1910,111852,offer,unigram,73,4,20,14,16,23
+1911,111922,offering,unigram,41,4,6,12,14,9
+1912,111961,offers,unigram,24,4,5,5,7,7
+1913,111980,office,unigram,116,4,32,24,31,29
+1914,112071,official,unigram,337,4,126,67,59,85
+1915,112169,official says,bigram,39,4,15,5,7,12
+1916,112206,officially,unigram,28,4,9,7,6,6
+1917,112234,officials,unigram,182,4,64,34,36,48
+1918,112379,offshore,unigram,20,4,2,8,5,5
+1919,112409,oil,unigram,488,4,120,120,121,127
+1920,112410,oil and,bigram,22,4,6,6,7,3
+1921,112463,oil futures,bigram,38,4,12,6,10,10
+1922,112479,oil inventories,bigram,28,4,5,5,8,10
+1923,112506,oil prices,bigram,45,4,15,14,13,3
+1924,112666,on,unigram,3257,4,851,781,848,777
+1925,112726,on ai,bigram,20,4,6,2,7,5
+1926,112879,on china,bigram,73,4,14,10,41,8
+1927,112880,on chinese,bigram,22,4,4,1,15,2
+1928,113071,on fed,bigram,40,4,11,7,3,19
+1929,113108,on friday,bigram,36,4,12,5,10,9
+1930,113125,on gaza,bigram,25,4,7,9,5,4
+1931,113218,on inflation,bigram,27,4,8,8,8,3
+1932,113235,on iran,bigram,59,4,44,10,3,2
+1933,113246,on its,bigram,31,4,15,5,6,5
+1934,113340,on monday,bigram,42,4,10,8,11,13
+1935,113375,on new,bigram,20,4,2,8,8,2
+1936,113570,on russia,bigram,57,4,18,22,11,6
+1937,113571,on russian,bigram,41,4,11,9,11,10
+1938,113581,on saturday,bigram,31,4,5,3,12,11
+1939,113681,on sunday,bigram,29,4,8,9,9,3
+1940,113705,on tariffs,bigram,20,4,7,9,2,2
+1941,113720,on the,bigram,262,4,86,64,58,54
+1942,113730,on thursday,bigram,21,4,4,6,6,5
+1943,113740,on track,bigram,35,4,9,8,7,11
+1944,113741,on trade,bigram,35,4,17,4,4,10
+1945,113756,on trump,bigram,22,4,5,5,8,4
+1946,113758,on truth,bigram,75,4,24,14,18,19
+1947,113761,on tuesday,bigram,27,4,3,9,6,9
+1948,113768,on ukraine,bigram,70,4,17,18,10,25
+1949,113786,on us,bigram,43,4,11,10,12,10
+1950,113817,on wednesday,bigram,24,4,6,5,4,9
+1951,113839,on year,bigram,20,4,3,2,11,4
+1952,113850,once,unigram,41,4,10,9,12,10
+1953,113889,one,unigram,259,4,69,56,71,63
+1954,113946,one of,bigram,53,4,10,15,17,11
+1955,114007,ongoing,unigram,91,4,34,16,19,22
+1956,114071,online,unigram,20,4,8,1,3,8
+1957,114091,only,unigram,141,4,38,30,38,35
+1958,114228,opec,unigram,64,4,17,16,21,10
+1959,114278,open,unigram,203,4,64,47,48,44
+1960,114279,open 500,bigram,24,3,0,7,9,8
+1961,114314,open nasdaq,bigram,25,4,6,7,7,5
+1962,114330,open to,bigram,34,4,17,8,6,3
+1963,114338,openai,unigram,135,4,26,34,35,40
+1964,114448,opening,unigram,31,4,11,6,13,1
+1965,114483,opens,unigram,60,4,12,15,13,20
+1966,114487,opens at,bigram,23,4,8,5,2,8
+1967,114535,operating,unigram,57,4,15,14,22,6
+1968,114558,operation,unigram,57,4,25,14,5,13
+1969,114604,operations,unigram,115,4,34,25,32,24
+1970,114692,opportunities,unigram,21,4,2,7,8,4
+1971,114745,opposition,unigram,24,4,2,8,9,5
+1972,114785,optimism,unigram,41,4,12,9,12,8
+1973,114847,options,unigram,39,4,8,11,8,12
+1974,114876,or,unigram,380,4,97,98,107,78
+1975,115190,oracle,unigram,50,4,6,20,14,10
+1976,115274,order,unigram,108,4,29,33,20,26
+1977,115358,orders,unigram,93,4,22,27,18,26
+1978,115483,organization,unigram,29,4,10,10,4,5
+1979,115581,other,unigram,157,4,43,30,41,43
+1980,115698,others,unigram,30,4,6,14,5,5
+1981,115733,ounce,unigram,30,4,4,9,10,7
+1982,115750,our,unigram,218,4,78,50,46,44
+1983,115937,out,unigram,232,4,56,60,66,50
+1984,116011,out of,bigram,50,4,16,11,18,5
+1985,116149,outlook,unigram,217,4,62,41,64,50
+1986,116193,outlook fy,bigram,30,3,10,0,15,5
+1987,116302,output,unigram,90,4,16,20,23,31
+1988,116372,outside,unigram,27,4,6,13,5,3
+1989,116421,over,unigram,715,4,201,169,210,135
+1990,116728,over the,bigram,79,4,19,18,28,14
+1991,116769,over year,bigram,37,4,15,4,14,4
+1992,116772,overall,unigram,36,4,5,11,9,11
+1993,116830,overhaul,unigram,23,4,6,4,7,6
+1994,116861,overnight,unigram,58,4,18,16,11,13
+1995,116984,overweight,unigram,25,4,3,6,6,10
+1996,117017,own,unigram,49,4,6,15,13,15
+1997,117116,oz,unigram,58,4,5,7,31,15
+1998,117155,pace,unigram,38,4,3,13,11,11
+1999,117178,pacific,unigram,34,4,12,8,4,10
+2000,117207,package,unigram,54,4,9,10,18,17
+2001,117280,paid,unigram,20,4,5,5,3,7
+2002,117359,palestine,unigram,25,3,12,12,0,1
+2003,117374,palestinian,unigram,90,4,27,31,25,7
+2004,117407,palestinian state,bigram,24,4,9,13,1,1
+2005,117415,palestinians,unigram,24,4,8,10,5,1
+2006,117573,paramount,unigram,28,4,6,3,3,16
+2007,117688,parliament,unigram,45,4,7,11,13,14
+2008,117731,part,unigram,124,4,35,23,39,27
+2009,117739,part of,bigram,106,4,31,19,34,22
+2010,117780,participation,unigram,22,4,6,7,5,4
+2011,117803,parties,unigram,29,4,9,7,7,6
+2012,117824,partner,unigram,32,4,11,5,7,9
+2013,117845,partners,unigram,60,4,10,16,14,20
+2014,117881,partnership,unigram,60,4,16,15,14,15
+2015,117916,parts,unigram,25,4,9,4,7,5
+2016,117926,party,unigram,95,4,18,22,40,15
+2017,118007,pass,unigram,22,4,4,1,6,11
+2018,118101,past,unigram,68,4,12,17,21,18
+2019,118162,path,unigram,51,4,7,18,8,18
+2020,118279,pause,unigram,33,4,6,8,12,7
+2021,118333,pay,unigram,79,4,17,15,29,18
+2022,118425,payments,unigram,53,4,6,15,17,15
+2023,118496,payrolls,unigram,27,4,3,8,5,11
+2024,118527,pboc,unigram,65,4,23,12,12,18
+2025,118545,pboc sets,bigram,25,4,14,4,3,4
+2026,118562,pce,unigram,33,4,10,11,4,8
+2027,118567,pce price,bigram,20,3,7,8,0,5
+2028,118578,pct,unigram,29,4,5,5,5,14
+2029,118596,peace,unigram,280,4,66,52,52,110
+2030,118615,peace deal,bigram,25,4,7,1,7,10
+2031,118622,peace in,bigram,27,4,5,8,3,11
+2032,118630,peace plan,bigram,42,3,0,3,7,32
+2033,118681,peak,unigram,34,4,6,11,5,12
+2034,118799,pension,unigram,23,4,3,6,8,6
+2035,118825,pentagon,unigram,50,4,14,15,9,12
+2036,118856,people,unigram,169,4,37,42,46,44
+2037,118961,per,unigram,224,4,58,37,59,70
+2038,118979,per dollar,bigram,31,4,10,7,4,10
+2039,119016,per share,bigram,35,4,15,2,10,8
+2040,119033,percent,unigram,67,4,12,14,17,24
+2041,119035,percent at,bigram,45,4,6,11,12,16
+2042,119093,performance,unigram,31,4,6,4,13,8
+2043,119144,period,unigram,35,4,7,5,8,15
+2044,119262,persistent,unigram,23,4,4,5,8,6
+2045,119305,personal,unigram,23,4,5,8,4,6
+2046,119468,pfizer,unigram,42,4,4,16,15,7
+2047,119518,pharma,unigram,24,4,8,7,6,3
+2048,119562,phase,unigram,43,4,8,10,13,12
+2049,119613,philippine,unigram,20,4,6,1,6,7
+2050,119626,philippines,unigram,34,4,16,6,5,7
+2051,119668,phone,unigram,53,4,16,7,13,17
+2052,119670,phone call,bigram,27,4,12,2,6,7
+2053,119841,pipeline,unigram,33,4,7,12,7,7
+2054,119922,place,unigram,47,4,11,10,17,9
+2055,119978,plan,unigram,278,4,55,72,68,83
+2056,120019,plan for,bigram,20,4,5,7,4,4
+2057,120073,plan to,bigram,87,4,23,28,19,17
+2058,120120,planned,unigram,47,4,12,14,8,13
+2059,120160,planning,unigram,44,4,21,5,12,6
+2060,120188,plans,unigram,356,4,90,109,86,71
+2061,120229,plans for,bigram,20,4,7,5,3,5
+2062,120273,plans to,bigram,219,4,57,78,49,35
+2063,120284,plant,unigram,62,4,19,16,17,10
+2064,120322,plants,unigram,21,4,4,8,5,4
+2065,120345,platform,unigram,40,4,7,10,8,15
+2066,120487,pledges,unigram,22,4,1,5,5,11
+2067,120581,pm,unigram,243,4,39,62,91,51
+2068,120676,pmi,unigram,186,4,50,34,50,52
+2069,120688,pmi actual,bigram,20,4,8,3,1,8
+2070,120689,pmi at,bigram,20,4,5,4,6,5
+2071,120738,point,unigram,131,4,37,33,27,34
+2072,120792,points,unigram,238,4,62,55,54,67
+2073,120832,points or,bigram,73,4,17,15,21,20
+2074,120844,points to,bigram,41,4,13,12,7,9
+2075,120850,poised,unigram,21,4,3,1,9,8
+2076,120863,poland,unigram,52,4,5,40,5,2
+2077,120906,police,unigram,39,4,7,12,11,9
+2078,120934,policies,unigram,58,4,15,22,10,11
+2079,120965,policy,unigram,357,4,71,96,88,102
+2080,121035,policy is,bigram,33,4,8,6,9,10
+2081,121143,polish,unigram,27,4,6,15,4,2
+2082,121161,political,unigram,92,4,19,32,30,11
+2083,121241,politico,unigram,51,4,9,6,18,18
+2084,121270,poll,unigram,30,4,7,11,9,3
+2085,121300,polymarket,unigram,20,4,9,4,4,3
+2086,121400,port,unigram,33,4,6,7,13,7
+2087,121492,position,unigram,54,4,15,16,14,9
+2088,121523,positions,unigram,22,4,6,5,6,5
+2089,121540,positive,unigram,91,4,24,21,22,24
+2090,121614,possibility,unigram,20,4,7,4,5,4
+2091,121618,possible,unigram,150,4,51,28,41,30
+2092,121733,post,unigram,102,4,33,34,15,20
+2093,121864,potential,unigram,145,4,44,34,36,31
+2094,121975,potentially,unigram,29,4,8,3,11,7
+2095,122040,powell,unigram,245,4,87,68,56,34
+2096,122153,powell says,bigram,37,4,3,24,9,1
+2097,122193,power,unigram,153,4,43,40,44,26
+2098,122280,powered,unigram,26,4,1,9,11,5
+2099,122325,ppi,unigram,58,4,13,11,12,22
+2100,122363,practices,unigram,20,4,3,6,5,6
+2101,122420,pre,unigram,39,4,8,15,8,8
+2102,122504,prediction,unigram,27,4,9,7,6,5
+2103,122514,predicts,unigram,41,4,7,17,14,3
+2104,122596,prelim,unigram,37,4,14,12,10,1
+2105,122635,premarket,unigram,32,4,5,12,9,6
+2106,122657,premier,unigram,38,4,5,10,17,6
+2107,122719,prepared,unigram,41,4,16,13,5,7
+2108,122729,prepared to,bigram,24,4,8,8,3,5
+2109,122739,preparing,unigram,50,4,14,11,12,13
+2110,122779,present,unigram,22,4,7,6,3,6
+2111,122837,president,unigram,635,4,182,148,164,141
+2112,122877,president donald,bigram,73,4,16,13,27,17
+2113,122915,president lee,bigram,24,4,5,5,11,3
+2114,122948,president putin,bigram,22,4,6,6,3,7
+2115,122975,president trump,bigram,178,4,63,38,47,30
+2116,122998,presidential,unigram,39,4,10,10,13,6
+2117,123030,press,unigram,62,4,20,17,15,10
+2118,123072,pressure,unigram,156,4,50,40,36,30
+2119,123114,pressure on,bigram,52,4,21,11,10,10
+2120,123140,pressures,unigram,37,4,11,8,12,6
+2121,123190,prev,unigram,476,4,87,131,118,140
+2122,123369,prev prevr,bigram,27,4,4,8,9,6
+2123,123387,prevent,unigram,35,4,8,10,7,10
+2124,123464,previous,unigram,872,4,221,192,173,286
+2125,123487,previous close,bigram,44,4,10,15,9,10
+2126,123493,previous est,bigram,570,4,144,126,114,186
+2127,123537,previously,unigram,37,4,14,15,6,2
+2128,123565,prevr,unigram,50,4,8,13,15,14
+2129,123590,price,unigram,499,4,112,118,136,133
+2130,123642,price index,bigram,67,4,16,22,9,20
+2131,123659,price of,bigram,20,4,5,1,9,5
+2132,123690,price target,bigram,81,4,15,24,20,22
+2133,123693,price to,bigram,90,4,24,19,26,21
+2134,123718,prices,unigram,321,4,67,78,85,91
+2135,123865,pricing,unigram,40,4,9,11,7,13
+2136,123917,prime,unigram,217,4,58,74,43,42
+2137,123923,prime minister,bigram,206,4,56,70,43,37
+2138,123937,prince,unigram,21,4,5,4,4,8
+2139,123974,prior,unigram,85,4,19,19,15,32
+2140,124107,private,unigram,113,4,25,21,35,32
+2141,124149,private sector,bigram,29,4,8,4,10,7
+2142,124170,pro,unigram,36,4,4,13,12,7
+2143,124238,probe,unigram,45,4,11,11,8,15
+2144,124272,problem,unigram,21,4,4,6,4,7
+2145,124284,problems,unigram,25,4,4,7,7,7
+2146,124334,process,unigram,58,4,15,13,16,14
+2147,124471,product,unigram,29,4,11,4,10,4
+2148,124492,production,unigram,216,4,55,59,60,42
+2149,124591,productive,unigram,26,4,4,2,7,13
+2150,124607,productivity,unigram,31,4,1,6,8,16
+2151,124629,products,unigram,58,4,19,11,16,12
+2152,124685,profit,unigram,65,4,17,9,27,12
+2153,124762,profits,unigram,32,4,10,5,10,7
+2154,124788,program,unigram,77,4,28,16,22,11
+2155,124859,progress,unigram,78,4,35,16,14,13
+2156,124913,project,unigram,63,4,22,16,13,12
+2157,124988,projections,unigram,20,4,2,5,5,8
+2158,125003,projects,unigram,79,4,16,23,27,13
+2159,125195,property,unigram,36,4,11,11,2,12
+2160,125228,proposal,unigram,68,4,21,17,15,15
+2161,125264,proposals,unigram,30,4,4,8,5,13
+2162,125298,proposed,unigram,54,4,16,4,13,21
+2163,125336,proposes,unigram,26,4,6,11,4,5
+2164,125418,protect,unigram,33,4,6,10,12,5
+2165,125457,protection,unigram,21,4,3,11,5,2
+2166,125571,provide,unigram,36,4,5,12,11,8
+2167,125792,public,unigram,92,4,21,34,19,18
+2168,125995,purchase,unigram,44,4,13,8,17,6
+2169,126038,purchases,unigram,56,4,14,13,14,15
+2170,126138,push,unigram,91,4,23,17,31,20
+2171,126201,pushes,unigram,24,4,8,6,5,5
+2172,126219,pushing,unigram,22,4,6,5,7,4
+2173,126235,put,unigram,36,4,4,11,7,14
+2174,126264,putin,unigram,370,4,136,94,68,72
+2175,126274,putin and,bigram,22,4,8,5,4,5
+2176,126377,putin says,bigram,28,4,5,10,10,3
+2177,126471,q1,unigram,37,4,7,6,13,11
+2178,126498,q2,unigram,153,4,99,38,6,10
+2179,126501,q2 2025,bigram,42,4,36,2,3,1
+2180,126581,q3,unigram,177,4,17,15,96,49
+2181,126585,q3 2025,bigram,31,4,3,2,22,4
+2182,126593,q3 adjusted,bigram,22,3,3,0,18,1
+2183,126617,q3 eps,bigram,21,3,0,1,19,1
+2184,126654,q3 revenue,bigram,27,4,1,2,22,2
+2185,126676,q4,unigram,60,4,7,7,32,14
+2186,126750,qatar,unigram,90,4,29,43,11,7
+2187,126839,qoq,unigram,29,4,12,6,1,10
+2188,126897,quality,unigram,24,4,6,6,7,5
+2189,126949,quarter,unigram,105,4,33,23,35,14
+2190,127011,quarterly,unigram,21,4,10,7,3,1
+2191,127105,quickly,unigram,36,4,9,8,11,8
+2192,127211,quoting,unigram,31,3,26,3,2,0
+2193,127251,race,unigram,32,4,4,6,10,12
+2194,127320,radio,unigram,20,4,11,5,3,1
+2195,127370,raid,unigram,22,4,6,9,3,4
+2196,127424,raise,unigram,66,4,20,14,16,16
+2197,127478,raised,unigram,51,4,19,13,8,11
+2198,127503,raises,unigram,131,4,29,31,38,33
+2199,127584,raises target,bigram,25,4,10,4,6,5
+2200,127593,raising,unigram,46,4,7,10,11,18
+2201,127649,rally,unigram,72,4,5,21,20,26
+2202,127753,range,unigram,76,4,21,21,24,10
+2203,127821,rapid,unigram,23,4,3,5,5,10
+2204,127849,rare,unigram,89,4,19,7,51,12
+2205,127854,rare earth,bigram,42,4,10,4,23,5
+2206,127855,rare earths,bigram,36,4,6,2,23,5
+2207,127879,rate,unigram,743,4,165,195,179,204
+2208,127902,rate at,bigram,24,4,3,7,7,7
+2209,127917,rate cut,bigram,175,4,34,51,35,55
+2210,127918,rate cuts,bigram,127,4,30,37,41,19
+2211,127920,rate decision,bigram,22,4,5,8,4,5
+2212,127948,rate hike,bigram,23,4,4,1,5,13
+2213,127949,rate hikes,bigram,21,4,2,6,6,7
+2214,127960,rate is,bigram,20,4,4,5,8,3
+2215,128050,rates,unigram,264,4,69,72,46,77
+2216,128154,rating,unigram,57,4,16,17,10,14
+2217,128190,ratings,unigram,26,4,9,3,4,10
+2218,128209,ratio,unigram,35,4,9,3,15,8
+2219,128269,rba,unigram,59,4,11,20,18,10
+2220,128321,rbnz,unigram,37,4,13,3,3,18
+2221,128340,re,unigram,100,4,27,19,37,17
+2222,128407,reach,unigram,111,4,39,24,25,23
+2223,128491,reached,unigram,71,4,26,17,15,13
+2224,128539,reaches,unigram,26,4,9,6,2,9
+2225,128561,reaching,unigram,61,4,25,8,14,14
+2226,128650,readiness,unigram,20,4,3,9,6,2
+2227,128669,ready,unigram,105,4,21,26,35,23
+2228,128680,ready to,bigram,74,4,15,18,26,15
+2229,128733,real,unigram,75,4,15,20,19,21
+2230,129016,receive,unigram,36,4,4,4,15,13
+2231,129051,received,unigram,39,4,7,8,10,14
+2232,129086,receives,unigram,26,4,6,8,8,4
+2233,129120,recent,unigram,123,4,35,29,27,32
+2234,129241,recession,unigram,27,4,2,10,10,5
+2235,129307,recognize,unigram,25,4,11,5,5,4
+2236,129407,record,unigram,237,4,42,61,74,60
+2237,129475,record high,bigram,57,4,13,10,23,11
+2238,129476,record highs,bigram,21,4,2,7,5,7
+2239,129515,recorded,unigram,20,4,9,3,4,4
+2240,129578,recovery,unigram,38,4,4,13,11,10
+2241,129623,red,unigram,36,4,7,5,18,6
+2242,129684,reduce,unigram,68,4,27,15,15,11
+2243,129735,reduced,unigram,33,4,11,10,9,3
+2244,129774,reducing,unigram,23,4,7,7,7,2
+2245,129795,reduction,unigram,38,4,6,10,13,9
+2246,129848,reeves,unigram,64,4,4,9,18,33
+2247,129944,refinery,unigram,29,4,4,12,8,5
+2248,130024,reform,unigram,28,4,1,8,11,8
+2249,130045,reforms,unigram,25,4,5,6,8,6
+2250,130131,regarding,unigram,83,4,31,17,16,19
+2251,130172,regarding the,bigram,25,4,9,3,5,8
+2252,130183,regime,unigram,23,4,13,2,4,4
+2253,130201,region,unigram,109,4,36,21,17,35
+2254,130247,regional,unigram,52,4,17,13,9,13
+2255,130351,regulation,unigram,24,4,4,7,7,6
+2256,130367,regulations,unigram,20,4,8,4,3,5
+2257,130380,regulator,unigram,31,4,9,7,6,9
+2258,130403,regulators,unigram,22,4,9,4,3,6
+2259,130418,regulatory,unigram,29,4,11,8,6,4
+2260,130537,reiterates,unigram,20,4,5,5,4,6
+2261,130558,reject,unigram,23,4,6,4,6,7
+2262,130601,rejects,unigram,34,4,9,10,7,8
+2263,130638,related,unigram,63,4,20,11,17,15
+2264,130675,related to,bigram,20,4,8,3,4,5
+2265,130685,relations,unigram,58,4,15,21,11,11
+2266,130711,relationship,unigram,24,4,3,5,11,5
+2267,130747,release,unigram,82,4,26,18,26,12
+2268,130786,released,unigram,49,4,9,7,19,14
+2269,130819,releases,unigram,22,4,5,3,8,6
+2270,130877,relief,unigram,28,4,11,5,5,7
+2271,130933,remain,unigram,139,4,38,34,35,32
+2272,131042,remaining,unigram,23,4,8,4,7,4
+2273,131063,remains,unigram,154,4,37,43,35,39
+2274,131175,remarks,unigram,31,4,6,9,11,5
+2275,131241,remove,unigram,31,4,8,10,9,4
+2276,131341,renewed,unigram,25,4,7,2,7,9
+2277,131578,repo,unigram,25,4,4,3,9,9
+2278,131586,report,unigram,153,4,47,41,36,29
+2279,131662,reported,unigram,90,4,29,22,23,16
+2280,131715,reportedly,unigram,28,4,13,5,9,1
+2281,131741,reporter,unigram,26,4,9,6,9,2
+2282,131768,reports,unigram,355,4,115,113,72,55
+2283,131908,reports that,bigram,41,4,15,6,10,10
+2284,131948,representative,unigram,23,4,5,3,9,6
+2285,131996,republican,unigram,25,4,2,7,6,10
+2286,132017,republicans,unigram,33,4,10,3,14,6
+2287,132070,request,unigram,36,4,10,10,4,12
+2288,132115,require,unigram,20,4,4,9,3,4
+2289,132224,research,unigram,46,4,17,8,13,8
+2290,132271,reserve,unigram,233,4,69,88,55,21
+2291,132279,reserve bank,bigram,27,4,6,5,14,2
+2292,132372,reserves,unigram,47,4,10,7,17,13
+2293,132469,residents,unigram,30,4,10,7,5,8
+2294,132486,resign,unigram,20,4,7,9,2,2
+2295,132522,resilient,unigram,26,4,3,6,9,8
+2296,132570,resolution,unigram,31,4,6,8,9,8
+2297,132590,resolve,unigram,27,4,6,13,6,2
+2298,132644,resources,unigram,21,4,4,4,8,5
+2299,132689,respond,unigram,34,4,13,7,8,6
+2300,132713,response,unigram,83,4,34,15,22,12
+2301,132735,response to,bigram,48,4,19,9,15,5
+2302,132770,restart,unigram,25,4,6,11,4,4
+2303,132878,restrictions,unigram,51,4,9,17,16,9
+2304,132892,restrictions on,bigram,23,4,3,9,6,5
+2305,132899,restrictive,unigram,42,4,9,5,15,13
+2306,132947,result,unigram,25,4,12,5,4,4
+2307,132958,results,unigram,68,4,21,19,16,12
+2308,132995,resume,unigram,39,4,14,9,12,4
+2309,133056,retail,unigram,89,4,21,21,19,28
+2310,133078,retail sales,bigram,49,4,11,12,9,17
+2311,133191,return,unigram,87,4,23,28,24,12
+2312,133216,return to,bigram,36,4,11,10,9,6
+2313,133230,returns,unigram,22,4,7,5,5,5
+2314,133244,reuters,unigram,46,4,19,10,7,10
+2315,133269,rev,unigram,57,4,19,1,28,9
+2316,133354,reveals,unigram,24,4,6,9,7,2
+2317,133374,revenue,unigram,206,4,69,39,75,23
+2318,133507,revenue usd,bigram,25,3,5,0,19,1
+2319,133538,reverse,unigram,32,4,9,4,7,12
+2320,133572,review,unigram,62,4,16,16,15,15
+2321,133629,revised,unigram,27,4,6,8,6,7
+2322,133813,ria,unigram,30,4,4,6,11,9
+2323,133909,right,unigram,101,4,25,23,30,23
+2324,133937,right now,bigram,26,4,3,7,9,7
+2325,133957,rights,unigram,46,4,14,13,8,11
+2326,134038,rise,unigram,232,4,44,64,63,61
+2327,134082,rise in,bigram,47,4,11,14,13,9
+2328,134108,rise to,bigram,20,4,2,5,4,9
+2329,134122,rises,unigram,195,4,43,49,41,62
+2330,134153,rises est,bigram,23,4,5,12,1,5
+2331,134177,rises to,bigram,74,4,19,16,13,26
+2332,134187,rising,unigram,143,4,32,38,35,38
+2333,134279,risk,unigram,172,4,37,48,42,45
+2334,134321,risk of,bigram,34,4,8,12,10,4
+2335,134366,risks,unigram,202,4,44,59,51,48
+2336,134446,risks to,bigram,35,4,9,14,9,3
+2337,134522,road,unigram,21,4,5,3,6,7
+2338,134724,role,unigram,60,4,20,11,21,8
+2339,134731,role in,bigram,26,4,8,4,8,6
+2340,134806,room,unigram,36,4,8,6,10,12
+2341,134842,rose,unigram,73,4,22,14,21,16
+2342,134935,round,unigram,33,4,7,11,4,11
+2343,135031,rtrs,unigram,34,4,26,5,2,1
+2344,135055,rubio,unigram,119,4,34,24,32,29
+2345,135145,rule,unigram,39,4,8,9,11,11
+2346,135176,rules,unigram,119,4,26,31,27,35
+2347,135230,ruling,unigram,72,4,13,18,30,11
+2348,135249,ruling party,bigram,21,3,1,0,19,1
+2349,135272,run,unigram,47,4,9,11,16,11
+2350,135310,running,unigram,21,4,1,8,4,8
+2351,135393,russia,unigram,739,4,202,204,146,187
+2352,135412,russia and,bigram,25,4,5,11,3,6
+2353,135532,russia is,bigram,36,4,10,5,10,11
+2354,135603,russia putin,bigram,24,4,4,6,7,7
+2355,135678,russia to,bigram,21,4,7,2,5,7
+2356,135684,russia ukraine,bigram,25,4,7,5,5,8
+2357,135716,russia will,bigram,20,4,3,4,6,7
+2358,135724,russian,unigram,404,4,104,123,85,92
+2359,135739,russian assets,bigram,25,4,1,3,7,14
+2360,135822,russian oil,bigram,59,4,15,22,16,6
+2361,135877,rutte,unigram,26,3,0,13,1,12
+2362,135950,sa,unigram,42,4,5,6,14,17
+2363,136004,sachs,unigram,73,4,11,17,29,16
+2364,136075,safe,unigram,45,4,9,14,15,7
+2365,136124,safety,unigram,62,4,30,15,5,12
+2366,136175,said,unigram,318,4,70,71,101,76
+2367,136214,said he,bigram,30,4,10,8,6,6
+2368,136276,said the,bigram,54,4,10,16,15,13
+2369,136281,said to,bigram,33,4,7,7,9,10
+2370,136346,sale,unigram,60,4,9,16,17,18
+2371,136359,sale of,bigram,21,4,5,7,1,8
+2372,136376,sales,unigram,265,4,65,65,63,72
+2373,136585,same,unigram,47,4,12,13,8,14
+2374,136641,samsung,unigram,39,4,10,4,19,6
+2375,136693,sanctions,unigram,193,4,48,72,42,31
+2376,136735,sanctions on,bigram,59,4,16,21,14,8
+2377,136892,saturday,unigram,40,4,7,5,16,12
+2378,136919,saudi,unigram,68,4,11,20,14,23
+2379,136923,saudi arabia,bigram,42,4,7,12,11,12
+2380,136949,save,unigram,21,4,5,4,7,5
+2381,136979,savings,unigram,23,4,9,2,5,7
+2382,137002,saw,unigram,36,4,10,3,17,6
+2383,137043,say,unigram,180,4,55,38,36,51
+2384,137145,saying,unigram,44,4,10,9,12,13
+2385,137184,says,unigram,2503,4,500,561,755,687
+2386,137318,says china,bigram,24,4,3,4,11,6
+2387,137531,says he,bigram,127,4,26,40,36,25
+2388,137567,says inflation,bigram,29,4,2,12,7,8
+2389,137588,says it,bigram,123,4,29,18,34,42
+2390,137700,says no,bigram,26,4,4,7,12,3
+2391,137834,says russia,bigram,26,4,4,7,8,7
+2392,137941,says the,bigram,120,4,28,26,31,35
+2393,137943,says there,bigram,45,4,6,9,13,17
+2394,137944,says they,bigram,28,4,6,12,9,1
+2395,137967,says trump,bigram,45,4,14,11,10,10
+2396,137978,says ukraine,bigram,22,4,4,6,3,9
+2397,137996,says us,bigram,33,4,10,10,9,4
+2398,138018,says we,bigram,75,4,13,15,25,22
+2399,138027,says will,bigram,35,4,3,7,17,8
+2400,138068,scale,unigram,32,4,8,5,14,5
+2401,138178,scheduled,unigram,38,4,14,9,9,6
+2402,138313,scmp,unigram,104,4,17,21,17,49
+2403,138457,sea,unigram,49,4,10,15,10,14
+2404,138572,sec,unigram,80,4,27,26,15,12
+2405,138607,second,unigram,98,4,31,21,27,19
+2406,138684,secretary,unigram,216,4,77,53,51,35
+2407,138693,secretary bessent,bigram,33,4,15,12,4,2
+2408,138706,secretary general,bigram,21,4,4,10,3,4
+2409,138724,secretary of,bigram,41,4,17,6,13,5
+2410,138762,sector,unigram,123,4,31,28,38,26
+2411,138839,sectors,unigram,34,4,10,9,10,5
+2412,138867,secure,unigram,33,4,10,8,8,7
+2413,138940,securities,unigram,34,4,6,14,7,7
+2414,138971,security,unigram,370,4,132,91,67,80
+2415,138987,security and,bigram,24,4,6,6,7,5
+2416,139014,security council,bigram,38,4,9,16,10,3
+2417,139038,security guarantees,bigram,45,3,24,9,0,12
+2418,139136,see,unigram,171,4,37,36,48,50
+2419,139261,seeing,unigram,30,4,4,6,15,5
+2420,139290,seek,unigram,44,4,8,15,11,10
+2421,139333,seeking,unigram,38,4,16,5,10,7
+2422,139359,seeks,unigram,56,4,15,8,13,20
+2423,139388,seeks to,bigram,23,4,5,5,2,11
+2424,139411,seen,unigram,81,4,13,21,22,25
+2425,139416,seen as,bigram,21,4,6,4,6,5
+2426,139450,sees,unigram,200,4,44,41,51,64
+2427,139504,sees fy,bigram,31,3,15,0,11,5
+2428,139694,self,unigram,22,4,6,4,3,9
+2429,139709,sell,unigram,66,4,12,13,18,23
+2430,139765,sellers,unigram,20,4,1,4,7,8
+2431,139781,selling,unigram,30,4,7,10,5,8
+2432,139835,semiconductor,unigram,29,4,7,5,8,9
+2433,139878,senate,unigram,83,4,14,11,32,26
+2434,139930,senator,unigram,23,4,6,4,6,7
+2435,139985,sending,unigram,21,4,3,5,5,8
+2436,140035,senior,unigram,103,4,36,23,27,17
+2437,140127,sent,unigram,23,4,4,7,6,6
+2438,140149,sentiment,unigram,86,4,26,14,28,18
+2439,140210,seoul,unigram,27,4,4,7,7,9
+2440,140228,sep,unigram,178,3,0,45,97,36
+2441,140258,sep actual,bigram,54,3,0,20,17,17
+2442,140320,sept,unigram,79,4,9,33,15,22
+2443,140379,september,unigram,191,4,43,54,71,23
+2444,140533,series,unigram,20,4,7,5,4,4
+2445,140546,serious,unigram,55,4,14,20,11,10
+2446,140638,service,unigram,86,4,26,23,21,16
+2447,140702,services,unigram,169,4,39,37,48,45
+2448,140752,services pmi,bigram,37,4,14,6,8,9
+2449,140786,session,unigram,51,4,12,10,15,14
+2450,140813,set,unigram,215,4,44,57,51,63
+2451,140823,set for,bigram,42,4,10,12,9,11
+2452,140843,set to,bigram,105,4,22,30,24,29
+2453,140856,sets,unigram,55,4,19,16,10,10
+2454,140880,sets yuan,bigram,27,4,16,4,2,5
+2455,140883,setting,unigram,25,4,5,7,3,10
+2456,140905,settle,unigram,63,4,16,12,15,20
+2457,140907,settle at,bigram,51,4,12,10,14,15
+2458,140928,settlement,unigram,31,4,13,2,7,9
+2459,140983,seven,unigram,26,4,7,4,8,7
+2460,141010,several,unigram,67,4,26,13,11,17
+2461,141066,severe,unigram,20,4,7,3,6,4
+2462,141169,shanghai,unigram,21,4,8,4,4,5
+2463,141215,share,unigram,121,4,36,24,29,32
+2464,141295,shared,unigram,25,4,8,9,2,6
+2465,141333,shareholders,unigram,22,4,2,4,9,7
+2466,141361,shares,unigram,229,4,45,74,48,62
+2467,141415,shares rise,bigram,25,4,4,12,5,4
+2468,141457,sharp,unigram,26,4,6,2,12,6
+2469,141488,sharply,unigram,31,4,11,8,6,6
+2470,141528,she,unigram,49,4,11,15,10,13
+2471,141569,sheet,unigram,32,4,5,3,15,9
+2472,141611,sheinbaum,unigram,22,4,8,2,8,4
+2473,141696,shift,unigram,61,4,20,17,15,9
+2474,141732,shifting,unigram,20,4,6,5,2,7
+2475,141750,shifts,unigram,20,4,1,9,6,4
+2476,141783,ship,unigram,29,4,7,5,9,8
+2477,141835,shipments,unigram,45,4,14,15,11,5
+2478,141887,ships,unigram,21,4,6,4,5,6
+2479,141961,shooting,unigram,28,4,3,14,1,10
+2480,142009,short,unigram,94,4,25,27,24,18
+2481,142036,short term,bigram,42,4,10,10,13,9
+2482,142084,shot,unigram,24,4,7,7,3,7
+2483,142107,should,unigram,222,4,50,55,56,61
+2484,142120,should be,bigram,62,4,15,11,14,22
+2485,142230,show,unigram,79,4,10,29,22,18
+2486,142320,showing,unigram,29,4,4,10,9,6
+2487,142349,shows,unigram,100,4,28,24,29,19
+2488,142460,shutdown,unigram,196,4,2,24,128,42
+2489,142618,side,unigram,28,4,9,6,8,5
+2490,142655,sides,unigram,35,4,10,7,7,11
+2491,142716,sign,unigram,70,4,19,23,10,18
+2492,142761,signal,unigram,27,4,6,3,4,14
+2493,142792,signaling,unigram,44,4,9,11,14,10
+2494,142835,signals,unigram,54,4,16,14,8,16
+2495,142879,signed,unigram,43,4,18,4,10,11
+2496,142910,significant,unigram,56,4,12,13,16,15
+2497,142955,significantly,unigram,34,4,14,9,8,3
+2498,142996,signs,unigram,84,4,21,25,23,15
+2499,143022,signs of,bigram,30,4,5,10,8,7
+2500,143055,silver,unigram,42,4,1,7,15,19
+2501,143139,since,unigram,316,4,74,78,83,81
+2502,143227,since the,bigram,23,4,6,3,6,8
+2503,143239,singapore,unigram,48,4,9,12,17,10
+2504,143278,single,unigram,38,4,6,8,11,13
+2505,143352,site,unigram,31,4,14,7,7,3
+2506,143369,sites,unigram,52,4,25,12,7,8
+2507,143404,situation,unigram,100,4,33,22,21,24
+2508,143422,situation in,bigram,22,4,9,2,6,5
+2509,143451,six,unigram,51,4,17,10,16,8
+2510,143484,size,unigram,21,4,2,6,8,5
+2511,143553,sky,unigram,29,4,11,9,5,4
+2512,143702,slightly,unigram,90,4,29,24,19,18
+2513,143776,slips,unigram,25,4,6,7,3,9
+2514,143812,slow,unigram,42,4,8,13,12,9
+2515,143843,slowdown,unigram,29,4,10,5,7,7
+2516,143872,slower,unigram,25,4,4,7,7,7
+2517,143890,slowing,unigram,31,4,6,9,12,4
+2518,143963,small,unigram,49,4,13,13,9,14
+2519,144204,so,unigram,86,4,27,12,25,22
+2520,144212,so far,bigram,31,4,12,6,6,7
+2521,144272,social,unigram,129,4,46,25,28,30
+2522,144390,softbank,unigram,24,4,8,6,4,6
+2523,144450,software,unigram,25,4,3,11,8,3
+2524,144504,solar,unigram,20,4,6,8,3,3
+2525,144523,sold,unigram,32,4,10,12,5,5
+2526,144556,soldiers,unigram,22,4,8,7,2,5
+2527,144578,solid,unigram,40,4,8,10,13,9
+2528,144628,solution,unigram,45,4,18,11,11,5
+2529,144688,some,unigram,216,4,45,42,71,58
+2530,144775,some of,bigram,20,4,3,5,8,4
+2531,144902,soon,unigram,105,4,30,25,26,24
+2532,145012,source,unigram,84,4,37,16,11,20
+2533,145051,sources,unigram,158,4,57,42,28,31
+2534,145081,sources say,bigram,51,4,18,14,8,11
+2535,145096,south,unigram,351,4,82,109,100,60
+2536,145099,south africa,bigram,23,4,6,6,4,7
+2537,145114,south korea,bigram,214,4,50,74,64,26
+2538,145115,south korean,bigram,47,4,10,12,17,8
+2539,145120,south of,bigram,21,4,8,6,3,4
+2540,145139,southern,unigram,72,4,19,16,20,17
+2541,145154,southern lebanon,bigram,23,4,3,5,9,6
+2542,145178,sovereign,unigram,21,4,2,5,6,8
+2543,145193,sovereignty,unigram,26,4,8,6,2,10
+2544,145229,soybeans,unigram,26,4,1,2,14,9
+2545,145262,space,unigram,30,4,6,10,7,7
+2546,145304,spain,unigram,109,4,21,38,19,31
+2547,145318,spain ibex,bigram,38,4,11,7,9,11
+2548,145399,speak,unigram,27,4,8,9,4,6
+2549,145407,speaker,unigram,37,4,8,5,13,11
+2550,145411,speaker johnson,bigram,20,4,5,1,9,5
+2551,145444,special,unigram,56,4,12,14,14,16
+2552,145548,speech,unigram,35,4,7,13,9,6
+2553,145575,speed,unigram,22,4,2,9,5,6
+2554,145608,spending,unigram,152,4,43,33,45,31
+2555,145789,spoke,unigram,31,4,12,5,3,11
+2556,145804,spokesman,unigram,25,4,11,8,4,2
+2557,145820,spokesperson,unigram,104,4,29,25,30,20
+2558,145832,spokesperson for,bigram,23,4,9,6,4,4
+2559,145847,spokesperson says,bigram,22,4,7,2,7,6
+2560,145897,spot,unigram,85,4,10,12,41,22
+2561,145905,spot gold,bigram,41,4,5,6,24,6
+2562,146081,stability,unigram,78,4,14,17,23,24
+2563,146141,stable,unigram,70,4,20,12,21,17
+2564,146186,stablecoin,unigram,30,4,10,10,7,3
+2565,146217,stablecoins,unigram,30,4,8,7,10,5
+2566,146257,staff,unigram,95,4,23,27,17,28
+2567,146322,stage,unigram,23,4,2,6,7,8
+2568,146355,stake,unigram,73,4,25,19,16,13
+2569,146366,stake in,bigram,37,4,12,7,10,8
+2570,146446,stance,unigram,43,4,18,7,8,10
+2571,146488,standard,unigram,21,4,4,5,7,5
+2572,146552,stanley,unigram,51,4,9,13,20,9
+2573,146627,starmer,unigram,75,4,17,27,12,19
+2574,146690,start,unigram,107,4,22,25,37,23
+2575,146768,starting,unigram,75,4,21,16,23,15
+2576,146800,starts,unigram,37,4,7,10,8,12
+2577,146829,startup,unigram,24,4,7,4,3,10
+2578,146858,state,unigram,307,4,91,92,65,59
+2579,146887,state department,bigram,34,4,19,6,2,7
+2580,146916,state media,bigram,33,4,9,5,15,4
+2581,146922,state of,bigram,24,4,5,12,4,3
+2582,146941,state rubio,bigram,21,4,6,4,7,4
+2583,146969,stated,unigram,43,4,30,8,3,2
+2584,146977,stated that,bigram,28,4,21,4,1,2
+2585,146987,statement,unigram,128,4,50,31,28,19
+2586,147046,states,unigram,419,4,138,161,73,47
+2587,147173,states that,bigram,105,4,34,43,22,6
+2588,147255,status,unigram,24,4,6,8,3,7
+2589,147269,stay,unigram,64,4,16,16,21,11
+2590,147362,steady,unigram,76,4,18,29,12,17
+2591,147412,steel,unigram,63,4,29,12,16,6
+2592,147513,step,unigram,60,4,11,22,11,16
+2593,147540,steps,unigram,49,4,14,12,11,12
+2594,147550,steps to,bigram,22,4,3,6,5,8
+2595,147597,still,unigram,215,4,55,63,47,50
+2596,147793,stock,unigram,175,4,35,50,47,43
+2597,147838,stock market,bigram,41,4,5,10,14,12
+2598,147903,stocks,unigram,203,4,45,54,51,53
+2599,148046,stop,unigram,96,4,31,31,18,16
+2600,148162,storage,unigram,43,4,11,12,10,10
+2601,148182,store,unigram,20,4,8,4,7,1
+2602,148255,straight,unigram,23,4,5,8,5,5
+2603,148312,strategic,unigram,82,4,26,13,22,21
+2604,148395,strategy,unigram,54,4,19,6,10,19
+2605,148479,street,unigram,77,4,19,27,20,11
+2606,148542,strength,unigram,34,4,9,5,11,9
+2607,148563,strengthen,unigram,46,4,12,16,8,10
+2608,148623,strengthens,unigram,30,4,5,9,5,11
+2609,148712,strike,unigram,120,4,41,43,21,15
+2610,148753,strike on,bigram,31,4,16,3,7,5
+2611,148774,strikes,unigram,140,4,57,31,27,25
+2612,148818,strikes on,bigram,51,4,27,13,8,3
+2613,148858,strip,unigram,79,4,27,18,30,4
+2614,148900,strong,unigram,213,4,62,42,62,47
+2615,149054,stronger,unigram,59,4,11,18,15,15
+2616,149093,strongest,unigram,20,4,4,6,7,3
+2617,149124,struck,unigram,28,4,12,6,3,7
+2618,149240,study,unigram,21,4,7,5,7,2
+2619,149532,such,unigram,54,4,14,14,12,14
+2620,149535,such as,bigram,23,4,7,6,5,5
+2621,149568,sudan,unigram,25,4,3,1,6,15
+2622,149714,suggests,unigram,35,4,12,11,8,4
+2623,149816,summit,unigram,97,4,31,22,28,16
+2624,149905,sunday,unigram,49,4,10,13,18,8
+2625,149948,super,unigram,25,4,3,8,6,8
+2626,150059,supplies,unigram,32,4,9,5,14,4
+2627,150077,supply,unigram,200,4,57,47,56,40
+2628,150092,supply chain,bigram,21,4,3,5,4,9
+2629,150187,support,unigram,240,4,55,76,53,56
+2630,150225,support for,bigram,48,4,12,19,5,12
+2631,150295,supported,unigram,46,4,12,7,15,12
+2632,150296,supported by,bigram,27,4,7,4,11,5
+2633,150317,supporting,unigram,20,4,2,8,4,6
+2634,150340,supports,unigram,29,4,4,10,7,8
+2635,150376,supreme,unigram,81,4,19,23,27,12
+2636,150379,supreme court,bigram,59,4,9,17,22,11
+2637,150411,surge,unigram,66,4,13,17,21,15
+2638,150446,surged,unigram,29,4,7,3,12,7
+2639,150466,surges,unigram,24,4,5,6,7,6
+2640,150528,surplus,unigram,22,4,6,4,6,6
+2641,150614,survey,unigram,51,4,16,9,11,15
+2642,150832,swap,unigram,27,4,5,3,14,5
+2643,150861,sweden,unigram,106,4,15,19,33,39
+2644,150962,swiss,unigram,47,4,16,12,5,14
+2645,151004,switzerland,unigram,55,4,13,16,10,16
+2646,151114,syria,unigram,85,4,36,7,12,30
+2647,151172,syrian,unigram,68,4,16,8,17,27
+2648,151212,system,unigram,89,4,19,31,22,17
+2649,151283,systems,unigram,44,4,12,9,12,11
+2650,151323,table,unigram,26,4,7,4,10,5
+2651,151398,taiwan,unigram,120,4,24,20,25,51
+2652,151494,takaichi,unigram,80,3,0,5,59,16
+2653,151557,take,unigram,152,4,49,29,36,38
+2654,151647,taken,unigram,40,4,10,10,11,9
+2655,151691,takes,unigram,21,4,7,5,3,6
+2656,151709,taking,unigram,51,4,21,4,14,12
+2657,151758,talk,unigram,58,4,19,12,15,12
+2658,151759,talk about,bigram,23,4,8,7,6,2
+2659,151786,talks,unigram,424,4,143,96,91,94
+2660,151840,talks in,bigram,28,4,11,6,2,9
+2661,151858,talks on,bigram,28,4,11,6,3,8
+2662,151894,talks to,bigram,29,4,6,10,5,8
+2663,151904,talks with,bigram,118,4,33,34,30,21
+2664,152007,target,unigram,399,4,89,89,115,106
+2665,152079,target price,bigram,121,4,29,23,41,28
+2666,152097,target to,bigram,70,4,13,23,23,11
+2667,152106,targeted,unigram,63,4,20,17,9,17
+2668,152152,targeting,unigram,81,4,28,23,14,16
+2669,152221,targets,unigram,97,4,26,27,24,20
+2670,152288,tariff,unigram,394,4,189,76,85,44
+2671,152358,tariff impact,bigram,23,4,6,6,6,5
+2672,152384,tariff on,bigram,42,4,22,11,6,3
+2673,152452,tariffs,unigram,472,4,186,139,97,50
+2674,152463,tariffs and,bigram,25,4,8,8,7,2
+2675,152466,tariffs are,bigram,21,4,9,4,3,5
+2676,152548,tariffs on,bigram,70,4,20,24,19,7
+2677,152598,tariffs to,bigram,20,4,9,5,5,1
+2678,152647,tass,unigram,48,4,11,9,9,19
+2679,152664,tax,unigram,149,4,39,26,39,45
+2680,152752,taxes,unigram,20,4,7,6,4,3
+2681,152828,team,unigram,62,4,22,9,16,15
+2682,152868,teams,unigram,22,4,4,6,8,4
+2683,152894,tech,unigram,123,4,19,30,38,36
+2684,152981,technical,unigram,21,4,5,8,2,6
+2685,153014,technology,unigram,65,4,11,21,20,13
+2686,153092,tehran,unigram,59,4,42,6,7,4
+2687,153132,tel,unigram,22,3,16,4,2,0
+2688,153198,tells,unigram,44,4,20,10,4,10
+2689,153268,temporary,unigram,23,4,7,5,5,6
+2690,153351,tensions,unigram,81,4,20,15,30,16
+2691,153417,term,unigram,177,4,42,41,51,43
+2692,153557,terms,unigram,41,4,13,9,6,13
+2693,153615,territory,unigram,35,4,14,9,7,5
+2694,153650,terrorism,unigram,23,4,3,7,5,8
+2695,153690,tesla,unigram,120,4,36,21,42,21
+2696,153782,test,unigram,29,4,4,9,11,5
+2697,153861,texas,unigram,38,4,11,4,14,9
+2698,153914,thai,unigram,32,4,6,10,8,8
+2699,153937,thailand,unigram,51,4,12,7,8,24
+2700,153975,than,unigram,366,4,76,72,107,111
+2701,154051,than expected,bigram,51,4,16,10,20,5
+2702,154132,than the,bigram,20,4,3,3,9,5
+2703,154184,that,unigram,1239,4,371,293,304,271
+2704,154297,that could,bigram,26,4,8,5,3,10
+2705,154450,that is,bigram,20,4,4,4,8,4
+2706,154453,that it,bigram,27,4,8,5,9,5
+2707,154626,that russia,bigram,20,4,7,4,4,5
+2708,154698,that the,bigram,193,4,63,47,36,47
+2709,154747,that we,bigram,20,4,8,2,9,1
+2710,154770,the,unigram,4487,4,1359,965,1091,1072
+2711,154824,the 500,bigram,42,4,8,11,12,11
+2712,154877,the ai,bigram,21,4,1,4,11,5
+2713,154904,the and,bigram,22,4,6,5,9,2
+2714,154928,the army,bigram,28,4,9,7,3,9
+2715,154971,the bank,bigram,34,4,12,9,5,8
+2716,155002,the biggest,bigram,20,4,2,4,8,6
+2717,155092,the ceasefire,bigram,27,3,9,0,10,8
+2718,155095,the central,bigram,27,4,9,6,7,5
+2719,155129,the city,bigram,29,4,10,9,4,6
+2720,155157,the coming,bigram,27,4,7,5,6,9
+2721,155169,the company,bigram,68,4,17,10,21,20
+2722,155219,the country,bigram,67,4,20,21,12,14
+2723,155248,the current,bigram,27,4,11,3,10,3
+2724,155268,the deal,bigram,30,4,7,5,8,10
+2725,155340,the dollar,bigram,58,4,13,18,15,12
+2726,155378,the economy,bigram,58,4,12,11,20,15
+2727,155397,the end,bigram,32,4,9,9,7,7
+2728,155420,the eu,bigram,49,4,22,5,8,14
+2729,155423,the european,bigram,43,4,17,14,3,9
+2730,155471,the fed,bigram,123,4,29,35,26,33
+2731,155472,the federal,bigram,53,4,21,14,10,8
+2732,155493,the first,bigram,87,4,26,18,25,18
+2733,155549,the gaza,bigram,77,4,24,21,26,6
+2734,155563,the global,bigram,28,4,11,2,8,7
+2735,155577,the government,bigram,68,4,7,10,32,19
+2736,155627,the highest,bigram,41,4,10,7,8,16
+2737,155651,the hostages,bigram,27,3,10,6,11,0
+2738,155719,the international,bigram,33,4,7,9,10,7
+2739,155729,the iranian,bigram,34,4,22,5,5,2
+2740,155740,the israeli,bigram,68,4,22,15,18,13
+2741,155795,the largest,bigram,20,4,6,4,5,5
+2742,155796,the last,bigram,22,4,6,3,5,8
+2743,155882,the market,bigram,36,4,8,5,17,6
+2744,155921,the middle,bigram,32,4,16,3,10,3
+2745,155951,the most,bigram,38,4,14,4,9,11
+2746,155967,the national,bigram,26,4,12,4,5,5
+2747,155977,the need,bigram,26,4,12,6,6,2
+2748,155990,the new,bigram,45,4,14,15,5,11
+2749,155993,the next,bigram,46,4,16,8,13,9
+2750,156029,the occupation,bigram,22,4,6,8,2,6
+2751,156102,the past,bigram,39,4,8,7,14,10
+2752,156185,the previous,bigram,27,4,12,3,6,6
+2753,156274,the region,bigram,36,4,10,6,6,14
+2754,156333,the right,bigram,20,4,4,7,7,2
+2755,156358,the russian,bigram,22,4,11,5,2,4
+2756,156368,the same,bigram,28,4,8,7,5,8
+2757,156390,the second,bigram,30,4,12,4,6,8
+2758,156396,the security,bigram,20,4,2,3,11,4
+2759,156450,the situation,bigram,36,4,17,3,5,11
+2760,156498,the state,bigram,33,4,9,12,5,7
+2761,156625,the town,bigram,21,4,5,3,7,6
+2762,156649,the trump,bigram,47,4,21,11,10,5
+2763,156657,the two,bigram,30,4,7,10,6,7
+2764,156662,the uk,bigram,25,4,8,7,5,5
+2765,156675,the united,bigram,128,4,42,40,29,17
+2766,156691,the us,bigram,172,4,58,35,35,44
+2767,156732,the war,bigram,78,4,34,16,9,19
+2768,156751,the west,bigram,25,4,11,9,4,1
+2769,156755,the white,bigram,39,4,18,6,10,5
+2770,156776,the world,bigram,71,4,22,16,22,11
+2771,156787,the year,bigram,31,4,6,4,11,10
+2772,156815,their,unigram,196,4,59,55,43,39
+2773,156994,them,unigram,94,4,28,26,20,20
+2774,157053,then,unigram,30,4,8,5,12,5
+2775,157093,there,unigram,234,4,72,51,52,59
+2776,157097,there are,bigram,39,4,12,7,7,13
+2777,157108,there is,bigram,94,4,30,16,24,24
+2778,157139,there will,bigram,25,4,5,6,9,5
+2779,157151,these,unigram,45,4,16,10,11,8
+2780,157190,they,unigram,229,4,62,70,62,35
+2781,157198,they are,bigram,42,4,13,16,10,3
+2782,157297,they will,bigram,23,4,8,9,1,5
+2783,157321,things,unigram,21,4,3,3,9,6
+2784,157341,think,unigram,97,4,21,29,32,15
+2785,157388,think we,bigram,21,4,7,3,8,3
+2786,157416,third,unigram,75,4,12,21,26,16
+2787,157435,third quarter,bigram,25,4,5,6,9,5
+2788,157456,this,unigram,455,4,107,119,143,86
+2789,157505,this is,bigram,42,4,14,9,12,7
+2790,157583,this week,bigram,78,4,11,26,21,20
+2791,157587,this year,bigram,125,4,24,40,41,20
+2792,157609,those,unigram,48,4,18,10,7,13
+2793,157645,though,unigram,50,4,15,11,12,12
+2794,157709,thousands,unigram,31,4,3,10,14,4
+2795,157715,thousands of,bigram,24,4,2,9,9,4
+2796,157723,threat,unigram,79,4,29,14,23,13
+2797,157755,threat to,bigram,22,4,8,7,3,4
+2798,157794,threatens,unigram,31,4,6,7,13,5
+2799,157815,threats,unigram,36,4,11,12,7,6
+2800,157829,three,unigram,143,4,33,29,50,31
+2801,157906,three years,bigram,20,4,4,4,8,4
+2802,157934,through,unigram,163,4,40,33,49,41
+2803,158084,thursday,unigram,51,4,13,14,14,10
+2804,158179,tied,unigram,31,4,9,9,7,6
+2805,158182,tied to,bigram,29,4,9,8,6,6
+2806,158187,ties,unigram,65,4,12,24,18,11
+2807,158210,ties with,bigram,23,4,4,7,7,5
+2808,158222,tight,unigram,23,4,2,7,8,6
+2809,158297,tiktok,unigram,69,4,7,53,7,2
+2810,158360,time,unigram,262,4,77,64,71,50
+2811,158392,time high,bigram,24,4,5,5,11,3
+2812,158439,time to,bigram,29,4,10,6,7,6
+2813,158470,times,unigram,83,4,32,19,21,11
+2814,158578,to,unigram,7880,4,2051,2023,1989,1817
+2815,158605,to 10,bigram,22,4,8,1,7,6
+2816,158873,to 50,bigram,21,4,4,4,7,6
+2817,159061,to achieve,bigram,21,4,4,8,5,4
+2818,159064,to acquire,bigram,27,4,7,3,10,7
+2819,159066,to act,bigram,21,4,5,8,6,2
+2820,159075,to address,bigram,28,4,2,14,4,8
+2821,159111,to allow,bigram,25,4,6,7,8,4
+2822,159126,to an,bigram,29,4,8,5,10,6
+2823,159131,to announce,bigram,23,4,3,9,7,4
+2824,159178,to attack,bigram,22,4,10,6,2,4
+2825,159195,to avoid,bigram,28,4,10,6,5,7
+2826,159216,to be,bigram,249,4,52,65,76,56
+2827,159220,to begin,bigram,24,4,5,6,7,6
+2828,159254,to boost,bigram,73,4,25,20,16,12
+2829,159276,to build,bigram,38,4,6,6,13,13
+2830,159281,to buy,bigram,64,4,12,16,18,18
+2831,159318,to change,bigram,20,4,8,8,2,2
+2832,159335,to china,bigram,64,4,20,12,16,16
+2833,159370,to come,bigram,27,4,8,5,8,6
+2834,159414,to continue,bigram,41,4,13,8,14,6
+2835,159465,to cut,bigram,87,4,13,23,21,30
+2836,159557,to discuss,bigram,71,4,17,22,18,14
+2837,159575,to do,bigram,37,4,8,10,10,9
+2838,159601,to ease,bigram,23,4,8,4,4,7
+2839,159628,to end,bigram,115,4,26,24,26,39
+2840,159637,to ensure,bigram,34,4,14,9,6,5
+2841,159686,to expand,bigram,35,4,9,8,12,6
+2842,159818,to get,bigram,51,4,10,10,14,17
+2843,159820,to give,bigram,24,4,3,4,11,6
+2844,159844,to grow,bigram,24,4,4,7,10,3
+2845,159861,to have,bigram,45,4,11,10,12,12
+2846,159871,to help,bigram,37,4,8,9,11,9
+2847,159883,to his,bigram,20,4,7,4,5,4
+2848,159885,to hit,bigram,25,4,5,5,6,9
+2849,159888,to hold,bigram,47,4,12,15,10,10
+2850,159925,to impose,bigram,28,4,10,9,3,6
+2851,159926,to improve,bigram,26,4,9,6,7,4
+2852,159928,to in,bigram,20,4,3,2,6,9
+2853,159933,to increase,bigram,47,4,15,13,13,6
+2854,159944,to inflation,bigram,22,4,6,7,6,3
+2855,159966,to invest,bigram,51,4,10,19,12,10
+2856,159981,to israel,bigram,23,4,11,7,1,4
+2857,159983,to issue,bigram,20,4,7,5,6,2
+2858,159989,to its,bigram,37,4,9,10,11,7
+2859,159997,to join,bigram,28,4,8,12,5,3
+2860,160013,to keep,bigram,55,4,8,15,15,17
+2861,160038,to launch,bigram,70,4,21,26,14,9
+2862,160102,to maintain,bigram,26,4,5,4,10,7
+2863,160107,to make,bigram,75,4,25,20,20,10
+2864,160136,to meet,bigram,99,4,26,22,25,26
+2865,160201,to near,bigram,20,4,4,4,2,10
+2866,160213,to new,bigram,29,4,8,8,7,6
+2867,160258,to offer,bigram,22,4,10,3,3,6
+2868,160326,to pay,bigram,30,4,9,3,9,9
+2869,160396,to prevent,bigram,27,4,8,7,4,8
+2870,160424,to protect,bigram,25,4,4,7,11,3
+2871,160456,to raise,bigram,29,4,12,4,6,7
+2872,160470,to reach,bigram,52,4,16,15,12,9
+2873,160498,to record,bigram,37,4,4,11,11,11
+2874,160506,to reduce,bigram,39,4,16,9,8,6
+2875,160533,to release,bigram,23,4,6,7,8,2
+2876,160539,to remain,bigram,23,4,5,6,8,4
+2877,160542,to remove,bigram,27,4,6,10,8,3
+2878,160573,to resolve,bigram,22,4,6,10,5,1
+2879,160582,to resume,bigram,28,4,9,8,9,2
+2880,160592,to return,bigram,26,4,5,13,6,2
+2881,160608,to rise,bigram,41,4,8,12,14,7
+2882,160623,to russia,bigram,27,4,5,12,5,5
+2883,160653,to see,bigram,49,4,12,10,13,14
+2884,160662,to sell,bigram,44,4,9,10,10,15
+2885,160703,to sign,bigram,30,4,9,8,2,11
+2886,160783,to start,bigram,36,4,7,10,8,11
+2887,160788,to stay,bigram,30,4,5,9,11,5
+2888,160791,to step,bigram,20,4,4,8,1,7
+2889,160800,to stop,bigram,45,4,16,14,4,11
+2890,160806,to strengthen,bigram,31,4,10,11,4,6
+2891,160832,to support,bigram,59,4,12,18,14,15
+2892,160859,to take,bigram,53,4,18,6,17,12
+2893,160861,to talk,bigram,21,4,7,4,7,3
+2894,160896,to the,bigram,348,4,129,69,80,70
+2895,160950,to trump,bigram,44,4,13,9,11,11
+2896,160963,to ukraine,bigram,46,4,11,10,13,12
+2897,160997,to us,bigram,44,4,11,18,9,6
+2898,161001,to use,bigram,51,4,12,15,11,13
+2899,161019,to visit,bigram,25,4,9,5,6,5
+2900,161023,to vote,bigram,20,4,2,2,9,7
+2901,161062,to work,bigram,27,4,5,4,9,9
+2902,161111,today,unigram,150,4,46,35,24,45
+2903,161194,together,unigram,29,4,9,5,7,8
+2904,161251,tokyo,unigram,34,4,11,11,4,8
+2905,161279,told,unigram,78,4,26,11,22,19
+2906,161387,tomorrow,unigram,40,4,12,10,12,6
+2907,161459,tons,unigram,33,4,7,5,11,10
+2908,161480,too,unigram,86,4,19,25,18,24
+2909,161493,too high,bigram,20,4,1,8,3,8
+2910,161529,tool,unigram,24,4,6,4,7,7
+2911,161544,tools,unigram,21,4,3,8,4,6
+2912,161558,top,unigram,125,4,30,40,33,22
+2913,161704,total,unigram,111,4,35,16,35,25
+2914,161890,toward,unigram,110,4,27,29,29,25
+2915,161978,towards,unigram,39,4,15,8,10,6
+2916,162020,town,unigram,30,4,7,6,9,8
+2917,162025,town of,bigram,21,4,5,3,7,6
+2918,162036,toyota,unigram,23,4,7,2,8,6
+2919,162071,track,unigram,53,4,13,13,13,14
+2920,162121,trade,unigram,731,4,260,158,200,113
+2921,162131,trade agreement,bigram,29,4,16,7,5,1
+2922,162142,trade balance,bigram,26,4,3,6,7,10
+2923,162171,trade deal,bigram,93,4,51,7,23,12
+2924,162312,trade talks,bigram,50,4,24,10,15,1
+2925,162317,trade tensions,bigram,23,4,7,2,12,2
+2926,162366,traders,unigram,108,4,30,28,24,26
+2927,162442,trading,unigram,134,4,26,39,36,33
+2928,162517,traffic,unigram,28,4,7,3,10,8
+2929,162561,train,unigram,23,4,2,9,6,6
+2930,162582,training,unigram,22,4,2,11,5,4
+2931,162788,transportation,unigram,20,4,4,4,7,5
+2932,162827,travel,unigram,41,4,7,9,16,9
+2933,162868,treasuries,unigram,24,4,1,7,6,10
+2934,162888,treasury,unigram,195,4,58,55,38,44
+2935,162947,treasury secretary,bigram,48,4,24,13,6,5
+2936,163022,trend,unigram,24,4,7,5,7,5
+2937,163048,trends,unigram,26,4,3,7,9,7
+2938,163163,trillion,unigram,112,4,22,24,46,20
+2939,163193,trillion in,bigram,22,4,3,5,10,4
+2940,163258,trip,unigram,22,4,5,5,7,5
+2941,163319,troops,unigram,63,4,11,18,22,12
+2942,163439,trump,unigram,2680,4,838,673,700,469
+2943,163466,trump admin,bigram,21,4,5,10,3,3
+2944,163467,trump administration,bigram,138,4,36,56,31,15
+2945,163491,trump and,bigram,55,4,23,8,13,11
+2946,163723,trump for,bigram,20,4,5,8,5,2
+2947,163753,trump has,bigram,30,4,10,5,9,6
+2948,163776,trump if,bigram,20,4,2,6,6,6
+2949,163802,trump is,bigram,43,4,17,13,6,7
+2950,163863,trump meeting,bigram,20,4,6,3,6,5
+2951,163915,trump on,bigram,189,4,61,46,48,34
+2952,164045,trump said,bigram,39,4,16,6,12,5
+2953,164050,trump says,bigram,205,4,47,49,74,35
+2954,164107,trump states,bigram,20,4,6,9,4,1
+2955,164131,trump tariffs,bigram,23,4,8,7,5,3
+2956,164143,trump the,bigram,21,4,10,3,5,3
+2957,164159,trump to,bigram,101,4,34,28,22,17
+2958,164212,trump we,bigram,71,4,27,13,22,9
+2959,164225,trump will,bigram,81,4,28,28,11,14
+2960,164254,trust,unigram,29,4,8,6,7,8
+2961,164281,truth,unigram,106,4,43,19,21,23
+2962,164287,truth social,bigram,98,4,38,18,21,21
+2963,164295,trying,unigram,27,4,9,4,6,8
+2964,164296,trying to,bigram,27,4,9,4,6,8
+2965,164310,tsla,unigram,37,4,12,8,13,4
+2966,164319,tsla tesla,bigram,22,4,8,5,6,3
+2967,164324,tsmc,unigram,26,3,6,7,13,0
+2968,164350,tsunami,unigram,23,3,20,2,1,0
+2969,164386,tuesday,unigram,50,4,8,14,14,14
+2970,164462,turkey,unigram,50,4,12,14,10,14
+2971,164500,turkish,unigram,44,4,5,9,16,14
+2972,164537,turn,unigram,31,4,9,4,9,9
+2973,164587,turns,unigram,23,4,8,6,5,4
+2974,164610,tv,unigram,37,4,11,9,14,3
+2975,164674,two,unigram,269,4,69,69,68,63
+2976,164852,uae,unigram,32,4,6,8,7,11
+2977,164910,ubs,unigram,33,4,4,12,7,10
+2978,164963,ueda,unigram,96,4,14,25,23,34
+2979,165045,uk,unigram,541,4,102,129,116,194
+2980,165129,uk government,bigram,21,4,5,8,6,2
+2981,165197,uk pm,bigram,20,4,4,3,5,8
+2982,165273,ukraine,unigram,725,4,186,172,113,254
+2983,165292,ukraine and,bigram,31,4,10,4,4,13
+2984,165460,ukraine peace,bigram,28,4,4,5,3,16
+2985,165472,ukraine president,bigram,20,4,7,5,5,3
+2986,165554,ukraine war,bigram,25,4,8,5,4,8
+2987,165562,ukraine will,bigram,22,4,9,3,2,8
+2988,165572,ukraine zelenskiy,bigram,27,4,5,3,10,9
+2989,165575,ukrainian,unigram,158,4,49,34,29,46
+2990,165599,ukrainian drones,bigram,22,4,11,6,4,1
+2991,165707,un,unigram,137,4,27,71,17,22
+2992,165783,unacceptable,unigram,20,4,4,10,2,4
+2993,165842,uncertain,unigram,26,4,8,6,6,6
+2994,165867,uncertainty,unigram,103,4,35,25,29,14
+2995,165923,unchanged,unigram,56,4,18,9,10,19
+2996,165990,under,unigram,198,4,52,49,46,51
+2997,166077,under the,bigram,31,4,10,5,8,8
+2998,166116,underlying,unigram,32,4,8,10,5,9
+2999,166232,underway,unigram,22,4,8,2,5,7
+3000,166287,unemployment,unigram,107,4,19,31,24,33
+3001,166305,unemployment rate,bigram,69,4,16,18,13,22
+3002,166428,union,unigram,81,4,25,36,10,10
+3003,166507,unit,unigram,40,4,10,10,9,11
+3004,166542,united,unigram,206,4,61,61,43,41
+3005,166551,united nations,bigram,23,4,7,9,3,4
+3006,166554,united states,bigram,153,4,48,42,36,27
+3007,166568,units,unigram,32,4,11,7,9,5
+3008,166640,unless,unigram,20,4,8,5,3,4
+3009,166663,unlikely,unigram,24,4,6,4,8,6
+3010,166695,unofficially,unigram,55,4,20,12,9,14
+3011,166697,unofficially closes,bigram,45,4,15,9,9,12
+3012,166823,until,unigram,85,4,33,13,24,15
+3013,166913,unveils,unigram,29,4,5,10,8,6
+3014,166960,up,unigram,823,4,169,174,245,235
+3015,167183,up from,bigram,60,4,14,12,15,19
+3016,167294,up to,bigram,123,4,23,28,36,36
+3017,167325,upcoming,unigram,49,4,11,13,12,13
+3018,167363,update,unigram,48,4,9,5,18,16
+3019,167450,upgrades,unigram,21,4,4,7,7,3
+3020,167516,ups,unigram,29,4,7,4,13,5
+3021,167546,upside,unigram,32,4,8,10,7,7
+3022,167614,urge,unigram,24,4,5,7,6,6
+3023,167633,urged,unigram,28,4,6,8,9,5
+3024,167655,urgent,unigram,20,4,4,6,7,3
+3025,167677,urges,unigram,118,4,26,38,32,22
+3026,167773,us,unigram,1814,4,486,527,421,380
+3027,167832,us and,bigram,38,4,10,9,11,8
+3028,167916,us china,bigram,33,4,3,6,22,2
+3029,167957,us crude,bigram,21,4,5,7,6,3
+3030,167990,us dollar,bigram,30,4,8,7,9,6
+3031,168077,us government,bigram,24,4,2,4,13,5
+3032,168101,us house,bigram,24,4,6,4,4,10
+3033,168235,us official,bigram,22,4,8,5,3,6
+3034,168274,us president,bigram,50,4,23,11,10,6
+3035,168398,us tariffs,bigram,36,4,18,9,5,4
+3036,168412,us to,bigram,42,4,8,18,9,7
+3037,168419,us trade,bigram,39,4,11,11,10,7
+3038,168426,us treasury,bigram,48,4,17,14,10,7
+3039,168466,us will,bigram,23,4,8,5,3,7
+3040,168507,usd,unigram,146,4,24,30,44,48
+3041,168752,use,unigram,138,4,26,42,35,35
+3042,168806,use of,bigram,36,4,6,12,8,10
+3043,168825,used,unigram,58,4,20,15,11,12
+3044,168860,user,unigram,20,4,4,5,3,8
+3045,168869,users,unigram,57,4,18,12,17,10
+3046,168925,using,unigram,84,4,19,24,27,14
+3047,169030,ustr,unigram,31,4,1,1,15,14
+3048,169032,ustr greer,bigram,20,4,1,1,9,9
+3049,169187,valuation,unigram,30,4,9,7,3,11
+3050,169214,valuations,unigram,21,4,6,2,6,7
+3051,169232,value,unigram,67,4,15,17,16,19
+3052,169293,vance,unigram,46,4,10,14,16,6
+3053,169375,various,unigram,20,4,9,2,7,2
+3054,169442,vehicle,unigram,39,4,12,10,9,8
+3055,169468,vehicles,unigram,53,4,10,16,15,12
+3056,169511,venezuela,unigram,106,4,4,20,30,52
+3057,169575,venezuelan,unigram,28,4,1,8,4,15
+3058,169675,versus,unigram,20,3,0,5,7,8
+3059,169699,very,unigram,168,4,52,26,50,40
+3060,169780,vessel,unigram,26,4,4,1,11,10
+3061,169801,vessels,unigram,23,4,2,2,11,8
+3062,169841,via,unigram,64,4,18,16,16,14
+3063,169899,vice,unigram,54,4,12,12,18,12
+3064,169906,vice president,bigram,26,4,6,8,8,4
+3065,169970,vietnam,unigram,40,4,12,8,11,9
+3066,170003,view,unigram,22,4,4,6,8,4
+3067,170029,views,unigram,27,4,6,5,8,8
+3068,170119,violation,unigram,30,4,14,4,7,5
+3069,170187,visa,unigram,45,4,3,21,12,9
+3070,170248,visit,unigram,109,4,23,42,21,23
+3071,170290,visit to,bigram,27,4,7,12,1,7
+3072,170354,vladimir,unigram,23,4,14,5,1,3
+3073,170355,vladimir putin,bigram,23,4,14,5,1,3
+3074,170399,volatility,unigram,42,4,16,3,12,11
+3075,170482,von,unigram,63,4,25,17,7,14
+3076,170483,von der,bigram,63,4,25,17,7,14
+3077,170492,vote,unigram,81,4,9,17,20,35
+3078,170583,vows,unigram,29,4,6,10,8,5
+3079,170611,vs,unigram,1021,4,275,202,226,318
+3080,170729,vs 50,bigram,20,4,6,4,5,5
+3081,170811,vs est,bigram,29,4,18,4,5,2
+3082,170812,vs estimate,bigram,45,3,15,0,26,4
+3083,170842,vs previous,bigram,460,4,110,99,90,161
+3084,170914,wage,unigram,47,4,8,11,10,18
+3085,170949,wages,unigram,21,4,4,5,8,4
+3086,170974,wait,unigram,20,4,8,6,3,3
+3087,171024,wall,unigram,64,4,14,24,17,9
+3088,171030,wall street,bigram,58,4,13,20,17,8
+3089,171036,waller,unigram,57,4,20,14,9,14
+3090,171116,want,unigram,110,4,40,19,35,16
+3091,171151,want to,bigram,62,4,28,9,20,5
+3092,171164,wants,unigram,90,4,19,23,24,24
+3093,171202,wants to,bigram,40,4,12,9,11,8
+3094,171213,war,unigram,287,4,95,71,65,56
+3095,171260,war in,bigram,40,4,15,7,8,10
+3096,171316,war with,bigram,24,4,7,3,6,8
+3097,171361,warn,unigram,37,4,7,15,9,6
+3098,171381,warned,unigram,42,4,7,6,16,13
+3099,171399,warner,unigram,31,4,1,2,7,21
+3100,171403,warner bros,bigram,25,4,1,2,6,16
+3101,171410,warning,unigram,62,4,25,11,12,14
+3102,171445,warns,unigram,170,4,39,48,52,31
+3103,171496,warns of,bigram,36,4,6,12,9,9
+3104,171512,warns that,bigram,37,4,7,14,9,7
+3105,171598,was,unigram,327,4,102,69,78,78
+3106,171844,washington,unigram,132,4,45,25,28,34
+3107,171881,washington post,bigram,20,4,5,9,2,4
+3108,171928,watch,unigram,29,4,7,12,6,4
+3109,172026,wave,unigram,20,4,9,1,5,5
+3110,172046,way,unigram,67,4,23,12,18,14
+3111,172068,way to,bigram,22,4,8,3,6,5
+3112,172091,we,unigram,880,4,264,192,235,189
+3113,172100,we are,bigram,143,4,42,36,40,25
+3114,172109,we can,bigram,47,4,9,12,20,6
+3115,172154,we have,bigram,98,4,29,20,27,22
+3116,172169,we ll,bigram,39,4,14,6,14,5
+3117,172181,we must,bigram,26,4,7,6,7,6
+3118,172182,we need,bigram,34,4,4,9,13,8
+3119,172199,we re,bigram,60,4,15,12,23,10
+3120,172242,we want,bigram,23,4,10,4,7,2
+3121,172246,we will,bigram,139,4,50,29,25,35
+3122,172252,weak,unigram,66,4,16,13,17,20
+3123,172316,weakening,unigram,21,4,4,7,4,6
+3124,172343,weaker,unigram,23,4,4,5,5,9
+3125,172367,weakness,unigram,26,4,5,8,7,6
+3126,172390,wealth,unigram,27,4,1,6,12,8
+3127,172432,weapons,unigram,108,4,26,31,32,19
+3128,172517,website,unigram,31,4,10,6,9,6
+3129,172563,wednesday,unigram,47,4,11,13,9,14
+3130,172596,week,unigram,268,4,61,65,66,76
+3131,172713,weekend,unigram,34,4,6,6,11,11
+3132,172736,weekly,unigram,41,4,9,12,13,7
+3133,172764,weeks,unigram,68,4,8,15,24,21
+3134,172858,weight,unigram,25,4,5,5,10,5
+3135,172875,welcome,unigram,23,4,6,9,5,3
+3136,172900,welcomes,unigram,20,4,7,6,5,2
+3137,172924,well,unigram,63,4,18,9,21,15
+3138,172960,wells,unigram,20,3,5,4,11,0
+3139,172982,were,unigram,156,4,41,39,44,32
+3140,173113,west,unigram,66,4,20,22,12,12
+3141,173116,west bank,bigram,28,4,8,12,5,3
+3142,173131,western,unigram,52,4,21,13,11,7
+3143,173185,wh,unigram,26,4,14,2,3,7
+3144,173201,what,unigram,107,4,33,23,25,26
+3145,173287,when,unigram,89,4,16,20,27,26
+3146,173341,where,unigram,45,4,8,15,15,7
+3147,173374,whether,unigram,41,4,15,9,8,9
+3148,173399,which,unigram,134,4,31,31,42,30
+3149,173434,which is,bigram,20,4,4,3,6,7
+3150,173479,while,unigram,216,4,42,63,61,50
+3151,173617,while the,bigram,20,4,1,7,8,4
+3152,173660,white,unigram,297,4,96,70,70,61
+3153,173662,white house,bigram,294,4,96,70,67,61
+3154,173675,who,unigram,116,4,31,31,19,35
+3155,173909,will,unigram,1676,4,447,415,433,381
+3156,173945,will be,bigram,326,4,90,67,93,76
+3157,173985,will continue,bigram,57,4,19,13,15,10
+3158,174084,will have,bigram,28,4,3,10,6,9
+3159,174118,will keep,bigram,21,4,8,7,3,3
+3160,174136,will make,bigram,25,4,6,7,4,8
+3161,174139,will meet,bigram,27,4,8,4,6,9
+3162,174152,will not,bigram,137,4,42,31,37,27
+3163,174219,will remain,bigram,20,4,7,4,3,6
+3164,174299,will take,bigram,34,4,11,9,4,10
+3165,174342,williams,unigram,54,4,4,18,7,25
+3166,174364,williams says,bigram,24,3,0,8,4,12
+3167,174373,willing,unigram,38,4,13,10,9,6
+3168,174383,willing to,bigram,26,4,9,7,8,2
+3169,174400,win,unigram,42,4,7,12,16,7
+3170,174433,wind,unigram,22,4,6,11,3,2
+3171,174527,wins,unigram,23,4,4,5,11,3
+3172,174601,with,unigram,2212,4,610,503,554,545
+3173,174785,with china,bigram,68,4,11,18,30,9
+3174,174896,with eu,bigram,25,4,9,4,4,8
+3175,175018,with india,bigram,22,4,14,4,2,2
+3176,175036,with iran,bigram,20,4,12,6,1,1
+3177,175173,with new,bigram,21,4,2,7,6,6
+3178,175254,with president,bigram,24,4,6,7,4,7
+3179,175274,with putin,bigram,35,4,15,8,5,7
+3180,175326,with russia,bigram,28,4,9,2,6,11
+3181,175438,with the,bigram,244,4,88,43,60,53
+3182,175469,with trump,bigram,81,4,25,21,14,21
+3183,175495,with us,bigram,57,4,16,5,22,14
+3184,175585,within,unigram,87,4,28,23,23,13
+3185,175633,without,unigram,93,4,28,23,20,22
+3186,175711,witkoff,unigram,53,4,15,8,10,20
+3187,175800,won,unigram,102,4,28,20,38,16
+3188,175910,work,unigram,110,4,28,21,27,34
+3189,175956,work with,bigram,20,4,6,5,6,3
+3190,175975,workers,unigram,67,4,5,30,21,11
+3191,176032,working,unigram,115,4,33,16,26,40
+3192,176055,working to,bigram,24,4,6,3,6,9
+3193,176061,working with,bigram,24,4,5,6,6,7
+3194,176085,world,unigram,139,4,41,40,36,22
+3195,176180,worried,unigram,20,4,7,2,6,5
+3196,176189,worries,unigram,26,4,8,6,10,2
+3197,176248,worst,unigram,26,4,8,2,7,9
+3198,176269,worth,unigram,52,4,16,12,12,12
+3199,176302,would,unigram,240,4,56,42,66,76
+3200,176309,would be,bigram,52,4,20,6,9,17
+3201,176473,wrong,unigram,22,4,6,4,8,4
+3202,176506,wsj,unigram,341,4,92,79,87,83
+3203,176547,wti,unigram,24,4,8,6,5,5
+3204,176610,xai,unigram,26,4,5,7,7,7
+3205,176644,xi,unigram,160,4,17,49,63,31
+3206,176729,xinhua,unigram,57,4,7,16,14,20
+3207,176821,year,unigram,829,4,166,198,227,238
+3208,176855,year bond,bigram,21,4,6,6,4,5
+3209,176899,year end,bigram,39,4,8,14,7,10
+3210,176922,year government,bigram,23,4,5,9,3,6
+3211,176937,year inflation,bigram,23,4,8,5,7,3
+3212,176941,year japanese,bigram,39,4,9,6,10,14
+3213,176942,year jgb,bigram,68,4,18,14,12,24
+3214,176981,year on,bigram,21,4,4,2,12,3
+3215,176986,year over,bigram,34,4,13,5,11,5
+3216,177047,year to,bigram,20,4,2,5,6,7
+3217,177088,years,unigram,187,4,35,50,53,49
+3218,177171,yemen,unigram,30,4,7,9,5,9
+3219,177200,yen,unigram,75,4,9,17,23,26
+3220,177279,yet,unigram,85,4,19,27,30,9
+3221,177338,yield,unigram,200,4,43,53,39,65
+3222,177379,yield on,bigram,29,4,10,8,6,5
+3223,177405,yields,unigram,50,4,13,12,6,19
+3224,177449,yonhap,unigram,85,4,20,23,16,26
+3225,177456,york,unigram,75,4,18,22,25,10
+3226,177489,you,unigram,79,4,25,25,16,13
+3227,177558,your,unigram,32,4,8,13,7,4
+3228,177603,yoy,unigram,224,4,52,55,45,72
+3229,177607,yoy actual,bigram,146,4,29,29,34,54
+3230,177650,yr,unigram,20,4,5,6,2,7
+3231,177669,ytd,unigram,22,4,7,6,6,3
+3232,177685,yuan,unigram,127,4,34,37,29,27
+3233,177717,yuan mid,bigram,20,3,13,3,0,4
+3234,177800,zealand,unigram,55,4,21,14,9,11
+3235,177847,zelenskiy,unigram,178,4,49,29,37,63
+3236,177904,zelenskiy says,bigram,40,4,10,3,10,17
+3237,177926,zelensky,unigram,101,4,48,21,6,26
+3238,177990,zelenskyy,unigram,51,4,23,11,5,12
+3239,178033,zero,unigram,37,4,11,10,9,7

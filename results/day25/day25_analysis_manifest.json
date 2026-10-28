@@ -1,0 +1,84 @@
+{
+  "day": 25,
+  "artifact": "day25_analysis_manifest",
+  "status": "INITIALIZED_AND_FROZEN",
+  "scientific_objective": "Diagnose the residual F3 positive-sentiment temporal failure that persists after historical optimization.",
+  "primary_question": "Is the residual F3 positive-to-negative failure associated with class-prior shift, source composition, lexical/topic shift, a concentrated error cohort, or a mixed mechanism?",
+  "scientific_firewall": {
+    "model_retraining": false,
+    "lora_updates": false,
+    "checkpoint_reselection": false,
+    "hyperparameter_search": false,
+    "prompt_modification": false,
+    "parser_modification": false,
+    "label_remapping": false,
+    "threshold_tuning": false,
+    "new_full_model_inference": false,
+    "causal_claims_without_direct_evidence": false
+  },
+  "primary_prediction_artifact": {
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv",
+    "sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b",
+    "immutable": true,
+    "day24_manifest_status": "COMPLETE_AND_FROZEN",
+    "day24_completion_status": "PASS",
+    "day24_scientific_status": "COMPLETE"
+  },
+  "population_identity": {
+    "n": 20002,
+    "ordered_observation_id_sha256": "f4aa6032db13ff333af6f0580286b1ef0d20ec44d2aa0117b6860eb58be56c51",
+    "observation_ids_unique": true,
+    "period_counts": {
+      "F1": 3602,
+      "F2": 3522,
+      "F3": 4818,
+      "F4": 3872,
+      "F5": 3588,
+      "F6": 600
+    },
+    "true_label_counts": {
+      "negative": 5203,
+      "neutral": 11748,
+      "positive": 3051
+    },
+    "predicted_label_counts": {
+      "negative": 5044,
+      "neutral": 11807,
+      "positive": 3151
+    },
+    "n_sources": 8,
+    "timestamp_min": "2026-01-01 04:05:22+00:00",
+    "timestamp_max": "2026-06-05 12:59:13+00:00",
+    "prediction_valid_count": 20002,
+    "inference_success_count": 20002
+  },
+  "canonical_schema": {
+    "observation_id": "observation_id",
+    "timestamp": "timestamp",
+    "period": "period",
+    "period_type": "period_type",
+    "source": "source",
+    "message_id": "message_id",
+    "text": "text",
+    "true_label": "true_label",
+    "predicted_label": "predicted_label",
+    "raw_generation": "raw_generation",
+    "prediction_valid": "prediction_valid",
+    "inference_status": "inference_status"
+  },
+  "upstream_artifact_hashes": {
+    "optimized_future_predictions_sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b",
+    "optimized_future_prediction_manifest_sha256": "9a70d00e0bc2a7c68a6cab1e0a66c4606e99a2ad7bc461fc42fa53a76b9926d9",
+    "day24_completion_checkpoint_sha256": "cbbb7edf3cae880e9ecf0218ce8508f585ef5e73b0ab19ee9e53c8aa684acc27",
+    "future_window_metrics_sha256": "752339fdc55a7d31209ba7ebb7031985c8a73f30a272944a4e4a6faf10286da0",
+    "bootstrap_delta_vs_validation_ci_sha256": "7d1967a3ffa5173286e47b9b2730c3ce68e7cbdd7ffd9b88a971ef7818a4b799",
+    "day24_final_scientific_summary_sha256": "18bb96c9b654bfc05b4a524f9b24629c5948da794491476647a594cceb716145"
+  },
+  "planned_mechanism_classes": {
+    "A": "primarily source-composition associated",
+    "B": "primarily lexical/topic associated and persists within sources",
+    "C": "mixed source + lexical association",
+    "D": "unresolved with current artifacts"
+  },
+  "created_utc": "2026-10-09T00:47:03.978766+00:00"
+}

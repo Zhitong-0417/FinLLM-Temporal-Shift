@@ -1,0 +1,93 @@
+{
+  "artifact": "day26_day27_handoff_manifest",
+  "created_utc": "2026-10-09T02:59:47.912711+00:00",
+  "day": 26,
+  "day24_future_prediction_identity": {
+    "immutable": true,
+    "n": 20002,
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv",
+    "sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b"
+  },
+  "day26_primary_artifact_hashes": {
+    "analysis_manifest": "ff49407efbc41e8a2f9cc123e4807da64d3f22fab1e40b078fa16556e7fa97bc",
+    "historical_population_manifest": "3e4ef7314899d0f60bb7373b32a75385c3dd5b464f35c74d063e51850556e213",
+    "historical_vocabulary": "cd1d6383beeb7409162e425d2bb44ae40ba3ce9a81672fd7b17132b3f35fda54",
+    "historical_vocabulary_manifest": "bec68a277530b1417759e4956b05a13c2e049d0963482bf82918e61f81b20c13",
+    "historical_window_distribution": "fe8907aab37a77becc7c48532c3a736edd2fd0cd48fd3d1a5bb07f37bef05745",
+    "historical_window_manifest": "b2490cad63a006efb1f582308727ea99d0d8304a93d52ab37d16fb0fbc413c93",
+    "support_sensitivity": "6667d100e071af2c945ae2c20b6e75a82c5338ad128d8984ea74aab95b936c03",
+    "token_class_association": "3b9ce6cf41b41f98ef0104e79e223e0c1c48f5451d103bfaac343666e24fb18c",
+    "token_instability_rank": "b1aa249f458a1b8c855ac8bdb5a4e210a68d322262978c9110cb6e0b6c732347",
+    "token_temporal_instability": "48af24b1ded06037e3f28c80619164a35d314709ee139fbed35b2e411fef2de2"
+  },
+  "day27_primary_test": {
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 42,
+    "confidence_interval": "95% observation-level bootstrap CI",
+    "outcome": "future classification error",
+    "primary_contrast": "Mean instability exposure among misclassified future observations minus mean instability exposure among correctly classified future observations."
+  },
+  "day27_secondary_analyses": [
+    "F3-only analysis",
+    "true-positive P->N versus P->P",
+    "within-source contrasts",
+    "future-window descriptive relation",
+    "coverage diagnostics",
+    "df>=50 vocabulary sensitivity"
+  ],
+  "future_observation_exposure": {
+    "coverage_definition": "Number of eligible frozen-vocabulary tokens present divided by the number of vectorized unigram/bigram features present under the frozen tokenizer interface.",
+    "primary_definition": "Mean token_instability across eligible frozen historical-vocabulary tokens present in the future observation.",
+    "token_weighting": "binary presence",
+    "unknown_or_ineligible_tokens": "ignored",
+    "zero_eligible_tokens": "Exposure is missing. Do not impute using future labels or correctness."
+  },
+  "instability_lookup": {
+    "instability_table_sha256": "48af24b1ded06037e3f28c80619164a35d314709ee139fbed35b2e411fef2de2",
+    "n_tokens": 3240,
+    "primary_ranking_sha256": "b1aa249f458a1b8c855ac8bdb5a4e210a68d322262978c9110cb6e0b6c732347",
+    "source": "/content/drive/MyDrive/FinGPT_Project/results/day26/token_instability_rank.csv"
+  },
+  "scientific_firewall": {
+    "checkpoint_reselection_performed": false,
+    "day25_terms_used_to_modify_primary_ranking": false,
+    "future_errors_used_to_select_instability_metric": false,
+    "future_errors_used_to_select_support_threshold": false,
+    "future_errors_used_to_select_vocabulary": false,
+    "future_labels_used_to_define_token_score": false,
+    "new_full_model_inference_performed": false,
+    "new_model_training_performed": false,
+    "prompt_modification_performed": false,
+    "threshold_tuning_performed": false
+  },
+  "scientific_role": "Define the immutable historical lexical-instability predictor interface for Day27 out-of-time testing.",
+  "status": "FROZEN_FOR_DAY27",
+  "token_score": {
+    "association_alpha": 0.5,
+    "ddof": 1,
+    "definition": "I(v) = max_c sample SD across historical windows of smoothed one-vs-rest lexical-label log-odds.",
+    "field": "token_instability"
+  },
+  "tokenizer": {
+    "binary_document_presence": true,
+    "implementation": "sklearn.feature_extraction.text.CountVectorizer",
+    "lowercase": true,
+    "max_df_historical_fit": 0.95,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sklearn_version": "1.6.1",
+    "stop_words": null,
+    "token_pattern": "(?u)\\b\\w\\w+\\b"
+  },
+  "vocabulary": {
+    "eligible_token_count": 3240,
+    "minimum_historical_df": 20,
+    "minimum_windows_present": 3,
+    "source": "/content/drive/MyDrive/FinGPT_Project/results/day26/historical_vocabulary.csv",
+    "token_order_sha256": "d487cc509d4066c0c54589682ebd9c755170b67f80a3be7522b9d3f4b5e8652c",
+    "vocabulary_manifest_sha256": "bec68a277530b1417759e4956b05a13c2e049d0963482bf82918e61f81b20c13",
+    "vocabulary_table_sha256": "cd1d6383beeb7409162e425d2bb44ae40ba3ce9a81672fd7b17132b3f35fda54"
+  }
+}

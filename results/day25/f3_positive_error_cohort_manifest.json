@@ -1,0 +1,40 @@
+{
+  "day": 25,
+  "artifact": "f3_positive_error_cohort_manifest",
+  "status": "FROZEN",
+  "scientific_role": "immutable F3 true-positive prediction-route cohorts for downstream lexical and joint source analyses",
+  "population": {
+    "period": "F3",
+    "true_label": "positive",
+    "n": 544,
+    "ordered_observation_id_sha256": "ef3229c853b722a3b988cb7b699eb7c76f2c840e9cb93a48b6f4c8ed54c2c074"
+  },
+  "cohorts": {
+    "positive_to_positive": {
+      "n": 346,
+      "ordered_observation_id_sha256": "a63417ba4fb803b0e218ffc2c93fa1c32eb0e97ec1eb3c2b45ee15054a8a6131"
+    },
+    "positive_to_negative": {
+      "n": 104,
+      "ordered_observation_id_sha256": "080e886fc08d4b1cb8573206b6b6f2445434a698d305c0b203907673037325af"
+    },
+    "positive_to_neutral": {
+      "n": 94,
+      "ordered_observation_id_sha256": "c5c04d5cc716c161655c7970000a15b0a0c2e1067a9268b0e62aab4d7230c460"
+    }
+  },
+  "expected_counts": {
+    "positive_to_positive": 346,
+    "positive_to_negative": 104,
+    "positive_to_neutral": 94
+  },
+  "manual_exclusion_allowed": false,
+  "source_artifact": {
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv",
+    "sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b"
+  },
+  "cohort_artifact": {
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/f3_positive_error_cohorts.csv"
+  },
+  "created_utc": "2026-10-09T01:01:51.518124+00:00"
+}

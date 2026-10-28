@@ -1,0 +1,55 @@
+{
+  "artifact": "historical_population_manifest",
+  "construction": {
+    "canonical_text_source": "/content/drive/MyDrive/FinGPT_Project/results/day07/temporal_dataset_clean.csv",
+    "future_rows_allowed": false,
+    "historical_train_n": 13539,
+    "historical_validation_n": 5859,
+    "identity_definition": "Frozen union of Day22 historical training IDs and Day23 historical validation IDs.",
+    "new_content_based_exclusions": 0,
+    "total_n": 19398
+  },
+  "created_utc": "2026-10-09T02:44:24.020130+00:00",
+  "day": 26,
+  "integrity": {
+    "all_pre_future": true,
+    "day22_day23_overlap_n": 0,
+    "future_labels_used": false,
+    "labels_valid": true,
+    "missing_frozen_ids_n": 0,
+    "text_complete": true
+  },
+  "population_identity": {
+    "dataframe_sha256": "43a46ce77b9e70b0412b07912ede6cca5b2e3bb7199685a245c25bc9ead1da64",
+    "historical_role_counts": {
+      "historical_train": 13539,
+      "historical_validation": 5859
+    },
+    "label_counts": {
+      "negative": 3914,
+      "neutral": 12123,
+      "positive": 3361
+    },
+    "n": 19398,
+    "n_sources": 7,
+    "observation_ids_unique": true,
+    "ordered_observation_id_sha256": "8a6ab062e1bbfd390a4d3c3448cd73f103ed386a7e5844921ff8b1af2ef753c0",
+    "source_counts": {
+      "AGGRNEWSWIRE": 48,
+      "MonitoringSituation": 143,
+      "TreeNewsFeed": 24,
+      "WalterBloomberg": 2351,
+      "ZoomerfiedNews": 97,
+      "cukkanews": 4,
+      "firstsquaw": 16731
+    },
+    "timestamp_max_utc": "2025-12-31T21:05:31+00:00",
+    "timestamp_min_utc": "2025-06-03T21:06:16+00:00"
+  },
+  "status": "FROZEN",
+  "upstream_hashes": {
+    "day07_source_sha256": "a65556ea5bc10ae163efee8ac952f1500ab64bd225b104a9e2a9c88cd2e9aa03",
+    "day22_split_manifest_sha256": "ddc2b0fff22d6b4035a5909cd321bf3d1fca8f970892bef677c9f60acc51c352",
+    "day23_validation_predictions_sha256": "8181d3359e32f4a467b8be4db91844cd36f88b5a66131cbb9a621d21d2f3870d"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "artifact": "day26_final_scientific_summary",
+  "association_estimation": {
+    "all_primary_associations_finite": true,
+    "alpha": 0.5,
+    "metric": "smoothed_one_vs_rest_log_odds",
+    "token_class_window_rows": 38880,
+    "zero_df_token_window_pairs": 69
+  },
+  "created_utc": "2026-10-09T03:01:21.506036+00:00",
+  "day": 26,
+  "day25_retrospective_comparison": {
+    "causal_interpretation_permitted": false,
+    "deterministic_posneg_signature_n": 15,
+    "full_contrast_match_fraction": 0.8997050147492626,
+    "full_contrast_matched_to_day26": 305,
+    "full_day25_contrast_terms": 339,
+    "interpretation": "The Day25 F3 positive-to-negative lexical/topic signature does not map uniformly to historically unstable lexical-label associations. Some terms rank highly, while several prominent energy/commodity terms are historically stable under the frozen Day26 estimator.",
+    "matched_signature_median_instability_percentile": 0.12380364309972214,
+    "matched_signature_top10_percentile_n": 1,
+    "posneg_signature_matched_n": 9
+  },
+  "day27_status": "READY_FOR_OUT_OF_TIME_HYPOTHESIS_TEST",
+  "historical_population": {
+    "historical_train_n": 13539,
+    "historical_validation_n": 5859,
+    "label_counts": {
+      "negative": 3914,
+      "neutral": 12123,
+      "positive": 3361
+    },
+    "n": 19398,
+    "n_sources": 7,
+    "timestamp_max_utc": "2025-12-31T21:05:31+00:00",
+    "timestamp_min_utc": "2025-06-03T21:06:16+00:00"
+  },
+  "historical_windows": {
+    "fallback_triggered": false,
+    "minimum_class_support": 764,
+    "n_windows": 4,
+    "window_sizes": {
+      "H1": 4850,
+      "H2": 4849,
+      "H3": 4849,
+      "H4": 4850
+    }
+  },
+  "hypothesis_status": {
+    "H0_rejected_claim_permitted": false,
+    "H1_supported_claim_permitted": false,
+    "H1_tested_on_day26": false,
+    "reason": "Day26 constructs the historical predictor only. Future classification-error association is reserved for Day27."
+  },
+  "primary_artifact_hashes": {
+    "analysis_manifest": "ff49407efbc41e8a2f9cc123e4807da64d3f22fab1e40b078fa16556e7fa97bc",
+    "day27_handoff": "674751cc96f6520e06a6db18be0f963a4ed857b2d890eaa603faa6d0c857c29c",
+    "historical_population_manifest": "3e4ef7314899d0f60bb7373b32a75385c3dd5b464f35c74d063e51850556e213",
+    "historical_vocabulary_manifest": "bec68a277530b1417759e4956b05a13c2e049d0963482bf82918e61f81b20c13",
+    "historical_window_manifest": "b2490cad63a006efb1f582308727ea99d0d8304a93d52ab37d16fb0fbc413c93",
+    "token_class_association": "3b9ce6cf41b41f98ef0104e79e223e0c1c48f5451d103bfaac343666e24fb18c",
+    "token_instability_rank": "b1aa249f458a1b8c855ac8bdb5a4e210a68d322262978c9110cb6e0b6c732347",
+    "token_temporal_instability": "48af24b1ded06037e3f28c80619164a35d314709ee139fbed35b2e411fef2de2"
+  },
+  "primary_research_question": "Do lexical features whose sentiment-label associations are unstable across historical time contribute to higher future classification error?",
+  "scientific_conclusion": "Day26 successfully constructed and froze a reproducible historical-only lexical-label instability estimator. Historical lexical-label associations show heterogeneous temporal stability. The retrospective Day25 comparison shows only partial overlap between the previously observed F3 lexical/topic signature and historically unstable lexical-label associations. Day26 does not evaluate whether instability predicts future classification error; H1 remains untested until Day27.",
+  "scientific_firewall": {
+    "H1_claim_made": false,
+    "checkpoint_reselection": false,
+    "day25_terms_used_to_define_instability": false,
+    "day25_terms_used_to_define_vocabulary": false,
+    "future_errors_used_to_construct_predictor": false,
+    "future_labels_used_to_construct_predictor": false,
+    "new_full_model_inference": false,
+    "new_model_training": false,
+    "prompt_modification": false,
+    "threshold_tuning": false
+  },
+  "scientific_objective": "Construct and freeze a historical-only measure of temporal lexical-label instability for subsequent out-of-time evaluation.",
+  "status": "COMPLETE",
+  "support_qc": {
+    "interpretation": "The extreme instability tail is enriched for lower-support terms. This does not redefine the primary df>=20 ranking; the pre-registered df>=50 analysis remains secondary robustness evidence.",
+    "top50_df_ge_50_n": 6,
+    "top50_df_lt_50_n": 44,
+    "top50_median_historical_df": 27.0,
+    "top50_min_historical_df": 20,
+    "top50_present_in_all4_windows_n": 42
+  },
+  "temporal_instability": {
+    "definition": "I(v)=max_c SD_t[A(v,c,t)], sample SD with ddof=1",
+    "maximum": 2.234542981150526,
+    "mean": 0.8979285604486955,
+    "median": 0.8766940210590981,
+    "minimum": 0.07915409461950708,
+    "n_tokens": 3240,
+    "q95": 1.5122229743937317,
+    "q99": 1.9018159199544105,
+    "responsible_class_counts": {
+      "negative": 1200,
+      "neutral": 817,
+      "positive": 1223
+    },
+    "responsible_direction_flip_fraction": 0.6802469135802469,
+    "responsible_direction_flip_n": 2204
+  },
+  "vocabulary": {
+    "bigram_count": 1013,
+    "eligible_primary_tokens": 3240,
+    "primary_support_rule": "historical df >= 20 and presence in >= 3 windows",
+    "raw_features": 178181,
+    "secondary_df50_tokens": 1270,
+    "unigram_count": 2227
+  }
+}

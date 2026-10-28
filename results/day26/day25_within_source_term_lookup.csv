@@ -1,0 +1,31 @@
+source,stable_for_interpretation,source_term_rank,term_normalized,instability_rank,instability_percentile,feature_type,historical_df,windows_present,token_instability,responsible_class,responsible_direction_flip,responsible_sign_change_count,in_day26_eligible_vocabulary
+firstsquaw,True,1,prices,3168.0,0.022229083050324228,unigram,321.0,4.0,0.25852748824065214,negative,False,0.0,True
+firstsquaw,True,2,gasoline,,,,,,,,,,False
+firstsquaw,True,3,gasoline prices,,,,,,,,,,False
+firstsquaw,True,4,qatarenergy,,,,,,,,,,False
+firstsquaw,True,5,lng,1980.0,0.3890089533806731,unigram,42.0,4.0,0.781219556561656,negative,True,2.0,True
+firstsquaw,True,6,oil,2839.0,0.12380364309972214,unigram,488.0,4.0,0.49007216628484684,neutral,False,0.0,True
+firstsquaw,True,7,gas,1943.0,0.400432232170423,unigram,137.0,4.0,0.7913045271675105,positive,True,2.0,True
+firstsquaw,True,8,force majeure,,,,,,,,,,False
+firstsquaw,True,9,majeure,,,,,,,,,,False
+firstsquaw,True,10,force,538.0,0.8342080889163321,unigram,105.0,4.0,1.2375688400437703,positive,True,2.0,True
+WalterBloomberg,True,1,iraq,133.0,0.9592466810744057,unigram,41.0,4.0,1.5608879420682666,negative,True,1.0,True
+WalterBloomberg,True,2,cuts,2940.0,0.09262117937635073,unigram,294.0,4.0,0.43382311347972063,positive,False,0.0,True
+WalterBloomberg,True,3,as,3200.0,0.012349490583513423,unigram,1273.0,4.0,0.2218441631413245,neutral,False,0.0,True
+WalterBloomberg,True,4,oil,2839.0,0.12380364309972214,unigram,488.0,4.0,0.49007216628484684,neutral,False,0.0,True
+WalterBloomberg,True,5,exports,2924.0,0.09756097560975607,unigram,139.0,4.0,0.44127155283838054,positive,False,0.0,True
+WalterBloomberg,True,6,hormuz,,,,,,,,,,False
+WalterBloomberg,True,7,production,3035.0,0.06329113924050633,unigram,216.0,4.0,0.3731145519588299,negative,False,0.0,True
+WalterBloomberg,True,8,supplies,1978.0,0.3896264279098487,unigram,32.0,4.0,0.7814137096254349,negative,True,1.0,True
+WalterBloomberg,True,9,per,3221.0,0.005866008027168856,unigram,224.0,4.0,0.18523361296526455,neutral,False,0.0,True
+WalterBloomberg,True,10,iraqi,612.0,0.8113615313368323,unigram,20.0,4.0,1.200083605597289,neutral,True,1.0,True
+MonitoringSituation,True,1,production,3035.0,0.06329113924050633,unigram,216.0,4.0,0.3731145519588299,negative,False,0.0,True
+MonitoringSituation,True,2,the,3237.0,0.0009262117937635095,unigram,4487.0,4.0,0.10759577478516186,negative,True,1.0,True
+MonitoringSituation,True,3,2022,,,,,,,,,,False
+MonitoringSituation,True,4,average,2218.0,0.31552948440876816,unigram,68.0,4.0,0.7126953999994989,negative,True,2.0,True
+MonitoringSituation,True,5,oil,2839.0,0.12380364309972214,unigram,488.0,4.0,0.49007216628484684,neutral,False,0.0,True
+MonitoringSituation,True,6,since,2686.0,0.171040444581661,unigram,316.0,4.0,0.5535285338568426,positive,False,0.0,True
+MonitoringSituation,True,7,prices,3168.0,0.022229083050324228,unigram,321.0,4.0,0.25852748824065214,negative,False,0.0,True
+MonitoringSituation,True,8,down,2588.0,0.2012966965112689,unigram,475.0,4.0,0.5938667960704501,positive,False,0.0,True
+MonitoringSituation,True,9,field,,,,,,,,,,False
+MonitoringSituation,True,10,gas,1943.0,0.400432232170423,unigram,137.0,4.0,0.7913045271675105,positive,True,2.0,True

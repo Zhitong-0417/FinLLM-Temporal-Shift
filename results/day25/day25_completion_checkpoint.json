@@ -1,0 +1,99 @@
+{
+  "day": 25,
+  "status": "PASS",
+  "scientific_status": "MECHANISM_DIAGNOSIS_COMPLETE",
+  "primary_scientific_endpoint": {
+    "mechanism_class": "C",
+    "mechanism_label": "mixed source + lexical association",
+    "qualifier": "Lexical/topic shift appears dominant, while source composition contributes secondarily."
+  },
+  "f3_residual_failure_identity": {
+    "true_positive_total": 544,
+    "positive_to_positive": 346,
+    "positive_to_negative": 104,
+    "positive_to_neutral": 94
+  },
+  "frozen_day24_prediction_artifact": {
+    "path": "/content/drive/MyDrive/FinGPT_Project/results/day24/optimized_future_predictions.csv",
+    "sha256": "c685990ef091d583d7fdc73b240ec8dc5ee73c579d24ed9badcc16e2f1066f3b",
+    "unchanged": true,
+    "n": 20002
+  },
+  "scientific_firewall": {
+    "model_retraining_performed": false,
+    "lora_update_performed": false,
+    "checkpoint_reselection_performed": false,
+    "prompt_modification_performed": false,
+    "threshold_tuning_performed": false,
+    "new_full_model_inference_performed": false,
+    "causal_claim_made": false
+  },
+  "canonical_notebook": {
+    "source_path": "/content/drive/MyDrive/Colab Notebooks/Untitled7.ipynb",
+    "canonical_path": "/content/drive/MyDrive/FinGPT_Project/notebooks/day25_f3_residual_failure_mechanism_diagnosis.ipynb",
+    "sha256": "3540746dcbbb5c1d5f725dc0ab95563f549e7195d5995bd813a4a211668f4ebb",
+    "size_bytes": 681450,
+    "cells": 41,
+    "code_cells": 30,
+    "markdown_cells": 11,
+    "final_closure_markdown_added": true
+  },
+  "key_artifact_hashes": {
+    "analysis_manifest": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/day25_analysis_manifest.json",
+      "sha256": "fb7143c351faa58a2699e17a1f3132517d8ec019444cbda643f9af4d774b4051",
+      "size_bytes": 3375
+    },
+    "mechanism_evidence": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/day25_mechanism_evidence.csv",
+      "sha256": "185c750616c92fc4e2fadf6a76f084854774c61080551f3d824cc361c879512e",
+      "size_bytes": 2010
+    },
+    "final_scientific_summary": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/day25_final_scientific_summary.json",
+      "sha256": "86e7b8ce51c93d6df842bb2e52c27620e6b22d7eb23099ebf387eac1763e0b67",
+      "size_bytes": 4017
+    },
+    "scientific_conclusion": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/day25_scientific_conclusion.txt",
+      "sha256": "ec346e1302774bb1f75c9b2da32ab1abff9d2fbc1183268e724036e7d9a3b274",
+      "size_bytes": 974
+    },
+    "final_artifact_audit": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/day25_final_artifact_audit.csv",
+      "sha256": "1c445e827a37269b8629c9822fda645e5823806fa8398510b423670285e159cd",
+      "size_bytes": 3696
+    },
+    "f3_positive_error_cohorts": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/f3_positive_error_cohorts.csv",
+      "sha256": "8d0415c6775a51cd77367aa183db87d2b36e7810e2750aeab29dcd4d756145ac",
+      "size_bytes": 112813
+    },
+    "f3_positive_error_cohort_manifest": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/f3_positive_error_cohort_manifest.json",
+      "sha256": "0f0cfc9b0d2de7c184f713e2ed45afbe6c510fb3e6de7b952392d03b9e685b35",
+      "size_bytes": 1445
+    },
+    "source_conditioned_metrics": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/source_conditioned_metrics.csv",
+      "sha256": "e2d680b36eff0caa033f1c4b02a52aae14e52a617595f69dd7a72fbfe84c8406",
+      "size_bytes": 3650
+    },
+    "lexical_contrast": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/lexical_contrast_f3_posneg_vs_pospos.csv",
+      "sha256": "d800a383a2374ef9e1fa93262a04b7edbd384a3cc115a79b23e5527e3ca425f2",
+      "size_bytes": 62739
+    },
+    "within_source_lexical_summary": {
+      "path": "/content/drive/MyDrive/FinGPT_Project/results/day25/within_source_lexical_summary.csv",
+      "sha256": "0c94c236c3ac12eef68c5ee909c47e1788b5e07f048cf54ad34a54a2e7db15ad",
+      "size_bytes": 782
+    }
+  },
+  "scientific_conclusion": "Day 25 identifies the residual F3 positive-sentiment failure as most consistent with a mixed source + lexical association. F3 exhibits a material class-prior shift and a modest source-composition shift, including increased representation of MonitoringSituation, but these factors are insufficient to explain the failure by themselves. Positive recall declines persist within major common sources, including firstsquaw and WalterBloomberg. In parallel, F3 true-positive texts show a broader energy/commodity/supply-disruption lexical shift relative to neighboring F2 and F4 periods, and this lexical structure is especially concentrated among the 104 positive→negative errors. The same lexical signature persists after conditioning on the three major F3 sources. Therefore, the residual failure is associated primarily with a lexical/topic shift, with source composition contributing secondarily. These results establish association and concentration, not causal mechanism.",
+  "optional_stage6": "SKIPPED_BY_DESIGN",
+  "day25_complete": true,
+  "final_resave_required": false,
+  "created_utc": "2026-10-09T01:11:21.048090+00:00",
+  "finalized_utc": "2026-10-09T01:11:59.610723+00:00"
+}

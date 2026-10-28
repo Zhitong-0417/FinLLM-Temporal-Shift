@@ -1,0 +1,56 @@
+{
+  "artifact": "historical_vocabulary_manifest",
+  "created_utc": "2026-10-09T02:47:16.808345+00:00",
+  "day": 26,
+  "feature_identity": {
+    "bigram_count": 1013,
+    "eligible_feature_count": 3240,
+    "raw_vectorizer_feature_count": 178181,
+    "token_order_sha256": "d487cc509d4066c0c54589682ebd9c755170b67f80a3be7522b9d3f4b5e8652c",
+    "unigram_count": 2227,
+    "vocabulary_csv_path": "/content/drive/MyDrive/FinGPT_Project/results/day26/historical_vocabulary.csv",
+    "vocabulary_table_sha256": "cd1d6383beeb7409162e425d2bb44ae40ba3ce9a81672fd7b17132b3f35fda54"
+  },
+  "historical_population": {
+    "n_documents": 19398,
+    "population_manifest_sha256": "3e4ef7314899d0f60bb7373b32a75385c3dd5b464f35c74d063e51850556e213",
+    "window_distribution_sha256": "fe8907aab37a77becc7c48532c3a736edd2fd0cd48fd3d1a5bb07f37bef05745",
+    "window_manifest_sha256": "b2490cad63a006efb1f582308727ea99d0d8304a93d52ab37d16fb0fbc413c93"
+  },
+  "scientific_firewall": {
+    "day25_terms_used_as_whitelist": false,
+    "day25_terms_used_for_support_rule": false,
+    "future_errors_used": false,
+    "future_labels_used": false,
+    "future_text_used": false
+  },
+  "status": "FROZEN",
+  "support_rule": {
+    "primary": {
+      "minimum_total_historical_df": 20,
+      "minimum_windows_present": 3,
+      "n_historical_windows": 4
+    },
+    "secondary_sensitivity": {
+      "minimum_total_historical_df": 50,
+      "role": "SECONDARY_ONLY"
+    }
+  },
+  "vectorizer": {
+    "analyzer": "word",
+    "binary": true,
+    "class": "CountVectorizer",
+    "dtype": "<class 'numpy.int32'>",
+    "library": "scikit-learn",
+    "lowercase": true,
+    "max_df": 0.95,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sklearn_version": "1.6.1",
+    "stop_words": null,
+    "strip_accents": null,
+    "token_pattern": "(?u)\\b\\w\\w+\\b"
+  }
+}
